@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: Bear
+  m_EditorClassIdentifier:
+  deprecatedTier: 0
+  _itemTierDef: {fileID: 0}
+  nameToken: ITEM_BEAR_NAME
+  pickupToken: ITEM_BEAR_PICKUP
+  descriptionToken: ITEM_BEAR_DESC
+  loreToken: ITEM_BEAR_LORE
+  unlockableDef: {fileID: 11400000, guid: b901c4391f5f93341aca62a080b0f86d, type: 2}
+  pickupModelPrefab: {fileID: 1833727713118131, guid: 38516de28b80fd445ac9d1279a02cbc2, type: 2}
+  pickupIconSprite: {fileID: 21300000, guid: f179fa3707885c2428d4fc276f22f199, type: 2}
+  isConsumed: 0
+  hidden: 0
+  canRemove: 1
+  tags:
+  - 3
+  - 11
+  requiredExpansion: {fileID: 0}

@@ -1,0 +1,143 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &6587867259672681428
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 894467083449454947, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 895306134161411101, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1008624614701082669, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_FillAmount
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_Pivot.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 75
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2942719657525187240, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 5ec1c7e6a7e1751438fcc2a4274d26dc, type: 3}
+    - target: {fileID: 3822922733934597681, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.97348
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822922733934597681, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.97348
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822922733934597681, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.97348
+      objectReference: {fileID: 0}
+    - target: {fileID: 3822922733934597681, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4830564306542708503, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 6399a1a545eb1eb45a8f0df18b29a71c, type: 3}
+    - target: {fileID: 7429475265012640154, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: buffName
+      value: Healing Rings Ready
+      objectReference: {fileID: 0}
+    - target: {fileID: 7429475265012640154, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: cooldownName
+      value: Healing Rings Cooldown
+      objectReference: {fileID: 0}
+    - target: {fileID: 7717279179682996303, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
+      propertyPath: m_Name
+      value: BandDisplayHeal
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 3761398d6b56e6844867d08039d094d8, type: 3}

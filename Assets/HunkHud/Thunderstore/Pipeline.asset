@@ -1,0 +1,166 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8748318349385026979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8808e815b3ce9c94e9552cb1dee9e305, type: 3}
+  m_Name: Zip
+  m_EditorClassIdentifier: 
+  Active: 1
+  PerManifest: 1
+  ListType: 1
+  Manifests:
+  - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+  ArchiveType: 1
+  Source: <ManifestPluginStaging>
+  Output: <ManifestPluginStaging>/Release.zip
+--- !u!114 &-8415991524404298425
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b5b20fac9c71fd64183cb7a8f359d73a, type: 3}
+  m_Name: StageAssemblies
+  m_EditorClassIdentifier: 
+  Active: 1
+  stageDebugDatabases: 1
+  releaseBuild: 1
+  assemblyArtifactPath: <AssemblyStaging>
+  buildTarget: 5
+--- !u!114 &-6843026688157038586
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d65cc226c348d45aa1c6dddf3600a6, type: 3}
+  m_Name: Delete
+  m_EditorClassIdentifier: 
+  Active: 1
+  PerManifest: 1
+  ListType: 1
+  Manifests:
+  - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+  Recursive: 0
+  IsFatal: 0
+  Path: <ManifestPluginStaging>/Release.zip
+--- !u!114 &-3169490240828168959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3570c76eb7a5c3c45942d9295a150917, type: 3}
+  m_Name: StageManifestFiles
+  m_EditorClassIdentifier: 
+  Active: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a3695521163bdd74fa2845bbd3438240, type: 3}
+  m_Name: Pipeline
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: -8415991524404298425}
+  - {fileID: 5363681938789526682}
+  - {fileID: -3169490240828168959}
+  - {fileID: 8242180745058324780}
+  - {fileID: 6914404765160623340}
+  - {fileID: 1329446815802926116}
+  - {fileID: -6843026688157038586}
+  - {fileID: -8748318349385026979}
+  QuickAccess: 1
+  manifest: {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+--- !u!114 &1329446815802926116
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d65cc226c348d45aa1c6dddf3600a6, type: 3}
+  m_Name: Delete
+  m_EditorClassIdentifier: 
+  Active: 1
+  PerManifest: 1
+  ListType: 1
+  Manifests:
+  - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+  Recursive: 0
+  IsFatal: 0
+  Path: <ManifestPluginStaging>/hunkhudassets.manifest
+--- !u!114 &5363681938789526682
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 924ee63e6c016f14d8a1560b288f15a3, type: 3}
+  m_Name: StageAssetBundles
+  m_EditorClassIdentifier: 
+  Active: 1
+  AssetBundleBuildOptions: 256
+  buildTarget: 5
+  recurseDirectories: 0
+  simulate: 0
+  BundleArtifactPath: <AssetBundleStaging>
+--- !u!114 &6914404765160623340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 87d65cc226c348d45aa1c6dddf3600a6, type: 3}
+  m_Name: Delete
+  m_EditorClassIdentifier: 
+  Active: 1
+  PerManifest: 1
+  ListType: 1
+  Manifests:
+  - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+  Recursive: 0
+  IsFatal: 0
+  Path: <ManifestPluginStaging>/HunkHud.manifest
+--- !u!114 &8242180745058324780
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc52389347ae9634bbb7e74eba886518, type: 3}
+  m_Name: StageThunderstoreManifest
+  m_EditorClassIdentifier: 
+  Active: 1

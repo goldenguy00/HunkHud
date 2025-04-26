@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1467844994, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: HUDHealthBar
+  m_EditorClassIdentifier:
+  barPrefab: {fileID: 1497326063750604, guid: 98caf6a311a44e744bdfe3b1d9e4dfca, type: 2}
+  flashOnHealthCritical: 1
+  trailingUnderHealthBarStyle:
+    enabled: 1
+    baseColor: {r: 0.6132076, g: 0.6132076, b: 0.6132076, a: 1}
+    sprite: {fileID: 21300000, guid: 974b57e1074387041930eda1c2bad324, type: 2}
+    imageType: 3
+    sizeDelta: -4
+  instantHealthBarStyle:
+    enabled: 1
+    baseColor: {r: 0.95554936, g: 1, b: 0.5801887, a: 1}
+    sprite: {fileID: 21300000, guid: a35a73175c6e9fb4a90b6adbe9c0cff7, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  trailingOverHealthBarStyle:
+    enabled: 1
+    baseColor: {r: 0.49019608, g: 0.8784314, b: 0.25882354, a: 1}
+    sprite: {fileID: 21300000, guid: 7638b6f5dc4df7b4383dab992e243472, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  shieldBarStyle:
+    enabled: 1
+    baseColor: {r: 0.3529412, g: 0.4862745, b: 0.9647059, a: 1}
+    sprite: {fileID: 21300000, guid: 7638b6f5dc4df7b4383dab992e243472, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  curseBarStyle:
+    enabled: 1
+    baseColor: {r: 0.8443396, g: 0.9154437, b: 1, a: 1}
+    sprite: {fileID: 21300000, guid: 5707b7a16a64b8c4d9950ff0ee2cb47e, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  barrierBarStyle:
+    enabled: 1
+    baseColor: {r: 1, g: 1, b: 1, a: 1}
+    sprite: {fileID: 21300000, guid: 412147c776e49664abc39b10787119d0, type: 2}
+    imageType: 1
+    sizeDelta: 12
+  flashBarStyle:
+    enabled: 1
+    baseColor: {r: 0.70980394, g: 0.91764706, b: 0.5882353, a: 0.45882353}
+    sprite: {fileID: 21300000, guid: a35a73175c6e9fb4a90b6adbe9c0cff7, type: 2}
+    imageType: 0
+    sizeDelta: 0
+  cullBarStyle:
+    enabled: 1
+    baseColor: {r: 1, g: 1, b: 1, a: 1}
+    sprite: {fileID: 21300000, guid: 6fcf1ddc85003b34e966a62cdf9cbb17, type: 2}
+    imageType: 1
+    sizeDelta: 0
+  magneticStyle:
+    enabled: 0
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    sprite: {fileID: 0}
+    imageType: 0
+    sizeDelta: 0
+  ospStyle:
+    enabled: 1
+    baseColor: {r: 0, g: 0, b: 0, a: 0.54509807}
+    sprite: {fileID: 21300000, guid: 33368389b8ee08c40824b0ee95d73763, type: 2}
+    imageType: 2
+    sizeDelta: -8
+  lowHealthOverStyle:
+    enabled: 1
+    baseColor: {r: 0, g: 0, b: 0, a: 0.2784314}
+    sprite: {fileID: 21300000, guid: 7638b6f5dc4df7b4383dab992e243472, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  lowHealthUnderStyle:
+    enabled: 0
+    baseColor: {r: 0.16037738, g: 0.12028304, b: 0.12028304, a: 1}
+    sprite: {fileID: 21300000, guid: a35a73175c6e9fb4a90b6adbe9c0cff7, type: 2}
+    imageType: 0
+    sizeDelta: 3
+  echoDamageStyle:
+    enabled: 1
+    baseColor: {r: 0.3773585, g: 0.10837658, b: 0.09077963, a: 1}
+    sprite: {fileID: 21300000, guid: 7638b6f5dc4df7b4383dab992e243472, type: 2}
+    imageType: 2
+    sizeDelta: 0
+  lunarRuinStyle:
+    enabled: 1
+    baseColor: {r: 0.5176471, g: 0.7882353, b: 1, a: 0.5803922}
+    sprite: {fileID: 21300000, guid: 994b0e7262f32ac4188cb6d5bcfb8f32, type: 2}
+    imageType: 2
+    sizeDelta: -2.7
