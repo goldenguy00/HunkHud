@@ -59,36 +59,33 @@ namespace HunkHud.Components.UI
         public string buffName;
         public string cooldownName;
 
-        private BuffIndex readyBuffIndex = BuffIndex.None;
-        private BuffIndex cooldownBuffIndex = BuffIndex.None;
-
         private CharacterBody targetBody => this.displayParent.targetBody;
-        private BandDisplayMover displayParent;
+        private HealthBarMover displayParent;
 
         private float timer;
         private int maxBuffs;
 
         private void Start()
         {
-            this.displayParent = this.GetComponentInParent<BandDisplayMover>();
-            this.readyBuffIndex = BuffCatalog.FindBuffIndex(this.buffName);
-            this.cooldownBuffIndex = BuffCatalog.FindBuffIndex(this.cooldownName);
+            if (this.transform.parent)
+                this.displayParent = this.transform.parent.GetComponentInParent<HealthBarMover>();
         }
 
         private void FixedUpdate()
         {
             if (this.displayParent && this.targetBody)
             {
-                if (this.targetBody.HasBuff(this.readyBuffIndex))
+                if (this.targetBody.HasBuff(BuffCatalog.FindBuffIndex(this.buffName)))
                 {
                     SetRingReady();
                     return;
                 }
 
-                var newBuffs = this.targetBody.GetBuffCount(this.cooldownBuffIndex);
+                var newBuffs = this.targetBody.GetBuffCount(BuffCatalog.FindBuffIndex(this.cooldownName));
                 if (newBuffs > 0)
                 {
-                    SetRingCooldown(newBuffs);
+                    this.maxBuffs = Math.Max(this.maxBuffs, newBuffs);
+                    SetRingCooldown();
                     return;
                 }
             }
@@ -99,18 +96,17 @@ namespace HunkHud.Components.UI
 
         private void SetRingReady()
         {
-            this.timer = 0f;
-
             this.fullObj.SetActive(true);
             this.fillObj.SetActive(false);
+
+            this.timer = 0f;
+            this.maxBuffs = 0;
         }
 
-        private void SetRingCooldown(int newBuffs)
+        private void SetRingCooldown()
         {
             this.fullObj.SetActive(false);
             this.fillObj.SetActive(true);
-
-            this.maxBuffs = Math.Max(this.maxBuffs, newBuffs);
 
             var timeLeft = Util.Remap(this.timer, 0f, this.maxBuffs, 0f, 1f);
             this.fillImage.color = this.fillGradient.Evaluate(timeLeft);

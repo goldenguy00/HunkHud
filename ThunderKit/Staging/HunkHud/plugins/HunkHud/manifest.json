@@ -1,10 +1,11 @@
 {
     "name": "HunkHud",
     "author": "public_ParticleSystem",
-    "version_number": "0.0.5",
+    "version_number": "0.0.9",
     "website_url": "https://discord.gg/xqp5CQM8Cs",
     "description": "BETA RELEASE - Standalone Hud from HUNK",
     "dependencies": [
-        "bbepis-BepInExPack-5.4.2117"
+        "bbepis-BepInExPack-5.4.2117",
+        "score-RiskUIRevived-1.0.4"
     ]
 }

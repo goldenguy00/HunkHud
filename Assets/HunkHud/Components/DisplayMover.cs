@@ -2,13 +2,19 @@ using RoR2;
 using RoR2.UI;
 using UnityEngine;
 using HunkHud.Modules;
+using System;
 
 namespace HunkHud.Components
 {
     public class DisplayMover : MonoBehaviour
     {
+        [NonSerialized]
         public HUD targetHud;
+
+        [NonSerialized]
         public CharacterBody targetBody;
+
+        [NonSerialized]
         public CharacterMaster targetMaster;
 
         public float refreshTimer = 2.8f;
@@ -16,16 +22,16 @@ namespace HunkHud.Components
         public float smoothSpeed = 4f;
 
         public Vector3 offset;
-        public Vector3 activePosition;
-        public Vector3 inactivePosition;
 
+        private Vector3 activePosition;
+        private Vector3 inactivePosition;
         private Vector3 desiredPosition;
 
         public virtual void UpdateReferences(HUD hud, CharacterBody body)
         {
             this.activeTimer = 8f;
             this.targetHud = hud;
-            this.targetMaster = hud ? hud.targetMaster : null;
+            this.targetMaster = hud.targetMaster;
             this.targetBody = body;
         }
 
@@ -43,7 +49,7 @@ namespace HunkHud.Components
 
         protected virtual void Update()
         {
-            this.transform.localPosition = Vector3.Slerp(this.transform.localPosition, this.desiredPosition, this.smoothSpeed * Time.deltaTime);
+            this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, this.desiredPosition, this.smoothSpeed * Time.deltaTime);
         }
 
         protected virtual void FixedUpdate()

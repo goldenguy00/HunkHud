@@ -34,11 +34,11 @@ RectTransform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 150, y: 350}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -50, y: -15}
   m_SizeDelta: {x: 75, y: 75}
-  m_Pivot: {x: 0.5, y: 0.5}
+  m_Pivot: {x: 0, y: 0.5}
 --- !u!222 &222376029095280010
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -56,18 +56,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1349068100638080}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ea44add3bb5e40449bdbc4dac702f65b, type: 3}
+  m_Script: {fileID: 11500000, guid: 429edc83bd01b7f4b991c902f104a5e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetHud: {fileID: 0}
-  targetBody: {fileID: 0}
-  targetMaster: {fileID: 0}
-  refreshTimer: 2.4
-  activeTimer: 8
-  smoothSpeed: 4
-  offset: {x: 100, y: -450, z: 0}
-  activePosition: {x: 0, y: 0, z: 0}
-  inactivePosition: {x: 0, y: 0, z: 0}
+  targetInventory: {fileID: 0}
 --- !u!114 &4521658448757228345
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -85,7 +77,7 @@ MonoBehaviour:
     m_Right: 0
     m_Top: 0
     m_Bottom: 0
-  m_ChildAlignment: 0
+  m_ChildAlignment: 3
   m_Spacing: 0
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0

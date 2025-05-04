@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1120645437
+CRC: 3859563387
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: da9cbdc61526b87afb7fc69b34e72387
+    Hash: a5649c8041ae5f10f33fea00ef6844a1
   TypeTreeHash:
     serializedVersion: 2
-    Hash: a1ccffa137ec2d0487ad1071dc6fb21f
+    Hash: 0781b3b032650e652faaea684f511b84
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -34,9 +34,9 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: ea44add3bb5e40449bdbc4dac702f65b, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 3e54dc1b4b6aa7846a8ce1ecd9e0fc6c, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 429edc83bd01b7f4b991c902f104a5e2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dffd04df1bbdbfc49aebfa48e395f193, type: 3}
 - Class: 114
@@ -74,6 +74,8 @@ ClassTypes:
 - Class: 225
   Script: {instanceID: 0}
 SerializeReferenceClassIdentifiers:
+- AssemblyName: HunkHud
+  ClassName: HunkHud.Components.UI.CustomHealthBar/BarInfo
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -162,6 +164,7 @@ Assets:
 - Assets/HunkHud/Assets/textures/texBarrierFill.asset
 - Assets/HunkHud/Assets/textures/texHealthFill.png
 - Assets/HunkHud/Assets/textures/texHudBar.asset
+- Assets/HunkHud/Assets/textures/texBlankFillEcho.png
 - Assets/HunkHud/Assets/textures/texHealthFill.asset
 - Assets/HunkHud/Assets/vfx/texVignette.asset
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassMask.png
@@ -187,6 +190,7 @@ Assets:
 - Assets/HunkHud/Assets/hud/WeaponRadial.prefab
 - Assets/HunkHud/Assets/textures/texBandCooldown.png
 - Assets/HunkHud/Assets/textures/texItemExclamation.asset
+- Assets/HunkHud/Assets/textures/texBlankFillShiny2.asset
 - Assets/HunkHud/Assets/BiomassHolder.prefab
 - Assets/HunkHud/Assets/textures/texRadialSelection.asset
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.asset

@@ -5,9 +5,7 @@ using System.IO;
 using System.Runtime.CompilerServices;
 using System.Security;
 using System.Security.Permissions;
-using TMPro;
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 using HunkHud.Modules;
 
 #pragma warning disable CS0618 // Type or member is obsolete
@@ -25,7 +23,7 @@ namespace HunkHud
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "0.0.5";
+        public const string VERSION = "0.0.9";
 
         public static HunkHudMain instance { get; private set; }
 

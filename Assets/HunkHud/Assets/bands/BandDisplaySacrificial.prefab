@@ -93,7 +93,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 75
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1114103762247133498, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -181,7 +181,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7717279179682996303, guid: 3761398d6b56e6844867d08039d094d8, type: 3}
       propertyPath: m_Name
-      value: BandDisplayBleed
+      value: BandDisplaySacrificial
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3761398d6b56e6844867d08039d094d8, type: 3}

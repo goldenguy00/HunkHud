@@ -1,3 +1,29 @@
+# Changelog
+
+`0.0.9`
+
+- Bands now get attached to the healthbar
+- Further hp bar accuracy improvements
+- Buffs display should stay on screen now
+
+`0.0.8`
+
+- Fixed bands having inconsistent positioning
+- Fixed issue with echo damage being always active
+
+`0.0.7`
+
+- Fixed band cooldowns not filling up
+- Centered some stuff
+
+`0.0.6`
+
+- Collapse and warped echo display added
+- Luminous Shot display fills from the bottom now
+- Fixed issue with healthbar displaying an extra bar
+- Fixed band display overlapping with healthbar
+- Minor adjustments to display movement for all UI elements
+
 `0.0.5`
 
 - Improved accuracy of Healthbar

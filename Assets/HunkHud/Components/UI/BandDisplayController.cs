@@ -1,28 +1,29 @@
-using RoR2.UI;
 using RoR2;
 using UnityEngine;
 using HunkHud.Modules;
 
-namespace HunkHud.Components
+namespace HunkHud.Components.UI
 {
-    public class BandDisplayMover : DisplayMover
+    public class BandDisplayController : MonoBehaviour
     {
+        private Inventory targetInventory;
+
         private void OnDestroy()
         {
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+            if (this.targetInventory)
+                this.targetInventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
         }
 
-        public override void UpdateReferences(HUD hud, CharacterBody body)
+        public void UpdateReferences(Inventory inventory)
         {
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+            if (this.targetInventory)
+                this.targetInventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
 
-            base.UpdateReferences(hud, body);
+            this.targetInventory = inventory;
 
-            if (this.targetMaster && this.targetMaster.inventory)
+            if (this.targetInventory)
             {
-                this.targetMaster.inventory.onInventoryChanged += this.Inventory_OnInventoryChanged;
+                this.targetInventory.onInventoryChanged += this.Inventory_OnInventoryChanged;
                 this.Inventory_OnInventoryChanged();
             }
         }
@@ -31,17 +32,24 @@ namespace HunkHud.Components
         {
             AddOrRemovePrefab("BandDisplay", "FireRing", "IceRing");
             AddOrRemovePrefab("BandDisplayVoid", "ElementalRingVoid");
-            AddOrRemovePrefab("BandDisplayHealing", "ITEM_HEALING_BAND");
+            AddOrRemovePrefab("BandDisplayHealing", "ITEM_HEALING_BAND", "ITEM_BARRIER_BAND");
             AddOrRemovePrefab("BandDisplayNova", "ITEM_NOVA_BAND");
             AddOrRemovePrefab("BandDisplaySacrificial", "ITEM_SANDSWEPT_SACRIFICIAL_BAND");
+
             void AddOrRemovePrefab(string prefabName, params string[] itemName)
             {
                 bool hasItem = false;
-                for (int i = 0; i < itemName.Length; i++)
+                if (this.targetInventory)
                 {
-                    var itemIndex = ItemCatalog.FindItemIndex(itemName[i]);
-                    if (itemIndex != ItemIndex.None)
-                        hasItem |= this.targetMaster.inventory.GetItemCount(itemIndex) > 0;
+                    for (int i = 0; i < itemName.Length; i++)
+                    {
+                        var itemIndex = ItemCatalog.FindItemIndex(itemName[i]);
+                        if (this.targetInventory.GetItemCount(itemIndex) > 0)
+                        {
+                            hasItem = true;
+                            break;
+                        }
+                    }
                 }
 
                 var childTransform = this.transform.Find(prefabName);

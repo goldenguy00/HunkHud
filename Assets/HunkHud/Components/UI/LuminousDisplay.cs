@@ -1,3 +1,4 @@
+using System;
 using RoR2;
 using TMPro;
 using UnityEngine;
@@ -14,7 +15,7 @@ namespace HunkHud.Components.UI
         public GameObject baseHolder;
         public Image[] pips;
 
-
+        [NonSerialized]
         public CharacterBody targetBody;
 
         private bool hasLuminousShot
