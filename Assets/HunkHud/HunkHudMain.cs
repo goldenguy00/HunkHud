@@ -23,7 +23,7 @@ namespace HunkHud
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "0.0.9";
+        public const string VERSION = "0.1.0";
 
         public static HunkHudMain instance { get; private set; }
 

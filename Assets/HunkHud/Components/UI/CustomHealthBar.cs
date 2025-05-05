@@ -63,38 +63,9 @@ namespace HunkHud.Components.UI
             }
         };
 
-        [NonSerialized]
-        public HealthComponent source;
-
-        private CharacterBody _targetBody;
-        public CharacterBody targetBody
-        {
-            get => this._targetBody;
-            set
-            {
-                if (this._targetBody != value)
-                {
-                    this._targetBody = value;
-                    this.source = this._targetBody ? this._targetBody.GetComponent<HealthComponent>() : null;
-                    this.updateTimer = 0f;
-                }
-            }
-        }
-
         public Color shieldColor = new Color(0.14901961f, 0.70980394f, 0.80784315f);
         public Color pinkShieldColor = new Color(0.80784315f, 0.29803923f, 0.7607843f);
         public Color infusionColor = new Color(1f, 18f / 85f, 0.23137255f);
-
-        public float updateDelay = 0.1f;
-        public float fillSpeed = 2f;
-
-        private float updateTimer;
-        private float minFill = 0.341f;
-        private float maxFill = 0.752f;
-        private float expFillMin = 0f;
-        private float expFillMax = 0.76f;
-        private float inverseFillMin => 1f - this.maxFill;
-        private float inverseFillMax => 1f - this.minFill;
 
         public BarInfo healingFill;
         public BarInfo healthFill;
@@ -123,21 +94,49 @@ namespace HunkHud.Components.UI
         public TextMeshProUGUI levelText;
 
         public GameObject biomassBar;
-        
+
+        [NonSerialized]
+        public HealthComponent source;
+
+        private CharacterBody _targetBody;
+
+        public CharacterBody targetBody
+        {
+            get => this._targetBody;
+            set
+            {
+                if (this._targetBody != value)
+                {
+                    this._targetBody = value;
+                    this.source = this._targetBody ? this._targetBody.GetComponent<HealthComponent>() : null;
+                    this.updateTimer = 0f;
+                }
+            }
+        }
+
+        private float updateTimer;
+        private float updateDelay = 0.1f;
+        private float fillSpeed = 1.5f;
+        private float minFill = 0.341f;
+        private float maxFill = 0.752f;
+        private float expFillMin = 0f;
+        private float expFillMax = 0.76f;
+        private float inverseFillMin = 0.248f;
+        private float inverseFillMax = 0.659f;
+
         private void Awake()
         {
+            SingletonHelper.Assign(ref CustomHealthBar.instance, this);
+
+            this.immunityDisplay.SetActive(false);
+            this.immunityText.SetActive(false);
             this.biomassBar.SetActive(false);
             this.gunIconHolder.SetActive(false);
             this.characterIconHolder.SetActive(true);
-        }
-
-        private void OnEnable()
-        {
-            SingletonHelper.Assign(ref CustomHealthBar.instance, this);
             this.updateTimer = 0f;
         }
 
-        private void OnDisable()
+        private void OnDestroy()
         {
             SingletonHelper.Unassign(ref CustomHealthBar.instance, this);
         }

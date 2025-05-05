@@ -1,5 +1,11 @@
 # Changelog
 
+`0.1.0`
+
+- Mod support stuff
+- Tiny repositioning of hp bar
+- Hp bar fills slower
+
 `0.0.9`
 
 - RiskUI is a dependency now
