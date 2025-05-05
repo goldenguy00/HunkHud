@@ -965,15 +965,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 73ebef91a56a0e24fa0f6341dca72894, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetHud: {fileID: 0}
-  targetBody: {fileID: 0}
-  targetMaster: {fileID: 0}
   refreshTimer: 3
   activeTimer: 8
   smoothSpeed: 6
   offset: {x: 0, y: -450, z: 0}
-  activePosition: {x: 0, y: 0, z: 0}
-  inactivePosition: {x: 0, y: 0, z: 0}
 --- !u!114 &5410034034168082792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1936,6 +1931,7 @@ MonoBehaviour:
   pinkShieldColor: {r: 0.80784315, g: 0.29803923, b: 0.7607843, a: 1}
   infusionColor: {r: 1, g: 0.21176471, b: 0.23137255, a: 1}
   updateDelay: 0.1
+  fillSpeed: 2
   healingFill:
     image: {fileID: 114781958363902627}
   healthFill:

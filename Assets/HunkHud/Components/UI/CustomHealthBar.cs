@@ -86,9 +86,9 @@ namespace HunkHud.Components.UI
         public Color infusionColor = new Color(1f, 18f / 85f, 0.23137255f);
 
         public float updateDelay = 0.1f;
+        public float fillSpeed = 2f;
 
         private float updateTimer;
-        private float fillSpeed = 1f;
         private float minFill = 0.341f;
         private float maxFill = 0.752f;
         private float expFillMin = 0f;
@@ -150,22 +150,6 @@ namespace HunkHud.Components.UI
                 SetBarFill();
                 updateTimer = updateDelay;
             }
-        }
-
-        private void FixedUpdate()
-        {
-            if (!this.source || !this.source.alive)
-            {
-                this.healingFill.enabled = false;
-                this.healthFill.enabled = false;
-                this.shieldFill.enabled = false;
-                this.barrierFill.enabled = false;
-                this.barrierFillShiny.enabled = false;
-                this.collapseFill.enabled = false;
-                this.echoFill.enabled = false;
-                this.delayedDamageMask.enabled = false;
-                this.damageFill.targetFill = 0f;
-            }
 
             this.ApplyBars();
         }
@@ -189,7 +173,7 @@ namespace HunkHud.Components.UI
                 info.image.enabled = info.enabled;
 
                 if (info.currentFill != info.targetFill)
-                    info.currentFill = Mathf.MoveTowards(info.currentFill, info.targetFill, this.fillSpeed * Time.fixedDeltaTime);
+                    info.currentFill = Mathf.Lerp(info.currentFill, info.targetFill, this.fillSpeed * Time.deltaTime);
 
                 if (info.enabled)
                     info.image.fillAmount = info.currentFill;
@@ -198,8 +182,19 @@ namespace HunkHud.Components.UI
 
         private void SetBarFill()
         {
-            if (!this.source || !this.targetBody)
+            if (!this.targetBody || !this.source || !this.source.alive)
+            {
+                this.healingFill.enabled = false;
+                this.healthFill.enabled = false;
+                this.shieldFill.enabled = false;
+                this.barrierFill.enabled = false;
+                this.barrierFillShiny.enabled = false;
+                this.collapseFill.enabled = false;
+                this.echoFill.enabled = false;
+                this.delayedDamageMask.enabled = false;
+                this.damageFill.targetFill = 0f;
                 return;
+            }
 
             HealthComponent.HealthBarValues barInfos = this.source.GetHealthBarValues();
 

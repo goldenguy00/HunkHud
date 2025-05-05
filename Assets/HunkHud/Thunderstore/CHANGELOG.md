@@ -2,6 +2,7 @@
 
 `0.0.9`
 
+- RiskUI is a dependency now
 - Bands now get attached to the healthbar
 - Further hp bar accuracy improvements
 - Buffs display should stay on screen now
