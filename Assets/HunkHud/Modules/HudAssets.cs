@@ -71,31 +71,25 @@ namespace HunkHud.Modules
 
         internal static void Init()
         {
-            HUD.onHudTargetChangedGlobal += HudAssets.HUD_OnHudTargetChangedGlobal;
+            HUD.onHudTargetChangedGlobal += HudAssets.HandleHud;
             var all = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
             hook = new Hook(typeof(HUD).GetMethod(nameof(HUD.Awake), all), typeof(HudAssets).GetMethod(nameof(HUD_Awake), all));
         }
 
-        internal static void HUD_Awake(System.Action<HUD> orig, HUD self)
+        private static void HUD_Awake(System.Action<HUD> orig, HUD self)
         {
             orig(self);
-            HUD_OnHudTargetChangedGlobal(self);
+
+            HandleHud(self);
         }
 
-        internal static void HUD_OnHudTargetChangedGlobal(HUD hud)
+        private static void HandleHud(HUD hud)
         {
             if (!PluginConfig.customHUD.Value || !hud)
                 return;
 
             var targetBody = hud.targetMaster ? hud.targetMaster.GetBody() : null;
-            if (targetBody && (targetBody.name.Contains("RobNemesis") || targetBody.name.Contains("RobHunk")))
-                return;
 
-            HandleHud(hud, targetBody);
-        }
-        
-        private static void HandleHud(HUD hud, CharacterBody targetBody)
-        {
             var springCanvas = hud.mainUIPanel.transform.Find("SpringCanvas");
             if (!springCanvas)
                 return;

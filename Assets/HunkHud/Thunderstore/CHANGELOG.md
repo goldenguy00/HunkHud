@@ -1,5 +1,14 @@
 # Changelog
 
+`0.1.2`
+
+- Works with Hunk and Nemesis now
+- Maybe lol
+
+`0.1.1`
+
+- NaN fix
+
 `0.1.0`
 
 - Mod support stuff

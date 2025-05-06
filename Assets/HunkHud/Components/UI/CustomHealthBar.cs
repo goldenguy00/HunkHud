@@ -225,7 +225,7 @@ namespace HunkHud.Components.UI
 
             this.barrierFillShiny.enabled = barInfos.barrierFraction > 0f;
             this.barrierFillShiny.targetFill = barrierAmount;
-            this.barrierFillShiny.targetFill = barrierAmount;
+            this.barrierFillShiny.currentFill = barrierAmount;
 
             var curseAmount = Util.Remap(barInfos.curseFraction, 0f, 1f, this.inverseFillMin, this.inverseFillMax);
             this.curseFill.enabled = barInfos.curseFraction > 0f;
