@@ -485,7 +485,7 @@
       <Private>False</Private>
     </Reference>
     <Reference Include="RiskUI">
-      <HintPath>Assets\ThunderKitSettings\Plugins\RiskUI.dll</HintPath>
+      <HintPath>Assets\FunnyUIMeme\RiskUI.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

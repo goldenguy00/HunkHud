@@ -30,7 +30,8 @@ MonoBehaviour:
   SelectedPipeline: {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
   SelectedManifest: {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
   QuickAccessPipelines:
+  - {fileID: 11400000, guid: bc0ce07644231694f8dea57b94e192b7, type: 2}
   - {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
   QuickAccessManifests:
   - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
-  ImportConfiguration: {fileID: 0}
+  ImportConfiguration: {fileID: 11400000, guid: 79fda941da8813149adf0b7d1ba003ca, type: 2}

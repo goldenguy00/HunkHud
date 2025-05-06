@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-9106238789518012194
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f22bb7fd1d3b56a48bc52f8e407901d6, type: 3}
+  m_Name: ManifestIdentity
+  m_EditorClassIdentifier: 
+  StagingPaths: []
+  Author: Bubbet
+  Name: Material Hud
+  Description: 
+  Version: 
+  Dependencies: []
+--- !u!114 &-433420947635846002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 17d1008b78cb6e846889b7778282fbef, type: 3}
+  m_Name: AssetBundleDefinitions
+  m_EditorClassIdentifier: 
+  StagingPaths:
+  - C:\Users\Bubbet\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Cum2Modding\BepInEx\plugins\_Indev
+  - C:\Users\Bubbet\Desktop\yes\Dev\Programming\C#\Risk Of Rain Mods\RiskUI
+  assetBundles:
+  - assetBundleName: riskui
+    assets:
+    - {fileID: 102900000, guid: f4cc8213162d3f94fb22297473ce5fa8, type: 3}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e563561e08b6a3642a487177f5cfbb37, type: 3}
+  m_Name: MaterialHud
+  m_EditorClassIdentifier: 
+  Data:
+  - {fileID: -9106238789518012194}
+  - {fileID: -433420947635846002}
+  identity: {fileID: -9106238789518012194}
+  QuickAccess: 0
