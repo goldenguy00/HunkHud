@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 475134185
+CRC: 3643540478
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: c7531520c6c171503274657b7389f77c
+    Hash: d194ad12e6c8456168270d6d3222511f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 952fce9e23aaab45c1b6a82abd647cc7
+    Hash: 10a8d13081c460a92f8879524db3a759
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -26,13 +26,19 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 114
+  Script: {fileID: 535236639, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3e54dc1b4b6aa7846a8ce1ecd9e0fc6c, type: 3}
 - Class: 114
@@ -42,23 +48,133 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 049c701da77597f4f94c7f5d5b1f7a76, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 73ebef91a56a0e24fa0f6341dca72894, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 86cca893016ba2041a3c009a13f889cc, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8a8695521f0d02e499659fee002a26c2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 2da0c512f12947e489f739169773d7ca, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 71c1514a6bd24e1e882cebbe1904ce04, type: 3}
 - Class: 114
+  Script: {fileID: 1698535915, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -337221655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -798650217, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1154994686, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -226763392, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 527445169, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2086124775, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 108432452, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1616264595, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1655364978, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1358442537, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -951972390, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 637974714, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1467844994, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 649313124, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -2089090934, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 89469222, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -146705984, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1132840554, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1889711748, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -966267668, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 463222144, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 877486143, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -630047940, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -573374155, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1693071685, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 224405951, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -103623725, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1213012214, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -2139312213, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -432102721, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -56772195, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 402010724, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1630124647, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1833123084, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1873157448, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 269839908, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+- Class: 114
+  Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: -55326007, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: -1468595796, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: -121293455, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 927084362, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: -474541677, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 237348783, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: -1753663027, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 1023940606, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 1681914417, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 1943367140, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 1681300032, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 62a7ad70a1758072f9cef1a691fbb05a, type: 3}
 - Class: 115
@@ -69,6 +185,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 222
   Script: {instanceID: 0}
+- Class: 223
+  Script: {instanceID: 0}
 - Class: 224
   Script: {instanceID: 0}
 - Class: 225
@@ -76,6 +194,10 @@ ClassTypes:
 SerializeReferenceClassIdentifiers:
 - AssemblyName: HunkHud
   ClassName: HunkHud.Components.UI.CustomHealthBar/BarInfo
+- AssemblyName: RoR2
+  ClassName: ChildLocator/NameTransformPair
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.HealthBarStyle/BarStyle
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -95,9 +217,25 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.TMP_GlyphValueRecord
 - AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/OnChangeEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/SelectionEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/SubmitEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/TextSelectionEvent
+- AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_InputField/TouchScreenKeyboardEvent
+- AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.VertexGradient
 - AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.ArgumentCache
+- AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.PersistentCallGroup
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.PersistentListenerMode
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.RectOffset
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
@@ -109,161 +247,192 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
   ClassName: UnityEngine.TextCore.GlyphRect
 - AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.AnimationTriggers
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ColorBlock
+- AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.MaskableGraphic/CullStateChangedEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Navigation
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.ScrollRect/ScrollRectEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.Scrollbar/ScrollEvent
+- AssemblyName: UnityEngine.UI
+  ClassName: UnityEngine.UI.SpriteState
 Assets:
-- Assets/HunkHud/Assets/textures/texWeakPointIndicator.asset
 - Assets/HunkHud/Assets/textures/texBuffSacrificialBandCooldown.png
-- Assets/HunkHud/Assets/textures/texHealthBarBiomass.asset
 - Assets/HunkHud/Assets/textures/texHunkCursor.png
-- Assets/HunkHud/Assets/animations/NewItemOverlay.anim
 - Assets/HunkHud/Assets/textures/texBarMask.png
+- Assets/HunkHud/Assets/textures/texBlankFill.png
 - Assets/HunkHud/Assets/textures/texItemBox.asset
 - Assets/HunkHud/Assets/textures/texBandCooldownFillVoid.png
-- Assets/HunkHud/Assets/textures/texBuffSacrificialBandReady.png
 - Assets/HunkHud/Assets/textures/texBandCooldownVoidBlank.png
-- Assets/HunkHud/Assets/textures/texCircularShade.asset
-- Assets/HunkHud/Assets/icons/weapon/texSMGIcon.png
-- Assets/HunkHud/Assets/textures/texBlankFill.png
-- Assets/HunkHud/Assets/bands/BandDisplay.prefab
-- Assets/HunkHud/Assets/textures/texBlankFillShiny2.png
-- Assets/HunkHud/Assets/hud/OldComboGauge.prefab
 - Assets/HunkHud/Assets/textures/texBlankFillPattern.asset
-- Assets/HunkHud/Assets/textures/texItemExclamation.png
+- Assets/HunkHud/Assets/textures/texBlankFillShiny2.png
+- Assets/HunkHud/Assets/textures/texBlankFillOSP.png
 - Assets/HunkHud/Assets/hud/JacketFullGauge.prefab
-- Assets/HunkHud/Assets/BandCooldownTracker.prefab
-- Assets/HunkHud/Assets/textures/texTeleporterIcon.png
 - Assets/HunkHud/Assets/animations/Pressed.anim
 - Assets/HunkHud/Assets/textures/texRadialSelection.png
-- Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.png
-- Assets/HunkHud/Assets/textures/texChargeRing.png
-- Assets/HunkHud/Assets/textures/texHudBar.png
-- Assets/HunkHud/Assets/textures/texRadialInner.asset
-- Assets/HunkHud/Assets/textures/texShieldFill.png
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
+- Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
+- Packages/com.unity.postprocessing/PostProcessing/Gizmos/PostProcessLayer.png
 - Assets/HunkHud/Assets/textures/texHealthBarShade.asset
-- Assets/HunkHud/Assets/textures/texRadialSelectionOuter.png
 - Assets/HunkHud/Assets/bands/BandDisplayHealing.prefab
 - Assets/HunkHud/Assets/animations/FullGauge.controller
-- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-- Assets/HunkHud/Assets/icons/item/texVirusSampleIcon.asset
+- Assets/PP Profile.asset
 - Assets/HunkHud/Assets/LuminousGauge.prefab
-- Assets/HunkHud/Assets/animations/FlashbangOverlay.anim
-- Assets/HunkHud/Assets/textures/texBandCooldownFill.png
-- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
 - Assets/HunkHud/Assets/icons/texHunk2Icon.png
 - Assets/HunkHud/Assets/bands/BandDisplayVoid.prefab
 - Assets/HunkHud/Assets/textures/texBandCooldownFillMarked.png
 - Assets/HunkHud/Assets/animations/NewOverlay.controller
 - Assets/HunkHud/Assets/textures/texBandCooldown.asset
-- Assets/HunkHud/Assets/ObjectiveGauge.prefab
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Void_Coin.png
 - Assets/HunkHud/Assets/animations/FlashbangOverlay.controller
-- Assets/HunkHud/Assets/textures/texBlankFillCollapse.png
 - Assets/HunkHud/Assets/textures/texShieldFill.asset
-- Assets/HunkHud/Assets/textures/texChargeRing.asset
 - Assets/HunkHud/Assets/textures/texBlankFillCollapse.asset
-- Assets/HunkHud/Assets/hud/FlashbangOverlay.prefab
-- Assets/HunkHud/Assets/textures/texBarrierFill.asset
 - Assets/HunkHud/Assets/textures/texHealthFill.png
-- Assets/HunkHud/Assets/textures/texHudBar.asset
-- Assets/HunkHud/Assets/textures/texBlankFillEcho.png
+- Assets/HunkHud/Assets/textures/texBarrierFill.asset
 - Assets/HunkHud/Assets/textures/texHealthFill.asset
-- Assets/HunkHud/Assets/vfx/texVignette.asset
+- Assets/FunnyUIMeme/Assets/HudParts/StripContainer.prefab
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassMask.png
-- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
 - Assets/HunkHud/Assets/hud/ComboGauge2.prefab
-- Assets/HunkHud/Assets/textures/texBandCooldownBlank.png
 - Assets/HunkHud/Assets/bands/BandDisplayPrefab.prefab
-- Assets/HunkHud/Assets/ItemGetPopup.prefab
+- Assets/HunkHud/Assets/hud/ItemGetPopup.prefab
 - Assets/HunkHud/Assets/textures/texBlankFillShield.png
-- Assets/HunkHud/Assets/hud/CounterFlash.prefab
-- Assets/HunkHud/Assets/Vignette.prefab
+- Assets/HunkHud/Assets/textures/texImmuneBar.png
 - Assets/HunkHud/Assets/textures/texBandCooldownHealingEmpty.png
-- Assets/HunkHud/Assets/CustomHealthBar.prefab
 - Assets/HunkHud/Assets/textures/texExpBar.asset
-- Assets/HunkHud/Assets/hud/DodgeFlash.prefab
-- Assets/HunkHud/Assets/textures/texBarrierBarPlaceholder.png
-- Assets/HunkHud/Assets/textures/texRadialOuter.asset
-- Assets/HunkHud/Assets/textures/texBlankFillHealth.asset
-- Assets/HunkHud/Assets/textures/texCircularMask.png
-- Assets/HunkHud/Assets/textures/texImmuneBar.asset
-- Assets/HunkHud/Assets/textures/texWhite.asset
 - Assets/HunkHud/Assets/textures/texHealthBar.png
-- Assets/HunkHud/Assets/hud/WeaponRadial.prefab
-- Assets/HunkHud/Assets/textures/texBandCooldown.png
+- Assets/HunkHud/Assets/textures/texRadialOuter.asset
 - Assets/HunkHud/Assets/textures/texItemExclamation.asset
-- Assets/HunkHud/Assets/textures/texBlankFillShiny2.asset
-- Assets/HunkHud/Assets/BiomassHolder.prefab
-- Assets/HunkHud/Assets/textures/texRadialSelection.asset
-- Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.asset
+- Assets/HunkHud/Assets/textures/texBandCooldown.png
 - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
 - Assets/HunkHud/Assets/textures/texHealthBar.asset
 - Assets/HunkHud/Assets/textures/texHunkCursor.asset
+- Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassBackground.png
 - Assets/HunkHud/Assets/textures/texBlankFillShiny.asset
-- Assets/HunkHud/Assets/textures/texRadialSelectionOuter.asset
-- Assets/HunkHud/Assets/textures/texBandCooldownVoidBlank.asset
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
 - Assets/HunkHud/Assets/textures/texBulletIndicator.asset
-- Assets/HunkHud/Assets/ItemNotification.prefab
+- Assets/HunkHud/Assets/RiskUI.prefab
 - Assets/HunkHud/Assets/textures/texRadialInner.png
+- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
 - Assets/HunkHud/Assets/animations/Flash.anim
 - Assets/HunkHud/Assets/textures/texBandCooldownNovaEmpty.png
-- Assets/HunkHud/Assets/textures/texHealthBarShade.png
-- Assets/HunkHud/Assets/textures/texImmuneBar.png
 - Assets/HunkHud/Assets/textures/texTeleporterIcon.asset
-- Assets/HunkHud/Assets/icons/weapon/texSMGIcon.asset
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassMask.asset
 - Assets/HunkHud/Assets/textures/texBandCooldownFill.asset
 - Assets/HunkHud/Assets/textures/texBlankFillInverse.asset
+- Assets/HunkHud/Assets/hud/WeaponChargeBar.prefab
+- Assets/HunkHud/Assets/bands/BandDisplayNova.prefab
+- Assets/HunkHud/Assets/textures/texFadingBox.png
+- Assets/HunkHud/Assets/textures/texRadialDefault.asset
+- Assets/HunkHud/Assets/animations/Flashing.anim
+- Assets/HunkHud/Assets/textures/texWeakPointIndicator.png
+- Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
+- Assets/HunkHud/Assets/textures/texBlankFillShiny.png
+- Assets/HunkHud/Assets/textures/texSniperBulletIndicator.asset
+- Assets/HunkHud/Assets/hud/StaminaBar.prefab
+- Assets/HunkHud/Assets/textures/texSniperBulletIndicator.png
+- Assets/HunkHud/Assets/textures/texRadialDefault.png
+- Assets/HunkHud/Assets/icons/item/texVirusSampleIcon.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.png
+- Assets/HunkHud/Assets/textures/texBarBaseFill.png
+- Assets/HunkHud/Assets/textures/texBlankFillInverse.png
+- Assets/HunkHud/Assets/textures/texBarrierFill2.png
+- Assets/HunkHud/Assets/textures/texCircularMask.asset
+- Assets/HunkHud/Assets/textures/texBandCooldownVoid.png
+- Assets/HunkHud/Assets/textures/texBlankFillTile.asset
+- Assets/HunkHud/Assets/bands/BandDisplaySacrificial.prefab
+- Assets/HunkHud/Assets/textures/texBarrierFill.png
+- Assets/HunkHud/Assets/textures/texWeakPointIndicator.asset
+- Assets/HunkHud/Assets/textures/texHealthBarBiomass.asset
+- Assets/HunkHud/Assets/animations/NewItemOverlay.anim
+- Assets/FunnyUIMeme/Assets/Sprites/HitMarker.png
+- Assets/HunkHud/Assets/textures/texBuffSacrificialBandReady.png
+- Assets/HunkHud/Assets/textures/texCircularShade.asset
+- Assets/HunkHud/Assets/icons/weapon/texSMGIcon.png
+- Assets/HunkHud/Assets/bands/BandDisplay.prefab
+- Assets/HunkHud/Assets/hud/OldComboGauge.prefab
+- Assets/HunkHud/Assets/textures/texItemExclamation.png
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
+- Assets/HunkHud/Assets/BandCooldownTracker.prefab
+- Assets/HunkHud/Assets/textures/texTeleporterIcon.png
+- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
+- Assets/HunkHud/Assets/textures/texShieldFill.png
+- Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.png
+- Assets/HunkHud/Assets/textures/texChargeRing.png
+- Assets/HunkHud/Assets/textures/texHudBar.png
+- Assets/HunkHud/Assets/textures/texRadialInner.asset
+- Assets/HunkHud/Assets/icons/item/texVirusSampleIcon.asset
+- Assets/HunkHud/Assets/textures/texRadialSelectionOuter.png
+- Assets/HunkHud/Assets/animations/FlashbangOverlay.anim
+- Assets/HunkHud/Assets/textures/texBandCooldownFill.png
+- Assets/HunkHud/Assets/vfx/texVignette.asset
+- Assets/HunkHud/Assets/ObjectiveGauge.prefab
+- Assets/HunkHud/Assets/textures/texBlankFillCollapse.png
+- Assets/HunkHud/Assets/textures/texChargeRing.asset
+- Assets/HunkHud/Assets/hud/FlashbangOverlay.prefab
+- Assets/HunkHud/Assets/textures/texHudBar.asset
+- Assets/HunkHud/Assets/textures/texBlankFillEcho.png
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
+- Assets/HunkHud/Assets/textures/texBandCooldownBlank.png
+- Assets/HunkHud/Assets/hud/CounterFlash.prefab
+- Assets/HunkHud/Assets/Vignette.prefab
+- Assets/HunkHud/Assets/textures/texBarrierBarPlaceholder.png
+- Assets/HunkHud/Assets/textures/texCircularMask.png
+- Assets/HunkHud/Assets/CustomHealthBar.prefab
+- Assets/HunkHud/Assets/textures/texWhite.asset
+- Assets/HunkHud/Assets/hud/DodgeFlash.prefab
+- Assets/HunkHud/Assets/textures/texBlankFillHealth.asset
+- Assets/HunkHud/Assets/textures/texImmuneBar.asset
+- Assets/HunkHud/Assets/hud/WeaponRadial.prefab
+- Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.asset
+- Assets/HunkHud/Assets/textures/texBlankFillShiny2.asset
+- Assets/HunkHud/Assets/BiomassHolder.prefab
+- Assets/HunkHud/Assets/textures/texRadialSelection.asset
+- Assets/HunkHud/Assets/textures/texRadialSelectionOuter.asset
+- Assets/HunkHud/Assets/textures/texBandCooldownVoidBlank.asset
+- Assets/HunkHud/Assets/ItemNotification.prefab
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
+- Assets/HunkHud/Assets/textures/texHealthBarShade.png
+- Assets/HunkHud/Assets/icons/weapon/texSMGIcon.asset
 - Assets/HunkHud/Assets/textures/texBandCooldownHealing.png
 - Assets/HunkHud/Assets/textures/texBarBaseFill.asset
 - Assets/HunkHud/Assets/hud/GenericTextPanel.prefab
 - Assets/HunkHud/Assets/hud/ChargeRing.prefab
 - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
-- Assets/HunkHud/Assets/hud/WeaponChargeBar.prefab
-- Assets/HunkHud/Assets/bands/BandDisplayNova.prefab
-- Assets/HunkHud/Assets/textures/texFadingBox.png
 - Assets/HunkHud/Assets/textures/texHealthBarBiomass.png
-- Assets/HunkHud/Assets/textures/texRadialDefault.asset
 - Assets/HunkHud/Assets/textures/texItemBox.png
-- Assets/HunkHud/Assets/animations/Flashing.anim
-- Assets/HunkHud/Assets/textures/texWeakPointIndicator.png
 - Assets/HunkHud/Assets/textures/texCircularShade.png
 - Assets/HunkHud/Assets/textures/texBlankFillTile.png
 - Assets/HunkHud/Assets/animations/FlashbangOverlaySlow.controller
-- Assets/HunkHud/Assets/textures/texBlankFillShiny.png
 - Assets/HunkHud/Assets/textures/texBandCooldownFillVoid.asset
 - Assets/HunkHud/Assets/textures/texFadingBox.asset
 - Assets/HunkHud/Assets/textures/texBarMask.asset
 - Assets/HunkHud/Assets/animations/DodgeOverlay.controller
-- Assets/HunkHud/Assets/hud/StaminaBar.prefab
-- Assets/HunkHud/Assets/textures/texSniperBulletIndicator.asset
+- Assets/HunkHud/Assets/textures/texBlankFillHealth.png
 - Assets/HunkHud/Assets/hud/StaticOverlay.prefab
 - Assets/HunkHud/Assets/textures/texBlankFill.asset
 - Assets/HunkHud/Assets/textures/texExpBar.png
-- Assets/HunkHud/Assets/textures/texRadialDefault.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.asset
 - Assets/HunkHud/Assets/textures/texBandCooldownBlank.asset
 - Assets/HunkHud/Assets/textures/texWhite.png
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
 - Assets/HunkHud/Assets/vfx/texVignette.png
-- Assets/HunkHud/Assets/textures/texSniperBulletIndicator.png
-- Assets/HunkHud/Assets/textures/texBlankFillHealth.png
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.asset
 - Assets/HunkHud/Assets/textures/texBlankFillShield.asset
 - Assets/HunkHud/Assets/textures/texRadialOuter.png
-- Assets/HunkHud/Assets/icons/item/texVirusSampleIcon.png
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassBackground.asset
 - Assets/HunkHud/Assets/textures/texBulletIndicator.png
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.png
-- Assets/HunkHud/Assets/textures/texBarBaseFill.png
 - Assets/HunkHud/Assets/textures/texBandCooldownVoid.asset
-- Assets/HunkHud/Assets/textures/texBlankFillInverse.png
 - Assets/HunkHud/Assets/hud/AmmoPanel.prefab
-- Assets/HunkHud/Assets/textures/texBarrierFill2.png
-- Assets/HunkHud/Assets/textures/texCircularMask.asset
+- Assets/FunnyUIMeme/Assets/HudParts/HealthBarSub.prefab
 - Assets/HunkHud/Assets/vfx/texDodgeFlash.asset
-- Assets/HunkHud/Assets/textures/texBandCooldownVoid.png
-- Assets/HunkHud/Assets/textures/texBlankFillTile.asset
 - Assets/HunkHud/Assets/vfx/texDodgeFlash.png
-- Assets/HunkHud/Assets/bands/BandDisplaySacrificial.prefab
-- Assets/HunkHud/Assets/textures/texBarrierFill.png
+- Assets/FunnyUIMeme/Assets/Sprites/whitepixel.png
 - Assets/HunkHud/Assets/hud/ChargeBar.prefab
 - Assets/HunkHud/Assets/textures/texBandCooldownNova.png
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf

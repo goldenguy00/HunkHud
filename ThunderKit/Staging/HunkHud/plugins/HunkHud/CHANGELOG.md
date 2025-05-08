@@ -1,5 +1,13 @@
 # Changelog
 
+`0.1.3`
+
+- Moved band display higher again
+- OSP display
+- Echo display fixed
+- Some backend staging stuff
+- Fixed offset inventory display when at the bottom
+
 `0.1.2`
 
 - Works with Hunk and Nemesis now

@@ -1,3 +1,4 @@
+using HunkHud.Components.UI;
 using UnityEngine;
 
 namespace HunkHud.Components
@@ -14,13 +15,13 @@ namespace HunkHud.Components
                 return;
 
             if (this.targetBody.healthComponent && this.targetBody.healthComponent.combinedHealth != this.targetBody.healthComponent.fullCombinedHealth)
-                this.activeTimer = this.refreshTimer;
+                this.SetActive();
 
             var newLevel = Mathf.RoundToInt(this.targetBody.level);
             if (newLevel != this.prevLevel)
             {
                 this.prevLevel = newLevel;
-                this.activeTimer = this.refreshTimer;
+                this.SetActive();
             }
         }
     }

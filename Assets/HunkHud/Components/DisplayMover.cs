@@ -23,9 +23,9 @@ namespace HunkHud.Components
 
         public Vector3 offset;
 
-        private Vector3 activePosition;
-        private Vector3 inactivePosition;
-        private Vector3 desiredPosition;
+        protected Vector3 activePosition;
+        protected Vector3 inactivePosition;
+        protected Vector3 desiredPosition;
 
         public virtual void UpdateReferences(HUD hud, CharacterBody body)
         {
@@ -33,6 +33,11 @@ namespace HunkHud.Components
             this.targetHud = hud;
             this.targetMaster = hud.targetMaster;
             this.targetBody = body;
+        }
+
+        public void SetActive()
+        {
+            this.activeTimer = Mathf.Max(this.activeTimer, this.refreshTimer);
         }
 
         public virtual void CheckForActivity()

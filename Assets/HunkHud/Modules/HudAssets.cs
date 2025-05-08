@@ -144,13 +144,7 @@ namespace HunkHud.Modules
             var crosshair = childLoc.FindChild("CrosshairExtras");
             if (crosshair)
             {
-                var luminousDisplay = crosshair.Find("LuminousGauge")?.gameObject;
-                if (!luminousDisplay)
-                {
-                    luminousDisplay = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>("LuminousGauge"), crosshair);
-                    luminousDisplay.name = "LuminousGauge";
-                }
-                luminousDisplay.GetComponent<LuminousDisplay>().targetBody = targetBody;
+                crosshair.FindOrInstantiate<LuminousDisplay>("LuminousGauge").targetBody = targetBody;
             }
 
             var bottomLeftCluster = springCanvas.Find("BottomLeftCluster");
@@ -167,19 +161,10 @@ namespace HunkHud.Modules
                     hud.buffDisplay.transform.localPosition = new Vector3(0f, -30f, 0f);
                 }
 
-                var healthBar = bottomLeftCluster.Find("CustomHealthBar")?.gameObject;
-                if (!healthBar)
-                {
-                    healthBar = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>("CustomHealthBar"), bottomLeftCluster);
-                    healthBar.name = "CustomHealthBar";
-                }
-                healthBar.GetComponent<HealthBarMover>().UpdateReferences(hud, targetBody);
-
-                var customHealthBar = healthBar.transform.Find("Center").GetComponent<CustomHealthBar>();
-                customHealthBar.targetBody = targetBody;
-                customHealthBar.SetCharacterIcon();
-
-                healthBar.transform.Find("BandCooldownTracker").GetComponent<BandDisplayController>().UpdateReferences(hud.targetMaster?.inventory);
+                var healthBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").GetComponentInChildren<CustomHealthBar>();
+                healthBar.SetCharacterIcon(targetBody);
+                healthBar.hpBarMover.UpdateReferences(hud, targetBody);
+                healthBar.bandDisplayController.UpdateReferences(hud.targetMaster?.inventory);
             }
 
             var bottomRightCluster = springCanvas.Find("BottomRightCluster");
@@ -191,11 +176,35 @@ namespace HunkHud.Modules
                     bottomRightScaler.GetOrAddComponent<SkillIconMover>().UpdateReferences(hud, targetBody);
                 }
             }
-
+            /*
             var bottomCenterCluster = springCanvas.Find("BottomCenterCluster");
             if (bottomCenterCluster)
             {
+            }*/
+        }
+
+        private static GameObject FindOrInstantiate(this Transform transform, string assetName)
+        {
+            var assetObject = transform.Find(assetName)?.gameObject;
+            if (!assetObject)
+            {
+                assetObject = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>(assetName), transform);
+                assetObject.name = assetName;
             }
+
+            return assetObject;
+        }
+
+        private static T FindOrInstantiate<T>(this Transform transform, string assetName) where T : MonoBehaviour
+        {
+            var assetObject = transform.Find(assetName)?.gameObject;
+            if (!assetObject)
+            {
+                assetObject = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>(assetName), transform);
+                assetObject.name = assetName;
+            }
+
+            return assetObject.GetComponent<T>();
         }
     }
 }
