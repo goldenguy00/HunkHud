@@ -1,4 +1,3 @@
-using HunkHud.Components.UI;
 using UnityEngine;
 
 namespace HunkHud.Components
@@ -11,10 +10,10 @@ namespace HunkHud.Components
         {
             base.CheckForActivity();
 
-            if (!this.targetBody)
+            if (!this.targetBody || !this.targetBody.healthComponent)
                 return;
 
-            if (this.targetBody.healthComponent && this.targetBody.healthComponent.combinedHealth != this.targetBody.healthComponent.fullCombinedHealth)
+            if (this.targetBody.healthComponent.missingCombinedHealth > 0f)
                 this.SetActive();
 
             var newLevel = Mathf.RoundToInt(this.targetBody.level);

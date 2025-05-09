@@ -29,7 +29,8 @@
         "Decalicious.dll",
         "RiskOfOptions.dll",
         "ZioConfigFile.dll",
-        "RiskUI.dll"
+        "RiskUI.dll",
+        "MMHOOK_RoR2.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

@@ -330,6 +330,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "riskofthunder-hookgenpatcher": {
+      "version": "file:HookGenPatcher",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "riskofthunder-ror2bepinexpack": {
       "version": "file:RoR2BepInExPack",
       "depth": 0,

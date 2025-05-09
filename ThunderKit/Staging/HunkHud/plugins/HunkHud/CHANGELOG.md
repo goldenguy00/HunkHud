@@ -1,5 +1,16 @@
 # Changelog
 
+`0.1.5`
+
+- Buffs moved down to the correct spot oops
+
+`0.1.4`
+
+- Forces a couple of specific RiskUI positioning options
+- Added Dynamic Crosshair
+- Fixed Health display using the wrong texture
+- More improvements to Echo and Collapse accuracy
+
 `0.1.3`
 
 - Moved band display higher again

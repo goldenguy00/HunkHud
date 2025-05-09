@@ -1,37 +1,15 @@
 ﻿using UnityEngine;
 using RoR2.UI;
 using HunkHud.Components.UI;
-using RoR2;
 using HunkHud.Components;
-using MonoMod.RuntimeDetour;
-using System.Reflection;
+using MaterialHud;
+using System.Runtime.CompilerServices;
 
 namespace HunkHud.Modules
 {
     public static class HudAssets
     {
-        private static T GetOrAddComponent<T>(this GameObject go) where T : Component
-        {
-            return go.GetComponent<T>() ?? go.AddComponent<T>();
-        }
-        private static T GetOrAddComponent<T>(this Component co) where T : Component
-        {
-            return co.GetComponent<T>() ?? co.gameObject.AddComponent<T>();
-        }
-        private static void SetActiveSafe(GameObject go, bool active)
-        {
-            if (go)
-                go.SetActive(active);
-        }
-
-        private static void SetActiveSafe(Component co, bool active)
-        {
-            if (co)
-                co.gameObject.SetActive(active);
-        }
-
         public static AssetBundle mainAssetBundle;
-        private static Hook hook;
         /*
 - Assets/hunk/hud/CustomHealthBar.prefab
 - Assets/hunk/hud/ItemGetPopup.prefab
@@ -71,16 +49,53 @@ namespace HunkHud.Modules
 
         internal static void Init()
         {
+            On.RoR2.UI.CrosshairController.Awake += CrosshairController_Awake;
             HUD.onHudTargetChangedGlobal += HudAssets.HandleHud;
-            var all = BindingFlags.Instance | BindingFlags.Static | BindingFlags.Public | BindingFlags.NonPublic;
-            hook = new Hook(typeof(HUD).GetMethod(nameof(HUD.Awake), all), typeof(HudAssets).GetMethod(nameof(HUD_Awake), all));
+
+            HandleHud(RiskUIPlugin._newHud.GetComponent<HUD>());
         }
 
-        private static void HUD_Awake(System.Action<HUD> orig, HUD self)
+        private static void CrosshairController_Awake(On.RoR2.UI.CrosshairController.orig_Awake orig, CrosshairController self)
         {
             orig(self);
 
-            HandleHud(self);
+            if (self && !self.name.Contains("SprintCrosshair"))
+            {
+                self.GetOrAddComponent<DynamicCrosshair>();
+            }
+        }
+
+        private static void SetRiskUISettings(HUD hud)
+        {
+            foreach (var configObject in hud.GetComponentsInChildren<BepinConfigParentManager>())
+            {
+                switch (configObject.gameObject.name)
+                {
+                    case "BuffDisplayRoot":
+                        var springCanvas = hud.mainUIPanel.transform.Find("SpringCanvas/BottomLeftCluster/BuffContainerPos3");
+                        configObject.choices[0] = springCanvas;
+                        configObject.choices[1] = springCanvas;
+                        configObject.choices[2] = springCanvas;
+                        configObject.choices[3] = springCanvas;
+
+                        configObject.transform.SetParent(springCanvas, false);
+                        configObject.transform.localPosition = Vector3.zero;
+
+                        break;
+                    case "InventoryContainer":
+                        configObject.choices[0] = configObject.choices[1];
+
+                        configObject.transform.SetParent(configObject.choices[1], false);
+
+                        break;
+                    case "ChatBoxRoot":
+                        configObject.choices[0] = configObject.choices[1];
+
+                        configObject.transform.SetParent(configObject.choices[1], false);
+
+                        break;
+                }
+            }
         }
 
         private static void HandleHud(HUD hud)
@@ -88,13 +103,15 @@ namespace HunkHud.Modules
             if (!PluginConfig.customHUD.Value || !hud)
                 return;
 
+            SetRiskUISettings(hud);
+
             var targetBody = hud.targetMaster ? hud.targetMaster.GetBody() : null;
 
             var springCanvas = hud.mainUIPanel.transform.Find("SpringCanvas");
             if (!springCanvas)
                 return;
 
-            var notification = hud.mainContainer.GetComponentInChildren<NotificationUIController>();
+            var notification = hud.mainContainer.transform.Find("NotificationArea").GetComponent<NotificationUIController>();
             if (notification)
             {
                 notification.genericNotificationPrefab = mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
@@ -107,12 +124,8 @@ namespace HunkHud.Modules
 
             if (hud.itemInventoryDisplay)
             {
-                var transformParent = hud.itemInventoryDisplay.transform.parent;
-                if (HunkHudMain.RiskUIEnabled)
-                    transformParent = transformParent ? transformParent.parent : null;
-
-                if (transformParent)
-                    transformParent.GetOrAddComponent<ItemDisplayMover>().UpdateReferences(hud, targetBody);
+                var transformParent = hud.itemInventoryDisplay.transform.parent.parent;
+                transformParent.GetOrAddComponent<ItemDisplayMover>().UpdateReferences(hud, targetBody);
             }
 
             if (PluginConfig.vignetteStrength.Value > 0f && !hud.mainContainer.transform.Find("Vignette"))
@@ -155,13 +168,8 @@ namespace HunkHud.Modules
                 SetActiveSafe(hud.healthBar, false);
                 SetActiveSafe(hud.expBar, false);
                 SetActiveSafe(hud.levelText, false);
-                
-                if (!HunkHudMain.RiskUIEnabled && hud.buffDisplay)
-                {
-                    hud.buffDisplay.transform.localPosition = new Vector3(0f, -30f, 0f);
-                }
 
-                var healthBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").GetComponentInChildren<CustomHealthBar>();
+                var healthBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
                 healthBar.SetCharacterIcon(targetBody);
                 healthBar.hpBarMover.UpdateReferences(hud, targetBody);
                 healthBar.bandDisplayController.UpdateReferences(hud.targetMaster?.inventory);
@@ -176,11 +184,27 @@ namespace HunkHud.Modules
                     bottomRightScaler.GetOrAddComponent<SkillIconMover>().UpdateReferences(hud, targetBody);
                 }
             }
-            /*
-            var bottomCenterCluster = springCanvas.Find("BottomCenterCluster");
-            if (bottomCenterCluster)
-            {
-            }*/
+        }
+
+        #region Extension Methods
+        private static T GetOrAddComponent<T>(this GameObject go) where T : Component
+        {
+            return go.GetComponent<T>() ?? go.AddComponent<T>();
+        }
+        private static T GetOrAddComponent<T>(this Component co) where T : Component
+        {
+            return co.GetComponent<T>() ?? co.gameObject.AddComponent<T>();
+        }
+        private static void SetActiveSafe(GameObject go, bool active)
+        {
+            if (go)
+                go.SetActive(active);
+        }
+
+        private static void SetActiveSafe(Component co, bool active)
+        {
+            if (co)
+                co.gameObject.SetActive(active);
         }
 
         private static GameObject FindOrInstantiate(this Transform transform, string assetName)
@@ -206,5 +230,6 @@ namespace HunkHud.Modules
 
             return assetObject.GetComponent<T>();
         }
+        #endregion
     }
 }

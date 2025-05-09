@@ -147,14 +147,15 @@ namespace HunkHud.Components.UI
 
         private void Update()
         {
-            updateTimer -= Time.deltaTime;
-            if (updateTimer <= 0f)
+            this.updateTimer -= Time.deltaTime;
+            if (this.updateTimer <= 0f)
             {
+                this.updateTimer = this.updateDelay;
+
                 SetBarFill();
-                updateTimer = updateDelay;
             }
 
-            this.ApplyBars();
+            ApplyBars();
         }
 
         private void ApplyBars()
@@ -193,80 +194,63 @@ namespace HunkHud.Components.UI
                 this.shieldFill.enabled = false;
                 this.barrierFill.enabled = false;
                 this.barrierFillShiny.enabled = false;
+
                 this.collapseFill.enabled = false;
                 this.echoFill.enabled = false;
-                this.delayedDamageMask.enabled = false;
                 this.ospFill.enabled = false;
+                this.delayedDamageMask.enabled = false;
+
                 this.damageFill.targetFill = 0f;
                 return;
             }
 
             HealthComponent.HealthBarValues barInfos = this.source.GetHealthBarValues();
-
-
-            // health bars
+            var missingHealthFraction = 1f - (barInfos.healthFraction + barInfos.shieldFraction);
+            var collapseFraction = this.GetCollapseFraction();
 
             this.shieldFill.image.color = barInfos.hasVoidShields ? this.pinkShieldColor : this.shieldColor;
             this.healthFill.image.color = barInfos.hasInfusion ? this.infusionColor : this.healthBarGradient.Evaluate(barInfos.healthFraction);
+
+            // lerped bars
 
             var healthFillAmount = Util.Remap(barInfos.healthFraction, 0f, 1f, this.minFill, this.maxFill);
             this.healthFill.enabled = barInfos.healthFraction > 0f;
             this.healthFill.targetFill = healthFillAmount;
             this.healthFill.currentFill = Mathf.Min(healthFillAmount, this.healthFill.currentFill);
 
-            this.healingFill.enabled = this.healthFill.currentFill < healthFillAmount;
-            this.healingFill.targetFill = healthFillAmount;
-            this.healingFill.currentFill = healthFillAmount;
-
-            var currentHealthFillAmount = Util.Remap(barInfos.healthFraction + barInfos.shieldFraction, 0f, 1f, this.minFill, this.maxFill);
-            this.damageFill.targetFill = currentHealthFillAmount;
-            this.damageFill.currentFill = Mathf.Max(currentHealthFillAmount, this.damageFill.currentFill);
-            this.damageFill.enabled = this.damageFill.currentFill > currentHealthFillAmount;
+            var combinedHealthFillAmount = Util.Remap(barInfos.healthFraction + barInfos.shieldFraction, 0f, 1f, this.minFill, this.maxFill);
+            this.damageFill.targetFill = combinedHealthFillAmount;
+            this.damageFill.currentFill = Mathf.Max(combinedHealthFillAmount, this.damageFill.currentFill);
+            this.damageFill.enabled = this.damageFill.currentFill > combinedHealthFillAmount;
 
             this.shieldFill.enabled = barInfos.shieldFraction > 0f;
-            this.shieldFill.targetFill = currentHealthFillAmount;
-            this.shieldFill.currentFill = Mathf.Min(currentHealthFillAmount, this.shieldFill.currentFill);
+            this.shieldFill.targetFill = combinedHealthFillAmount;
+            this.shieldFill.currentFill = Mathf.Min(combinedHealthFillAmount, this.shieldFill.currentFill);
 
-            var barrierFillAmount = Util.Remap(barInfos.barrierFraction, 0f, 1f, this.minFill, this.maxFill);
-            this.barrierFill.enabled = barInfos.barrierFraction > 0f;
-            this.barrierFill.targetFill = barrierFillAmount;
-            this.barrierFill.currentFill = barrierFillAmount;
+            // remap
 
-            this.barrierFillShiny.enabled = this.barrierFill.enabled;
-            this.barrierFillShiny.targetFill = this.barrierFill.targetFill;
-            this.barrierFillShiny.currentFill = this.barrierFill.currentFill;
+            Remap(ref this.healingFill, barInfos.healthFraction, enabled: this.healthFill.currentFill < this.healthFill.targetFill, inverse: false);
+            Remap(ref this.barrierFill, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
+            Remap(ref this.barrierFillShiny, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
+            Remap(ref this.curseFill, barInfos.curseFraction, enabled: barInfos.curseFraction > 0f, inverse: true);
+            Remap(ref this.collapseFill, collapseFraction + missingHealthFraction, enabled: collapseFraction > 0f && this.targetBody.HasBuff(DLC1Content.Buffs.Fracture), inverse: true);
+            Remap(ref this.echoFill, barInfos.echoFraction + missingHealthFraction, enabled: barInfos.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff), inverse: true);
+            Remap(ref this.ospFill, barInfos.ospFraction + missingHealthFraction, enabled: barInfos.ospFraction > 0f, inverse: true);
+            Remap(ref this.delayedDamageMask, combinedHealthFillAmount, enabled: this.collapseFill.enabled | this.echoFill.enabled | this.ospFill.enabled, inverse: false);
 
-            var curseFillAmount = Util.Remap(barInfos.curseFraction, 0f, 1f, this.inverseFillMin, this.inverseFillMax);
-            this.curseFill.enabled = barInfos.curseFraction > 0f;
-            this.curseFill.targetFill = curseFillAmount;
-            this.curseFill.currentFill = curseFillAmount;
-
-            // inverse fill
-
-            var collapseFraction = this.GetCollapseFraction();
-            var collapseFillAmount = Util.Remap(collapseFraction, 0f, 1f, 1f - currentHealthFillAmount, this.inverseFillMax);
-            this.collapseFill.enabled = collapseFraction > 0f;
-            this.collapseFill.targetFill = collapseFillAmount;
-            this.collapseFill.currentFill = collapseFillAmount;
-
-            var echoFillAmount = Util.Remap(barInfos.echoFraction, 0f, 1f, 1f - currentHealthFillAmount, this.inverseFillMax);
-            this.echoFill.enabled = barInfos.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff);
-            this.echoFill.targetFill = echoFillAmount;
-            this.echoFill.currentFill = echoFillAmount;
-
-            if (this.echoFill.enabled || this.collapseFill.enabled)
+            if (this.echoFill.enabled | this.collapseFill.enabled)
                 this.hpBarMover?.SetActive();
 
-            var ospFillAmount = Util.Remap(this.targetBody.oneShotProtectionFraction, 0f, 1f, this.inverseFillMin, this.inverseFillMax);
-            this.ospFill.enabled = ospFillAmount > 1f - currentHealthFillAmount;
-            this.ospFill.targetFill = this.targetBody.oneShotProtectionFraction;
-            this.ospFill.currentFill = this.targetBody.oneShotProtectionFraction;
-
-            this.delayedDamageMask.enabled = this.collapseFill.enabled | this.echoFill.enabled | this.ospFill.enabled;
-            this.delayedDamageMask.targetFill = currentHealthFillAmount;
-            this.delayedDamageMask.currentFill = currentHealthFillAmount;
-
             UpdateExpBar();
+
+            void Remap(ref BarInfo bar, float value, bool enabled, bool inverse)
+            {
+                bar.enabled = enabled;
+
+                var fillAmount = inverse ? Util.Remap(Mathf.Clamp01(value), 0f, 1f, this.inverseFillMin, this.inverseFillMax) : Util.Remap(Mathf.Clamp01(value), 0f, 1f, this.minFill, this.maxFill);
+                bar.targetFill = fillAmount;
+                bar.currentFill = fillAmount;
+            }
         }
         
         private void UpdateExpBar()
@@ -306,7 +290,7 @@ namespace HunkHud.Components.UI
                     collapseDamage += stackDamage;
             }
 
-            float num = 1f - 1f / this.targetBody.cursePenalty;
+            float num = 1f - (1f / this.targetBody.cursePenalty);
             float num2 = (1f - num) / this.source.fullCombinedHealth;
             return Mathf.Clamp01(collapseDamage * num2);
         }

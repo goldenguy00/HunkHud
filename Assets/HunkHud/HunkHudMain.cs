@@ -17,13 +17,14 @@ using HunkHud.Modules;
 namespace HunkHud
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
+    [BepInDependency("bubbet.riskui", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInPlugin(GUID, MODNAME, VERSION)]
     public class HunkHudMain : BaseUnityPlugin
     {
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "0.1.3";
+        public const string VERSION = "0.1.5";
 
         public static HunkHudMain instance { get; private set; }
 
@@ -46,7 +47,6 @@ namespace HunkHud
 
             Log.Init(this.Logger);
             PluginConfig.Init(this.Config);
-            HudAssets.Init();
 
             StartCoroutine(nameof(Load));
         }
@@ -56,6 +56,7 @@ namespace HunkHud
             var request = AssetBundle.LoadFromFileAsync(Path.Combine(Path.GetDirectoryName(this.Info.Location), "hunkhudassets"));
             yield return request;
             HudAssets.mainAssetBundle = request.assetBundle;
+            HudAssets.Init();
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]

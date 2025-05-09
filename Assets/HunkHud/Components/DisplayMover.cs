@@ -23,8 +23,13 @@ namespace HunkHud.Components
 
         public Vector3 offset;
 
-        protected Vector3 activePosition;
-        protected Vector3 inactivePosition;
+        [NonSerialized]
+        public Vector3 activePosition;
+        
+        [NonSerialized]
+        public Vector3 inactivePosition;
+
+        [NonSerialized]
         protected Vector3 desiredPosition;
 
         public virtual void UpdateReferences(HUD hud, CharacterBody body)
