@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeline: {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
   creationDate:
-    ticks: 638811784335349655
+    ticks: 638824795731198970
   entries:
   - logLevel: 3
     internalTime:
-      ticks: 638811784401484070
+      ticks: 638824795831296768
     message: '[Pipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Finished execution'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784401249782
+      ticks: 638824795831114101
     message: '[Pipeline(7 - Zip)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       archived ``` ThunderKit/Staging/HunkHud/plugins/HunkHud ``` into ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/Release.zip
       ```'
@@ -36,110 +36,111 @@ MonoBehaviour:
       7. ThunderKit\\Staging\\HunkHud\\plugins\\HunkHud\\README.md\r\n\r\n 8. ThunderKit\\Staging\\HunkHud\\plugins\\HunkHud\\Release.zip"
   - logLevel: 3
     internalTime:
-      ticks: 638811784396905594
+      ticks: 638824795826638105
     message: '[Pipeline(7 - Zip)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784396673627
+      ticks: 638824795826481696
     message: '[Pipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleted ThunderKit/Staging/HunkHud/plugins/HunkHud/Release.zip'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784396442282
+      ticks: 638824795826310394
     message: '[Pipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleting ThunderKit/Staging/HunkHud/plugins/HunkHud/Release.zip'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784396246189
+      ticks: 638824795826138377
     message: '[Pipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784395712701
+      ticks: 638824795825966153
     message: '[Pipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleted ThunderKit/Staging/HunkHud/plugins/HunkHud/hunkhudassets.manifest'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784394990348
+      ticks: 638824795825799009
     message: '[Pipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleting ThunderKit/Staging/HunkHud/plugins/HunkHud/hunkhudassets.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784394608723
+      ticks: 638824795825633153
     message: '[Pipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784394267577
+      ticks: 638824795825466733
     message: '[Pipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleted ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.manifest'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784393915907
+      ticks: 638824795825290351
     message: '[Pipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Deleting ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784393554210
+      ticks: 638824795825118622
     message: '[Pipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784393265725
+      ticks: 638824795824941616
     message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Creating Thunderstore manifest.json'
     context:
     - "Manifest.json\r\n```js\r\n{\n    \"name\": \"HunkHud\",\n    \"author\": \"public_ParticleSystem\",\n   
-      \"version_number\": \"0.0.4\",\n    \"website_url\": \"https://discord.gg/xqp5CQM8Cs\",\n   
+      \"version_number\": \"0.1.6\",\n    \"website_url\": \"https://discord.gg/xqp5CQM8Cs\",\n   
       \"description\": \"BETA RELEASE - Standalone Hud from HUNK\",\n    \"dependencies\":
-      [\n        \"bbepis-BepInExPack-5.4.2117\"\n    ]\n}\r\n```"
+      [\n        \"bbepis-BepInExPack-5.4.2117\",\n        \"RiskofThunder-HookGenPatcher-1.2.5\",\n       
+      \"score-RiskUIRevived-1.0.4\"\n    ]\n}\r\n```"
   - logLevel: 3
     internalTime:
-      ticks: 638811784393062200
+      ticks: 638824795824769961
     message: '[Pipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784392885971
+      ticks: 638824795824618297
     message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       staged ``` Assets/HunkHud/Thunderstore/CHANGELOG.md ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/CHANGELOG.md
       ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784392720539
+      ticks: 638824795824462342
     message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       staged ``` Assets/HunkHud/Thunderstore/README.md ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/README.md
       ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784392589759
+      ticks: 638824795824311478
     message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       staged ``` Assets/HunkHud/Thunderstore/icon.png ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/icon.png
       ```'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784392425830
+      ticks: 638824795824152023
     message: '[Pipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784386046474
+      ticks: 638824795813136670
     message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Creating 1 AssetBundles'
     context:
@@ -157,10 +158,6 @@ MonoBehaviour:
 
       
 
-      [ItemGetPopup](assetlink://Assets%2fHunkHud%2fAssets%2fItemGetPopup.prefab)
-
-      
-
       [ItemNotification](assetlink://Assets%2fHunkHud%2fAssets%2fItemNotification.prefab)
 
       
@@ -170,6 +167,10 @@ MonoBehaviour:
       
 
       [ObjectiveGauge](assetlink://Assets%2fHunkHud%2fAssets%2fObjectiveGauge.prefab)
+
+      
+
+      [RiskUI](assetlink://Assets%2fHunkHud%2fAssets%2fRiskUI.prefab)
 
       
 
@@ -270,6 +271,10 @@ MonoBehaviour:
       
 
       [GenericTextPanel](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fGenericTextPanel.prefab)
+
+      
+
+      [ItemGetPopup](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fItemGetPopup.prefab)
 
       
 
@@ -417,6 +422,10 @@ MonoBehaviour:
 
       
 
+      [texBlankFillEcho](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillEcho.png)
+
+      
+
       [texBlankFillHealth](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillHealth.asset)
 
       
@@ -430,6 +439,10 @@ MonoBehaviour:
       
 
       [texBlankFillInverse](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillInverse.png)
+
+      
+
+      [texBlankFillOSP](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillOSP.png)
 
       
 
@@ -454,6 +467,10 @@ MonoBehaviour:
       
 
       [texBlankFillShiny](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillShiny.png)
+
+      
+
+      [texBlankFillShiny2](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBlankFillShiny2.asset)
 
       
 
@@ -769,24 +786,94 @@ MonoBehaviour:
 
       
 
+      [MoneyContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoneyContainer.prefab)
+
+      
+
+      [MaterialChatbox](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialChatbox.prefab)
+
+      
+
+      [MaterialHealthbarStyle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyle.asset)
+
+      
+
+      [Money](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoney.png)
+
+      
+
+      [HitMarker](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fHitMarker.png)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [MaterialBuffIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialBuffIcon.prefab)
+
+      
+
+      [SkillIconRoot](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSkillIconRoot.prefab)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [EquipIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fEquipIcon.prefab)
+
+      
+
+      [Void_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fVoid_Coin.png)
+
+      
+
+      [Lunar_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fLunar_Coin.png)
+
+      
+
+      [StripContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fStripContainer.prefab)
+
+      
+
+      [HealthBarSub](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fHealthBarSub.prefab)
+
+      
+
+      [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
+
+      
+
+      [ItemIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fItemIcon.prefab)
+
+      
+
       
 
 '
   - logLevel: 3
     internalTime:
-      ticks: 638811784381595509
+      ticks: 638824795799279884
     message: '[Pipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784381500979
+      ticks: 638824795799106661
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Build Completed: ``` ThunderKit/Libraries/HunkHud.dll ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784378529196
+      ticks: 638824795791341772
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud
       ```
@@ -797,49 +884,61 @@ MonoBehaviour:
       ThunderKit/Libraries\\HunkHud.dll\r\n  To: ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.dll\r\n\r\n"
   - logLevel: 0
     internalTime:
-      ticks: 638811784341884446
+      ticks: 638824795741544904
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
       Building : ThunderKit/Libraries/HunkHud.dll'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638811784340012398
+      ticks: 638824795739184919
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RiskUIManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fRiskUIManifest.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638824795738784200
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HookGenPatcherManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHookGenPatcherManifest.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638824795738384974
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638811784339647623
+      ticks: 638824795737983619
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638811784339078247
+      ticks: 638824795737577914
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638811784338740729
+      ticks: 638824795737172515
     message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784336752730
-    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
+      ticks: 638824795732917769
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638811784336702685
-    message: '[Pipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
+      ticks: 638824795732897580
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       Clearing PipelineJob error states'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638811784336582269
-    message: '[Pipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)
+      ticks: 638824795732707247
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       Execute Pipeline'
     context: []

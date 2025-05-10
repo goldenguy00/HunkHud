@@ -59,7 +59,13 @@ namespace HunkHud.Components
 
         protected virtual void Update()
         {
-            this.transform.localPosition = Vector3.Lerp(this.transform.localPosition, this.desiredPosition, this.smoothSpeed * Time.deltaTime);
+            var currentPos = this.transform.localPosition;
+            if (this.offset.x == 0f)
+                this.desiredPosition.x = currentPos.x;
+            if (this.offset.y == 0f)
+                this.desiredPosition.y = currentPos.y;
+
+            this.transform.localPosition = Vector3.Lerp(currentPos, this.desiredPosition, this.smoothSpeed * Time.deltaTime);
         }
 
         protected virtual void FixedUpdate()

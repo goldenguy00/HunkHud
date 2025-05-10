@@ -1,5 +1,14 @@
 # Changelog
 
+`0.1.6`
+
+- Ally Cards get moved when inactive
+- Fixed buff positioning again
+- Fixed Delayed Damage mask inaccuracies
+- Restored the correct default chatbox positioning
+- Force Lee specific chatbox positioning
+- More backend staging stuff
+
 `0.1.5`
 
 - Buffs moved down to the correct spot oops

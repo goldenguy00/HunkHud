@@ -13,9 +13,10 @@ namespace HunkHud.Components
 
         protected override void Start()
         {
+            var pos = this.transform.localPosition;
+            pos.x = 0f;
+            this.transform.localPosition = pos;
             base.Start();
-            base.activePosition.x = 0f;
-            base.inactivePosition.x = 0f;
         }
 
         public override void UpdateReferences(HUD hud, CharacterBody body)

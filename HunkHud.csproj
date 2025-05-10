@@ -64,6 +64,7 @@
     <Compile Include="Assets\HunkHud\Components\ItemDisplayMover.cs" />
     <Compile Include="Assets\HunkHud\Components\UI\ObjectiveChargeDisplay.cs" />
     <Compile Include="Assets\HunkHud\Components\UI\CustomHealthBar.cs" />
+    <Compile Include="Assets\HunkHud\Components\AllyHealthBarMover.cs" />
     <Compile Include="Assets\HunkHud\Modules\HudAssets.cs" />
     <Compile Include="Assets\HunkHud\Components\CameraAdjuster.cs" />
     <Compile Include="Assets\HunkHud\Components\HealthBarMover.cs" />

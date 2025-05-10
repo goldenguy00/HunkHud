@@ -175,13 +175,11 @@ namespace HunkHud.Components.UI
 
             void Apply(ref BarInfo info)
             {
-                info.image.enabled = info.enabled;
-
                 if (info.currentFill != info.targetFill)
                     info.currentFill = Mathf.Lerp(info.currentFill, info.targetFill, this.fillSpeed * Time.deltaTime);
 
-                if (info.enabled)
-                    info.image.fillAmount = info.currentFill;
+                info.image.enabled = info.enabled;
+                info.image.fillAmount = info.currentFill;
             }
         }
 
@@ -233,10 +231,11 @@ namespace HunkHud.Components.UI
             Remap(ref this.barrierFill, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
             Remap(ref this.barrierFillShiny, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
             Remap(ref this.curseFill, barInfos.curseFraction, enabled: barInfos.curseFraction > 0f, inverse: true);
+
             Remap(ref this.collapseFill, collapseFraction + missingHealthFraction, enabled: collapseFraction > 0f && this.targetBody.HasBuff(DLC1Content.Buffs.Fracture), inverse: true);
             Remap(ref this.echoFill, barInfos.echoFraction + missingHealthFraction, enabled: barInfos.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff), inverse: true);
             Remap(ref this.ospFill, barInfos.ospFraction + missingHealthFraction, enabled: barInfos.ospFraction > 0f, inverse: true);
-            Remap(ref this.delayedDamageMask, combinedHealthFillAmount, enabled: this.collapseFill.enabled | this.echoFill.enabled | this.ospFill.enabled, inverse: false);
+            Remap(ref this.delayedDamageMask, barInfos.healthFraction + barInfos.shieldFraction, enabled: true, inverse: false);
 
             if (this.echoFill.enabled | this.collapseFill.enabled)
                 this.hpBarMover?.SetActive();
@@ -246,8 +245,8 @@ namespace HunkHud.Components.UI
             void Remap(ref BarInfo bar, float value, bool enabled, bool inverse)
             {
                 bar.enabled = enabled;
-
-                var fillAmount = inverse ? Util.Remap(Mathf.Clamp01(value), 0f, 1f, this.inverseFillMin, this.inverseFillMax) : Util.Remap(Mathf.Clamp01(value), 0f, 1f, this.minFill, this.maxFill);
+                value = Mathf.Clamp01(value);
+                var fillAmount = inverse ? Util.Remap(value, 0f, 1f, this.inverseFillMin, this.inverseFillMax) : Util.Remap(value, 0f, 1f, this.minFill, this.maxFill);
                 bar.targetFill = fillAmount;
                 bar.currentFill = fillAmount;
             }

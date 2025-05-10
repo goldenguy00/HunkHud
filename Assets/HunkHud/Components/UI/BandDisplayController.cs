@@ -6,8 +6,12 @@ namespace HunkHud.Components.UI
 {
     public class BandDisplayController : MonoBehaviour
     {
+        public static BandDisplayController instance;
         private Inventory targetInventory;
-
+        private void Awake()
+        {
+            instance = this;
+        }
         private void OnDestroy()
         {
             if (this.targetInventory)

@@ -8,6 +8,7 @@ namespace HunkHud.Components.UI
 {
     public class LuminousDisplay : MonoBehaviour
     {
+        public static LuminousDisplay instance;
         public Color activeColor = Color.white;
         public Color inactiveColor = new Color(0f, 0f, 0f, 0.25f);
 
@@ -27,6 +28,11 @@ namespace HunkHud.Components.UI
 
                 return this.targetBody.HasBuff(DLC2Content.Buffs.IncreasePrimaryDamageBuff) || this.targetBody.inventory.GetItemCount(DLC2Content.Items.IncreasePrimaryDamage) > 0;
             }
+        }
+
+        private void Awake()
+        {
+            instance = this;
         }
 
         private void FixedUpdate()
