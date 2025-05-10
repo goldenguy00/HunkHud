@@ -1,5 +1,9 @@
 # Changelog
 
+`0.1.7`
+
+- Absolutely BANGER Readme update from Smxres
+
 `0.1.6`
 
 - Ally Cards get moved when inactive
