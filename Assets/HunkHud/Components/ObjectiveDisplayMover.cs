@@ -8,16 +8,18 @@ namespace HunkHud.Components
         private int prevCount;
         private ObjectivePanelController objectivePanel;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             this.offset = new UnityEngine.Vector3(400f, 100f, 0f);
 
             this.objectivePanel = this.GetComponentInChildren<ObjectivePanelController>();
             GlobalEventManager.onTeamLevelUp += this.GlobalEventManager_onTeamLevelUp;
         }
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
             GlobalEventManager.onTeamLevelUp -= this.GlobalEventManager_onTeamLevelUp;
         }
 
@@ -29,8 +31,6 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            base.CheckForActivity();
-
             if (!this.objectivePanel)
                 return;
 
@@ -38,7 +38,7 @@ namespace HunkHud.Components
             if (newCount != this.prevCount)
             {
                 this.prevCount = newCount;
-                this.activeTimer = this.refreshTimer;
+                this.SetActive();
             }
         }
     }

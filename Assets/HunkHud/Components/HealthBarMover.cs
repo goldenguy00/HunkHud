@@ -8,8 +8,6 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            base.CheckForActivity();
-
             if (!this.targetBody || !this.targetBody.healthComponent)
                 return;
 

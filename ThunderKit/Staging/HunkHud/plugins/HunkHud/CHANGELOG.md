@@ -1,8 +1,16 @@
 # Changelog
 
+`0.2.0`
+
+- Ally cards get sorted better
+
+`0.1.8`
+
+- didnt happen
+
 `0.1.7`
 
-- Absolutely BANGER Readme update from Smxres
+- Absolutely BANGER Readme update from Smxrez
 
 `0.1.6`
 

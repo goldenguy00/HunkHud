@@ -1,13 +1,17 @@
 using RoR2;
 using RoR2.UI;
 using UnityEngine;
-using HunkHud.Modules;
 using System;
+using MaterialHud;
+using ZioConfigFile;
 
 namespace HunkHud.Components
 {
-    public class DisplayMover : MonoBehaviour
+    public abstract class DisplayMover : MonoBehaviour, IConfigHandler
     {
+        [NonSerialized]
+        public ZioConfigEntry<bool> _configEntry;
+
         [NonSerialized]
         public HUD targetHud;
 
@@ -17,6 +21,8 @@ namespace HunkHud.Components
         [NonSerialized]
         public CharacterMaster targetMaster;
 
+        protected float delayTimer = 0.1f;
+
         public float refreshTimer = 2.8f;
         public float activeTimer = 8f;
         public float smoothSpeed = 4f;
@@ -25,12 +31,18 @@ namespace HunkHud.Components
 
         [NonSerialized]
         public Vector3 activePosition;
-        
-        [NonSerialized]
-        public Vector3 inactivePosition;
 
-        [NonSerialized]
-        protected Vector3 desiredPosition;
+        public abstract void CheckForActivity();
+
+        private void ConfigUpdated(ZioConfigEntryBase zioConfigEntryBase, object o, bool arg3)
+        {
+            this.enabled = this._configEntry.Value;
+        }
+
+        public void Startup()
+        {
+            _configEntry = ConfigHelper.Bind("HunkHud", this.GetType().Name, true, "Enable or disable moving this hud element", (cfg) => this.enabled = cfg.Value);
+        }
 
         public virtual void UpdateReferences(HUD hud, CharacterBody body)
         {
@@ -40,51 +52,65 @@ namespace HunkHud.Components
             this.targetBody = body;
         }
 
-        public void SetActive()
+        public virtual void SetActive()
         {
             this.activeTimer = Mathf.Max(this.activeTimer, this.refreshTimer);
+            this.delayTimer = 0.1f;
         }
 
-        public virtual void CheckForActivity()
+        protected virtual void Awake()
         {
+            Startup();
+            _configEntry.SettingChanged += ConfigUpdated;
         }
 
         protected virtual void Start()
         {
             this.activePosition = this.transform.localPosition;
-            this.inactivePosition = this.activePosition;
-            this.inactivePosition.x += Mathf.Abs(this.offset.x) * Mathf.Sign(this.transform.position.x);
-            this.inactivePosition.y += Mathf.Abs(this.offset.y) * Mathf.Sign(this.transform.position.y);
+            this.offset.x = Mathf.Abs(this.offset.x) * Mathf.Sign(this.transform.position.x);
+            this.offset.y = Mathf.Abs(this.offset.y) * Mathf.Sign(this.transform.position.y);
+        }
+
+        protected virtual void OnEnable()
+        {
+            ConfigUpdated(null, null, arg3: false);
         }
 
         protected virtual void Update()
         {
+            var desiredPosition = this.activePosition;
             var currentPos = this.transform.localPosition;
-            if (this.offset.x == 0f)
-                this.desiredPosition.x = currentPos.x;
-            if (this.offset.y == 0f)
-                this.desiredPosition.y = currentPos.y;
 
-            this.transform.localPosition = Vector3.Lerp(currentPos, this.desiredPosition, this.smoothSpeed * Time.deltaTime);
+            if (this.activeTimer <= 0f)
+                desiredPosition += this.offset;
+
+            if (this.offset.x == 0f)
+                desiredPosition.x = currentPos.x;
+
+            if (this.offset.y == 0f)
+                desiredPosition.y = currentPos.y;
+
+            this.transform.localPosition = Vector3.Lerp(currentPos, desiredPosition, this.smoothSpeed * Time.deltaTime);
         }
 
         protected virtual void FixedUpdate()
         {
-            this.desiredPosition = this.activePosition;
-            if (!PluginConfig.dynamicCustomHUD.Value)
+            this.activeTimer -= Time.fixedDeltaTime;
+            this.delayTimer -= Time.fixedDeltaTime;
+
+            if (this.targetHud && this.targetHud.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
+                this.SetActive();
+
+            if (this.delayTimer > 0f)
                 return;
 
-            if (this.activeTimer < this.refreshTimer)
-            {
-                if (this.targetHud && this.targetHud.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
-                    this.activeTimer = this.refreshTimer;
-                else
-                    CheckForActivity();
-            }
+            this.delayTimer = 0.1f;
+            CheckForActivity();
+        }
 
-            this.activeTimer -= Time.fixedDeltaTime;
-            if (this.activeTimer <= 0f)
-                this.desiredPosition = this.inactivePosition;
+        protected virtual void OnDestroy()
+        {
+            _configEntry.SettingChanged -= ConfigUpdated;
         }
     }
 }

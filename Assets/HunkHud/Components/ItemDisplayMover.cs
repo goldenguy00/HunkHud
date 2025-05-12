@@ -6,8 +6,9 @@ namespace HunkHud.Components
 {
     public class ItemDisplayMover : DisplayMover
     {
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             this.offset = new Vector3(0f, 250f, 0f);
         }
 
@@ -16,8 +17,11 @@ namespace HunkHud.Components
             var pos = this.transform.localPosition;
             pos.x = 0f;
             this.transform.localPosition = pos;
+
             base.Start();
         }
+
+        public override void CheckForActivity() { }
 
         public override void UpdateReferences(HUD hud, CharacterBody body)
         {
@@ -30,8 +34,10 @@ namespace HunkHud.Components
                 this.targetMaster.inventory.onInventoryChanged += this.SetActive;
         }
 
-        private void OnDestroy()
+        protected override void OnDestroy()
         {
+            base.OnDestroy();
+
             if (this.targetMaster && this.targetMaster.inventory)
                 this.targetMaster.inventory.onInventoryChanged -= this.SetActive;
         }

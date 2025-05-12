@@ -5,15 +5,14 @@ namespace HunkHud.Components
         private int cachedMoney;
         private int cachedCoin;
 
-        private void Awake()
+        protected override void Awake()
         {
+            base.Awake();
             this.offset = new UnityEngine.Vector3(-450f, 100f, 0f);
         }
 
         public override void CheckForActivity()
         {
-            base.CheckForActivity();
-
             if (!this.targetHud)
                 return;
 
@@ -23,16 +22,17 @@ namespace HunkHud.Components
                 if (coin != this.cachedCoin)
                 {
                     this.cachedCoin = coin;
-                    this.activeTimer = this.refreshTimer;
+                    this.SetActive();
                 }
             }
+
             if (this.targetHud.moneyText)
             {
                 var coin = this.targetHud.moneyText.displayAmount;
                 if (coin != this.cachedMoney)
                 {
                     this.cachedMoney = coin;
-                    this.activeTimer = this.refreshTimer;
+                    this.SetActive();
                 }
             }
         }

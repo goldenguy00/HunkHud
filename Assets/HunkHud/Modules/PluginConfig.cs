@@ -1,5 +1,6 @@
 ﻿using System.Runtime.CompilerServices;
 using BepInEx.Configuration;
+using HunkHud.Components;
 using RiskOfOptions;
 using RiskOfOptions.OptionConfigs;
 using RiskOfOptions.Options;
@@ -88,8 +89,12 @@ namespace HunkHud.Modules
                 "Controls the sensitivity of HUNK's custom camera interpolation - higher values are faster. Set to 0 to disable interpolation and camera bobbing.",
                 min: 0f, max: 80f);*/
             #endregion
+
+            #region Display Movers
+
+            #endregion
         }
-        
+
         public static void InitROO(Sprite modSprite, string modDescription)
         {
             ModSettingsManager.SetModIcon(modSprite);

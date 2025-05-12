@@ -152,7 +152,10 @@ namespace HunkHud.Components.UI
             {
                 this.updateTimer = this.updateDelay;
 
-                SetBarFill();
+                if (this.targetBody && this.source && this.source.alive)
+                    SetBarFill();
+                else
+                    SetDefaults();
             }
 
             ApplyBars();
@@ -183,10 +186,8 @@ namespace HunkHud.Components.UI
             }
         }
 
-        private void SetBarFill()
+        private void SetDefaults()
         {
-            if (!this.targetBody || !this.source || !this.source.alive)
-            {
                 this.healingFill.enabled = false;
                 this.healthFill.enabled = false;
                 this.shieldFill.enabled = false;
@@ -199,9 +200,10 @@ namespace HunkHud.Components.UI
                 this.delayedDamageMask.enabled = false;
 
                 this.damageFill.targetFill = 0f;
-                return;
-            }
+        }
 
+        private void SetBarFill()
+        {
             HealthComponent.HealthBarValues barInfos = this.source.GetHealthBarValues();
             var missingHealthFraction = 1f - (barInfos.healthFraction + barInfos.shieldFraction);
             var collapseFraction = this.GetCollapseFraction();
@@ -238,7 +240,10 @@ namespace HunkHud.Components.UI
             Remap(ref this.delayedDamageMask, barInfos.healthFraction + barInfos.shieldFraction, enabled: true, inverse: false);
 
             if (this.echoFill.enabled | this.collapseFill.enabled)
-                this.hpBarMover?.SetActive();
+            {
+                this.hpBarMover.SetActive();
+                this.damageFill.currentFill = this.damageFill.targetFill;
+            }
 
             UpdateExpBar();
 

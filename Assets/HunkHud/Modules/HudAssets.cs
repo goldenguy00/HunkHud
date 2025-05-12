@@ -3,7 +3,6 @@ using RoR2.UI;
 using HunkHud.Components.UI;
 using HunkHud.Components;
 using MaterialHud;
-using UnityEngine.UI;
 
 namespace HunkHud.Modules
 {
@@ -202,12 +201,21 @@ namespace HunkHud.Modules
                 healthBar.hpBarMover.UpdateReferences(hud, targetBody);
                 healthBar.bandDisplayController.UpdateReferences(hud.targetMaster?.inventory);
 
-                if (targetBody && targetBody.name == "LeeHyperrealBody(Clone)")
+                var chatbox = bottomLeftCluster.Find("ChatBoxPos1");
+                var chatbox2 = bottomLeftCluster.Find("ChatBoxPos2");
+
+                if (chatbox && chatbox2)
                 {
-                    var chatbox = bottomLeftCluster.Find("ChatBoxPos1/ChatBoxRoot");
-                    if (chatbox && bottomLeftCluster.Find("ChatBoxPos2"))
+                    var box = chatbox.Find("ChatBoxRoot");
+                    if (!box)
+                        chatbox2.Find("ChatBoxRoot");
+
+                    var configManager = box ? box.GetComponent<BepinConfigParentManager>() : null;
+
+                    if (configManager)
                     {
-                        chatbox.SetParent(bottomLeftCluster.Find("ChatBoxPos2"), false);
+                        configManager.choices[0] = targetBody && targetBody.name == "LeeHyperrealBody(Clone)" ? chatbox2 : chatbox;
+                        configManager.OnEnable();
                     }
                 }
             }
@@ -218,14 +226,10 @@ namespace HunkHud.Modules
         {
             return go.GetComponent<T>() ?? go.AddComponent<T>();
         }
+
         private static T GetOrAddComponent<T>(this Component co) where T : Component
         {
             return co.GetComponent<T>() ?? co.gameObject.AddComponent<T>();
-        }
-        private static void SetActiveSafe(GameObject go, bool active)
-        {
-            if (go)
-                go.SetActive(active);
         }
 
         private static void SetActiveSafe(Component co, bool active)
