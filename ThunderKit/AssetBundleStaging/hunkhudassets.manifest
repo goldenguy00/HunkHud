@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 17517270
+CRC: 1499828521
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 2e62f50c5bbad0e663c9030ac95f0f63
+    Hash: 8182788ffabe2fa88cbc65bc2d380e0a
   TypeTreeHash:
     serializedVersion: 2
-    Hash: d6868f32eaed91375ec11045ed33b460
+    Hash: 28faed039b62f6725e122544ddb1d2cd
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -23,6 +23,8 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 95
   Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
 - Class: 114
@@ -49,8 +51,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 049c701da77597f4f94c7f5d5b1f7a76, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 73ebef91a56a0e24fa0f6341dca72894, type: 3}
 - Class: 114
@@ -304,8 +304,8 @@ Assets:
 - Assets/HunkHud/Assets/textures/texBandCooldownHealingEmpty.png
 - Assets/HunkHud/Assets/textures/texExpBar.asset
 - Assets/HunkHud/Assets/textures/texHealthBar.png
-- Assets/HunkHud/Assets/textures/texRadialOuter.asset
 - Assets/HunkHud/Assets/textures/texItemExclamation.asset
+- Assets/HunkHud/Assets/textures/texRadialOuter.asset
 - Assets/HunkHud/Assets/textures/texBandCooldown.png
 - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
 - Assets/HunkHud/Assets/textures/texHealthBar.asset
@@ -341,10 +341,11 @@ Assets:
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.png
 - Assets/HunkHud/Assets/textures/texBarBaseFill.png
 - Assets/HunkHud/Assets/textures/texBlankFillInverse.png
-- Assets/HunkHud/Assets/textures/texBarrierFill2.png
+- Assets/HunkHud/Assets/textures/texImmunityFill.png
 - Assets/HunkHud/Assets/textures/texCircularMask.asset
 - Assets/HunkHud/Assets/textures/texBandCooldownVoid.png
 - Assets/HunkHud/Assets/textures/texBlankFillTile.asset
+- Assets/HunkHud/Assets/textures/texFrozenFill.png
 - Assets/HunkHud/Assets/bands/BandDisplaySacrificial.prefab
 - Assets/HunkHud/Assets/textures/texBarrierFill.png
 - Assets/HunkHud/Assets/textures/texWeakPointIndicator.asset
@@ -366,6 +367,7 @@ Assets:
 - Assets/HunkHud/Assets/textures/texHealthBarBiomassBase.png
 - Assets/HunkHud/Assets/textures/texChargeRing.png
 - Assets/HunkHud/Assets/textures/texHudBar.png
+- Assets/HunkHud/Assets/textures/texLunarRuin.png
 - Assets/HunkHud/Assets/textures/texRadialInner.asset
 - Assets/HunkHud/Assets/icons/item/texVirusSampleIcon.asset
 - Assets/HunkHud/Assets/textures/texRadialSelectionOuter.png

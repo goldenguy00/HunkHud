@@ -32,6 +32,11 @@ namespace HunkHud.Components
         [NonSerialized]
         public Vector3 activePosition;
 
+        [NonSerialized]
+        public Vector3 desiredPosition;
+
+        public bool isDisplayVisible => this.transform.position == this.desiredPosition && this.desiredPosition != this.activePosition;
+
         public abstract void CheckForActivity();
 
         private void ConfigUpdated(ZioConfigEntryBase zioConfigEntryBase, object o, bool arg3)
@@ -78,17 +83,15 @@ namespace HunkHud.Components
 
         protected virtual void Update()
         {
-            var desiredPosition = this.activePosition;
             var currentPos = this.transform.localPosition;
-
-            if (this.activeTimer <= 0f)
-                desiredPosition += this.offset;
-
             if (this.offset.x == 0f)
-                desiredPosition.x = currentPos.x;
+                this.desiredPosition.x = currentPos.x;
 
             if (this.offset.y == 0f)
-                desiredPosition.y = currentPos.y;
+                this.desiredPosition.y = currentPos.y;
+
+            if (this.offset.y == 0f)
+                this.desiredPosition.y = currentPos.y;
 
             this.transform.localPosition = Vector3.Lerp(currentPos, desiredPosition, this.smoothSpeed * Time.deltaTime);
         }
@@ -101,11 +104,16 @@ namespace HunkHud.Components
             if (this.targetHud && this.targetHud.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
                 this.SetActive();
 
-            if (this.delayTimer > 0f)
-                return;
+            if (this.delayTimer <= 0f)
+            {
+                this.delayTimer = 0.1f;
+                CheckForActivity();
+            }
 
-            this.delayTimer = 0.1f;
-            CheckForActivity();
+            this.desiredPosition = this.activePosition;
+            if (this.activeTimer <= 0f)
+                this.desiredPosition += this.offset;
+
         }
 
         protected virtual void OnDestroy()

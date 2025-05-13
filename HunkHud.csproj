@@ -73,8 +73,8 @@
     <Compile Include="Assets\HunkHud\Components\SkillIconMover.cs" />
     <Compile Include="Assets\HunkHud\Components\DynamicCrosshair.cs" />
     <Compile Include="Assets\HunkHud\Modules\Log.cs" />
-    <Compile Include="Assets\HunkHud\Components\DisplayMover.cs" />
     <Compile Include="Assets\HunkHud\HunkHudMain.cs" />
+    <Compile Include="Assets\HunkHud\Components\DisplayMover.cs" />
     <Compile Include="Assets\HunkHud\Components\MoneyDisplayMover.cs" />
     <Compile Include="Assets\HunkHud\Modules\PluginConfig.cs" />
   </ItemGroup>

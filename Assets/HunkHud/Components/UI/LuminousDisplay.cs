@@ -1,5 +1,6 @@
 using System;
 using RoR2;
+using RoR2.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -8,13 +9,15 @@ namespace HunkHud.Components.UI
 {
     public class LuminousDisplay : MonoBehaviour
     {
-        public static LuminousDisplay instance;
         public Color activeColor = Color.white;
         public Color inactiveColor = new Color(0f, 0f, 0f, 0.25f);
 
         public TextMeshProUGUI label;
         public GameObject baseHolder;
         public Image[] pips;
+
+        [NonSerialized]
+        public HUD targetHud;
 
         [NonSerialized]
         public CharacterBody targetBody;
@@ -30,9 +33,20 @@ namespace HunkHud.Components.UI
             }
         }
 
-        private void Awake()
+        private void OnEnable()
         {
-            instance = this;
+            InstanceTracker.Add(this);
+        }
+
+        private void OnDisable()
+        {
+            InstanceTracker.Remove(this);
+        }
+
+        public void UpdateReferences(HUD hud, CharacterBody body)
+        {
+            this.targetHud = hud;
+            this.targetBody = body;
         }
 
         private void FixedUpdate()
