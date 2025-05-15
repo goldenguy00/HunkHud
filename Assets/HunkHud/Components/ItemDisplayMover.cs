@@ -6,6 +6,8 @@ namespace HunkHud.Components
 {
     public class ItemDisplayMover : DisplayMover
     {
+        private CharacterMaster _prevMaster;
+
         protected override void Awake()
         {
             base.Awake();
@@ -21,17 +23,18 @@ namespace HunkHud.Components
             base.Start();
         }
 
-        public override void CheckForActivity() { }
-
-        public override void UpdateReferences(HUD hud, CharacterBody body)
+        public override void CheckForActivity()
         {
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged -= this.SetActive;
+            if (this._prevMaster != this.targetMaster)
+            {
+                if (this._prevMaster && this._prevMaster.inventory)
+                    this._prevMaster.inventory.onInventoryChanged -= this.SetActive;
+                
+                this._prevMaster = this.targetMaster;
 
-            base.UpdateReferences(hud, body);
-
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged += this.SetActive;
+                if (this.targetMaster && this.targetMaster.inventory)
+                    this.targetMaster.inventory.onInventoryChanged += this.SetActive;
+            }
         }
 
         protected override void OnDestroy()

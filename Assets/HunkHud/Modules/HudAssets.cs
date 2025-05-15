@@ -6,6 +6,9 @@ using MaterialHud;
 using System.Collections.Generic;
 using RoR2;
 using System.Linq;
+using MonoMod.RuntimeDetour;
+using System.Reflection;
+using System;
 
 namespace HunkHud.Modules
 {
@@ -52,10 +55,20 @@ namespace HunkHud.Modules
         internal static void Init()
         {
             On.RoR2.UI.CrosshairController.Awake += CrosshairController_Awake;
-            HUD.onHudTargetChangedGlobal += HudAssets.HandleHud;
-            CustomHealthBar.Hook();
+            HUD.onHudTargetChangedGlobal += HudAssets.UpdateHud;
 
-            SetRiskUISettings(RiskUIPlugin._newHud.GetComponent<HUD>());
+            new Hook(
+                typeof(RiskUIPlugin).GetMethod(nameof(RiskUIPlugin.onLoad), ~BindingFlags.Default),
+                typeof(HudAssets).GetMethod(nameof(HudAssets.onLoad), ~BindingFlags.Default)
+            );
+        }
+
+        private static void UpdateHud(HUD hud)
+        {
+            foreach (var mover in InstanceTracker.GetInstancesList<CustomHudElement>())
+            {
+                mover.hud = hud;
+            }
         }
 
         private static void CrosshairController_Awake(On.RoR2.UI.CrosshairController.orig_Awake orig, CrosshairController self)
@@ -66,6 +79,13 @@ namespace HunkHud.Modules
             {
                 self.gameObject.AddComponent<DynamicCrosshair>();
             }
+        }
+
+        private static void onLoad(Action<RiskUIPlugin> orig, RiskUIPlugin self)
+        {
+            orig(self);
+
+            SetRiskUISettings(RiskUIPlugin._newHud.GetComponent<HUD>());
         }
 
         private static void SetRiskUISettings(HUD hud)
@@ -137,12 +157,11 @@ namespace HunkHud.Modules
                 }
             }
 
+            childLoc.transformPairs = newChildLoc.ToArray();
+
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/CurrentHealthText").gameObject.SetActive(false);
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash").gameObject.SetActive(false);
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText").gameObject.SetActive(false);
-
-            childLoc.transformPairs = newChildLoc.ToArray();
-            childLoc.FindChild("AllyCardContainer").GetOrAddComponent<AllyHealthBarMover>();
 
             SetActiveSafe(childLoc.FindChild("BottomLeftCluster").Find("BarRoots/HealthText"), false);
             SetActiveSafe(childLoc.FindChild("BottomLeftCluster").Find("BarRoots/Seperator"), false);
@@ -150,11 +169,6 @@ namespace HunkHud.Modules
             SetActiveSafe(hud.expBar, false);
             SetActiveSafe(hud.levelText, false);
 
-            HandleHud(hud);
-        }
-
-        private static void HandleHud(HUD hud)
-        {
             /*
             if (PluginConfig.vignetteStrength.Value > 0f && !hud.mainContainer.transform.Find("Vignette"))
             {
@@ -164,64 +178,50 @@ namespace HunkHud.Modules
                 component.localPosition = Vector3.zero;
             }*/
 
-            var targetBody = hud.targetMaster ? hud.targetMaster.GetBody() : null;
-
             if (hud.gameModeUiInstance)
-            {
-                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>().UpdateReferences(hud, targetBody);
-            }
+                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>();
 
-            var childLoc = hud.GetComponent<ChildLocator>();
+            var allyCards = childLoc.FindChild("AllyCardContainer");
+            if (allyCards)
+                allyCards.GetOrAddComponent<AllyHealthBarMover>();
 
             var notification = childLoc.FindChildComponent<NotificationUIController>("NotificationArea");
             if (notification)
-            {
                 notification.genericNotificationPrefab = mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
-            }
 
             var topCenterCluster = childLoc.FindChild("TopCenterCluster");
             if (topCenterCluster)
-            {
                 topCenterCluster.FindOrInstantiate("ObjectiveGauge");
-            }
 
             var inventoryContainer = childLoc.FindChild("InventoryContainer");
             if (inventoryContainer)
-            {
-                inventoryContainer.GetOrAddComponent<ItemDisplayMover>().UpdateReferences(hud, targetBody);
-            }
+                inventoryContainer.GetOrAddComponent<ItemDisplayMover>();
 
             var skillIconContainer = childLoc.FindChild("SkillIconContainer");
             if (skillIconContainer)
-            {
-                skillIconContainer.GetOrAddComponent<SkillIconMover>().UpdateReferences(hud, targetBody);
-            }
+                skillIconContainer.GetOrAddComponent<SkillIconMover>();
 
             var upperLeftCluster = childLoc.FindChild("UpperLeftCluster");
             if (upperLeftCluster)
-            {
-                upperLeftCluster.GetOrAddComponent<MoneyDisplayMover>().UpdateReferences(hud, targetBody);
-            }
+                upperLeftCluster.GetOrAddComponent<MoneyDisplayMover>();
 
             var crosshair = childLoc.FindChild("CrosshairExtras");
             if (crosshair)
-            {
-                crosshair.FindOrInstantiate<LuminousDisplay>("LuminousGauge").UpdateReferences(hud, targetBody);
-            }
+                crosshair.FindOrInstantiate<LuminousDisplay>("LuminousGauge");
 
             var bottomLeftCluster = childLoc.FindChild("BottomLeftCluster");
             if (bottomLeftCluster)
             {
-                var healthBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
-                healthBar.SetCharacterIcon();
-                healthBar.hpBarMover.UpdateReferences(hud, targetBody);
-                healthBar.bandDisplayController.UpdateReferences(hud, targetBody);
+                var hpBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
+                hud.healthBar = hpBar;
+                hud.levelText = hpBar.GetComponentInChildren<LevelText>();
+                hud.expBar = hpBar.GetComponentInChildren<ExpBar>();
 
-                FuckinLee(bottomLeftCluster, targetBody);
+                FuckinLee(bottomLeftCluster, hud.targetBodyObject);
             }
         }
 
-        private static void FuckinLee(Transform hud, CharacterBody targetBody)
+        private static void FuckinLee(Transform hud, GameObject targetBody)
         {
             var chatbox = hud.Find("ChatBoxPos1");
             var chatbox2 = hud.Find("ChatBoxPos2");
