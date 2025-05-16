@@ -1,13 +1,11 @@
-using System;
 using RoR2;
-using RoR2.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace HunkHud.Components.UI
 {
-    public class LuminousDisplay : MonoBehaviour
+    public class LuminousDisplay : CustomHudElement
     {
         public Color activeColor = Color.white;
         public Color inactiveColor = new Color(0f, 0f, 0f, 0.25f);
@@ -16,48 +14,20 @@ namespace HunkHud.Components.UI
         public GameObject baseHolder;
         public Image[] pips;
 
-        [NonSerialized]
-        public HUD targetHud;
-
-        [NonSerialized]
-        public CharacterBody targetBody;
-
-        private bool hasLuminousShot
+        private int GetBuffCount()
         {
-            get
-            {
-                if (!this.targetBody || !this.targetBody.inventory)
-                    return false;
-
-                return this.targetBody.HasBuff(DLC2Content.Buffs.IncreasePrimaryDamageBuff) || this.targetBody.inventory.GetItemCount(DLC2Content.Items.IncreasePrimaryDamage) > 0;
-            }
-        }
-
-        private void OnEnable()
-        {
-            InstanceTracker.Add(this);
-        }
-
-        private void OnDisable()
-        {
-            InstanceTracker.Remove(this);
-        }
-
-        public void UpdateReferences(HUD hud, CharacterBody body)
-        {
-            this.targetHud = hud;
-            this.targetBody = body;
+            return this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff);
         }
 
         private void FixedUpdate()
         {
-            if (!this.hasLuminousShot)
+            var buffCount = this.targetBody ? this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff) : 0;
+            if (buffCount == 0)
             {
                 this.baseHolder.SetActive(false);
                 return;
             }
 
-            int buffCount = this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff);
             for (var i = 0; i < this.pips.Length; i++)
             {
                 this.pips[i].color = buffCount > i ? this.activeColor : this.inactiveColor;

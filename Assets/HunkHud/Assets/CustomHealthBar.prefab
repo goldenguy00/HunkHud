@@ -1889,6 +1889,7 @@ RectTransform:
   - {fileID: 5214429564763499767}
   - {fileID: 5044932099520300076}
   - {fileID: 224721570450796835}
+  - {fileID: 134495949008896259}
   m_Father: {fileID: 224058332178961623}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -0, z: -0}
@@ -1919,7 +1920,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   baseSubBarMat: {fileID: 2100000, guid: ab4b29de88429194d9bf539e8b264d54, type: 2}
   style: {fileID: 11400000, guid: 7d747656b2032be48b80ac34a53cf400, type: 2}
-  barContainer: {fileID: 224654703882980599}
+  barContainer: {fileID: 134495949008896259}
   eliteBackdropRectTransform: {fileID: 0}
   criticallyHurtImage: {fileID: 0}
   deadImage: {fileID: 0}
@@ -1936,18 +1937,18 @@ MonoBehaviour:
   healthBarGradient:
     serializedVersion: 2
     key0: {r: 1, g: 0, b: 0, a: 1}
-    key1: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+    key1: {r: 0.7169812, g: 0.6611683, b: 0, a: 1}
     key2: {r: 0.3647059, g: 0.67058825, b: 0.4509804, a: 0}
     key3: {r: 0.3647059, g: 0.67058825, b: 0.4509804, a: 0}
-    key4: {r: 0, g: 0, b: 0, a: 0}
+    key4: {r: 0.3647059, g: 0.67058825, b: 0.4509804, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
     key6: {r: 0, g: 0, b: 0, a: 0}
     key7: {r: 0, g: 0, b: 0, a: 0}
     ctime0: 0
-    ctime1: 32768
+    ctime1: 26214
     ctime2: 52428
     ctime3: 65535
-    ctime4: 0
+    ctime4: 65535
     ctime5: 0
     ctime6: 0
     ctime7: 0
@@ -2233,7 +2234,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.78431374}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3058,6 +3059,42 @@ MonoBehaviour:
   m_FillOrigin: 3
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &7502083776236154672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 134495949008896259}
+  m_Layer: 5
+  m_Name: LMFAO
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &134495949008896259
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7502083776236154672}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 224654703882980599}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &8304496875308232057
 GameObject:
   m_ObjectHideFlags: 0

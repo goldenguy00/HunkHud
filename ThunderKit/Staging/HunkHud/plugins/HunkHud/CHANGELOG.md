@@ -2,10 +2,12 @@
 
 `0.2.0`
 
-- Ally cards get sorted better
+- Config options moved to RiskUI config file (temporarily under the HunkHud tab)
 - Lunar ruin display
 - Frozen display
+- Low HP threshhold
 - More HP bar accuracy fixes
+- Ally cards get sorted better
 
 `0.1.8`
 

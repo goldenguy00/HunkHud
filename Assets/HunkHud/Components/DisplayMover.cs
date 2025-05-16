@@ -35,12 +35,6 @@ namespace HunkHud.Components
             _configEntry = ConfigHelper.Bind("HunkHud", this.GetType().Name, true, "Enable or disable moving this hud element");
         }
 
-        public void UpdateReferences()
-        {
-            this.activeTimer = 8f;
-            this.delayTimer = this.activeTimer - this.refreshTimer;
-        }
-
         public virtual void SetActive()
         {
             this.activeTimer = Mathf.Max(this.activeTimer, this.refreshTimer);

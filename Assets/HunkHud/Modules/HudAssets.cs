@@ -55,7 +55,7 @@ namespace HunkHud.Modules
         internal static void Init()
         {
             On.RoR2.UI.CrosshairController.Awake += CrosshairController_Awake;
-            HUD.onHudTargetChangedGlobal += HudAssets.UpdateHud;
+            HUD.onHudTargetChangedGlobal += HudAssets.OnHudTargetChangedGlobal;
 
             new Hook(
                 typeof(RiskUIPlugin).GetMethod(nameof(RiskUIPlugin.onLoad), ~BindingFlags.Default),
@@ -63,11 +63,19 @@ namespace HunkHud.Modules
             );
         }
 
-        private static void UpdateHud(HUD hud)
+        private static void OnHudTargetChangedGlobal(HUD hud)
         {
-            foreach (var mover in InstanceTracker.GetInstancesList<CustomHudElement>())
+            SetupHud(hud);
+
+            foreach (var hudElement in InstanceTracker.GetInstancesList<CustomHudElement>())
             {
-                mover.hud = hud;
+                hudElement.hud = hud;
+
+                if (hudElement is DisplayMover mover)
+                {
+                    mover.activeTimer = 8f;
+                    mover.delayTimer = mover.activeTimer - mover.refreshTimer;
+                }
             }
         }
 
@@ -94,7 +102,7 @@ namespace HunkHud.Modules
 
             var childLoc = hud.GetComponent<ChildLocator>();
             var newChildLoc = childLoc.transformPairs.ToList();
-            
+
             newChildLoc.AddRange(new ChildLocator.NameTransformPair[]
             {
                 new ChildLocator.NameTransformPair
@@ -159,6 +167,8 @@ namespace HunkHud.Modules
 
             childLoc.transformPairs = newChildLoc.ToArray();
 
+            RiskUIPlugin._allyCard.AddComponent<CanvasGroup>();
+            RiskUIPlugin._allyCard.AddComponent<AllyHealthBarMover>();
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/CurrentHealthText").gameObject.SetActive(false);
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash").gameObject.SetActive(false);
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText").gameObject.SetActive(false);
@@ -168,30 +178,6 @@ namespace HunkHud.Modules
             SetActiveSafe(hud.healthBar, false);
             SetActiveSafe(hud.expBar, false);
             SetActiveSafe(hud.levelText, false);
-
-            /*
-            if (PluginConfig.vignetteStrength.Value > 0f && !hud.mainContainer.transform.Find("Vignette"))
-            {
-                var component = Object.Instantiate(mainAssetBundle.LoadAsset<GameObject>("Vignette"), hud.mainContainer.transform).GetComponent<RectTransform>();
-                component.gameObject.name = "Vignette";
-                component.sizeDelta = Vector2.one;
-                component.localPosition = Vector3.zero;
-            }*/
-
-            if (hud.gameModeUiInstance)
-                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>();
-
-            var allyCards = childLoc.FindChild("AllyCardContainer");
-            if (allyCards)
-                allyCards.GetOrAddComponent<AllyHealthBarMover>();
-
-            var notification = childLoc.FindChildComponent<NotificationUIController>("NotificationArea");
-            if (notification)
-                notification.genericNotificationPrefab = mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
-
-            var topCenterCluster = childLoc.FindChild("TopCenterCluster");
-            if (topCenterCluster)
-                topCenterCluster.FindOrInstantiate("ObjectiveGauge");
 
             var inventoryContainer = childLoc.FindChild("InventoryContainer");
             if (inventoryContainer)
@@ -204,6 +190,31 @@ namespace HunkHud.Modules
             var upperLeftCluster = childLoc.FindChild("UpperLeftCluster");
             if (upperLeftCluster)
                 upperLeftCluster.GetOrAddComponent<MoneyDisplayMover>();
+        }
+
+        private static void SetupHud(HUD hud)
+        {
+            /*
+            if (PluginConfig.vignetteStrength.Value > 0f && !hud.mainContainer.transform.Find("Vignette"))
+            {
+                var component = Object.Instantiate(mainAssetBundle.LoadAsset<GameObject>("Vignette"), hud.mainContainer.transform).GetComponent<RectTransform>();
+                component.gameObject.name = "Vignette";
+                component.sizeDelta = Vector2.one;
+                component.localPosition = Vector3.zero;
+            }*/
+
+            var childLoc = hud.GetComponent<ChildLocator>();
+
+            if (hud.gameModeUiInstance)
+                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>();
+
+            var notification = childLoc.FindChildComponent<NotificationUIController>("NotificationArea");
+            if (notification)
+                notification.genericNotificationPrefab = mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
+
+            var topCenterCluster = childLoc.FindChild("TopCenterCluster");
+            if (topCenterCluster)
+                topCenterCluster.FindOrInstantiate("ObjectiveGauge");
 
             var crosshair = childLoc.FindChild("CrosshairExtras");
             if (crosshair)
@@ -213,6 +224,9 @@ namespace HunkHud.Modules
             if (bottomLeftCluster)
             {
                 var hpBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
+                hpBar.source = hud.targetBodyObject ? hud.targetBodyObject.GetComponent<HealthComponent>() : null;
+                hpBar.SetCharacterIcon();
+
                 hud.healthBar = hpBar;
                 hud.levelText = hpBar.GetComponentInChildren<LevelText>();
                 hud.expBar = hpBar.GetComponentInChildren<ExpBar>();
