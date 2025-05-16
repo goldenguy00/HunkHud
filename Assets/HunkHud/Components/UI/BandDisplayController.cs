@@ -1,39 +1,60 @@
 using RoR2;
 using UnityEngine;
 using HunkHud.Modules;
+using RoR2.UI;
+using System;
 
 namespace HunkHud.Components.UI
 {
     public class BandDisplayController : MonoBehaviour
     {
-        public static BandDisplayController instance;
-        private Inventory targetInventory;
-        private void Awake()
+        public HealthBarMover healthBar;
+
+        [NonSerialized]
+        public HUD targetHud;
+
+        [NonSerialized]
+        public CharacterBody targetBody;
+
+        [NonSerialized]
+        public CharacterMaster targetMaster;
+
+        private void OnEnable()
         {
-            instance = this;
+            InstanceTracker.Add(this);
         }
-        private void OnDestroy()
+
+        private void OnDisable()
         {
-            if (this.targetInventory)
-                this.targetInventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+            InstanceTracker.Remove(this);
+
+            if (this.targetMaster && this.targetMaster.inventory)
+                this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
         }
 
-        public void UpdateReferences(Inventory inventory)
+        public void UpdateReferences(HUD hud, CharacterBody body)
         {
-            if (this.targetInventory)
-                this.targetInventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+            var inventory = hud?.targetMaster ? hud.targetMaster.inventory : null;
 
-            this.targetInventory = inventory;
-
-            if (this.targetInventory)
+            if (this.targetMaster != inventory)
             {
-                this.targetInventory.onInventoryChanged += this.Inventory_OnInventoryChanged;
-                this.Inventory_OnInventoryChanged();
+                if (this.targetMaster && this.targetMaster.inventory)
+                    this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+
+                if (inventory)
+                    inventory.onInventoryChanged += this.Inventory_OnInventoryChanged;
             }
+
+            this.targetHud = hud;
+            this.targetMaster = hud?.targetMaster;
+            this.targetBody = body;
+
+            this.Inventory_OnInventoryChanged();
         }
 
         private void Inventory_OnInventoryChanged()
         {
+            var inventory = this.targetMaster ? this.targetMaster.inventory : null;
             AddOrRemovePrefab("BandDisplay", "FireRing", "IceRing");
             AddOrRemovePrefab("BandDisplayVoid", "ElementalRingVoid");
             AddOrRemovePrefab("BandDisplayHealing", "ITEM_HEALING_BAND", "ITEM_BARRIER_BAND");
@@ -43,12 +64,12 @@ namespace HunkHud.Components.UI
             void AddOrRemovePrefab(string prefabName, params string[] itemName)
             {
                 bool hasItem = false;
-                if (this.targetInventory)
+                if (inventory)
                 {
                     for (int i = 0; i < itemName.Length; i++)
                     {
                         var itemIndex = ItemCatalog.FindItemIndex(itemName[i]);
-                        if (this.targetInventory.GetItemCount(itemIndex) > 0)
+                        if (inventory.GetItemCount(itemIndex) > 0)
                         {
                             hasItem = true;
                             break;
@@ -57,11 +78,11 @@ namespace HunkHud.Components.UI
                 }
 
                 var childTransform = this.transform.Find(prefabName);
-                bool hasChild = childTransform != null;
+                bool hasDisplay = childTransform != null;
 
-                if (hasItem != hasChild)
+                if (hasItem != hasDisplay)
                 {
-                    if (hasChild)
+                    if (hasDisplay)
                     {
                         GameObject.Destroy(childTransform.gameObject);
                     }
@@ -69,6 +90,7 @@ namespace HunkHud.Components.UI
                     {
                         var child = GameObject.Instantiate(HudAssets.mainAssetBundle.LoadAsset<GameObject>(prefabName), this.transform);
                         child.name = prefabName;
+                        child.GetComponent<BandDisplay>().UpdateReferences(this.targetBody, this.healthBar);
                     }
                 }
             }

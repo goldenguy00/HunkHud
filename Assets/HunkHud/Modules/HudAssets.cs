@@ -3,6 +3,12 @@ using RoR2.UI;
 using HunkHud.Components.UI;
 using HunkHud.Components;
 using MaterialHud;
+using System.Collections.Generic;
+using RoR2;
+using System.Linq;
+using MonoMod.RuntimeDetour;
+using System.Reflection;
+using System;
 
 namespace HunkHud.Modules
 {
@@ -49,29 +55,78 @@ namespace HunkHud.Modules
         internal static void Init()
         {
             On.RoR2.UI.CrosshairController.Awake += CrosshairController_Awake;
-            HUD.onHudTargetChangedGlobal += HudAssets.HandleHud;
+            HUD.onHudTargetChangedGlobal += HudAssets.OnHudTargetChangedGlobal;
 
-            SetRiskUISettings(RiskUIPlugin._newHud.GetComponent<HUD>());
+            new Hook(
+                typeof(RiskUIPlugin).GetMethod(nameof(RiskUIPlugin.onLoad), ~BindingFlags.Default),
+                typeof(HudAssets).GetMethod(nameof(HudAssets.onLoad), ~BindingFlags.Default)
+            );
+        }
+
+        private static void OnHudTargetChangedGlobal(HUD hud)
+        {
+            SetupHud(hud);
+
+            foreach (var hudElement in InstanceTracker.GetInstancesList<CustomHudElement>())
+            {
+                hudElement.hud = hud;
+
+                if (hudElement is DisplayMover mover)
+                {
+                    mover.activeTimer = 8f;
+                    mover.delayTimer = mover.activeTimer - mover.refreshTimer;
+                }
+            }
         }
 
         private static void CrosshairController_Awake(On.RoR2.UI.CrosshairController.orig_Awake orig, CrosshairController self)
         {
             orig(self);
 
-            if (self && !self.name.Contains("SprintCrosshair"))
+            if (self && !self.GetComponent<DynamicCrosshair>())
             {
-                self.GetOrAddComponent<DynamicCrosshair>();
+                self.gameObject.AddComponent<DynamicCrosshair>();
             }
+        }
+
+        private static void onLoad(Action<RiskUIPlugin> orig, RiskUIPlugin self)
+        {
+            orig(self);
+
+            SetRiskUISettings(RiskUIPlugin._newHud.GetComponent<HUD>());
         }
 
         private static void SetRiskUISettings(HUD hud)
         {
-            var childLoc = hud.GetComponent<ChildLocator>();
             var springCanvas = hud.mainUIPanel.transform.Find("SpringCanvas");
-            RiskUIPlugin._allyCard.AddComponent<AllyHealthBarMover>();
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/CurrentHealthText").gameObject.SetActive(false);
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash").gameObject.SetActive(false);
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText").gameObject.SetActive(false);
+
+            var childLoc = hud.GetComponent<ChildLocator>();
+            var newChildLoc = childLoc.transformPairs.ToList();
+
+            newChildLoc.AddRange(new ChildLocator.NameTransformPair[]
+            {
+                new ChildLocator.NameTransformPair
+                {
+                    name = "NotificationArea",
+                    transform = hud.mainContainer.transform.Find("NotificationArea")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "UpperLeftCluster",
+                    transform = springCanvas.Find("UpperLeftCluster")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "SkillIconContainer",
+                    transform = springCanvas.Find("BottomRightCluster/Scaler")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "AllyCardContainer",
+                    transform = springCanvas.Find("LeftCluster/AllyCardContainer")
+                }
+            });
+
             foreach (var configObject in hud.GetComponentsInChildren<BepinConfigParentManager>())
             {
                 switch (configObject.gameObject.name)
@@ -89,45 +144,34 @@ namespace HunkHud.Modules
                         var rect = configObject.GetComponent<RectTransform>();
                         rect.pivot = new Vector2(0.5f, 1f);
                         rect.anchoredPosition3D = Vector3.zero;
+
+                        newChildLoc.Add(new ChildLocator.NameTransformPair
+                        {
+                            name = "BuffDisplayRoot",
+                            transform = configObject.transform
+                        });
                         break;
 
                     case "InventoryContainer":
                         configObject.choices[0] = configObject.choices[1];
                         configObject.transform.SetParent(configObject.choices[1], false);
 
-                        HG.ArrayUtils.ArrayAppend(ref childLoc.transformPairs,
-                            new ChildLocator.NameTransformPair
-                            {
-                                name = "InventoryContainer",
-                                transform = configObject.transform
-                            });
-                        break;
-
-                    case "ChatBoxRoot":
-                        //configObject.choices[0] = configObject.choices[1];
-                        //configObject.transform.SetParent(configObject.choices[1], false);
+                        newChildLoc.Add(new ChildLocator.NameTransformPair
+                        {
+                            name = "InventoryContainer",
+                            transform = configObject.transform
+                        });
                         break;
                 }
             }
 
-            HG.ArrayUtils.ArrayAppend(ref childLoc.transformPairs,
-                new ChildLocator.NameTransformPair
-                {
-                    name = "NotificationArea",
-                    transform = hud.mainContainer.transform.Find("NotificationArea")
-                });
-            HG.ArrayUtils.ArrayAppend(ref childLoc.transformPairs,
-                new ChildLocator.NameTransformPair
-                {
-                    name = "UpperLeftCluster",
-                    transform = springCanvas.Find("UpperLeftCluster")
-                });
-            HG.ArrayUtils.ArrayAppend(ref childLoc.transformPairs,
-                new ChildLocator.NameTransformPair
-                {
-                    name = "SkillIconContainer",
-                    transform = springCanvas.Find("BottomRightCluster/Scaler")
-                });
+            childLoc.transformPairs = newChildLoc.ToArray();
+
+            RiskUIPlugin._allyCard.AddComponent<CanvasGroup>();
+            RiskUIPlugin._allyCard.AddComponent<AllyHealthBarMover>();
+            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/CurrentHealthText").gameObject.SetActive(false);
+            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash").gameObject.SetActive(false);
+            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText").gameObject.SetActive(false);
 
             SetActiveSafe(childLoc.FindChild("BottomLeftCluster").Find("BarRoots/HealthText"), false);
             SetActiveSafe(childLoc.FindChild("BottomLeftCluster").Find("BarRoots/Seperator"), false);
@@ -135,10 +179,20 @@ namespace HunkHud.Modules
             SetActiveSafe(hud.expBar, false);
             SetActiveSafe(hud.levelText, false);
 
-            HandleHud(hud);
+            var inventoryContainer = childLoc.FindChild("InventoryContainer");
+            if (inventoryContainer)
+                inventoryContainer.GetOrAddComponent<ItemDisplayMover>();
+
+            var skillIconContainer = childLoc.FindChild("SkillIconContainer");
+            if (skillIconContainer)
+                skillIconContainer.GetOrAddComponent<SkillIconMover>();
+
+            var upperLeftCluster = childLoc.FindChild("UpperLeftCluster");
+            if (upperLeftCluster)
+                upperLeftCluster.GetOrAddComponent<MoneyDisplayMover>();
         }
 
-        private static void HandleHud(HUD hud)
+        private static void SetupHud(HUD hud)
         {
             /*
             if (PluginConfig.vignetteStrength.Value > 0f && !hud.mainContainer.transform.Find("Vignette"))
@@ -149,74 +203,55 @@ namespace HunkHud.Modules
                 component.localPosition = Vector3.zero;
             }*/
 
-            var targetBody = hud.targetMaster ? hud.targetMaster.GetBody() : null;
             var childLoc = hud.GetComponent<ChildLocator>();
+
+            if (hud.gameModeUiInstance)
+                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>();
 
             var notification = childLoc.FindChildComponent<NotificationUIController>("NotificationArea");
             if (notification)
-            {
                 notification.genericNotificationPrefab = mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
-            }
-
-            if (hud.gameModeUiInstance)
-            {
-                hud.gameModeUiInstance.GetOrAddComponent<ObjectiveDisplayMover>().UpdateReferences(hud, targetBody);
-            }
-
-            var inventoryContainer = childLoc.FindChild("InventoryContainer");
-            if (inventoryContainer)
-            {
-                inventoryContainer.GetOrAddComponent<ItemDisplayMover>().UpdateReferences(hud, targetBody);
-            }
-
-            var skillIconContainer = childLoc.FindChild("SkillIconContainer");
-            if (skillIconContainer)
-            {
-                skillIconContainer.GetOrAddComponent<SkillIconMover>().UpdateReferences(hud, targetBody);
-            }
-
-            var upperLeftCluster = childLoc.FindChild("UpperLeftCluster");
-            if (upperLeftCluster)
-            {
-                upperLeftCluster.GetOrAddComponent<MoneyDisplayMover>().UpdateReferences(hud, targetBody);
-            }
 
             var topCenterCluster = childLoc.FindChild("TopCenterCluster");
             if (topCenterCluster)
-            {
                 topCenterCluster.FindOrInstantiate("ObjectiveGauge");
-            }
 
             var crosshair = childLoc.FindChild("CrosshairExtras");
             if (crosshair)
-            {
-                crosshair.FindOrInstantiate<LuminousDisplay>("LuminousGauge").targetBody = targetBody;
-            }
+                crosshair.FindOrInstantiate<LuminousDisplay>("LuminousGauge");
 
             var bottomLeftCluster = childLoc.FindChild("BottomLeftCluster");
             if (bottomLeftCluster)
             {
-                var healthBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
-                healthBar.SetCharacterIcon(targetBody);
-                healthBar.hpBarMover.UpdateReferences(hud, targetBody);
-                healthBar.bandDisplayController.UpdateReferences(hud.targetMaster?.inventory);
+                var hpBar = bottomLeftCluster.FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
+                hpBar.source = hud.targetBodyObject ? hud.targetBodyObject.GetComponent<HealthComponent>() : null;
+                hpBar.SetCharacterIcon();
 
-                var chatbox = bottomLeftCluster.Find("ChatBoxPos1");
-                var chatbox2 = bottomLeftCluster.Find("ChatBoxPos2");
+                hud.healthBar = hpBar;
+                hud.levelText = hpBar.GetComponentInChildren<LevelText>();
+                hud.expBar = hpBar.GetComponentInChildren<ExpBar>();
 
-                if (chatbox && chatbox2)
+                FuckinLee(bottomLeftCluster, hud.targetBodyObject);
+            }
+        }
+
+        private static void FuckinLee(Transform hud, GameObject targetBody)
+        {
+            var chatbox = hud.Find("ChatBoxPos1");
+            var chatbox2 = hud.Find("ChatBoxPos2");
+
+            if (chatbox && chatbox2)
+            {
+                var box = chatbox.Find("ChatBoxRoot");
+                if (!box)
+                    chatbox2.Find("ChatBoxRoot");
+
+                var configManager = box ? box.GetComponent<BepinConfigParentManager>() : null;
+
+                if (configManager)
                 {
-                    var box = chatbox.Find("ChatBoxRoot");
-                    if (!box)
-                        chatbox2.Find("ChatBoxRoot");
-
-                    var configManager = box ? box.GetComponent<BepinConfigParentManager>() : null;
-
-                    if (configManager)
-                    {
-                        configManager.choices[0] = targetBody && targetBody.name == "LeeHyperrealBody(Clone)" ? chatbox2 : chatbox;
-                        configManager.OnEnable();
-                    }
+                    configManager.choices[0] = targetBody && targetBody.name == "LeeHyperrealBody(Clone)" ? chatbox2 : chatbox;
+                    configManager.OnEnable();
                 }
             }
         }

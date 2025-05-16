@@ -6,7 +6,7 @@ Sprite:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: texBlankFillTile
+  m_Name: texFillTile
   m_Rect:
     serializedVersion: 2
     x: 155.07613
@@ -19,8 +19,8 @@ Sprite:
   m_Pivot: {x: 0.4798346, y: 0.49115464}
   m_Extrude: 1
   m_IsPolygon: 0
-  m_AtlasName:
-  m_PackingTag:
+  m_AtlasName: 
+  m_PackingTag: 
   m_RenderDataKey:
     cf46c12f078460a44b2fa7fd1200561f: 21300000
   m_AtlasTags: []
@@ -122,13 +122,13 @@ Sprite:
     alphaTexture: {fileID: 0}
     secondaryTextures: []
     m_SubMeshes: []
-    m_IndexBuffer:
+    m_IndexBuffer: 
     m_VertexData:
       serializedVersion: 3
       m_VertexCount: 0
       m_Channels: []
       m_DataSize: 0
-      _typelessdata:
+      _typelessdata: 
     m_Bindpose: []
     textureRect:
       serializedVersion: 2
@@ -332,4 +332,4 @@ Sprite:
     - {x: 0.28, y: -3.27}
     - {x: 0.41, y: -3.26}
   m_Bones: []
-  m_SpriteID:
+  m_SpriteID: 

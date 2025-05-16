@@ -3,6 +3,9 @@
 `0.2.0`
 
 - Ally cards get sorted better
+- Lunar ruin display
+- Frozen display
+- More HP bar accuracy fixes
 
 `0.1.8`
 

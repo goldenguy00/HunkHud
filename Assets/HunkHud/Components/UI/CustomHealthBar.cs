@@ -1,15 +1,18 @@
 using System;
 using RoR2;
+using RoR2.UI;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
 namespace HunkHud.Components.UI
 {
-    public class CustomHealthBar : MonoBehaviour
+    public class CustomHealthBar : HealthBar
     {
+        public static CustomHealthBar instance;
+
         [Serializable]
-        public struct BarInfo
+        public struct CustomBarInfo
         {
             [NonSerialized]
             public bool enabled;
@@ -20,8 +23,6 @@ namespace HunkHud.Components.UI
             [SerializeField]
             public Image image;
         }    
-
-        public static CustomHealthBar instance;
 
         public Gradient healthBarGradient = new Gradient
         {
@@ -67,18 +68,21 @@ namespace HunkHud.Components.UI
         public Color pinkShieldColor = new Color(0.80784315f, 0.29803923f, 0.7607843f);
         public Color infusionColor = new Color(1f, 18f / 85f, 0.23137255f);
 
-        public BarInfo healingFill;
-        public BarInfo healthFill;
-        public BarInfo shieldFill;
-        public BarInfo barrierFill;
-        public BarInfo barrierFillShiny;
-        public BarInfo damageFill;
-        public BarInfo curseFill;
-        public BarInfo ospFill;
-        public BarInfo delayedDamageMask;
-        public BarInfo echoFill;
-        public BarInfo collapseFill;
-        public BarInfo expFill;
+        public CustomBarInfo healthFill;
+        public CustomBarInfo lowHealthFill;
+
+        public CustomBarInfo shieldFill;
+        public CustomBarInfo damageFill;
+
+        public CustomBarInfo healingFill;
+        public CustomBarInfo curseFill;
+        public CustomBarInfo barrierFill;
+        public CustomBarInfo barrierFillShiny;
+        public CustomBarInfo delayedDamageMask;
+        public CustomBarInfo ospFill;
+        public CustomBarInfo echoFill;
+        public CustomBarInfo collapseFill;
+        public CustomBarInfo cullFill;
 
         public TextMeshProUGUI gunText;
         public RawImage gunIcon;
@@ -88,166 +92,182 @@ namespace HunkHud.Components.UI
         public RawImage characterIconBorder;
         public GameObject characterIconHolder;
 
+        public GameObject lunarRuinDisplay;
         public GameObject immunityDisplay;
-        public GameObject immunityText;
-
-        public TextMeshProUGUI levelDisplay;
-        public TextMeshProUGUI levelText;
 
         public GameObject biomassBar;
 
-        public BandDisplayController bandDisplayController;
         public HealthBarMover hpBarMover;
 
-        [NonSerialized]
-        public HealthComponent source;
+        public CharacterBody targetBody => this.source?.body;
 
-        private CharacterBody _targetBody;
-
-        public CharacterBody targetBody
-        {
-            get => this._targetBody;
-            set
-            {
-                if (this._targetBody != value)
-                {
-                    this._targetBody = value;
-                    this.source = this._targetBody ? this._targetBody.GetComponent<HealthComponent>() : null;
-                    this.updateTimer = 0f;
-                }
-            }
-        }
-
-        private float updateTimer;
-        private float updateDelay = 0.1f;
         private float fillSpeed = 1.5f;
         private float minFill = 0.341f;
         private float maxFill = 0.752f;
-        private float expFillMin = 0f;
-        private float expFillMax = 0.76f;
         private float inverseFillMin = 0.248f;
         private float inverseFillMax = 0.659f;
 
-        private void Awake()
+        private new void Awake()
         {
-            SingletonHelper.Assign(ref CustomHealthBar.instance, this);
+            base.Awake();
 
-            this.immunityDisplay.SetActive(false);
-            this.immunityText.SetActive(false);
-            this.biomassBar.SetActive(false);
-            this.gunIconHolder.SetActive(false);
-            this.characterIconHolder.SetActive(true);
-            this.updateTimer = 0f;
+            this.SetDefaults();
+
+            this.biomassBar?.SetActive(false);
+            this.gunIconHolder?.SetActive(false);
+            this.characterIconHolder?.SetActive(true);
         }
 
-        private void OnDestroy()
+        private new void OnEnable()
         {
-            SingletonHelper.Unassign(ref CustomHealthBar.instance, this);
+            base.OnEnable();
+
+            SingletonHelper.Assign(ref instance, this);
         }
 
-        private void Update()
+        private new void OnDisable()
         {
-            this.updateTimer -= Time.deltaTime;
-            if (this.updateTimer <= 0f)
+            base.OnDisable();
+
+            SingletonHelper.Unassign(ref instance, this);
+        }
+
+        private new void Update()
+        {
+            updateTimer -= Time.deltaTime;
+            if (_source != oldSource)
             {
-                this.updateTimer = this.updateDelay;
-
-                if (this.targetBody && this.source && this.source.alive)
-                    SetBarFill();
-                else
-                    SetDefaults();
+                updateTimer = 0f;
+                oldSource = _source;
             }
 
-            ApplyBars();
+            if (updateTimer <= 0f)
+            {
+                updateTimer = updateDelay;
+
+                UpdateCustomBarInfos();
+                ApplyCustomBars();
+            }
+
+            ApplyCustomBarsUpdate();
         }
 
-        private void ApplyBars()
+        private void ApplyCustomBarsUpdate()
         {
             Apply(ref healthFill);
-            Apply(ref healingFill);
             Apply(ref shieldFill);
+            Apply(ref damageFill);
+        }
+
+        private void ApplyCustomBars()
+        {
+            Apply(ref healingFill);
             Apply(ref barrierFill);
             Apply(ref barrierFillShiny);
+            Apply(ref lowHealthFill);
+            Apply(ref curseFill);
+            Apply(ref cullFill);
+
+            Apply(ref delayedDamageMask);
             Apply(ref collapseFill);
             Apply(ref echoFill);
-            Apply(ref damageFill);
-            Apply(ref delayedDamageMask);
-            Apply(ref expFill);
-            Apply(ref curseFill);
             Apply(ref ospFill);
+        }
 
-            void Apply(ref BarInfo info)
-            {
-                if (info.currentFill != info.targetFill)
-                    info.currentFill = Mathf.Lerp(info.currentFill, info.targetFill, this.fillSpeed * Time.deltaTime);
+        private void Apply(ref CustomBarInfo info)
+        {
+            if (info.currentFill != info.targetFill)
+                info.currentFill = Mathf.Lerp(info.currentFill, info.targetFill, this.fillSpeed * Time.deltaTime);
 
-                info.image.enabled = info.enabled;
-                info.image.fillAmount = info.currentFill;
-            }
+            info.image.enabled = info.enabled;
+            info.image.fillAmount = info.currentFill;
         }
 
         private void SetDefaults()
         {
-                this.healingFill.enabled = false;
-                this.healthFill.enabled = false;
-                this.shieldFill.enabled = false;
-                this.barrierFill.enabled = false;
-                this.barrierFillShiny.enabled = false;
+            this.healthFill.enabled = false;
+            this.healingFill.enabled = false;
+            this.lowHealthFill.enabled = false;
 
-                this.collapseFill.enabled = false;
-                this.echoFill.enabled = false;
-                this.ospFill.enabled = false;
-                this.delayedDamageMask.enabled = false;
+            this.shieldFill.enabled = false;
+            this.barrierFill.enabled = false;
+            this.barrierFillShiny.enabled = false;
 
-                this.damageFill.targetFill = 0f;
+            this.damageFill.targetFill = 0f;
+            this.damageFill.enabled = 0f < this.damageFill.currentFill;
+
+            this.delayedDamageMask.enabled = false;
+            this.collapseFill.enabled = false;
+            this.echoFill.enabled = false;
+            this.ospFill.enabled = false;
+            this.cullFill.enabled = false;
+
+            this.immunityDisplay?.SetActive(false);
         }
 
-        private void SetBarFill()
+        private void UpdateCustomBarInfos()
         {
-            HealthComponent.HealthBarValues barInfos = this.source.GetHealthBarValues();
-            var missingHealthFraction = 1f - (barInfos.healthFraction + barInfos.shieldFraction);
-            var collapseFraction = this.GetCollapseFraction();
+            if (!this.source || !this.targetBody)
+            {
+                SetDefaults();
+                return;
+            }
 
-            this.shieldFill.image.color = barInfos.hasVoidShields ? this.pinkShieldColor : this.shieldColor;
-            this.healthFill.image.color = barInfos.hasInfusion ? this.infusionColor : this.healthBarGradient.Evaluate(barInfos.healthFraction);
+            if (isInventoryCheckDirty)
+            {
+                CheckInventory();
+            }
+
+            HealthComponent.HealthBarValues barValues = this.source.GetHealthBarValues();
+            var missingHealthFraction = 1f - (barValues.healthFraction + barValues.shieldFraction);
+            var reducedHealthFraction = 1f - barValues.curseFraction;
+
+            var collapseFraction = Mathf.Clamp01(this.GetCollapseFraction() * reducedHealthFraction);
+
+            this.shieldFill.image.color = barValues.hasVoidShields ? this.pinkShieldColor : this.shieldColor;
+            this.healthFill.image.color = barValues.hasInfusion ? this.infusionColor : this.healthBarGradient.Evaluate(barValues.healthFraction);
+
+            this.immunityDisplay?.SetActive(this.targetBody.HasBuff(RoR2Content.Buffs.HiddenInvincibility));
+            this.lunarRuinDisplay?.SetActive(barValues.hasLunarRuin);
 
             // lerped bars
 
-            var healthFillAmount = Util.Remap(barInfos.healthFraction, 0f, 1f, this.minFill, this.maxFill);
-            this.healthFill.enabled = barInfos.healthFraction > 0f;
+            var healthFillAmount = Util.Remap(barValues.healthFraction, 0f, 1f, this.minFill, this.maxFill);
+            this.healthFill.enabled = barValues.healthFraction > 0f;
             this.healthFill.targetFill = healthFillAmount;
             this.healthFill.currentFill = Mathf.Min(healthFillAmount, this.healthFill.currentFill);
 
-            var combinedHealthFillAmount = Util.Remap(barInfos.healthFraction + barInfos.shieldFraction, 0f, 1f, this.minFill, this.maxFill);
+            var combinedHealthFillAmount = Util.Remap(barValues.healthFraction + barValues.shieldFraction, 0f, 1f, this.minFill, this.maxFill);
             this.damageFill.targetFill = combinedHealthFillAmount;
             this.damageFill.currentFill = Mathf.Max(combinedHealthFillAmount, this.damageFill.currentFill);
             this.damageFill.enabled = this.damageFill.currentFill > combinedHealthFillAmount;
 
-            this.shieldFill.enabled = barInfos.shieldFraction > 0f;
+            this.shieldFill.enabled = barValues.shieldFraction > 0f;
             this.shieldFill.targetFill = combinedHealthFillAmount;
             this.shieldFill.currentFill = Mathf.Min(combinedHealthFillAmount, this.shieldFill.currentFill);
 
             // remap
+            Remap(ref this.healingFill, barValues.healthFraction, enabled: this.healthFill.currentFill < this.healthFill.targetFill, inverse: false);
+            Remap(ref this.lowHealthFill, HealthComponent.lowHealthFraction * reducedHealthFraction, enabled: (this.hasLowHealthItem || this.hasLowHealthBuff) && !this.source.isHealthLow, inverse: false);
 
-            Remap(ref this.healingFill, barInfos.healthFraction, enabled: this.healthFill.currentFill < this.healthFill.targetFill, inverse: false);
-            Remap(ref this.barrierFill, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
-            Remap(ref this.barrierFillShiny, barInfos.barrierFraction, enabled: barInfos.barrierFraction > 0f, inverse: false);
-            Remap(ref this.curseFill, barInfos.curseFraction, enabled: barInfos.curseFraction > 0f, inverse: true);
+            Remap(ref this.barrierFill, barValues.barrierFraction, enabled: barValues.barrierFraction > 0f, inverse: false);
+            Remap(ref this.barrierFillShiny, barValues.barrierFraction, enabled: barValues.barrierFraction > 0f, inverse: false);
 
+            Remap(ref this.cullFill, barValues.cullFraction, enabled: barValues.cullFraction > 0f, inverse: false);
+            Remap(ref this.curseFill, barValues.curseFraction, enabled: barValues.curseFraction > 0f, inverse: true);
+            Remap(ref this.ospFill, barValues.ospFraction + missingHealthFraction, enabled: barValues.ospFraction > 0f, inverse: true);
+
+            Remap(ref this.delayedDamageMask, barValues.healthFraction + barValues.shieldFraction, enabled: true, inverse: false);
             Remap(ref this.collapseFill, collapseFraction + missingHealthFraction, enabled: collapseFraction > 0f && this.targetBody.HasBuff(DLC1Content.Buffs.Fracture), inverse: true);
-            Remap(ref this.echoFill, barInfos.echoFraction + missingHealthFraction, enabled: barInfos.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff), inverse: true);
-            Remap(ref this.ospFill, barInfos.ospFraction + missingHealthFraction, enabled: barInfos.ospFraction > 0f, inverse: true);
-            Remap(ref this.delayedDamageMask, barInfos.healthFraction + barInfos.shieldFraction, enabled: true, inverse: false);
+            Remap(ref this.echoFill, barValues.echoFraction + missingHealthFraction, enabled: barValues.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff), inverse: true);
 
-            if (this.echoFill.enabled | this.collapseFill.enabled)
+            if (this.echoFill.enabled || this.collapseFill.enabled)
             {
-                this.hpBarMover.SetActive();
+                this.hpBarMover?.SetActive();
                 this.damageFill.currentFill = this.damageFill.targetFill;
             }
 
-            UpdateExpBar();
-
-            void Remap(ref BarInfo bar, float value, bool enabled, bool inverse)
+            void Remap(ref CustomBarInfo bar, float value, bool enabled, bool inverse)
             {
                 bar.enabled = enabled;
                 value = Mathf.Clamp01(value);
@@ -255,23 +275,6 @@ namespace HunkHud.Components.UI
                 bar.targetFill = fillAmount;
                 bar.currentFill = fillAmount;
             }
-        }
-        
-        private void UpdateExpBar()
-        {
-            var teamIndex = this.targetBody.teamComponent.teamIndex;
-            var currentExp = TeamManager.instance.GetTeamCurrentLevelExperience(teamIndex);
-            var expFillAmount = Util.Remap(TeamManager.instance.GetTeamExperience(teamIndex) - currentExp, 0f, TeamManager.instance.GetTeamNextLevelExperience(teamIndex) - currentExp, this.expFillMin, this.expFillMax);
-
-            this.expFill.enabled = true;
-            this.expFill.targetFill = expFillAmount;
-            this.expFill.currentFill = Mathf.Min(expFillAmount, this.expFill.currentFill);
-
-            this.levelText.text = Mathf.RoundToInt(this.targetBody.level).ToString();
-
-            var isImmune = this.targetBody.HasBuff(RoR2Content.Buffs.HiddenInvincibility);
-            this.immunityDisplay.SetActive(isImmune);
-            this.immunityText.SetActive(isImmune);
         }
 
         private float GetCollapseFraction()
@@ -289,14 +292,11 @@ namespace HunkHud.Components.UI
 
                 float stackDamage = dotStack.damage;
                 ModifyIncomingDamage(ref stackDamage, dotStack.attackerObject, dotStack.attackerTeam, dotStack.damageType);
-
-                if (stackDamage > 0f)
-                    collapseDamage += stackDamage;
+                
+                collapseDamage += Mathf.Max(0f, stackDamage);
             }
 
-            float num = 1f - (1f / this.targetBody.cursePenalty);
-            float num2 = (1f - num) / this.source.fullCombinedHealth;
-            return Mathf.Clamp01(collapseDamage * num2);
+            return collapseDamage / this.source.fullCombinedHealth;
         }
 
         private void ModifyIncomingDamage(ref float damage, GameObject attacker, TeamIndex attackerTeam, DamageTypeCombo damageType)
@@ -415,20 +415,18 @@ namespace HunkHud.Components.UI
             }
         }
 
-
-        public void SetCharacterIcon(CharacterBody body, Color? colorOverride = null)
+        public void SetCharacterIcon(Color? colorOverride = null)
         {
-            this.targetBody = body;
             this.gunIconHolder.SetActive(false);
             this.characterIconHolder.SetActive(true);
 
-            if (body)
+            if (this.targetBody)
             {
-                var bodyColor = colorOverride ?? body.bodyColor;
+                var bodyColor = colorOverride ?? this.targetBody.bodyColor;
                 bodyColor.a = 0.25f;
 
                 this.characterIconBorder.color = bodyColor;
-                this.characterIcon.texture = body.portraitIcon;
+                this.characterIcon.texture = this.targetBody.portraitIcon;
             }
         }
 
@@ -439,7 +437,5 @@ namespace HunkHud.Components.UI
 
             this.gunIcon.texture = icon;
         }
-
     }
-
 }

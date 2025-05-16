@@ -59,21 +59,24 @@ namespace HunkHud.Components.UI
         public string buffName;
         public string cooldownName;
 
-        private CharacterBody targetBody => this.displayParent.targetBody;
-        private HealthBarMover displayParent;
+        [NonSerialized]
+        public CharacterBody targetBody;
+
+        [NonSerialized]
+        public HealthBarMover healthBar;
 
         private float timer;
         private int maxBuffs;
-
-        private void Start()
+        
+        public void UpdateReferences(CharacterBody body, HealthBarMover hpBar)
         {
-            if (this.transform.parent)
-                this.displayParent = this.transform.parent.GetComponentInParent<HealthBarMover>();
+            this.targetBody = body;
+            this.healthBar = hpBar;
         }
 
         private void FixedUpdate()
         {
-            if (this.displayParent && this.targetBody)
+            if (this.targetBody && this.healthBar)
             {
                 if (this.targetBody.HasBuff(BuffCatalog.FindBuffIndex(this.buffName)))
                 {
@@ -84,8 +87,7 @@ namespace HunkHud.Components.UI
                 var newBuffs = this.targetBody.GetBuffCount(BuffCatalog.FindBuffIndex(this.cooldownName));
                 if (newBuffs > 0)
                 {
-                    this.maxBuffs = Math.Max(this.maxBuffs, newBuffs);
-                    SetRingCooldown();
+                    SetRingCooldown(newBuffs);
                     return;
                 }
             }
@@ -103,17 +105,18 @@ namespace HunkHud.Components.UI
             this.maxBuffs = 0;
         }
 
-        private void SetRingCooldown()
+        private void SetRingCooldown(int newBuffs)
         {
             this.fullObj.SetActive(false);
             this.fillObj.SetActive(true);
+            this.healthBar.SetActive();
 
+            this.maxBuffs = Math.Max(this.maxBuffs, newBuffs);
             var timeLeft = Util.Remap(this.timer, 0f, this.maxBuffs, 0f, 1f);
             this.fillImage.color = this.fillGradient.Evaluate(timeLeft);
             this.fillImage.fillAmount = timeLeft;
 
             this.timer += Time.fixedDeltaTime;
-            this.displayParent.activeTimer = Mathf.Max(this.displayParent.activeTimer, this.displayParent.refreshTimer);
         }
     }
 }
