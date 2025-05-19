@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 namespace HunkHud.Components.UI
 {
-    public class BandDisplay : MonoBehaviour
+    public class BandDisplay : CustomHudElement
     {
         public Gradient fillGradient = new Gradient
         {
@@ -60,19 +60,10 @@ namespace HunkHud.Components.UI
         public string cooldownName;
 
         [NonSerialized]
-        public CharacterBody targetBody;
-
-        [NonSerialized]
         public HealthBarMover healthBar;
 
         private float timer;
         private int maxBuffs;
-        
-        public void UpdateReferences(CharacterBody body, HealthBarMover hpBar)
-        {
-            this.targetBody = body;
-            this.healthBar = hpBar;
-        }
 
         private void FixedUpdate()
         {

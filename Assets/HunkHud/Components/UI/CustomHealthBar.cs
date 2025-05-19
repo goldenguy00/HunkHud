@@ -423,7 +423,7 @@ namespace HunkHud.Components.UI
             if (this.targetBody)
             {
                 var bodyColor = colorOverride ?? this.targetBody.bodyColor;
-                bodyColor.a = 0.25f;
+                //bodyColor.a = 0.25f;
 
                 this.characterIconBorder.color = bodyColor;
                 this.characterIcon.texture = this.targetBody.portraitIcon;

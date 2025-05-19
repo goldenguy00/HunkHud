@@ -1,13 +1,16 @@
 # Changelog
 
+`0.2.1`
+
+- Fixed band display not appearing
+- Try to release an update without regression challenge: IMPOSSIBLE
+
 `0.2.0`
 
-- Config options moved to RiskUI config file (temporarily under the HunkHud tab)
+- Ally cards get sorted better
 - Lunar ruin display
 - Frozen display
-- Low HP threshhold
 - More HP bar accuracy fixes
-- Ally cards get sorted better
 
 `0.1.8`
 

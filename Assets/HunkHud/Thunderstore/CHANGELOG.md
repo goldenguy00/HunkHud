@@ -1,5 +1,10 @@
 # Changelog
 
+`0.2.1`
+
+- Fixed band display not appearing
+- Try to release an update without regression challenge: IMPOSSIBLE
+
 `0.2.0`
 
 - Ally cards get sorted better

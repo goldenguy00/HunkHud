@@ -1,59 +1,46 @@
 using RoR2;
 using UnityEngine;
 using HunkHud.Modules;
-using RoR2.UI;
-using System;
 
 namespace HunkHud.Components.UI
 {
-    public class BandDisplayController : MonoBehaviour
+    public class BandDisplayController : CustomHudElement
     {
         public HealthBarMover healthBar;
 
-        [NonSerialized]
-        public HUD targetHud;
+        private CharacterMaster _prevMaster;
 
-        [NonSerialized]
-        public CharacterBody targetBody;
+        private bool isInventoryCheckDirty;
 
-        [NonSerialized]
-        public CharacterMaster targetMaster;
-
-        private void OnEnable()
+        private void FixedUpdate()
         {
-            InstanceTracker.Add(this);
-        }
-
-        private void OnDisable()
-        {
-            InstanceTracker.Remove(this);
-
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
-        }
-
-        public void UpdateReferences(HUD hud, CharacterBody body)
-        {
-            var inventory = hud?.targetMaster ? hud.targetMaster.inventory : null;
-
-            if (this.targetMaster != inventory)
+            if (this._prevMaster != this.targetMaster)
             {
-                if (this.targetMaster && this.targetMaster.inventory)
-                    this.targetMaster.inventory.onInventoryChanged -= this.Inventory_OnInventoryChanged;
+                if (this._prevMaster?.inventory)
+                    this._prevMaster.inventory.onInventoryChanged -= OnInventoryChanged;
 
-                if (inventory)
-                    inventory.onInventoryChanged += this.Inventory_OnInventoryChanged;
+                this._prevMaster = this.targetMaster;
+
+                if (this.targetMaster?.inventory)
+                    this.targetMaster.inventory.onInventoryChanged += OnInventoryChanged;
+
+                OnInventoryChanged();
             }
 
-            this.targetHud = hud;
-            this.targetMaster = hud?.targetMaster;
-            this.targetBody = body;
-
-            this.Inventory_OnInventoryChanged();
+            if (this.isInventoryCheckDirty)
+            {
+                CheckInventory();
+            }
         }
 
-        private void Inventory_OnInventoryChanged()
+        public void OnInventoryChanged()
         {
+            isInventoryCheckDirty = true;
+        }
+
+        private void CheckInventory()
+        {
+            this.isInventoryCheckDirty = false;
             var inventory = this.targetMaster ? this.targetMaster.inventory : null;
             AddOrRemovePrefab("BandDisplay", "FireRing", "IceRing");
             AddOrRemovePrefab("BandDisplayVoid", "ElementalRingVoid");
@@ -90,7 +77,9 @@ namespace HunkHud.Components.UI
                     {
                         var child = GameObject.Instantiate(HudAssets.mainAssetBundle.LoadAsset<GameObject>(prefabName), this.transform);
                         child.name = prefabName;
-                        child.GetComponent<BandDisplay>().UpdateReferences(this.targetBody, this.healthBar);
+                        var display = child.GetComponent<BandDisplay>();
+                        display.healthBar = this.healthBar;
+                        display.hud = this.hud;
                     }
                 }
             }

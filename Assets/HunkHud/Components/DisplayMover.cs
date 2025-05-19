@@ -7,15 +7,13 @@ namespace HunkHud.Components
 {
     public abstract class DisplayMover : CustomHudElement, IConfigHandler
     {
-        [NonSerialized]
-        public ZioConfigEntry<bool> _configEntry;
-
         public float delayTimer = 0.1f;
         public float refreshTimer = 2.8f;
         public float activeTimer = 8f;
         public float smoothSpeed = 4f;
 
         public Vector3 offset;
+        public CanvasGroup canvas;
 
         [NonSerialized]
         public Vector3 activePosition;
@@ -23,26 +21,54 @@ namespace HunkHud.Components
         [NonSerialized]
         public Vector3 desiredPosition;
 
+        [NonSerialized]
+        public ZioConfigEntry<bool> _configEntry;
+
         public abstract void CheckForActivity();
 
-        private void ConfigUpdated(ZioConfigEntryBase zioConfigEntryBase, object o, bool arg3)
+        protected virtual void ConfigUpdated(ZioConfigEntryBase zioConfigEntryBase, object o, bool arg3)
         {
             this.enabled = this._configEntry?.Value ?? true;
         }
 
-        public void Startup()
+        public virtual void Startup()
         {
             _configEntry = ConfigHelper.Bind("HunkHud", this.GetType().Name, true, "Enable or disable moving this hud element");
         }
 
-        public virtual void SetActive()
+        public void SetActive() => SetActive(this.refreshTimer);
+
+        public void SetActive(float time)
         {
-            this.activeTimer = Mathf.Max(this.activeTimer, this.refreshTimer);
+            this.activeTimer = Mathf.Max(this.activeTimer, time);
             this.delayTimer = Mathf.Max(this.delayTimer, 0.1f);
+        }
+
+        public void ForceActive(float time)
+        {
+            this.SetActive(time);
+
+            var currentPos = this.transform.localPosition;
+            var desiredPosition = this.activePosition;
+
+            if (this.offset.x == 0f)
+                desiredPosition.x = currentPos.x;
+
+            if (this.offset.y == 0f)
+                desiredPosition.y = currentPos.y;
+
+            if (this.offset.z == 0f)
+                desiredPosition.z = currentPos.z;
+
+            this.transform.localPosition = desiredPosition;
+
+            if (this.canvas)
+                this.canvas.alpha = Mathf.Clamp01(this.activeTimer + 1f);
         }
 
         protected virtual void Awake()
         {
+            this.canvas = this.GetComponent<CanvasGroup>();
             Startup();
             _configEntry.SettingChanged += ConfigUpdated;
         }
@@ -80,6 +106,9 @@ namespace HunkHud.Components
                 desiredPosition.z = currentPos.z;
 
             this.transform.localPosition = Vector3.Lerp(currentPos, desiredPosition, this.smoothSpeed * Time.deltaTime);
+
+            if (this.canvas)
+                this.canvas.alpha = Mathf.Clamp01(this.activeTimer + 1f);
         }
 
         protected virtual void FixedUpdate()
@@ -87,8 +116,8 @@ namespace HunkHud.Components
             this.activeTimer -= Time.fixedDeltaTime;
             this.delayTimer -= Time.fixedDeltaTime;
 
-            if (this.targetHud && this.targetHud.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
-                this.SetActive();
+            if (this.targetHud?.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
+                this.ForceActive(0.5f);
 
             if (this.delayTimer <= 0f)
             {

@@ -944,7 +944,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 530, y: 315}
+  m_SizeDelta: {x: 300, y: 300}
   m_Pivot: {x: 0, y: 0}
 --- !u!222 &222105174294972216
 CanvasRenderer:
@@ -971,6 +971,7 @@ MonoBehaviour:
   activeTimer: 8
   smoothSpeed: 6
   offset: {x: 0, y: -500, z: 0}
+  canvas: {fileID: 0}
 --- !u!114 &5410034034168082792
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -983,11 +984,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_IgnoreLayout: 1
+  m_IgnoreLayout: 0
   m_MinWidth: -1
   m_MinHeight: -1
-  m_PreferredWidth: 530
-  m_PreferredHeight: -1
+  m_PreferredWidth: 275
+  m_PreferredHeight: 300
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1

@@ -3,7 +3,6 @@ using RoR2.UI;
 using HunkHud.Components.UI;
 using HunkHud.Components;
 using MaterialHud;
-using System.Collections.Generic;
 using RoR2;
 using System.Linq;
 using MonoMod.RuntimeDetour;
@@ -231,7 +230,7 @@ namespace HunkHud.Modules
                 hud.levelText = hpBar.GetComponentInChildren<LevelText>();
                 hud.expBar = hpBar.GetComponentInChildren<ExpBar>();
 
-                FuckinLee(bottomLeftCluster, hud.targetBodyObject);
+                //FuckinLee(bottomLeftCluster, hud.targetBodyObject);
             }
         }
 

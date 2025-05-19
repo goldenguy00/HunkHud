@@ -6,7 +6,6 @@ namespace HunkHud.Components
     public class AllyHealthBarMover : DisplayMover
     {
         private AllyCardController cardController;
-        private CanvasGroup canvas;
 
         protected override void Awake()
         {
@@ -14,15 +13,6 @@ namespace HunkHud.Components
 
             this.offset = new Vector3(-500f, 0f, 0f);
             this.cardController = this.GetComponent<AllyCardController>();
-            this.canvas = this.GetComponent<CanvasGroup>();
-        }
-
-        protected override void Update()
-        {
-            base.Update();
-
-            if (this.canvas)
-                this.canvas.alpha = Mathf.Clamp01(this.activeTimer + 1f);
         }
 
         public override void CheckForActivity()
