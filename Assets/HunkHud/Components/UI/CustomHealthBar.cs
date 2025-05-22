@@ -139,6 +139,8 @@ namespace HunkHud.Components.UI
             {
                 updateTimer = 0f;
                 oldSource = _source;
+
+                SetCharacterIcon();
             }
 
             if (updateTimer <= 0f)
@@ -417,11 +419,11 @@ namespace HunkHud.Components.UI
 
         public void SetCharacterIcon(Color? colorOverride = null)
         {
-            this.gunIconHolder.SetActive(false);
-            this.characterIconHolder.SetActive(true);
-
             if (this.targetBody)
             {
+                this.gunIconHolder.SetActive(false);
+                this.characterIconHolder.SetActive(true);
+
                 var bodyColor = colorOverride ?? this.targetBody.bodyColor;
                 //bodyColor.a = 0.25f;
 

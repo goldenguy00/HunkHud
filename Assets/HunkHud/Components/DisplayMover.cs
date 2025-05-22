@@ -38,32 +38,10 @@ namespace HunkHud.Components
 
         public void SetActive() => SetActive(this.refreshTimer);
 
-        public void SetActive(float time)
+        public virtual void SetActive(float time)
         {
             this.activeTimer = Mathf.Max(this.activeTimer, time);
             this.delayTimer = Mathf.Max(this.delayTimer, 0.1f);
-        }
-
-        public void ForceActive(float time)
-        {
-            this.SetActive(time);
-
-            var currentPos = this.transform.localPosition;
-            var desiredPosition = this.activePosition;
-
-            if (this.offset.x == 0f)
-                desiredPosition.x = currentPos.x;
-
-            if (this.offset.y == 0f)
-                desiredPosition.y = currentPos.y;
-
-            if (this.offset.z == 0f)
-                desiredPosition.z = currentPos.z;
-
-            this.transform.localPosition = desiredPosition;
-
-            if (this.canvas)
-                this.canvas.alpha = Mathf.Clamp01(this.activeTimer + 1f);
         }
 
         protected virtual void Awake()
@@ -117,7 +95,7 @@ namespace HunkHud.Components
             this.delayTimer -= Time.fixedDeltaTime;
 
             if (this.targetHud?.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
-                this.ForceActive(0.5f);
+                this.SetActive(this.refreshTimer * 0.5f);
 
             if (this.delayTimer <= 0f)
             {

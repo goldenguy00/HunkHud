@@ -14,11 +14,6 @@ namespace HunkHud.Components.UI
         public GameObject baseHolder;
         public Image[] pips;
 
-        private int GetBuffCount()
-        {
-            return this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff);
-        }
-
         private void FixedUpdate()
         {
             var buffCount = this.targetBody ? this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff) : 0;
