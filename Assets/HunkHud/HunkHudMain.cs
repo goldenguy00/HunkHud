@@ -1,8 +1,6 @@
 using BepInEx;
-using BepInEx.Bootstrap;
 using System.Collections;
 using System.IO;
-using System.Runtime.CompilerServices;
 using System.Security;
 using System.Security.Permissions;
 using UnityEngine;
@@ -24,22 +22,9 @@ namespace HunkHud
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "0.2.3";
+        public const string VERSION = "0.2.5";
 
         public static HunkHudMain instance { get; private set; }
-
-        public static bool ROOInstalled => Chainloader.PluginInfos.ContainsKey("com.rune580.riskofoptions");
-        public static bool HunkInstalled => Chainloader.PluginInfos.ContainsKey("com.rob.Hunk");
-
-        public static bool RiskUIEnabled
-        {
-            get
-            {
-                if (Chainloader.PluginInfos.ContainsKey("bubbet.riskui"))
-                    return GetRiskUIEnabled();
-                return false;
-            }
-        }
 
         public void Awake()
         {
@@ -49,6 +34,8 @@ namespace HunkHud
             PluginConfig.Init(this.Config);
 
             StartCoroutine(nameof(Load));
+
+            Compat.Init();
         }
 
         private IEnumerator Load()
@@ -57,12 +44,6 @@ namespace HunkHud
             yield return request;
             HudAssets.mainAssetBundle = request.assetBundle;
             HudAssets.Init();
-        }
-
-        [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
-        private static bool GetRiskUIEnabled()
-        {
-            return MaterialHud.RiskUIPlugin.Enabled.Value;
         }
     }
 }

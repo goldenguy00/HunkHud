@@ -1,40 +1,50 @@
+using RoR2;
+using RoR2.UI;
+
 namespace HunkHud.Components
 {
     public class MoneyDisplayMover : DisplayMover
     {
+        public CostTypeIndex costType;
         private int cachedMoney;
-        private int cachedCoin;
+        private MoneyText moneyText;
+        private InteractionDriver interactionDriver;
 
         protected override void Awake()
         {
             base.Awake();
-            this.offset = new UnityEngine.Vector3(-450f, 100f, 0f);
+
+            this.moneyText = this.GetComponent<MoneyText>();
+            this.activeInterval = 2.25f;
         }
 
         public override void CheckForActivity()
         {
-            if (!this.targetHud)
-                return;
-
-            if (this.targetHud.lunarCoinText)
+            if (this.moneyText)
             {
-                var coin = this.targetHud.lunarCoinText.displayAmount;
-                if (coin != this.cachedCoin)
+                var newMoney = this.moneyText.displayAmount;
+                if (newMoney != this.cachedMoney)
                 {
-                    this.cachedCoin = coin;
+                    this.cachedMoney = newMoney;
                     this.SetActive();
                 }
             }
 
-            if (this.targetHud.moneyText)
+            if (this.interactionDriver)
             {
-                var coin = this.targetHud.moneyText.displayAmount;
-                if (coin != this.cachedMoney)
+                var interactable = this.interactionDriver.currentInteractable ? this.interactionDriver.currentInteractable.GetComponent<PurchaseInteraction>() : null;
+                if (interactable && interactable.costType == this.costType)
                 {
-                    this.cachedMoney = coin;
-                    this.SetActive();
+                    SetActive();
                 }
             }
+        }
+
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
+        {
+            base.HUD_onHudTargetChangedGlobal(newHud);
+
+            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

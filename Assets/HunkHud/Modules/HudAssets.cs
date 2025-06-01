@@ -50,12 +50,18 @@ namespace HunkHud.Modules
 [Error  :   HunkHud] BossHealthBar
 [Error  :   HunkHud] RightUtilityArea
          */
-        private static Hook onLoadHook, notifHook;
+        private static Hook onLoadHook, notifHook, crosshairHook, hudAwakeHook;
         internal static void Init()
         {
-            HUD.onHudTargetChangedGlobal += HudAssets.OnHudTargetChangedGlobal;
+            crosshairHook = new Hook(
+                typeof(CrosshairController).GetMethod(nameof(CrosshairController.Awake), ~BindingFlags.Default),
+                typeof(HudAssets).GetMethod(nameof(HudAssets.CrosshairController_Awake), ~BindingFlags.Default)
+            );
 
-            On.RoR2.UI.CrosshairController.Awake += CrosshairController_Awake;
+            hudAwakeHook = new Hook(
+                typeof(HUD).GetMethod(nameof(HUD.Awake), ~BindingFlags.Default),
+                typeof(HudAssets).GetMethod(nameof(HudAssets.HUD_Awake), ~BindingFlags.Default)
+            );
 
             onLoadHook = new Hook(
                 typeof(RiskUIPlugin).GetMethod(nameof(RiskUIPlugin.onLoad), ~BindingFlags.Default),
@@ -68,25 +74,27 @@ namespace HunkHud.Modules
             );
         }
 
-        private static void OnHudTargetChangedGlobal(HUD hud)
-        {
-            foreach (var hudElement in InstanceTracker.GetInstancesList<CustomHudElement>())
-            {
-                hudElement.hud = hud;
-
-                if (hudElement is DisplayMover mover)
-                {
-                    mover.SetActive(8f);
-                    mover.delayTimer = mover.activeTimer - mover.refreshTimer;
-                }
-            }
-        }
-
-        private static void CrosshairController_Awake(On.RoR2.UI.CrosshairController.orig_Awake orig, CrosshairController self)
+        private static void CrosshairController_Awake(Action<CrosshairController> orig, CrosshairController self)
         {
             orig(self);
 
             self.GetOrAddComponent<DynamicCrosshair>();
+        }
+
+        private static void HUD_Awake(Action<HUD> orig, HUD self)
+        {
+            orig(self);
+
+            var childLoc = self.GetComponent<ChildLocator>();
+
+            childLoc.FindChild("TopCenterCluster").FindOrInstantiate("ObjectiveGauge");
+            childLoc.FindChild("CrosshairExtras").FindOrInstantiate("LuminousGauge");
+
+            var hpBar = childLoc.FindChild("BottomLeftCluster").FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
+
+            self.healthBar = hpBar;
+            self.levelText = hpBar.GetComponentInChildren<LevelText>();
+            self.expBar = hpBar.GetComponentInChildren<ExpBar>();
         }
 
         private static GameObject NotificationAreaLoader_get_genericNotificationPrefab(Func<GameObject> _) => mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
@@ -178,8 +186,8 @@ namespace HunkHud.Modules
             var hud = RiskUIPlugin._newHud.GetComponent<HUD>();
             var childLoc = RiskUIPlugin._newHud.GetComponent<ChildLocator>();
 
-            RiskUIPlugin._newClassicRunHud.GetOrAddComponent<ObjectiveDisplayMover>();
-            RiskUIPlugin._newSimulacrumHud.GetOrAddComponent<ObjectiveDisplayMover>();
+            RiskUIPlugin._newClassicRunHud.AddComponent<ObjectiveDisplayMover>();
+            RiskUIPlugin._newSimulacrumHud.AddComponent<ObjectiveDisplayMover>();
 
             RiskUIPlugin._allyCard.AddComponent<CanvasGroup>();
             RiskUIPlugin._allyCard.AddComponent<AllyHealthBarMover>();
@@ -187,22 +195,19 @@ namespace HunkHud.Modules
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash")?.SetInactiveSafe();
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText")?.SetInactiveSafe();
 
-            childLoc.FindChild("InventoryContainer").GetOrAddComponent<ItemDisplayMover>();
-            childLoc.FindChild("SkillIconContainer").GetOrAddComponent<SkillIconMover>();
-            childLoc.FindChild("UpperLeftCluster").GetOrAddComponent<MoneyDisplayMover>();
-            childLoc.FindChild("TopCenterCluster").FindOrInstantiate("ObjectiveGauge");
-            childLoc.FindChild("CrosshairExtras").FindOrInstantiate("LuminousGauge");
+            childLoc.FindChild("InventoryContainer").gameObject.AddComponent<ItemDisplayMover>();
+            childLoc.FindChild("SkillIconContainer").gameObject.AddComponent<SkillIconMover>();
+
+            childLoc.FindChild("UpperLeftCluster").GetChild(0).gameObject.AddComponent<MoneyDisplayMover>().costType = CostTypeIndex.Money;
+            childLoc.FindChild("UpperLeftCluster").GetChild(1).gameObject.AddComponent<MoneyDisplayMover>().costType = CostTypeIndex.VoidCoin;
+            childLoc.FindChild("UpperLeftCluster").GetChild(2).gameObject.AddComponent<MoneyDisplayMover>().costType = CostTypeIndex.LunarCoin;
+
             childLoc.FindChild("BottomLeftCluster").Find("BarRoots/HealthText")?.SetInactiveSafe();
             childLoc.FindChild("BottomLeftCluster").Find("BarRoots/Seperator")?.SetInactiveSafe();
 
             hud.healthBar?.SetInactiveSafe();
             hud.expBar?.SetInactiveSafe();
             hud.levelText?.SetInactiveSafe();
-
-            var hpBar = childLoc.FindChild("BottomLeftCluster").FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
-            hud.healthBar = hpBar;
-            hud.levelText = hpBar.GetComponentInChildren<LevelText>();
-            hud.expBar = hpBar.GetComponentInChildren<ExpBar>();
         }
 
         #region Extension Methods
@@ -233,9 +238,8 @@ namespace HunkHud.Modules
             var assetObject = transform.Find(assetName)?.gameObject;
             if (!assetObject)
             {
-                //assetObject = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>(assetName), transform);
-                //assetObject.name = assetName;
-                assetObject = mainAssetBundle.LoadAsset<GameObject>(assetName);
+                assetObject = GameObject.Instantiate(mainAssetBundle.LoadAsset<GameObject>(assetName), transform);
+                assetObject.name = assetName;
                 assetObject.transform.SetParent(transform);
             }
 

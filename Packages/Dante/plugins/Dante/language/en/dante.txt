@@ -1,0 +1,146 @@
+{
+	strings: {
+ 	 "ROB_DANTE_BODY_NAME": "<color=#B70027>Dante</color>",
+ 	 "ROB_DANTE_BODY_DESCRIPTION": "<color=#B70027>Dante</color> is a legendary devil hunter who fights with a pair of pistols and a sword.<color=#CCD3E0>\n\n< ! > Ebony & Ivory is a reliable, consistent source of damage.\n\n< ! > Each Devil Arm has a unique moveset, experiment with directional inputs to make the most of them.\n\n< ! > Use Trick to cancel actions and dodge incoming blows.\n\n< ! > Devil Trigger does stuff and things.",
+ 	 "ROB_DANTE_BODY_SUBTITLE": "Legendary Devil Hunter",
+ 	 "ROB_DANTE_BODY_LORE": "",
+ 	 "ROB_DANTE_BODY_OUTRO_FLAVOR": "..and so he left.",
+ 	 "ROB_DANTE_BODY_OUTRO_FAILURE": "..and so he vanished.",
+
+ 	 "ROB_DANTE_BODY_DEFAULT_SKIN_NAME": "<color=#B70027>Default</color>",
+ 	 "ROB_DANTE_BODY_MASTERY_SKIN_NAME": "<color=#B70027>Classic</color>",
+ 	 "ROB_DANTE_BODY_MINECRAFT_SKIN_NAME": "<color=#B70027>Minecraft</color>",
+
+     "ROB_DANTE_BODY_PASSIVE_NAME": "<color=#B70027>Devil Arms</color>",
+     "ROB_DANTE_BODY_PASSIVE_DESCRIPTION": "",
+     "ROB_DANTE_BODY_CONFIRM_NAME": "Confirm",
+ 	 "ROB_DANTE_BODY_CONFIRM_DESCRIPTION": "Proceed with the current skill.",
+ 	 "ROB_DANTE_BODY_CANCEL_NAME": "Cancel",
+ 	 "ROB_DANTE_BODY_CANCEL_DESCRIPTION": "Cancel the current skill.",
+
+ 	 "ROB_DANTE_BODY_PRIMARY_NAME": "<color=#B70027>Ebony & Ivory</color>",
+ 	 "ROB_DANTE_BODY_PRIMARY_DESCRIPTION": "Rapidly shoot for <style=cIsDamage>120% damage</style>. Stop firing for <style=cIsUtility>1 second</style> to prepare a <style=cIsDamage>charge shot</style> that deals <style=cIsDamage>350% damage</style>.",
+
+ 	 "ROB_DANTE_BODY_MELEE_NAME": "<color=#B70027>Lock & Load</color>",
+ 	 "ROB_DANTE_BODY_MELEE_DESCRIPTION": "Ready your <style=cIsUtility>held weapon</style>. <style=cIsDamage>Primary</style> becomes <style=cIsDamage>melee attacks</style>, and enemy attacks are <style=cIsUtility>deflected</style> while held.",
+
+	 "ROB_DANTE_BODY_UTILITY_NAME": "<color=#B70027>Trick</color>",
+	 "ROB_DANTE_BODY_UTILITY_DESCRIPTION": "<style=cIsUtility>Dash</style> in a direction, becoming briefly <style=cIsUtility>invulnerable</style>.",
+
+	 "ROB_DANTE_BODY_SPECIAL_DEVILTRIGGER_NAME": "<color=#A556FF>Devil Trigger</color>",
+	 "ROB_DANTE_BODY_SPECIAL_DEVILTRIGGER_DESCRIPTION": "<color=#B70027>Hellbent.</color> Activate <color=#A556FF>Devil Trigger</color>, draining your gauge to gain temporary <style=cIsUtility>armor</style>, <style=cIsHealing>regeneration</style> and <style=cIsDamage>damage</style>. <style=cIsUtility>Melee hits fill the gauge.</style>",
+
+	 "ROB_DANTE_BODY_SPECIAL_HOLYWATER_SCEPTER_NAME": "Hellfire",
+	 "ROB_DANTE_BODY_SPECIAL_HOLYWATER_SCEPTER_DESCRIPTION": "Throw a jar of <style=cIsUtility>wisp fragments</style>, exploding and unleashing <style=cIsUtility>pillars of flame</style> for <style=cIsDamage>800% damage</style>.\n<color=#d299ff>SCEPTER: Flames are larger, deal 1200% damage and leave a trail of fire on the ground.</color>",
+
+	 "ROB_DANTE_BODY_SPECIAL_CROSS_NAME": "Battle Cross",
+	 "ROB_DANTE_BODY_SPECIAL_CROSS_DESCRIPTION": "Throw a <style=cIsUtility>piercing cross</style> that hits multiple times for <style=cIsDamage>200% damage</style>.",
+
+	 "ROB_DANTE_BODY_SPECIAL_CROSS_SCEPTER_NAME": "Battle Cross MkII",
+	 "ROB_DANTE_BODY_SPECIAL_CROSS_SCEPTER_DESCRIPTION": "Throw a <style=cIsUtility>piercing cross</style> that hits multiple times for <style=cIsDamage>200% damage</style>.\n<color=#d299ff>SCEPTER: Cooldown halved and gain an extra stock.</color>",
+
+	 "ROB_DANTE_BODY_SPECIAL_PISTOL_NAME": "Silver Bullet",
+	 "ROB_DANTE_BODY_SPECIAL_PISTOL_DESCRIPTION": "Shoot a <style=cIsUtility>silver bullet</style> for <style=cIsDamage>800% damage</style>. <style=cIsUtility>Headshots</style> deal <style=cIsDamage>2x damage</style>. Kills <style=cIsUtility>reset all your cooldowns</style>.",
+
+	 "ROB_DANTE_BODY_SPECIAL_PISTOL_SCEPTER_NAME": "Golden Gun",
+	 "ROB_DANTE_BODY_SPECIAL_PISTOL_SCEPTER_DESCRIPTION": "Shoot a <style=cIsUtility>silver bullet</style> for <style=cIsDamage>800% damage</style>. <style=cIsUtility>Headshots</style> deal <style=cIsDamage>2x damage</style>. Kills <style=cIsUtility>reset all your cooldowns</style>.\n<color=#d299ff>SCEPTER: Deals 9000% damage.</color>",
+
+	 "ROB_DANTE_BODY_SPECIAL_HOLYCROSS_NAME": "Sacred Flame",
+	 "ROB_DANTE_BODY_SPECIAL_HOLYCROSS_DESCRIPTION": "Invoke the power of <color=#FF0033>Providence</color>, unleashing a <style=cIsUtility>massive flame</style> for <style=cIsDamage>300% damage per tick</style>. Ends with a <style=cIsDamage>4000% damage</style> supernova.",
+
+   
+
+	 "ROB_DANTE_BODY_UNLOCKABLE_UNLOCKABLE_NAME": "Divine Bloodlines",
+	 "ROB_DANTE_BODY_UNLOCKABLE_ACHIEVEMENT_NAME": "Divine Bloodlines",
+	 "ROB_DANTE_BODY_UNLOCKABLE_ACHIEVEMENT_DESC": "Discover a sacred relic on the moon.",
+	 
+	 "ROB_DANTE_BODY_MONSOON_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Mastery",
+	 "ROB_DANTE_BODY_MONSOON_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Mastery",
+	 "ROB_DANTE_BODY_MONSOON_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, beat the game or obliterate on Monsoon.",
+	 
+     "ROB_DANTE_BODY_TYPHOON_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Grand Mastery",
+     "ROB_DANTE_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Grand Mastery",
+     "ROB_DANTE_BODY_TYPHOON_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, beat the game or obliterate on Typhoon or Eclipse.\n<color=#8888>Counts any difficulty Typhoon or higher</color>",
+	 
+	 "ROB_DANTE_BODY_SOMA_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Aria of Sorrow",
+     "ROB_DANTE_BODY_SOMA_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Aria of Sorrow",
+     "ROB_DANTE_BODY_SOMA_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, enter A Moment, Whole.",
+     
+	 "ROB_DANTE_BODY_MORRIS_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Portrait of Ruin",
+     "ROB_DANTE_BODY_MORRIS_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Portrait of Ruin",
+     "ROB_DANTE_BODY_MORRIS_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, obtain a sacred relic.",
+	 
+	 "ROB_DANTE_BODY_JULIUS_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Dawn of Sorrow",
+	 "ROB_DANTE_BODY_JULIUS_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Dawn of Sorrow",
+	 "ROB_DANTE_BODY_JULIUS_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, wield all the sacred relics at once.",
+	 
+	 "ROB_DANTE_BODY_ISAAC_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Curse of Darkness",
+	 "ROB_DANTE_BODY_ISAAC_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Curse of Darkness",
+	 "ROB_DANTE_BODY_ISAAC_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, complete a Shrine of the Night.",
+	 
+	 "ROB_DANTE_BODY_CROSS_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Seeker",
+	 "ROB_DANTE_BODY_CROSS_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Seeker",
+	 "ROB_DANTE_BODY_CROSS_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, find the stolen weapon on the moon.",
+	 
+	 "ROB_DANTE_BODY_PISTOL_UNLOCKABLE_UNLOCKABLE_NAME": "Dante: Premonition",
+	 "ROB_DANTE_BODY_PISTOL_UNLOCKABLE_ACHIEVEMENT_NAME": "Dante: Premonition",
+	 "ROB_DANTE_BODY_PISTOL_UNLOCKABLE_ACHIEVEMENT_DESC": "As <color=#B70027>Dante</color>, find the secret weapon in the Void.",
+
+	 "ROB_DANTE_BODY_LOADOUT_SKILL_MISC": "Passive",
+	 
+	 "ROB_DANTE_DEVILSHRINE_NAME": "Shrine of the Night",
+	 "ROB_DANTE_DEVILSHRINE_DESC": "I am not paid enough to write these.",
+	 "ROB_DANTE_DEVILSHRINE_CONTEXT": "Pray to Shrine of the Night",
+	 
+	 "ROB_DANTE_TREASURECHEST_NAME": "Treasure Chest",
+	 "ROB_DANTE_TREASURECHEST_DESC": "HEEEEEEEEEELLLLLLLPPPPP MEEEEEEEEEE",
+	 "ROB_DANTE_TREASURECHEST_CONTEXT": "Use key and open",
+	 "ROB_DANTEKEYCOST": "Skeleton Key",
+	 
+	 "ROB_DANTE_KEYFRAGMENT_NAME": "Key Fragment",
+	 "ROB_DANTE_KEYFRAGMENT_DESC": "Fractured piece of a key. Collect 3 to form a whole key.",
+	 "ROB_DANTE_KEYFRAGMENT_PICKUP": "Fractured piece of a key. Collect 3 to form a whole key.",
+	 "ROB_DANTE_KEYFRAGMENT_LORE": "",
+	 
+	 "ROB_DANTE_KEY_NAME": "Skeleton Key",
+	 "ROB_DANTE_KEY_DESC": "Used to open a <color=#FFFF00>Treasure Chest</color>. These chests contain a <color=#FF0033>sacred relic</color> and spawn every <style=cIsUtility>fourth</style> stage in a <style=cIsDamage>fixed location</style>.",
+	 "ROB_DANTE_KEY_PICKUP": "Used to open a Treasure Chest. Glows when near a chest.",
+	 "ROB_DANTE_KEY_LORE": "",
+	 
+	 "ROB_DANTE_REBELLION_NAME": "Rebellion",
+	 "ROB_DANTE_REBELLION_DESC": "sowrd",
+	 "ROB_DANTE_REBELLION_PICKUP": "sord",
+	 "ROB_DANTE_REBELLION_LORE": "",
+	 
+	 "ROB_DANTE_TITAN_NAME": "Titan",
+	 "ROB_DANTE_TITAN_DESC": "the 1,000,000,000,000,000,000 year old pooooncher",
+	 "ROB_DANTE_TITAN_PICKUP": ".",
+	 "ROB_DANTE_TITAN_LORE": "",
+	 
+	 "ROB_DANTE_QUEEN_NAME": "Queen",
+	 "ROB_DANTE_QUEEN_DESC": "",
+	 "ROB_DANTE_QUEEN_PICKUP": "",
+	 "ROB_DANTE_QUEEN_LORE": "",
+	 
+	 "ROB_DANTE_MITHRIX_NAME": "Mithrix",
+	 "ROB_DANTE_MITHRIX_DESC": "The",
+	 "ROB_DANTE_MITHRIX_PICKUP": "",
+	 "ROB_DANTE_MITHRIX_LORE": "",
+	 
+	 "ROB_DANTE_BROTHERSOUL_NAME": "Soul of the King",
+	 "ROB_DANTE_BROTHERSOUL_DESC": "Every <style=cIsUtility>whip crack</style> spawns a <style=cIsDamage>lunar flame pillar</style>, every <style=cIsUtility>sword swing</style> spawns a <style=cIsDamage>lunar shard</style>, every <style=cIsUtility>whip slam</style> unleashes <style=cIsDamage>ground shockwaves</style> and every <style=cIsUtility>dash</style> generates <style=cIsHealing>20% barrier</style>.",
+	 "ROB_DANTE_BROTHERSOUL_PICKUP": "Wield the King of Nothing's power as your own.",
+	 "ROB_DANTE_BROTHERSOUL_LORE": "",
+	 
+	 "ROB_DANTE_ITEM_EFFECT_TITLE": "Bonus Effect",
+	 "ROB_DANTE_ITEM_EFFECT_BACKUPMAG": "Gain the ability to store extra Charge Shots.",
+	 "ROB_DANTE_ITEM_EFFECT_BANDOLIER": "Ammo packs restore gauge.",
+	 "ROB_DANTE_ITEM_EFFECT_ALIENHEAD": "Devil Trigger consumes less gauge.",
+	 "ROB_DANTE_ITEM_EFFECT_BRAINSTALKS": "Devil Trigger consumes no gauge while active.",
+	 "ROB_DANTE_ITEM_EFFECT_PURITY": "Increases gauge gained on hit.",
+	 "ROB_DANTE_ITEM_EFFECT_LYSATECELL": "Increases maximum gauge.",
+	 "ROB_DANTE_ITEM_EFFECT_LUMINOUSSHOT": "Charges up while your weapon is out. Resets when you put it away.",
+
+	 "KEYWORD_HELLBENT": "<style=cKeywordName>Hellbent</style><style=cSub><style=cIsUtility>Once per stage</style>, falling below <style=cIsHealth>25% health</style> fills your gauge and grants a free <color=#A556FF>Devil Trigger</color>."
+	 }
+}

@@ -1,8 +1,12 @@
+using RoR2;
+using RoR2.UI;
+
 namespace HunkHud.Components
 {
     public class HealthBarMover : DisplayMover
     {
         private uint prevLevel;
+        private InteractionDriver interactionDriver;
 
         public override void CheckForActivity()
         {
@@ -21,6 +25,22 @@ namespace HunkHud.Components
                 this.prevLevel = newLevel;
                 this.SetActive();
             }
+
+            if (this.interactionDriver)
+            {
+                var interactable = this.interactionDriver.currentInteractable ? this.interactionDriver.currentInteractable.GetComponent<PurchaseInteraction>() : null;
+                if (interactable && interactable.costType is CostTypeIndex.PercentHealth or CostTypeIndex.SoulCost)
+                {
+                    SetActive();
+                }
+            }
+        }
+
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
+        {
+            base.HUD_onHudTargetChangedGlobal(newHud);
+
+            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

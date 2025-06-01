@@ -113,7 +113,7 @@ namespace HunkHud.Modules
 
             var configEntry = config.Bind(section, name, defaultValue, description);
 
-            if (HunkHudMain.ROOInstalled)
+            if (Compat.ROOInstalled)
                 TryRegisterOption(configEntry, restartRequired);
 
             return configEntry;
@@ -131,7 +131,7 @@ namespace HunkHud.Modules
 
             var configEntry = config.Bind(section, name, defaultValue, new ConfigDescription(description, new AcceptableValueRange<float>(min, max)));
 
-            if (HunkHudMain.ROOInstalled)
+            if (Compat.ROOInstalled)
                 TryRegisterOptionSlider(configEntry, min, max, restartRequired);
 
             return configEntry;
@@ -149,7 +149,7 @@ namespace HunkHud.Modules
 
             var configEntry = config.Bind(section, name, defaultValue, new ConfigDescription(description, new AcceptableValueRange<int>(min, max)));
 
-            if (HunkHudMain.ROOInstalled)
+            if (Compat.ROOInstalled)
                 TryRegisterOptionSlider(configEntry, min, max, restartRequired);
 
             return configEntry;

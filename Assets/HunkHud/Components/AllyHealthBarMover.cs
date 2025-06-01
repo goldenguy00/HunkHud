@@ -12,15 +12,8 @@ namespace HunkHud.Components
             base.Awake();
 
             this.offset = new Vector3(-500f, 0f, 0f);
+
             this.cardController = this.GetComponent<AllyCardController>();
-        }
-
-        protected override void Update()
-        {
-            base.Update();
-
-            if (this.cardController && this.cardController.layoutElement)
-                this.cardController.layoutElement.ignoreLayout = this.activeTimer < -0.5f;
         }
 
         public override void CheckForActivity()

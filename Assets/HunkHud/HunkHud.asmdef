@@ -30,7 +30,8 @@
         "RiskOfOptions.dll",
         "ZioConfigFile.dll",
         "RiskUI.dll",
-        "MMHOOK_RoR2.dll"
+        "MMHOOK_RoR2.dll",
+        "DanteMod.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

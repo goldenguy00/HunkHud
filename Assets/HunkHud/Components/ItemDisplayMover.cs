@@ -1,11 +1,12 @@
 using RoR2;
+using RoR2.UI;
 using UnityEngine;
 
 namespace HunkHud.Components
 {
     public class ItemDisplayMover : DisplayMover
     {
-        private CharacterMaster _prevMaster;
+        private InteractionDriver interactionDriver;
 
         protected override void Awake()
         {
@@ -24,24 +25,27 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            if (this._prevMaster != this.targetMaster)
+            if (this.interactionDriver)
             {
-                if (this._prevMaster && this._prevMaster.inventory)
-                    this._prevMaster.inventory.onInventoryChanged -= this.SetActive;
-                
-                this._prevMaster = this.targetMaster;
-
-                if (this.targetMaster && this.targetMaster.inventory)
-                    this.targetMaster.inventory.onInventoryChanged += this.SetActive;
+                var interactable = this.interactionDriver.currentInteractable ? this.interactionDriver.currentInteractable.GetComponent<PurchaseInteraction>() : null;
+                if (interactable && CostTypeIndex.WhiteItem <= interactable.costType && interactable.costType <= CostTypeIndex.TreasureCacheVoidItem)
+                {
+                    SetActive();
+                }
             }
         }
 
-        protected override void OnDestroy()
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            base.OnDestroy();
+            if (this._prevBody)
+                this._prevBody.onInventoryChanged -= this.SetActive;
 
-            if (this.targetMaster && this.targetMaster.inventory)
-                this.targetMaster.inventory.onInventoryChanged -= this.SetActive;
+            base.HUD_onHudTargetChangedGlobal(newHud);
+
+            if (this.targetBody)
+                this.targetBody.onInventoryChanged += this.SetActive;
+
+            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

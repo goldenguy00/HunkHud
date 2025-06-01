@@ -1,6 +1,7 @@
 using RoR2;
 using UnityEngine;
 using HunkHud.Modules;
+using RoR2.UI;
 
 namespace HunkHud.Components.UI
 {
@@ -8,39 +9,19 @@ namespace HunkHud.Components.UI
     {
         public HealthBarMover healthBar;
 
-        private CharacterMaster _prevMaster;
-
-        private bool isInventoryCheckDirty;
-
-        private void FixedUpdate()
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            if (this._prevMaster != this.targetMaster)
-            {
-                if (this._prevMaster?.inventory)
-                    this._prevMaster.inventory.onInventoryChanged -= OnInventoryChanged;
+            if (this._prevBody)
+                this._prevBody.onInventoryChanged -= this.CheckInventory;
 
-                this._prevMaster = this.targetMaster;
+            base.HUD_onHudTargetChangedGlobal(newHud);
 
-                if (this.targetMaster?.inventory)
-                    this.targetMaster.inventory.onInventoryChanged += OnInventoryChanged;
-
-                OnInventoryChanged();
-            }
-
-            if (this.isInventoryCheckDirty)
-            {
-                CheckInventory();
-            }
-        }
-
-        public void OnInventoryChanged()
-        {
-            isInventoryCheckDirty = true;
+            if (this.targetBody)
+                this.targetBody.onInventoryChanged += this.CheckInventory;
         }
 
         private void CheckInventory()
         {
-            this.isInventoryCheckDirty = false;
             var inventory = this.targetMaster ? this.targetMaster.inventory : null;
             AddOrRemovePrefab("BandDisplay", "FireRing", "IceRing");
             AddOrRemovePrefab("BandDisplayVoid", "ElementalRingVoid");

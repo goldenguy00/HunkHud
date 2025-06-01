@@ -1,5 +1,21 @@
 # Changelog
 
+`0.2.5`
+
+- Dante compat
+- Hud elements now show when near interactables
+- Skill visibility is a bit more accurate, only applies for skills with cooldowns
+
+`0.2.3`
+
+- Moved hp bar more to the corner
+- Ally hp bars get shown when pressing tab
+- Barrier decay no longer makes elements visible
+- Added fade out
+- Added low hp display
+- Money text movement paths updated
+- Lots of very secret backend work shhhhhh
+
 `0.2.1`
 
 - Fixed band display not appearing

@@ -2,17 +2,19 @@ using UnityEngine;
 using System;
 using MaterialHud;
 using ZioConfigFile;
+using RoR2.UI;
 
 namespace HunkHud.Components
 {
     public abstract class DisplayMover : CustomHudElement, IConfigHandler
     {
         public float delayTimer = 0.1f;
-        public float refreshTimer = 2.8f;
+        public float activeInterval = 3f;
         public float activeTimer = 8f;
         public float smoothSpeed = 4f;
 
         public Vector3 offset;
+
         public CanvasGroup canvas;
 
         [NonSerialized]
@@ -36,7 +38,7 @@ namespace HunkHud.Components
             _configEntry = ConfigHelper.Bind("HunkHud", this.GetType().Name, true, "Enable or disable moving this hud element");
         }
 
-        public void SetActive() => SetActive(this.refreshTimer);
+        public void SetActive() => SetActive(this.activeInterval);
 
         public virtual void SetActive(float time)
         {
@@ -44,10 +46,18 @@ namespace HunkHud.Components
             this.delayTimer = Mathf.Max(this.delayTimer, 0.1f);
         }
 
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
+        {
+            base.HUD_onHudTargetChangedGlobal(newHud);
+            this.SetActive(8f);
+        }
+
         protected virtual void Awake()
         {
-            this.canvas = this.GetComponent<CanvasGroup>();
+            this.canvas = this.GetComponent<CanvasGroup>() ?? this.gameObject.AddComponent<CanvasGroup>();
+
             Startup();
+
             _configEntry.SettingChanged += ConfigUpdated;
         }
 
@@ -85,8 +95,7 @@ namespace HunkHud.Components
 
             this.transform.localPosition = Vector3.Lerp(currentPos, desiredPosition, this.smoothSpeed * Time.deltaTime);
 
-            if (this.canvas)
-                this.canvas.alpha = Mathf.Clamp01(this.activeTimer + 1f);
+            this.canvas.alpha = Mathf.Clamp01(2f * (this.activeTimer + 0.5f));
         }
 
         protected virtual void FixedUpdate()
@@ -94,8 +103,8 @@ namespace HunkHud.Components
             this.activeTimer -= Time.fixedDeltaTime;
             this.delayTimer -= Time.fixedDeltaTime;
 
-            if (this.targetHud?.scoreboardPanel && this.targetHud.scoreboardPanel.activeSelf)
-                this.SetActive(this.refreshTimer * 0.5f);
+            if (this.hud?.scoreboardPanel && this.hud.scoreboardPanel.activeSelf)
+                this.SetActive(this.activeInterval * 0.5f);
 
             if (this.delayTimer <= 0f)
             {

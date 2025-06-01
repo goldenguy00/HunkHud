@@ -1,34 +1,44 @@
+using RoR2;
+using RoR2.UI;
+
 namespace HunkHud.Components
 {
     public class SkillIconMover : DisplayMover
     {
+        private int prevStocks;
+
         protected override void Awake()
         {
             base.Awake();
-            this.offset = new UnityEngine.Vector3(0f, -300f, 0f);
+            this.offset = new UnityEngine.Vector3(0f, 0f, 0f);
+            this.activeInterval = 2.25f;
         }
 
         public override void CheckForActivity()
         {
-            if (!this.targetBody)
-                return;
-
-            if (this.targetBody.equipmentSlot && this.targetBody.equipmentSlot.cooldownTimer > 0f)
+            var newStocks = this.targetBody?.equipmentSlot?.stock ?? 0;
+            if (newStocks != prevStocks)
             {
+                this.prevStocks = newStocks;
                 this.SetActive();
             }
-            else if (this.targetBody.skillLocator)
-            {
-                for (int i = 0; i < this.targetBody.skillLocator.allSkills.Length; i++)
-                {
-                    var skill = this.targetBody.skillLocator.allSkills[i];
-                    if (skill && skill.cooldownRemaining != 0f)
-                    {
-                        this.SetActive();
-                        return;
-                    }
-                }
-            }
+        }
+
+        protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
+        {
+            if (this._prevBody)
+                this._prevBody.onSkillActivatedAuthority -= this.OnSkillActivatedAuthority;
+
+            base.HUD_onHudTargetChangedGlobal(newHud);
+
+            if (this.targetBody)
+                this.targetBody.onSkillActivatedAuthority += this.OnSkillActivatedAuthority;
+        }
+
+        private void OnSkillActivatedAuthority(GenericSkill skill)
+        {
+            if (skill.stock < skill.maxStock)
+                SetActive();
         }
     }
 }

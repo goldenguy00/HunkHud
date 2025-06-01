@@ -1,0 +1,10 @@
+{
+    "name": "Dante",
+    "version_number": "0.0.13",
+    "website_url": "",
+    "description": "This party's getting crazy, let's rock! - BETA RELEASE",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.1905",
+        "tristanmcpherson-R2API-5.0.5"
+    ]
+}

@@ -25,8 +25,7 @@ namespace HunkHud.Components
 
         private void GlobalEventManager_onTeamLevelUp(TeamIndex team)
         {
-            if (team == TeamIndex.Monster)
-                this.activeTimer = this.refreshTimer;
+            this.SetActive();
         }
 
         public override void CheckForActivity()
