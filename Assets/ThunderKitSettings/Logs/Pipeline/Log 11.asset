@@ -1,0 +1,78 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 11
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
+  creationDate:
+    ticks: 638844575756242656
+  entries:
+  - logLevel: 0
+    internalTime:
+      ticks: 638844575763965306
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Build Completed: ```  ```'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575762905329
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fRiskUIManifest.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575762536460
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[HookGenPatcherManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHookGenPatcherManifest.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575762058548
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575761743720
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575761430436
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638844575760958957
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638844575758275742
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638844575757959295
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638844575757784145
+    message: '[Pipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Execute Pipeline'
+    context: []

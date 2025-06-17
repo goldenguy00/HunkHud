@@ -14,42 +14,7 @@ namespace HunkHud.Modules
     public static class HudAssets
     {
         public static AssetBundle mainAssetBundle;
-        /*
-- Assets/hunk/hud/CustomHealthBar.prefab
-- Assets/hunk/hud/ItemGetPopup.prefab
-- Assets/hunk/hud/ItemNotification.prefab
-- Assets/hunk/hud/Vignette.prefab
-- Assets/hunk/hud/BandCooldownTracker.prefab
-- Assets/hunk/hud/ObjectiveGauge.prefab
-- Assets/hunk/hud/LuminousGauge.prefab
 
-
-- Assets/hunk/hud/BiomassHolder.prefab
-- Assets/hunk/hud/AmmoPanel.prefab
-- Assets/hunk/hud/DodgeFlash.prefab
-- Assets/hunk/hud/WeaponChargeBar.prefab
-- Assets/hunk/hud/WeaponRadial.prefab
-- Assets/hunk/hud/StaticOverlay.prefab
-- Assets/hunk/hud/StaminaBar.prefab
-- Assets/hunk/hud/JacketFullGauge.prefab
-- Assets/hunk/hud/OldComboGauge.prefab
-- Assets/hunk/hud/FlashbangOverlay.prefab
-- Assets/hunk/hud/ChargeBar.prefab
-- Assets/hunk/hud/ComboGauge2.prefab
-- Assets/hunk/hud/ChargeRing.prefab
-- Assets/hunk/hud/CounterFlash.prefab
-         * */
-
-        /*
-         childLoc
-[Error  :   HunkHud] RightInfoBar
-[Error  :   HunkHud] TopCenterCluster
-[Error  :   HunkHud] ScopeContainer
-[Error  :   HunkHud] CrosshairExtras
-[Error  :   HunkHud] BottomLeftCluster
-[Error  :   HunkHud] BossHealthBar
-[Error  :   HunkHud] RightUtilityArea
-         */
         private static Hook onLoadHook, notifHook, crosshairHook, hudAwakeHook;
         internal static void Init()
         {
@@ -120,8 +85,18 @@ namespace HunkHud.Modules
             {
                 new ChildLocator.NameTransformPair
                 {
-                    name = "NotificationArea",
-                    transform = hud.mainContainer.transform.Find("NotificationArea")
+                    name = "SpringCanvas",
+                    transform = springCanvas
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "UpperRightCluster",
+                    transform = springCanvas.Find("UpperRightCluster")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "BottomRightCluster",
+                    transform = springCanvas.Find("BottomRightCluster")
                 },
                 new ChildLocator.NameTransformPair
                 {
@@ -130,14 +105,35 @@ namespace HunkHud.Modules
                 },
                 new ChildLocator.NameTransformPair
                 {
-                    name = "SkillIconContainer",
-                    transform = springCanvas.Find("BottomRightCluster/Scaler")
+                    name = "BottomCenterCluster",
+                    transform = springCanvas.Find("BottomCenterCluster")
                 },
                 new ChildLocator.NameTransformPair
                 {
-                    name = "AllyCardContainer",
-                    transform = springCanvas.Find("LeftCluster/AllyCardContainer")
-                }
+                    name = "LeftCluster",
+                    transform = springCanvas.Find("LeftCluster")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "RightCluster",
+                    transform = springCanvas.Find("RightCluster")
+                },
+
+                new ChildLocator.NameTransformPair
+                {
+                    name = "NotificationArea",
+                    transform = hud.mainContainer.transform.Find("NotificationArea")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "ScoreboardPanel",
+                    transform = springCanvas.Find("ScoreboardPanel")
+                },
+                new ChildLocator.NameTransformPair
+                {
+                    name = "SkillDisplayRoot",
+                    transform = springCanvas.Find("BottomRightCluster/Scaler")
+                },
             });
 
             foreach (var configObject in hud.GetComponentsInChildren<BepinConfigParentManager>())
@@ -171,7 +167,7 @@ namespace HunkHud.Modules
 
                         newChildLoc.Add(new ChildLocator.NameTransformPair
                         {
-                            name = "InventoryContainer",
+                            name = "InventoryDisplayRoot",
                             transform = configObject.transform
                         });
                         break;
@@ -195,8 +191,8 @@ namespace HunkHud.Modules
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash")?.SetInactiveSafe();
             RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText")?.SetInactiveSafe();
 
-            childLoc.FindChild("InventoryContainer").gameObject.AddComponent<ItemDisplayMover>();
-            childLoc.FindChild("SkillIconContainer").gameObject.AddComponent<SkillIconMover>();
+            childLoc.FindChild("InventoryDisplayRoot").gameObject.AddComponent<ItemDisplayMover>();
+            childLoc.FindChild("SkillDisplayRoot").gameObject.AddComponent<SkillIconMover>();
 
             childLoc.FindChild("UpperLeftCluster").GetChild(0).gameObject.AddComponent<MoneyDisplayMover>().costType = CostTypeIndex.Money;
             childLoc.FindChild("UpperLeftCluster").GetChild(1).gameObject.AddComponent<MoneyDisplayMover>().costType = CostTypeIndex.VoidCoin;

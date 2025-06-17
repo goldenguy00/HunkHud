@@ -3,8 +3,10 @@
 `0.2.5`
 
 - Dante compat
-- Hud elements now show when near interactables
+- Money elements now show when near interactables
 - Skill visibility is a bit more accurate, only applies for skills with cooldowns
+- ChildLocator updated
+- Soon...
 
 `0.2.3`
 

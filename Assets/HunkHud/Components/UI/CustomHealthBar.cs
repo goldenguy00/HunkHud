@@ -113,9 +113,9 @@ namespace HunkHud.Components.UI
 
             this.SetDefaults();
 
-            this.biomassBar?.SetActive(false);
-            this.gunIconHolder?.SetActive(false);
-            this.characterIconHolder?.SetActive(true);
+            this.biomassBar.SetActive(false);
+            this.gunIconHolder.SetActive(false);
+            this.characterIconHolder.SetActive(true);
         }
 
         private new void OnEnable()
@@ -147,6 +147,7 @@ namespace HunkHud.Components.UI
             {
                 updateTimer = updateDelay;
 
+                SetCharacterIcon();
                 UpdateCustomBarInfos();
                 ApplyCustomBars();
             }
@@ -204,7 +205,7 @@ namespace HunkHud.Components.UI
             this.ospFill.enabled = false;
             this.cullFill.enabled = false;
 
-            this.immunityDisplay?.SetActive(false);
+            this.immunityDisplay.SetActive(false);
         }
 
         private void UpdateCustomBarInfos()
@@ -417,22 +418,19 @@ namespace HunkHud.Components.UI
             }
         }
 
-        public void SetCharacterIcon(Color? colorOverride = null)
+        public void SetCharacterIcon()
         {
             if (this.targetBody)
             {
-                this.gunIconHolder.SetActive(false);
-                this.characterIconHolder.SetActive(true);
-
-                var bodyColor = colorOverride ?? this.targetBody.bodyColor;
-                //bodyColor.a = 0.25f;
+                var bodyColor = this.targetBody.bodyColor;
+                bodyColor.a = 0.5f;
 
                 this.characterIconBorder.color = bodyColor;
                 this.characterIcon.texture = this.targetBody.portraitIcon;
             }
         }
 
-        public void SetGenericIcon(Texture icon)
+        public void SetGenericIcon(Texture icon = null)
         {
             this.gunIconHolder.SetActive(true);
             this.characterIconHolder.SetActive(false);
