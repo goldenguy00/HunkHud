@@ -29,12 +29,12 @@ namespace HunkHud.Modules
             );
 
             onLoadHook = new Hook(
-                typeof(RiskUIPlugin).GetMethod(nameof(RiskUIPlugin.onLoad), ~BindingFlags.Default),
+                typeof(RiskUIPlugin).GetMethod("OnLoad", ~BindingFlags.Default),
                 typeof(HudAssets).GetMethod(nameof(HudAssets.RiskUIPlugin_onLoad), ~BindingFlags.Default)
             );
 
             notifHook = new Hook(
-                typeof(NotificationAreaLoader).GetMethod("get_" + nameof(NotificationAreaLoader.genericNotificationPrefab), ~BindingFlags.Default),
+                typeof(NotificationAreaLoader).GetMethod("get_genericNotificationPrefab", ~BindingFlags.Default),
                 typeof(HudAssets).GetMethod(nameof(HudAssets.NotificationAreaLoader_get_genericNotificationPrefab), ~BindingFlags.Default)
             );
         }
@@ -75,8 +75,8 @@ namespace HunkHud.Modules
 
         private static void UpdateRiskUI()
         {
-            var hud = RiskUIPlugin._newHud.GetComponent<HUD>();
-            var childLoc = RiskUIPlugin._newHud.GetComponent<ChildLocator>();
+            var hud = RiskUIPlugin.CreateHud().GetComponent<HUD>();
+            var childLoc = RiskUIPlugin.CreateHud().GetComponent<ChildLocator>();
 
             var newChildLoc = childLoc.transformPairs.ToList();
             var springCanvas = hud.mainUIPanel.transform.Find("SpringCanvas");
@@ -179,17 +179,17 @@ namespace HunkHud.Modules
 
         private static void ModifyRiskUI()
         {
-            var hud = RiskUIPlugin._newHud.GetComponent<HUD>();
-            var childLoc = RiskUIPlugin._newHud.GetComponent<ChildLocator>();
+            var hud = RiskUIPlugin.CreateHud().GetComponent<HUD>();
+            var childLoc = RiskUIPlugin.CreateHud().GetComponent<ChildLocator>();
 
-            RiskUIPlugin._newClassicRunHud.AddComponent<ObjectiveDisplayMover>();
-            RiskUIPlugin._newSimulacrumHud.AddComponent<ObjectiveDisplayMover>();
+            RiskUIPlugin.CreateClassicRunHud().AddComponent<ObjectiveDisplayMover>();
+            RiskUIPlugin.CreateSimulcrum().AddComponent<ObjectiveDisplayMover>();
 
-            RiskUIPlugin._allyCard.AddComponent<CanvasGroup>();
-            RiskUIPlugin._allyCard.AddComponent<AllyHealthBarMover>();
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/CurrentHealthText")?.SetInactiveSafe();
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/Slash")?.SetInactiveSafe();
-            RiskUIPlugin._allyCard.transform.Find("Healthbar/HealthTextContainer/MaxHealthText")?.SetInactiveSafe();
+            RiskUIPlugin.CreateAllyCard().AddComponent<CanvasGroup>();
+            RiskUIPlugin.CreateAllyCard().AddComponent<AllyHealthBarMover>();
+            RiskUIPlugin.CreateAllyCard().transform.Find("Healthbar/HealthTextContainer/CurrentHealthText")?.SetInactiveSafe();
+            RiskUIPlugin.CreateAllyCard().transform.Find("Healthbar/HealthTextContainer/Slash")?.SetInactiveSafe();
+            RiskUIPlugin.CreateAllyCard().transform.Find("Healthbar/HealthTextContainer/MaxHealthText")?.SetInactiveSafe();
 
             childLoc.FindChild("InventoryDisplayRoot").gameObject.AddComponent<ItemDisplayMover>();
             childLoc.FindChild("SkillDisplayRoot").gameObject.AddComponent<SkillIconMover>();

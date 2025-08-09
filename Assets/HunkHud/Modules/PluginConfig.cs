@@ -164,7 +164,7 @@ namespace HunkHud.Modules
                 {
                     min = 0f,
                     max = 20f,
-                    FormatString = "{0:0.00}",
+                    formatString = "{0:0.00}",
                     restartRequired = restartRequired
                 }), HunkHudMain.GUID, HunkHudMain.MODNAME);
             }
@@ -195,7 +195,7 @@ namespace HunkHud.Modules
             {
                 min = min,
                 max = max,
-                FormatString = "{0:0.00}",
+                formatString = "{0:0.00}",
                 restartRequired = restartRequired
             }), HunkHudMain.GUID, HunkHudMain.MODNAME);
         }

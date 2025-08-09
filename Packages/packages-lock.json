@@ -6,6 +6,18 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "bubbet-zioconfigfile": {
+      "version": "file:ZioConfigFile",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
+    "bubbet-zioriskofoptions": {
+      "version": "file:ZioRiskOfOptions",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "com.passivepicasso.thunderkit": {
       "version": "https://github.com/PassivePicasso/ThunderKit.git",
       "depth": 0,
@@ -477,13 +489,13 @@
       "dependencies": {}
     },
     "riskofthunder-ror2editorkit": {
-      "version": "https://github.com/risk-of-thunder/RoR2EditorKit.git#5.4.0",
+      "version": "https://github.com/risk-of-thunder/RoR2EditorKit.git#5.4.1",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.editorcoroutines": "1.0.0"
       },
-      "hash": "0a5d4c7644e7ebcfc977a6332e9190bb4d263b16"
+      "hash": "83a8727f8f657edcf0e9f0745ac6ac8b6df627be"
     },
     "riskofthunder-ror2importextensions": {
       "version": "https://github.com/risk-of-thunder/RoR2ImportExtensions.git",
@@ -491,6 +503,12 @@
       "source": "git",
       "dependencies": {},
       "hash": "b8704d045fd4c32e83778bf3e1792d6e0cf76e00"
+    },
+    "rune580-risk_of_options": {
+      "version": "file:Risk_Of_Options",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
     },
     "tristanmcpherson-r2api": {
       "version": "file:R2API",

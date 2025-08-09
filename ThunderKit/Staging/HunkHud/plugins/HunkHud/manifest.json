@@ -6,7 +6,6 @@
     "description": "BETA RELEASE - Standalone Hud from HUNK",
     "dependencies": [
         "bbepis-BepInExPack-5.4.2117",
-        "RiskofThunder-HookGenPatcher-1.2.5",
-        "score-RiskUIRevived-1.0.4"
+        "Bubbet-RiskUI-2.0.0"
     ]
 }

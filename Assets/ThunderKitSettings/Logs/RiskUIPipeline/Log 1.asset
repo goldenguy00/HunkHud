@@ -1,0 +1,649 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 1
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 2fff3363a4c7d5a469a01906d76d798c, type: 2}
+  creationDate:
+    ticks: 638903631354355234
+  entries:
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631412774037
+    message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'riskui
+
+      [MaterialCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialCenti.asset)
+
+      
+
+      [MaterialClassicRunInfoHudPanel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialClassicRunInfoHudPanel.prefab)
+
+      
+
+      [MaterialHealthbarStyle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyle.asset)
+
+      
+
+      [MaterialHealthbarStyleMinion](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyleMinion.asset)
+
+      
+
+      [MaterialNonCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialNonCenti.asset)
+
+      
+
+      [MaterialTimerStringFormatter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialTimerStringFormatter.asset)
+
+      
+
+      [RiskUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fRiskUI.prefab)
+
+      
+
+      [MaterialAllyCardBackup](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fBackups%2fMaterialAllyCardBackup.prefab)
+
+      
+
+      [Lunar_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fLunar_Coin.png)
+
+      
+
+      [Money](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoney.png)
+
+      
+
+      [MoneyContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoneyContainer.prefab)
+
+      
+
+      [Void_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fVoid_Coin.png)
+
+      
+
+      [Armageddon
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fArmageddon+(More+Difficulties).png)
+
+      
+
+      [Calypso
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCalypso+(More+Difficulties).png)
+
+      
+
+      [Charybdis
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCharybdis+(UntitledDifficultyMod).png)
+
+      
+
+      [Deluge
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDeluge+(UntitledDifficultyMod).png)
+
+      
+
+      [Drizzle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDrizzle.png)
+
+      
+
+      [Inferno
+      (Inferno)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fInferno+(Inferno).png)
+
+      
+
+      [Monsoon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fMonsoon.png)
+
+      
+
+      [Pluviculture
+      (ConfigurableDifficulty)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fPluviculture+(ConfigurableDifficulty).png)
+
+      
+
+      [Rainstorm](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fRainstorm.png)
+
+      
+
+      [README](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fREADME.txt)
+
+      
+
+      [Sunny
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSunny+(More+Difficulties).png)
+
+      
+
+      [Super
+      Typhoon (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSuper+Typhoon+(Starstorm+2).png)
+
+      
+
+      [Tempest
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTempest+(More+Difficulties).png)
+
+      
+
+      [ThunderStorm
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fThunderStorm+(More+Difficulties).png)
+
+      
+
+      [Tropical
+      Storm (Tropical Storm)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTropical+Storm+(Tropical+Storm).png)
+
+      
+
+      [Typhoon
+      (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTyphoon+(Starstorm+2).png)
+
+      
+
+      [EquipIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fEquipIcon.prefab)
+
+      
+
+      [HealthBarSub](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fHealthBarSub.prefab)
+
+      
+
+      [ItemIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fItemIcon.prefab)
+
+      
+
+      [MaterialAllyCard](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialAllyCard.prefab)
+
+      
+
+      [MaterialArtifactStatusIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialArtifactStatusIcon.prefab)
+
+      
+
+      [MaterialBuffIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialBuffIcon.prefab)
+
+      
+
+      [MaterialChatbox](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialChatbox.prefab)
+
+      
+
+      [MaterialMonsterItemInventory](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialMonsterItemInventory.prefab)
+
+      
+
+      [MaterialObjectiveStrip](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialObjectiveStrip.prefab)
+
+      
+
+      [SkillIconRoot](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSkillIconRoot.prefab)
+
+      
+
+      [StripContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fStripContainer.prefab)
+
+      
+
+      [MaterialDefaultWaveUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialDefaultWaveUI.prefab)
+
+      
+
+      [MaterialSimulacrum](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialSimulacrum.prefab)
+
+      
+
+      [Bold_Circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fBold_Circle.png)
+
+      
+
+      [checkboxCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxCheckedWhite.png)
+
+      
+
+      [checkboxUnCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxUnCheckedWhite.png)
+
+      
+
+      [circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcircle.png)
+
+      
+
+      [CircleCentered](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleCentered.png)
+
+      
+
+      [CircleInner](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleInner.png)
+
+      
+
+      [CircleOuter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleOuter.png)
+
+      
+
+      [HitMarker](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fHitMarker.png)
+
+      
+
+      [ringBelow](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringBelow.png)
+
+      
+
+      [ringTop](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringTop.png)
+
+      
+
+      [Shift](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fShift.png)
+
+      
+
+      [Tab](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fTab.png)
+
+      
+
+      [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
+
+      
+
+      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
+
+      
+
+      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
+
+      
+
+      [texBearNormal](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearNormal.png)
+
+      
+
+      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
+
+      
+
+      [texWarbannerIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerIcon.png)
+
+      
+
+      [Bear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fBear.asset)
+
+      
+
+      [TMP_SDF](assetlink://Assets%2fTextMesh+Pro%2fFormerResources%2fShaders%2fTMP_SDF.shader)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
+
+      
+
+      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [BearMesh](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fBearMesh.asset)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
+      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
+
+      
+
+      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
+
+      
+
+      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
+
+      
+
+      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
+
+      
+
+      [TMP
+      - Font Asset Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Font+Asset+Icon.psd)
+
+      
+
+      [matWarbannerFlag](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fmatWarbannerFlag.mat)
+
+      
+
+      [uilSecondaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilSecondaryPanel.asset)
+
+      
+
+      [Bombadier_number_texture_12](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_12.asset)
+
+      
+
+      [Bombadier_Timer_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture_2.asset)
+
+      
+
+      [Cylinder](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fCylinder.asset)
+
+      
+
+      [texBearDiffuse](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearDiffuse.png)
+
+      
+
+      [Plane](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fPlane.asset)
+
+      
+
+      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
+
+      
+
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
+
+      
+
+      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
+
+      
+
+      [PickupWarbanner](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fPickupWarbanner.prefab)
+
+      
+
+      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
+
+      
+
+      [matBear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fmatBear.mat)
+
+      
+
+      [HGStandard](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGStandard.shader)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
+
+      
+
+      [mdlBearAvatar](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fmdlBearAvatar.asset)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
+
+      
+
+      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.asset)
+
+      
+
+      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
+
+      
+
+      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.asset)
+
+      
+
+      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
+
+      
+
+      [Bombadier_number_texture_6](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_6.asset)
+
+      
+
+      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+
+      
+
+      [SpriteNumberImage](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fSpriteNumberImage.prefab)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [WardOnLevel](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fWardOnLevel.asset)
+
+      
+
+      [matWarbannerPole](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fmatWarbannerPole.mat)
+
+      
+
+      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+
+      
+
+      [texWarbannerDiffuse](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerDiffuse.png)
+
+      
+
+      [texWarbannerIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerIcon.asset)
+
+      
+
+      [Items.Bear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fItems.Bear.asset)
+
+      
+
+      [Bombadier_Timer_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture.png)
+
+      
+
+      [NullMesh](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fNullMesh.asset)
+
+      
+
+      [tmpBombStandard
+      Material](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombStandard+Material.mat)
+
+      
+
+      [NullModel](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fNullModel.prefab)
+
+      
+
+      [PickupBear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fPickupBear.prefab)
+
+      
+
+      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+
+      
+
+      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
+
+      
+
+      [matNull](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fmatNull.mat)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      
+
+'
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631408716580
+    message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631408614044
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/RiskUI.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631402674720
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\RiskUI.pdb\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.pdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\RiskUI.dll\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.dll\r\n\r\n"
+  - logLevel: 1
+    internalTime:
+      ticks: 638903631402530568
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(93,113): warning CS0618:
+      ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex from the ItemTierDef
+      instead'''
+    context:
+    - 'Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs (93:113)
+
+      [Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(93,113):
+      warning CS0618: ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex
+      from the ItemTierDef instead''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs#93)'
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631361925107
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Building : ThunderKit/Libraries/RiskUI.dll'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638903631359031231
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638903631358486357
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638903631358102245
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638903631357713233
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631356003915
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631355928053
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631355812370
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      Execute Pipeline'
+    context: []

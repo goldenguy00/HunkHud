@@ -1,0 +1,10 @@
+{
+    "name": "RiskUI",
+    "author": "Bubbet",
+    "version_number": "2.0.0",
+    "website_url": "https://discord.gg/xqp5CQM8Cs",
+    "description": "UI but risky",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.2117"
+    ]
+}

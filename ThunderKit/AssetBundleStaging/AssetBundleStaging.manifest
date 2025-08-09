@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 3090908372
+CRC: 1121365206
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: hunkhudassets
+      Name: riskui
       Dependencies: {}
