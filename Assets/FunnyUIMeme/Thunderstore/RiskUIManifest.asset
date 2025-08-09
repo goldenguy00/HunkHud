@@ -15,7 +15,9 @@ MonoBehaviour:
   StagingPaths:
   - <ManifestPluginStaging>
   includeMetaFiles: 0
-  files: []
+  files:
+  - {fileID: 2800000, guid: 10a1584cf06ae02498f8d31ad83c959d, type: 3}
+  - {fileID: 4900000, guid: 9cad8d9fc4e89cf42839f2a1fe0f7833, type: 3}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -52,10 +54,11 @@ MonoBehaviour:
   - <ManifestPluginStaging>
   Author: Bubbet
   Name: RiskUI
-  Description: UI but risky
+  Description: The first hud replacement mod
   Version: 2.0.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
+  - {fileID: 11400000, guid: 7e223af718a9b1766e42836ea3d31194, type: 2}
 --- !u!114 &2266209334223278594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -70,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StagingPaths:
   - <ManifestPluginStaging>
-  url: https://discord.gg/xqp5CQM8Cs
+  url: https://github.com/Bubbet
 --- !u!114 &6004529491268351232
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -16,6 +16,97 @@ MonoBehaviour:
   creationDate:
     ticks: 638903631354355234
   entries:
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631675138792
+    message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631674885765
+    message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      archived ``` ThunderKit/Staging/RiskUI/plugins/RiskUI ``` into ``` Assets/FunnyUIMeme/Thunderstore/Release.zip
+      ```'
+    context:
+    - "Copied Files\r\n\r\n 1. Assets\\FunnyUIMeme\\Thunderstore\\icon.png\r\n\r\n
+      2. Assets\\FunnyUIMeme\\Thunderstore\\icon.png.meta\r\n\r\n 3. Assets\\FunnyUIMeme\\Thunderstore\\manifest.json\r\n\r\n
+      4. Assets\\FunnyUIMeme\\Thunderstore\\manifest.json.meta\r\n\r\n 5. Assets\\FunnyUIMeme\\Thunderstore\\README.md\r\n\r\n
+      6. Assets\\FunnyUIMeme\\Thunderstore\\README.md.meta\r\n\r\n 7. Assets\\FunnyUIMeme\\Thunderstore\\Release.zip\r\n\r\n
+      8. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIDestinationPath.asset\r\n\r\n 9.
+      Assets\\FunnyUIMeme\\Thunderstore\\RiskUIDestinationPath.asset.meta\r\n\r\n
+      10. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIManifest.asset\r\n\r\n 11. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIManifest.asset.meta\r\n\r\n
+      12. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset\r\n\r\n 13. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset.meta"
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631671421307
+    message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631671249136
+    message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Deleting Assets/FunnyUIMeme/Thunderstore/Release.zip'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631671094681
+    message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631670926018
+    message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/riskui.manifest'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631670773565
+    message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631670626939
+    message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Deleted ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631670494228
+    message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631670354276
+    message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638903631670227193
+    message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Creating Thunderstore manifest.json'
+    context:
+    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"RiskUI\",\n    \"author\": \"Bubbet\",\n   
+      \"version_number\": \"2.0.0\",\n    \"website_url\": \"https://discord.gg/xqp5CQM8Cs\",\n   
+      \"description\": \"UI but risky\",\n    \"dependencies\": [\n        \"bbepis-BepInExPack-5.4.2117\"\n   
+      ]\n}\r\n```"
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631670085801
+    message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638903631669948217
+    message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
   - logLevel: 0
     internalTime:
       ticks: 638903631412774037

@@ -6911,7 +6911,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Under
   configDesc: The color of the boss health bar that trails under
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   target: {fileID: 7477034168479689244}
   _rainbow: 0
 --- !u!114 &219667112612207591
@@ -10078,6 +10082,7 @@ MonoBehaviour:
   maxIconWidth: 50
   maxHeight: 120
   verticalMargin: 8
+  hideInventoryImage: {fileID: 0}
   itemIcons: []
   onItemClicked:
     m_PersistentCalls:
@@ -10925,7 +10930,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Under
   configDesc: The color of the boss health bar that trails under
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   target: {fileID: 5334840035428893876}
   _rainbow: 0
 --- !u!222 &4554682966472798233
@@ -11271,7 +11280,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Ontop
   configDesc: The color of the boss health bar on top.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   target: {fileID: 911945103723666886}
   _rainbow: 0
 --- !u!114 &4926142238320597711
@@ -11332,7 +11345,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Ontop
   configDesc: The color of the boss health bar on top.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  defaultColor:
+    r: 0
+    g: 0
+    b: 0
+    a: 0
   target: {fileID: 3382253168277929803}
   _rainbow: 0
 --- !u!114 &5005382847858800455
@@ -12600,6 +12617,7 @@ MonoBehaviour:
   contextManager: {fileID: 3195611051559639366}
   allyCardManager: {fileID: 7328635400563177189}
   gameModeUiRoot: {fileID: 4810066671826902902}
+  remoteOperationContainer: {fileID: 0}
   healthBar: {fileID: 0}
   expBar: {fileID: 0}
   levelText: {fileID: 0}
@@ -12617,7 +12635,9 @@ MonoBehaviour:
   equipmentIcons:
   - {fileID: 2720478898508773176}
   - {fileID: 8056169286075254611}
+  equipmentOverflowIcon: {fileID: 0}
   itemInventoryDisplay: {fileID: 6772497100910155202}
+  sprintIcon: {fileID: 0}
   speedometer: {fileID: 0}
 --- !u!1 &6005774398120102299
 GameObject:
@@ -13588,6 +13608,7 @@ MonoBehaviour:
   maxIconWidth: 64
   maxHeight: 140
   verticalMargin: 0
+  hideInventoryImage: {fileID: 0}
   itemIcons: []
   onItemClicked:
     m_PersistentCalls:
@@ -15139,6 +15160,8 @@ MonoBehaviour:
   healthLabel: {fileID: 3816631161968307698}
   bossNameLabel: {fileID: 1476191752157934944}
   bossSubtitleLabel: {fileID: 7037058999683430325}
+  thresholdPipPrefab: {fileID: 0}
+  thresholdPipsParent: {fileID: 0}
   healthMaterial: {fileID: 0}
   delayMaterial: {fileID: 0}
 --- !u!1 &8072376104775808998
@@ -15820,6 +15843,7 @@ MonoBehaviour:
   regeneratingScrapRegenTransformationNotificationPrefab: {fileID: 0}
   LowerPricedChestsRegenTransformationNotificationPrefab: {fileID: 0}
   teleportOnLowHealthRegenTransformationNotificationPrefab: {fileID: 0}
+  droneRepairNotificationPrefab: {fileID: 0}
 --- !u!114 &8749546151323653541
 MonoBehaviour:
   m_ObjectHideFlags: 0
