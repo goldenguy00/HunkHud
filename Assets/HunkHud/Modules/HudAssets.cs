@@ -1,13 +1,9 @@
 ﻿using UnityEngine;
 using RoR2.UI;
-using HunkHud.Components.UI;
 using HunkHud.Components;
 using MaterialHud;
 using RoR2;
 using System.Linq;
-using MonoMod.RuntimeDetour;
-using System.Reflection;
-using System;
 
 namespace HunkHud.Modules
 {
@@ -15,65 +11,7 @@ namespace HunkHud.Modules
     {
         public static AssetBundle mainAssetBundle;
 
-        private static Hook onLoadHook, notifHook, crosshairHook, hudAwakeHook;
-        internal static void Init()
-        {
-            crosshairHook = new Hook(
-                typeof(CrosshairController).GetMethod(nameof(CrosshairController.Awake), ~BindingFlags.Default),
-                typeof(HudAssets).GetMethod(nameof(HudAssets.CrosshairController_Awake), ~BindingFlags.Default)
-            );
-
-            hudAwakeHook = new Hook(
-                typeof(HUD).GetMethod(nameof(HUD.Awake), ~BindingFlags.Default),
-                typeof(HudAssets).GetMethod(nameof(HudAssets.HUD_Awake), ~BindingFlags.Default)
-            );
-
-            onLoadHook = new Hook(
-                typeof(RiskUIPlugin).GetMethod("OnLoad", ~BindingFlags.Default),
-                typeof(HudAssets).GetMethod(nameof(HudAssets.RiskUIPlugin_onLoad), ~BindingFlags.Default)
-            );
-
-            notifHook = new Hook(
-                typeof(NotificationAreaLoader).GetMethod("get_genericNotificationPrefab", ~BindingFlags.Default),
-                typeof(HudAssets).GetMethod(nameof(HudAssets.NotificationAreaLoader_get_genericNotificationPrefab), ~BindingFlags.Default)
-            );
-        }
-
-        private static void CrosshairController_Awake(Action<CrosshairController> orig, CrosshairController self)
-        {
-            orig(self);
-
-            self.GetOrAddComponent<DynamicCrosshair>();
-        }
-
-        private static void HUD_Awake(Action<HUD> orig, HUD self)
-        {
-            orig(self);
-
-            var childLoc = self.GetComponent<ChildLocator>();
-
-            childLoc.FindChild("TopCenterCluster").FindOrInstantiate("ObjectiveGauge");
-            childLoc.FindChild("CrosshairExtras").FindOrInstantiate("LuminousGauge");
-
-            var hpBar = childLoc.FindChild("BottomLeftCluster").FindOrInstantiate("CustomHealthBar").transform.GetChild(0).GetComponent<CustomHealthBar>();
-
-            self.healthBar = hpBar;
-            self.levelText = hpBar.GetComponentInChildren<LevelText>();
-            self.expBar = hpBar.GetComponentInChildren<ExpBar>();
-        }
-
-        private static GameObject NotificationAreaLoader_get_genericNotificationPrefab(Func<GameObject> _) => mainAssetBundle.LoadAsset<GameObject>("ItemNotification");
-
-        private static void RiskUIPlugin_onLoad(Action<RiskUIPlugin> orig, RiskUIPlugin self)
-        {
-            orig(self);
-
-            UpdateRiskUI();
-
-            ModifyRiskUI();
-        }
-
-        private static void UpdateRiskUI()
+        internal static void UpdateRiskUI()
         {
             var hud = RiskUIPlugin.CreateHud().GetComponent<HUD>();
             var childLoc = RiskUIPlugin.CreateHud().GetComponent<ChildLocator>();
@@ -177,7 +115,7 @@ namespace HunkHud.Modules
             childLoc.transformPairs = newChildLoc.ToArray();
         }
 
-        private static void ModifyRiskUI()
+        internal static void ModifyRiskUI()
         {
             var hud = RiskUIPlugin.CreateHud().GetComponent<HUD>();
             var childLoc = RiskUIPlugin.CreateHud().GetComponent<ChildLocator>();
@@ -207,7 +145,7 @@ namespace HunkHud.Modules
         }
 
         #region Extension Methods
-        private static T GetOrAddComponent<T>(this GameObject go) where T : Component
+        internal static T GetOrAddComponent<T>(this GameObject go) where T : Component
         {
             if (!go)
                 return null;
@@ -215,7 +153,7 @@ namespace HunkHud.Modules
             return go.GetComponent<T>() ?? go.AddComponent<T>();
         }
 
-        private static T GetOrAddComponent<T>(this Component co) where T : Component
+        internal static T GetOrAddComponent<T>(this Component co) where T : Component
         {
             if (!co)
                 return null;
@@ -223,13 +161,13 @@ namespace HunkHud.Modules
             return co.GetComponent<T>() ?? co.gameObject.AddComponent<T>();
         }
 
-        private static void SetInactiveSafe(this Component co, bool active = false)
+        internal static void SetInactiveSafe(this Component co, bool active = false)
         {
             if (co)
                 co.gameObject.SetActive(active);
         }
 
-        private static GameObject FindOrInstantiate(this Transform transform, string assetName)
+        internal static GameObject FindOrInstantiate(this Transform transform, string assetName)
         {
             var assetObject = transform.Find(assetName)?.gameObject;
             if (!assetObject)

@@ -5,6 +5,10 @@ using System.Security;
 using System.Security.Permissions;
 using UnityEngine;
 using HunkHud.Modules;
+using System.Diagnostics.CodeAnalysis;
+using HarmonyLib;
+
+[assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>")]
 
 #pragma warning disable CS0618 // Type or member is obsolete
 [module: UnverifiableCode]
@@ -25,17 +29,19 @@ namespace HunkHud
         public const string VERSION = "0.2.6";
 
         public static HunkHudMain instance { get; private set; }
+        private static Harmony harm;
+        private static PatchClassProcessor patcher;
 
         public void Awake()
         {
             instance = this;
 
             Log.Init(this.Logger);
-            PluginConfig.Init(this.Config);
 
             StartCoroutine(nameof(Load));
 
-            Compat.Init();
+            harm = new Harmony(GUID);
+            patcher = harm.CreateClassProcessor(typeof(Hooks));
         }
 
         private IEnumerator Load()
@@ -43,7 +49,7 @@ namespace HunkHud
             var request = AssetBundle.LoadFromFileAsync(Path.Combine(Path.GetDirectoryName(this.Info.Location), "hunkhudassets"));
             yield return request;
             HudAssets.mainAssetBundle = request.assetBundle;
-            HudAssets.Init();
+            patcher.Patch();
         }
     }
 }

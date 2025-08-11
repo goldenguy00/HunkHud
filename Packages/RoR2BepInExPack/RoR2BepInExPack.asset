@@ -19,7 +19,7 @@ MonoBehaviour:
   Author: RiskofThunder
   Name: RoR2BepInExPack
   Description: Simplify the modding ecosystem of Risk of Rain 2, making it easier for modders to create and maintain their mods while preventing harmful bugs.
-  Version: 1.26.0
+  Version: 1.33.0
   Dependencies: []
 --- !u!114 &11400000
 MonoBehaviour:

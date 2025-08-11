@@ -55,8 +55,8 @@ MonoBehaviour:
   - <ManifestPluginStaging>
   Author: public_ParticleSystem
   Name: HunkHud
-  Description: BETA RELEASE - Standalone Hud from HUNK
-  Version: 0.2.6
+  Description: Standalone Hud from HUNK
+  Version: 1.0.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: e46a484df6cb5c54cb1e2592799bd0b0, type: 2}

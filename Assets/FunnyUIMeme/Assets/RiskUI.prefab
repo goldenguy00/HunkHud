@@ -467,7 +467,7 @@ GameObject:
   - component: {fileID: 1103202829739704040}
   - component: {fileID: 8553268922925945710}
   - component: {fileID: 5195730037925541252}
-  - component: {fileID: 7513664843334812962}
+  - component: {fileID: 2763915581896481487}
   m_Layer: 5
   m_Name: Container
   m_TagString: Untagged
@@ -650,7 +650,7 @@ MonoBehaviour:
   requiredTopLayer: {fileID: 8553268922925945710}
   enabledObjectsIfActive: []
   RequireInputMapperNotRunning: 0
---- !u!114 &7513664843334812962
+--- !u!114 &2763915581896481487
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 587448007975069214}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -676,7 +676,7 @@ GameObject:
   - component: {fileID: 9044897055228075842}
   - component: {fileID: 5939506695792197913}
   - component: {fileID: 2704130551279233301}
-  - component: {fileID: 3851590418395157603}
+  - component: {fileID: 3248059968762356415}
   m_Layer: 5
   m_Name: ContextNotification
   m_TagString: Untagged
@@ -736,7 +736,7 @@ MonoBehaviour:
   inspectGlyphTMP: {fileID: 0}
   inspectDisplay: {fileID: 0}
   hud: {fileID: 6529022293397391606}
---- !u!114 &3851590418395157603
+--- !u!114 &3248059968762356415
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 612357337121483195}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -1292,7 +1292,7 @@ GameObject:
   - component: {fileID: 7384426173411260641}
   - component: {fileID: 8234215608412492266}
   - component: {fileID: 2823258255904788248}
-  - component: {fileID: 5565618521651496931}
+  - component: {fileID: 7314363226014497821}
   m_Layer: 5
   m_Name: Red
   m_TagString: Untagged
@@ -1358,7 +1358,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5565618521651496931
+--- !u!114 &7314363226014497821
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1367,14 +1367,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 792670025411178397}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Ontop
   configDesc: The color of the boss health bar on top.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 2823258255904788248}
-  _rainbow: 0
 --- !u!1 &838418718066219903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2752,7 +2750,7 @@ GameObject:
   - component: {fileID: 616942897015289553}
   - component: {fileID: 3657412972649701386}
   - component: {fileID: 4012455685159768337}
-  - component: {fileID: 6410026182075403074}
+  - component: {fileID: 6022848571237639217}
   m_Layer: 5
   m_Name: CombatHealthBarViewer
   m_TagString: Untagged
@@ -2825,7 +2823,7 @@ MonoBehaviour:
   healthBarPrefab: {fileID: 0}
   healthBarDuration: 3
   zPosition: 1
---- !u!114 &6410026182075403074
+--- !u!114 &6022848571237639217
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2834,7 +2832,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1712245906305601197}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -121293455, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 7c4b8e5a12597e845b0edbd0f27f8e58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   viewer: {fileID: 4012455685159768337}
@@ -2849,7 +2847,7 @@ GameObject:
   - component: {fileID: 6851600951781771833}
   - component: {fileID: 7365491138264268121}
   - component: {fileID: 5585373378776427164}
-  - component: {fileID: 4747540875216467508}
+  - component: {fileID: 4900225469881999003}
   m_Layer: 5
   m_Name: BossHealthBarRoot
   m_TagString: Untagged
@@ -2898,6 +2896,8 @@ MonoBehaviour:
   healthLabel: {fileID: 4407180054338952609}
   bossNameLabel: {fileID: 2135387547063141683}
   bossSubtitleLabel: {fileID: 7527398280034600934}
+  thresholdPipPrefab: {fileID: 0}
+  thresholdPipsParent: {fileID: 0}
   healthMaterial: {fileID: 0}
   delayMaterial: {fileID: 0}
 --- !u!114 &5585373378776427164
@@ -2926,7 +2926,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &4747540875216467508
+--- !u!114 &4900225469881999003
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2935,7 +2935,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1753289648485072593}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -4848,7 +4848,7 @@ GameObject:
   - component: {fileID: 7366080139683377441}
   - component: {fileID: 6769887056854449921}
   - component: {fileID: 4888445765200147687}
-  - component: {fileID: 3948962481118763362}
+  - component: {fileID: 33420253362378342}
   m_Layer: 5
   m_Name: Red
   m_TagString: Untagged
@@ -4914,7 +4914,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &3948962481118763362
+--- !u!114 &33420253362378342
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -4923,14 +4923,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 3290452330056251870}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Under
   configDesc: The color of the boss health bar that trails under
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 4888445765200147687}
-  _rainbow: 0
 --- !u!1 &3309477815145369872
 GameObject:
   m_ObjectHideFlags: 0
@@ -4942,7 +4940,7 @@ GameObject:
   - component: {fileID: 1897040670482528212}
   - component: {fileID: 1746690390856835489}
   - component: {fileID: 8136714825477294104}
-  - component: {fileID: 2474884949250972624}
+  - component: {fileID: 3864167736534026919}
   m_Layer: 5
   m_Name: NotificationArea
   m_TagString: Untagged
@@ -5000,7 +4998,8 @@ MonoBehaviour:
   regeneratingScrapRegenTransformationNotificationPrefab: {fileID: 0}
   LowerPricedChestsRegenTransformationNotificationPrefab: {fileID: 0}
   teleportOnLowHealthRegenTransformationNotificationPrefab: {fileID: 0}
---- !u!114 &2474884949250972624
+  droneRepairNotificationPrefab: {fileID: 0}
+--- !u!114 &3864167736534026919
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5009,7 +5008,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3309477815145369872}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1943367140, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7b9730319e8584eb7de33839bd4a73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   controller: {fileID: 8136714825477294104}
@@ -6259,7 +6258,7 @@ GameObject:
   - component: {fileID: 399925714221478516}
   - component: {fileID: 7663568642047970572}
   - component: {fileID: 9145362398537016222}
-  - component: {fileID: 2540955447010511003}
+  - component: {fileID: 6707906307905057769}
   m_Layer: 5
   m_Name: BuffDisplayRoot
   m_TagString: Untagged
@@ -6321,7 +6320,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &2540955447010511003
+--- !u!114 &6707906307905057769
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6330,7 +6329,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3888137865176454537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -6626,7 +6625,7 @@ GameObject:
   - component: {fileID: 6418615125639259157}
   - component: {fileID: 8171932369577990090}
   - component: {fileID: 4927869861710010066}
-  - component: {fileID: 8054967702586402312}
+  - component: {fileID: 4324504686082366086}
   m_Layer: 5
   m_Name: FillPanelRight
   m_TagString: Untagged
@@ -6720,7 +6719,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &8054967702586402312
+--- !u!114 &4324504686082366086
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -6729,11 +6728,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4038029809684313819}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1468595796, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: cae647a10e6ec9e44a8ae5a0946ff0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   from: {fileID: 5445463884694185492}
-  _to: {fileID: 0}
 --- !u!1 &4167897647171441042
 GameObject:
   m_ObjectHideFlags: 0
@@ -6950,7 +6948,7 @@ GameObject:
   - component: {fileID: 8606871427622145229}
   - component: {fileID: 166466067131144908}
   - component: {fileID: 2850305589552624804}
-  - component: {fileID: 5425436311233136969}
+  - component: {fileID: 8173615827908175529}
   m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
@@ -7024,6 +7022,11 @@ MonoBehaviour:
   maxHealthbarWidth: 0
   minHealthbarHealth: 0
   maxHealthbarHealth: 0
+  sharedSufferingRoot: {fileID: 0}
+  sharedSufferingText: {fileID: 0}
+  safeColor: {r: 0, g: 0, b: 0, a: 0}
+  warningColor: {r: 0, g: 0, b: 0, a: 0}
+  warningInterval: 0.2
   updateDelay: 0.1
   currentHealthText: {fileID: 5680612413584888303}
   fullHealthText: {fileID: 3886440500894416033}
@@ -7086,7 +7089,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &5425436311233136969
+--- !u!114 &8173615827908175529
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7095,7 +7098,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4244844869338788855}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -474541677, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 144885f8d9fc338468e70cdae884e3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whichBar: Player HealthBar
@@ -7150,7 +7153,7 @@ GameObject:
   - component: {fileID: 4452707910130307728}
   - component: {fileID: 569695846183999245}
   - component: {fileID: 7596848842586260842}
-  - component: {fileID: 3301893283247823293}
+  - component: {fileID: 6791658857696583197}
   m_Layer: 5
   m_Name: FillPanelRight
   m_TagString: Untagged
@@ -7244,7 +7247,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_ShowMaskGraphic: 0
---- !u!114 &3301893283247823293
+--- !u!114 &6791658857696583197
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7253,11 +7256,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 4391682433685531023}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1468595796, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: cae647a10e6ec9e44a8ae5a0946ff0b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   from: {fileID: 8839308331973734178}
-  _to: {fileID: 0}
 --- !u!1 &4463710832840795207
 GameObject:
   m_ObjectHideFlags: 0
@@ -7752,8 +7754,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4048024242563260029}
-  - component: {fileID: 5673818048576425704}
-  - component: {fileID: 883416641825757576}
+  - component: {fileID: 7595950850459694506}
+  - component: {fileID: 2945470941144135690}
   m_Layer: 5
   m_Name: Scaler
   m_TagString: Untagged
@@ -7790,7 +7792,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &5673818048576425704
+--- !u!114 &7595950850459694506
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7799,7 +7801,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4957727734506025024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -7808,7 +7810,7 @@ MonoBehaviour:
   category: Repositioning
   key: SkillSlots
   description: 0 = Bottom Right, 1 = Bottom Center
---- !u!114 &883416641825757576
+--- !u!114 &2945470941144135690
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7817,7 +7819,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4957727734506025024}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -7835,7 +7837,7 @@ GameObject:
   - component: {fileID: 2225356921336194630}
   - component: {fileID: 6492308104992308895}
   - component: {fileID: 7812228215030302390}
-  - component: {fileID: 8955402371100501098}
+  - component: {fileID: 6404945134337611443}
   m_Layer: 5
   m_Name: AllyCardContainer
   m_TagString: Untagged
@@ -7896,7 +7898,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   indentWidth: 16
---- !u!114 &8955402371100501098
+--- !u!114 &6404945134337611443
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7905,7 +7907,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5073542796228175649}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -8149,6 +8151,7 @@ MonoBehaviour:
   maxIconWidth: 64
   maxHeight: 140
   verticalMargin: 0
+  hideInventoryImage: {fileID: 0}
   itemIcons: []
   onItemClicked:
     m_PersistentCalls:
@@ -8587,7 +8590,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4399128242426980517}
-  - component: {fileID: 6707276375110357684}
+  - component: {fileID: 207644688846773875}
   m_Layer: 5
   m_Name: CrosshairExtras
   m_TagString: Untagged
@@ -8615,7 +8618,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &6707276375110357684
+--- !u!114 &207644688846773875
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8624,7 +8627,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5709570264334952537}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -8986,7 +8989,7 @@ GameObject:
   - component: {fileID: 5805224385365997928}
   - component: {fileID: 7962403943138574196}
   - component: {fileID: 5680612413584888303}
-  - component: {fileID: 1865047635053854372}
+  - component: {fileID: 5979445966747726114}
   m_Layer: 5
   m_Name: CurrentHealthText
   m_TagString: Untagged
@@ -9111,7 +9114,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1865047635053854372
+--- !u!114 &5979445966747726114
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9120,14 +9123,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 5882134407601161474}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Health Text
   configDesc: The color of your current health.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 5680612413584888303}
-  _rainbow: 0
 --- !u!1 &5908669124412710436
 GameObject:
   m_ObjectHideFlags: 0
@@ -9393,6 +9394,7 @@ MonoBehaviour:
   maxIconWidth: 50
   maxHeight: 120
   verticalMargin: 8
+  hideInventoryImage: {fileID: 0}
   itemIcons: []
   onItemClicked:
     m_PersistentCalls:
@@ -9854,7 +9856,7 @@ GameObject:
   - component: {fileID: 2597514271202537814}
   - component: {fileID: 206051575455363568}
   - component: {fileID: 3886440500894416033}
-  - component: {fileID: 8380840457395375776}
+  - component: {fileID: 3733152926009102489}
   m_Layer: 5
   m_Name: MaxHealthText
   m_TagString: Untagged
@@ -9979,7 +9981,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &8380840457395375776
+--- !u!114 &3733152926009102489
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -9988,14 +9990,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 6462166655983378435}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Health Max
   configDesc: The color of your health's maximum.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 3886440500894416033}
-  _rainbow: 0
 --- !u!1 &6492797307895439755
 GameObject:
   m_ObjectHideFlags: 0
@@ -10934,7 +10934,7 @@ GameObject:
   - component: {fileID: 5639441786078721588}
   - component: {fileID: 6587091804829628412}
   - component: {fileID: 7873772755674370000}
-  - component: {fileID: 6961126899134716115}
+  - component: {fileID: 9125641840742502532}
   m_Layer: 5
   m_Name: LevelBar
   m_TagString: Untagged
@@ -11056,7 +11056,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 0}
   fillRectTransform: {fileID: 8951268960352059600}
---- !u!114 &6961126899134716115
+--- !u!114 &9125641840742502532
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11065,14 +11065,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7297147721722465666}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Exp Bar
   configDesc: The color of your exp bar.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 2640639410939424393}
-  _rainbow: 0
 --- !u!1 &7497394305311256379
 GameObject:
   m_ObjectHideFlags: 0
@@ -11544,7 +11542,7 @@ GameObject:
   - component: {fileID: 7986573559446825021}
   - component: {fileID: 3691940611283458959}
   - component: {fileID: 394616955482074517}
-  - component: {fileID: 5419266457831459003}
+  - component: {fileID: 1420558451553500019}
   m_Layer: 5
   m_Name: Red
   m_TagString: Untagged
@@ -11610,7 +11608,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &5419266457831459003
+--- !u!114 &1420558451553500019
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -11619,14 +11617,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 7946143652863369814}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Ontop
   configDesc: The color of the boss health bar on top.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 394616955482074517}
-  _rainbow: 0
 --- !u!1 &7968053106713912259
 GameObject:
   m_ObjectHideFlags: 0
@@ -11942,6 +11938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   glowImage: {fileID: 0}
   image: {fileID: 2334860602440774784}
+  durationImage: {fileID: 0}
   stackText: {fileID: 4692581439422222433}
   spriteAsNumberManager: {fileID: 6910015957305693226}
   tooltipProvider: {fileID: 3002863442146237605}
@@ -12102,6 +12099,7 @@ MonoBehaviour:
   updateTextOnHover: 0
   hoverLanguageTextMeshController: {fileID: 0}
   hoverToken: 
+  hoverHighlightGameObject: {fileID: 0}
   uiClickSoundOverride: 
 --- !u!114 &1585158695378992758
 MonoBehaviour:
@@ -12303,7 +12301,7 @@ GameObject:
   - component: {fileID: 6462777573324892991}
   - component: {fileID: 8251687752566579452}
   - component: {fileID: 9064227589207458206}
-  - component: {fileID: 9134613808549205021}
+  - component: {fileID: 4326590814915807881}
   m_Layer: 5
   m_Name: SkillIconContainer
   m_TagString: Untagged
@@ -12373,7 +12371,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_HorizontalFit: 2
   m_VerticalFit: 2
---- !u!114 &9134613808549205021
+--- !u!114 &4326590814915807881
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12382,13 +12380,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8151988043740812571}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -55326007, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 194d28b6b56079f45a1af097344fc26d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   desc: The spacing between the first and second row of skill icons if you have more
     than 4.
   key: Skill Icon Container Vertical Spacing
-  target: {fileID: 8251687752566579452}
 --- !u!1 &8164803574923425547
 GameObject:
   m_ObjectHideFlags: 0
@@ -12399,8 +12396,8 @@ GameObject:
   m_Component:
   - component: {fileID: 1678240023628053726}
   - component: {fileID: 6942879105660465901}
-  - component: {fileID: 4477592745117472374}
-  - component: {fileID: 3538519168934413123}
+  - component: {fileID: 46845657343259113}
+  - component: {fileID: 2173755810347321918}
   m_Layer: 5
   m_Name: InventoryContainer
   m_TagString: Untagged
@@ -12457,7 +12454,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &4477592745117472374
+--- !u!114 &46845657343259113
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12466,7 +12463,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8164803574923425547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -12475,7 +12472,7 @@ MonoBehaviour:
   category: Repositioning
   key: Inventory
   description: 0 = Bottom, 1 = Top
---- !u!114 &3538519168934413123
+--- !u!114 &2173755810347321918
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -12484,7 +12481,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8164803574923425547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -12913,6 +12910,7 @@ MonoBehaviour:
   updateTextOnHover: 0
   hoverLanguageTextMeshController: {fileID: 0}
   hoverToken: 
+  hoverHighlightGameObject: {fileID: 0}
   uiClickSoundOverride: 
 --- !u!1 &8370706065611234764
 GameObject:
@@ -13055,7 +13053,7 @@ GameObject:
   - component: {fileID: 446714148247981222}
   - component: {fileID: 1843299890235073791}
   - component: {fileID: 9022423755862669030}
-  - component: {fileID: 5389970685664720575}
+  - component: {fileID: 7869076869533127020}
   m_Layer: 5
   m_Name: Slash
   m_TagString: Untagged
@@ -13180,7 +13178,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &5389970685664720575
+--- !u!114 &7869076869533127020
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13189,14 +13187,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8478271680277632242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Health Max
   configDesc: The color of your health's maximum.
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 9022423755862669030}
-  _rainbow: 0
 --- !u!1 &8544267141193900718
 GameObject:
   m_ObjectHideFlags: 0
@@ -13615,6 +13611,7 @@ MonoBehaviour:
   contextManager: {fileID: 2704130551279233301}
   allyCardManager: {fileID: 7812228215030302390}
   gameModeUiRoot: {fileID: 5413006923063750437}
+  remoteOperationContainer: {fileID: 0}
   healthBar: {fileID: 5553849858908785591}
   expBar: {fileID: 7873772755674370000}
   levelText: {fileID: 1591836278919579760}
@@ -13632,7 +13629,9 @@ MonoBehaviour:
   equipmentIcons:
   - {fileID: 4987741290281545801}
   - {fileID: 1095590950784565292}
+  equipmentOverflowIcon: {fileID: 0}
   itemInventoryDisplay: {fileID: 6062593873943537041}
+  sprintIcon: {fileID: 0}
   speedometer: {fileID: 0}
 --- !u!114 &1528711177338960208
 MonoBehaviour:
@@ -13699,6 +13698,8 @@ MonoBehaviour:
   equipmentIcon: {fileID: 4987741290281545801}
   sprintTutorialObject: {fileID: 0}
   sprintTutorialTriggerTime: 20
+  remoteOpTutorialObject: {fileID: 0}
+  remoteOpTutorialTriggerTime: 1
 --- !u!114 &1291662099043533926
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13788,7 +13789,7 @@ GameObject:
   - component: {fileID: 3685380491307893381}
   - component: {fileID: 7778687692688525183}
   - component: {fileID: 8597288377262730724}
-  - component: {fileID: 913331615915027906}
+  - component: {fileID: 1020530043219363862}
   m_Layer: 5
   m_Name: ChatBoxRoot
   m_TagString: Untagged
@@ -13910,7 +13911,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &913331615915027906
+--- !u!114 &1020530043219363862
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -13919,7 +13920,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8701926281804129847}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -14098,7 +14099,7 @@ GameObject:
   - component: {fileID: 8444309908674901638}
   - component: {fileID: 7374627158852997456}
   - component: {fileID: 7934733194244479567}
-  - component: {fileID: 802423964276558611}
+  - component: {fileID: 4538372832889804693}
   m_Layer: 5
   m_Name: Red
   m_TagString: Untagged
@@ -14164,7 +14165,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &802423964276558611
+--- !u!114 &4538372832889804693
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14173,14 +14174,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8814783901541171065}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Boss HealthBar Under
   configDesc: The color of the boss health bar that trails under
-  defaultColor: {r: 0, g: 0, b: 0, a: 0}
   target: {fileID: 7934733194244479567}
-  _rainbow: 0
 --- !u!1 &8900422076925107986
 GameObject:
   m_ObjectHideFlags: 0
@@ -14426,7 +14425,7 @@ GameObject:
   - component: {fileID: 7273440341340812664}
   - component: {fileID: 381895922663540316}
   - component: {fileID: 2392919310787785263}
-  - component: {fileID: 4401047029364091046}
+  - component: {fileID: 5588161634525470485}
   m_Layer: 5
   m_Name: ScoreboardPanel
   m_TagString: Untagged
@@ -14774,7 +14773,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _inspectPanel: {fileID: 6032275468165474147}
---- !u!114 &4401047029364091046
+--- !u!114 &5588161634525470485
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14783,7 +14782,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9064352350515085309}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -14983,8 +14982,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8668949246557122218}
   - component: {fileID: 2889837685003891113}
-  - component: {fileID: 1070833907353438721}
-  - component: {fileID: 4788542064881838446}
+  - component: {fileID: 7177944023026511642}
+  - component: {fileID: 4703167445979302245}
   m_Layer: 5
   m_Name: BarRoots
   m_TagString: Untagged
@@ -15042,7 +15041,7 @@ MonoBehaviour:
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
   m_ReverseArrangement: 0
---- !u!114 &1070833907353438721
+--- !u!114 &7177944023026511642
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15051,7 +15050,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9220831266722968200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -15060,7 +15059,7 @@ MonoBehaviour:
   category: Repositioning
   key: HealthBar
   description: 0 = Bottom Left, 1 = Bottom Center
---- !u!114 &4788542064881838446
+--- !u!114 &4703167445979302245
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15069,7 +15068,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 9220831266722968200}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   Category: Rescaling
@@ -15934,7 +15933,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 27301596093651794, guid: dbcd46dbbe20ec448815efaf4d785dd6, type: 3}
   m_PrefabInstance: {fileID: 3179262190814119782}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1749114445279398526
+--- !u!114 &237218923565139702
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -15943,7 +15942,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3206559318521994292}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:
@@ -17449,7 +17448,7 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 27301596093651794, guid: dbcd46dbbe20ec448815efaf4d785dd6, type: 3}
   m_PrefabInstance: {fileID: 7355315467263440643}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &132399276422327788
+--- !u!114 &4018036253876578460
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -17458,7 +17457,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 7382432070520990801}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   choices:

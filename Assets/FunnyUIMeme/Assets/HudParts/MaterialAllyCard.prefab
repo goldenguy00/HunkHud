@@ -30,6 +30,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6058978680239729093}
   m_Father: {fileID: 8972362208948664862}
@@ -76,6 +77,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -138,6 +140,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3141765458475066377}
   - {fileID: 7617547128987642238}
@@ -176,6 +179,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!114 &4384555096799024210
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -207,7 +211,7 @@ GameObject:
   - component: {fileID: 3141765458475066377}
   - component: {fileID: 8396561112677854688}
   - component: {fileID: 4441081852142604347}
-  - component: {fileID: 1749613845941203545}
+  - component: {fileID: 874591825157861973}
   m_Layer: 0
   m_Name: CurrentHealthText
   m_TagString: Untagged
@@ -225,6 +229,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4530847640166802306}
   m_RootOrder: 0
@@ -257,15 +262,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: 1000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -331,7 +336,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &1749613845941203545
+--- !u!114 &874591825157861973
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -340,7 +345,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1918878066173687719}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Ally Card Current Health Text
@@ -373,6 +378,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7732901659704895137}
   m_Father: {fileID: 5101383672188027747}
@@ -408,6 +414,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2164328639954128258
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,6 +445,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 9159331655721657835}
   - {fileID: 360668861113667599}
@@ -484,6 +492,7 @@ MonoBehaviour:
   healthBar: {fileID: 2076735451113111286}
   nameLabel: {fileID: 6729565645270027480}
   portraitIconImage: {fileID: 7765027849963373297}
+  droneItemIndicatorObj: {fileID: 0}
 --- !u!114 &7301057047556525985
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -523,6 +532,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2407101020700820469
 GameObject:
   m_ObjectHideFlags: 0
@@ -550,6 +560,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 7732901659704895137}
   m_RootOrder: 0
@@ -591,7 +602,7 @@ GameObject:
   - component: {fileID: 7617547128987642238}
   - component: {fileID: 3953857536470019629}
   - component: {fileID: 9157247593108489134}
-  - component: {fileID: 4639950704445581595}
+  - component: {fileID: 8255403451392735809}
   m_Layer: 0
   m_Name: Slash
   m_TagString: Untagged
@@ -609,6 +620,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4530847640166802306}
   m_RootOrder: 1
@@ -641,15 +653,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: /
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -715,7 +727,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &4639950704445581595
+--- !u!114 &8255403451392735809
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -724,7 +736,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 2616915778186923547}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Ally Card Max Health Text
@@ -758,6 +770,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4344166587194052344}
   - {fileID: 9141459933100522262}
@@ -792,6 +805,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -831,6 +845,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6058978680239729093}
   m_RootOrder: 1
@@ -863,6 +878,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.8235294}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -905,6 +921,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6058978680239729093}
   m_RootOrder: 0
@@ -937,6 +954,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 0, b: 0, a: 0.59607846}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -981,6 +999,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4530847640166802306}
   - {fileID: 5101383672188027747}
@@ -1015,6 +1034,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1074,6 +1094,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &5920409591354587898
 GameObject:
   m_ObjectHideFlags: 0
@@ -1088,7 +1109,7 @@ GameObject:
   - component: {fileID: 8608081581480780917}
   - component: {fileID: 3548622318705822957}
   - component: {fileID: 5417402920934830941}
-  - component: {fileID: 5432898804672833928}
+  - component: {fileID: 6275400140860655283}
   m_Layer: 5
   m_Name: Healthbar (1)
   m_TagString: Untagged
@@ -1106,6 +1127,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1917860625409282465}
   m_Father: {fileID: 7275584214889776082}
@@ -1149,6 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 637974714, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  baseSubBarMat: {fileID: 0}
   style: {fileID: 11400000, guid: 75805abcf21699348b6c308e7ad58e58, type: 2}
   barContainer: {fileID: 1917860625409282465}
   eliteBackdropRectTransform: {fileID: 0}
@@ -1160,8 +1183,15 @@ MonoBehaviour:
   maxHealthbarWidth: 0
   minHealthbarHealth: 0
   maxHealthbarHealth: 0
+  sharedSufferingRoot: {fileID: 0}
+  sharedSufferingText: {fileID: 0}
+  safeColor: {r: 0, g: 0, b: 0, a: 0}
+  warningColor: {r: 0, g: 0, b: 0, a: 0}
+  warningInterval: 0.2
+  updateDelay: 0.1
   currentHealthText: {fileID: 4441081852142604347}
   fullHealthText: {fileID: 3045177978677733875}
+  spriteAsNumberManager: {fileID: 0}
 --- !u!222 &8608081581480780917
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1185,6 +1215,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.65882355}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1219,7 +1250,7 @@ MonoBehaviour:
   m_FlexibleWidth: -1
   m_FlexibleHeight: -1
   m_LayoutPriority: 1
---- !u!114 &5432898804672833928
+--- !u!114 &6275400140860655283
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1228,7 +1259,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 5920409591354587898}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -474541677, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 144885f8d9fc338468e70cdae884e3c8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   whichBar: AllyCard HealthBar
@@ -1262,6 +1293,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4530847640166802306}
   m_RootOrder: 3
@@ -1294,15 +1326,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: Beetle Guard
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1418,6 +1450,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7275584214889776082}
   m_Father: {fileID: 360668861113667599}
@@ -1451,6 +1484,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.65882355}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1510,6 +1544,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &8558426757833425538
 GameObject:
   m_ObjectHideFlags: 0
@@ -1521,7 +1556,7 @@ GameObject:
   - component: {fileID: 6167217451453355083}
   - component: {fileID: 2159375677154880914}
   - component: {fileID: 3045177978677733875}
-  - component: {fileID: 866825963001563082}
+  - component: {fileID: 5894869091485187371}
   m_Layer: 0
   m_Name: MaxHealthText
   m_TagString: Untagged
@@ -1539,6 +1574,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4530847640166802306}
   m_RootOrder: 2
@@ -1571,15 +1607,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: 2000
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1645,7 +1681,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &866825963001563082
+--- !u!114 &5894869091485187371
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1654,7 +1690,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 8558426757833425538}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Ally Card Max Health Text

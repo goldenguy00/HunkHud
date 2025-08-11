@@ -25,102 +25,19 @@
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.16.1"
       },
-      "hash": "450171d64287ebd49764e40a45dc2a2eaeebd053"
+      "hash": "d6310723b385fc66467f262978f8aa36c4663a8d"
     },
-    "com.unity.2d.animation": {
-      "version": "7.0.12",
-      "depth": 1,
+    "com.unity.addressables": {
+      "version": "1.19.19",
+      "depth": 0,
       "source": "registry",
       "dependencies": {
-        "com.unity.2d.common": "6.0.6",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.modules.animation": "1.0.0",
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.aseprite": {
-      "version": "1.0.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.common": "6.0.6",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.mathematics": "1.2.6",
-        "com.unity.modules.animation": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.common": {
-      "version": "6.0.6",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.burst": "1.5.1",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.modules.uielements": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.path": {
-      "version": "5.0.2",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.pixel-perfect": {
-      "version": "5.0.3",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.psdimporter": {
-      "version": "6.0.7",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.common": "6.0.6",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.2d.animation": "7.0.9"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.sprite": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {}
-    },
-    "com.unity.2d.spriteshape": {
-      "version": "7.0.7",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.2d.path": "5.0.2",
-        "com.unity.2d.common": "6.0.6",
-        "com.unity.mathematics": "1.1.0",
-        "com.unity.modules.physics2d": "1.0.0"
-      },
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.2d.tilemap": {
-      "version": "1.0.0",
-      "depth": 1,
-      "source": "builtin",
-      "dependencies": {}
-    },
-    "com.unity.2d.tilemap.extras": {
-      "version": "2.2.7",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.ugui": "1.0.0",
-        "com.unity.2d.tilemap": "1.0.0",
-        "com.unity.modules.tilemap": "1.0.0",
-        "com.unity.modules.jsonserialize": "1.0.0"
+        "com.unity.modules.assetbundle": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0",
+        "com.unity.modules.imageconversion": "1.0.0",
+        "com.unity.modules.unitywebrequest": "1.0.0",
+        "com.unity.scriptablebuildpipeline": "1.19.6",
+        "com.unity.modules.unitywebrequestassetbundle": "1.0.0"
       },
       "url": "https://packages.unity.com"
     },
@@ -130,15 +47,6 @@
       "source": "git",
       "dependencies": {},
       "hash": "ad2a81ec3068eafd48753df1825a8dd7201ce60c"
-    },
-    "com.unity.burst": {
-      "version": "1.8.11",
-      "depth": 3,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.mathematics": "1.2.1"
-      },
-      "url": "https://packages.unity.com"
     },
     "com.unity.collab-proxy": {
       "version": "2.2.0",
@@ -160,35 +68,6 @@
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
-    },
-    "com.unity.feature.2d": {
-      "version": "2.0.0",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.2d.animation": "7.0.12",
-        "com.unity.2d.pixel-perfect": "5.0.3",
-        "com.unity.2d.psdimporter": "6.0.7",
-        "com.unity.2d.sprite": "1.0.0",
-        "com.unity.2d.spriteshape": "7.0.7",
-        "com.unity.2d.tilemap": "1.0.0",
-        "com.unity.2d.tilemap.extras": "2.2.7",
-        "com.unity.2d.aseprite": "1.0.1"
-      }
-    },
-    "com.unity.feature.development": {
-      "version": "1.0.1",
-      "depth": 0,
-      "source": "builtin",
-      "dependencies": {
-        "com.unity.ide.visualstudio": "2.0.22",
-        "com.unity.ide.rider": "3.0.26",
-        "com.unity.ide.vscode": "1.2.5",
-        "com.unity.editorcoroutines": "1.0.0",
-        "com.unity.performance.profile-analyzer": "1.2.2",
-        "com.unity.test-framework": "1.1.33",
-        "com.unity.testtools.codecoverage": "1.2.4"
-      }
     },
     "com.unity.ide.rider": {
       "version": "3.0.26",
@@ -215,26 +94,12 @@
       "dependencies": {},
       "url": "https://packages.unity.com"
     },
-    "com.unity.mathematics": {
-      "version": "1.2.6",
-      "depth": 2,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
     "com.unity.multiplayer-hlapi": {
       "version": "https://github.com/risk-of-thunder/UnityMultiplayerHLAPI.git#1.1.1",
       "depth": 0,
       "source": "git",
       "dependencies": {},
       "hash": "faf93100110c30bfeec46d5367928c18f73a6ce1"
-    },
-    "com.unity.performance.profile-analyzer": {
-      "version": "1.2.2",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
     },
     "com.unity.postprocessing": {
       "version": "2.3.0",
@@ -244,15 +109,8 @@
       "url": "https://packages.unity.com"
     },
     "com.unity.scriptablebuildpipeline": {
-      "version": "1.20.1",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {},
-      "url": "https://packages.unity.com"
-    },
-    "com.unity.settings-manager": {
-      "version": "1.0.3",
-      "depth": 2,
+      "version": "1.20.2",
+      "depth": 0,
       "source": "registry",
       "dependencies": {},
       "url": "https://packages.unity.com"
@@ -268,18 +126,8 @@
       },
       "url": "https://packages.unity.com"
     },
-    "com.unity.testtools.codecoverage": {
-      "version": "1.2.4",
-      "depth": 1,
-      "source": "registry",
-      "dependencies": {
-        "com.unity.test-framework": "1.0.16",
-        "com.unity.settings-manager": "1.0.1"
-      },
-      "url": "https://packages.unity.com"
-    },
     "com.unity.textmeshpro": {
-      "version": "3.0.6",
+      "version": "3.0.9",
       "depth": 0,
       "source": "registry",
       "dependencies": {
@@ -308,14 +156,24 @@
         "com.unity.modules.imgui": "1.0.0"
       }
     },
+    "com.unity.visualscripting": {
+      "version": "1.9.1",
+      "depth": 0,
+      "source": "registry",
+      "dependencies": {
+        "com.unity.ugui": "1.0.0",
+        "com.unity.modules.jsonserialize": "1.0.0"
+      },
+      "url": "https://packages.unity.com"
+    },
     "mmhook-assemblies": {
       "version": "file:mmhook-assemblies",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
     },
-    "poopchudgamer422-dante": {
-      "version": "file:Dante",
+    "pseudopulse-seekerspatcher": {
+      "version": "file:SeekersPatcher",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -334,150 +192,6 @@
     },
     "riskofthunder-fixplugintypesserialization": {
       "version": "file:FixPluginTypesSerialization",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-hookgenpatcher": {
-      "version": "file:HookGenPatcher",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_artifactcode": {
-      "version": "file:R2API_ArtifactCode",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_commandhelper": {
-      "version": "file:R2API_CommandHelper",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_contentmanagement": {
-      "version": "file:R2API_ContentManagement",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_core": {
-      "version": "file:R2API_Core",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_damagetype": {
-      "version": "file:R2API_DamageType",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_deployable": {
-      "version": "file:R2API_Deployable",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_difficulty": {
-      "version": "file:R2API_Difficulty",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_director": {
-      "version": "file:R2API_Director",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_dot": {
-      "version": "file:R2API_Dot",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_elites": {
-      "version": "file:R2API_Elites",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_items": {
-      "version": "file:R2API_Items",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_language": {
-      "version": "file:R2API_Language",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_loadout": {
-      "version": "file:R2API_Loadout",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_lobbyconfig": {
-      "version": "file:R2API_LobbyConfig",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_networking": {
-      "version": "file:R2API_Networking",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_orb": {
-      "version": "file:R2API_Orb",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_prefab": {
-      "version": "file:R2API_Prefab",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_recalculatestats": {
-      "version": "file:R2API_RecalculateStats",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_sceneasset": {
-      "version": "file:R2API_SceneAsset",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_skins": {
-      "version": "file:R2API_Skins",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_sound": {
-      "version": "file:R2API_Sound",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_tempvisualeffect": {
-      "version": "file:R2API_TempVisualEffect",
-      "depth": 0,
-      "source": "embedded",
-      "dependencies": {}
-    },
-    "riskofthunder-r2api_unlockable": {
-      "version": "file:R2API_Unlockable",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}
@@ -510,8 +224,8 @@
       "source": "embedded",
       "dependencies": {}
     },
-    "tristanmcpherson-r2api": {
-      "version": "file:R2API",
+    "score-miscfixes": {
+      "version": "file:MiscFixes",
       "depth": 0,
       "source": "embedded",
       "dependencies": {}

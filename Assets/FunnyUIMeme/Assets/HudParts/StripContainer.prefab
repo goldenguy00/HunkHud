@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 68492091809739116}
   - component: {fileID: 7582122785270118933}
   - component: {fileID: 7136606050025436872}
-  - component: {fileID: 2184281206409239945}
+  - component: {fileID: 8832226641746516632}
   m_Layer: 5
   m_Name: PlayerMoney
   m_TagString: Untagged
@@ -29,6 +29,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1721395353298320238}
   m_RootOrder: 1
@@ -61,6 +62,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -69,9 +71,8 @@ MonoBehaviour:
 
 '
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -137,7 +138,7 @@ MonoBehaviour:
   m_hasFontAssetChanged: 0
   m_baseMaterial: {fileID: 0}
   m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!114 &2184281206409239945
+--- !u!114 &8832226641746516632
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -146,12 +147,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 847327316117213712}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Scoreboard Money
   configDesc: Color of the money in the scoreboard.
-  defaultColor: '#FCEE22'
   target: {fileID: 7136606050025436872}
 --- !u!1 &1309125465097290129
 GameObject:
@@ -182,6 +182,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8362689322721015135}
   m_RootOrder: 0
@@ -214,6 +215,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -241,6 +243,9 @@ MonoBehaviour:
   titleColor: {r: 0, g: 0, b: 0, a: 0}
   bodyToken: 
   bodyColor: {r: 0, g: 0, b: 0, a: 0}
+  extraUIDisplayPrefab: {fileID: 0}
+  AllowTooltipOnNavigationSelect: 0
+  RequiredInspectStateForNavigationTooltip: 3
   overrideTitleText: 
   overrideBodyText: 
   disableTitleRichText: 0
@@ -274,6 +279,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 5437291220178832191}
   m_Father: {fileID: 333699884497454533}
@@ -307,6 +313,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.66, g: 0.66, b: 0.66, a: 0.65882355}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -369,6 +376,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4841858043611387270}
   m_RootOrder: 0
@@ -398,13 +406,16 @@ MonoBehaviour:
   m_Script: {fileID: -630047940, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemIconPrefab: {fileID: 5540232716240821402, guid: 21ee000baade83e43b9ade23bd62f83d,
-    type: 3}
+  itemIconPrefab: {fileID: 5540232716240821402, guid: 21ee000baade83e43b9ade23bd62f83d, type: 3}
   itemIconPrefabWidth: 58
   maxIconWidth: 48
   maxHeight: 48
   verticalMargin: 2
+  hideInventoryImage: {fileID: 0}
   itemIcons: []
+  onItemClicked:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &4952996946947195653
 GameObject:
   m_ObjectHideFlags: 0
@@ -432,6 +443,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 7482923843532056284}
   - {fileID: 68492091809739116}
@@ -490,6 +502,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4752314192362142848}
   - {fileID: 1721395353298320238}
@@ -528,6 +541,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &5797024700862794643
 GameObject:
   m_ObjectHideFlags: 0
@@ -541,7 +555,7 @@ GameObject:
   - component: {fileID: 3954420837203147579}
   - component: {fileID: 6580689122450368740}
   - component: {fileID: 3374219521890201563}
-  - component: {fileID: 3024363017598899858}
+  - component: {fileID: 7047309932881614844}
   m_Layer: 5
   m_Name: EquipmentContainer
   m_TagString: Untagged
@@ -559,6 +573,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8420087973383631974}
   m_Father: {fileID: 333699884497454533}
@@ -612,6 +627,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.8352942, g: 0.34901962, b: 0.16078432, a: 0.65882355}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -649,9 +665,10 @@ MonoBehaviour:
   reminderFlashPanelObject: {fileID: 0}
   isReadyPanelObject: {fileID: 0}
   isAutoCastPanelObject: {fileID: 0}
+  extraEquipmentSwapObject: {fileID: 0}
   tooltipProvider: {fileID: 2879979123672549778}
   displayAlternateEquipment: 0
---- !u!114 &3024363017598899858
+--- !u!114 &7047309932881614844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -660,12 +677,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 5797024700862794643}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Scoreboard Equipment Border
   configDesc: Color of the equipment border in the scoreboard.
-  defaultColor: '#D55929'
   target: {fileID: 6580689122450368740}
 --- !u!1 &5842939322317365684
 GameObject:
@@ -695,6 +711,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6857714675576404603}
   m_RootOrder: 0
@@ -727,6 +744,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.6509804, g: 0.654902, b: 0.627451, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -769,6 +787,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6857714675576404603}
   m_Father: {fileID: 7022091594350759064}
@@ -824,6 +843,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6485189772311686937
 GameObject:
   m_ObjectHideFlags: 0
@@ -852,6 +872,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 4752314192362142848}
   m_RootOrder: 0
@@ -884,6 +905,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -924,6 +946,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4990388834251240614}
   - {fileID: 6623066738694175421}
@@ -958,6 +981,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.6509804, g: 0.654902, b: 0.627451, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1002,7 +1026,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7022091594350759064}
   - component: {fileID: 4616996604147437031}
-  - component: {fileID: 37923913558685330}
+  - component: {fileID: 5640532032010822803}
   - component: {fileID: 5673170049134210625}
   m_Layer: 5
   m_Name: StripContainer
@@ -1021,6 +1045,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4577515634690443258}
   - {fileID: 333699884497454533}
@@ -1057,7 +1082,8 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
---- !u!114 &37923913558685330
+  m_ReverseArrangement: 0
+--- !u!114 &5640532032010822803
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1066,7 +1092,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 6818308339486676932}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -1753663027, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 0def715ce03f3e744be1270fe31fa388, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 5969705334099698558}
@@ -1084,11 +1110,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemInventoryDisplay: {fileID: 8963597155318864146}
+  nameFocusHighlight: {fileID: 0}
   equipmentIcon: {fileID: 3374219521890201563}
   userAvatar: {fileID: 0}
   nameLabel: {fileID: 5769807106773883478}
   classIcon: {fileID: 1084166673946618959}
   moneyText: {fileID: 7136606050025436872}
+  itemCountText: {fileID: 0}
+  eventSystemLocator: {fileID: 0}
 --- !u!1 &7378189277995892953
 GameObject:
   m_ObjectHideFlags: 0
@@ -1117,6 +1146,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6857714675576404603}
   m_RootOrder: 1
@@ -1149,6 +1179,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.6509804, g: 0.654902, b: 0.627451, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1192,6 +1223,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 4396984464917414241}
   m_Father: {fileID: 333699884497454533}
@@ -1245,6 +1277,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.66, g: 0.66, b: 0.66, a: 0.65882355}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1287,6 +1320,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1721395353298320238}
   m_RootOrder: 0
@@ -1319,15 +1353,15 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
   m_text: Bubbet
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -27,6 +27,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8138847950304761581}
   - {fileID: 5618225505305127949}
@@ -63,6 +64,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &2594676645753658200
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,6 +93,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8070110842357711317}
   m_RootOrder: 1
@@ -123,6 +126,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -130,8 +134,7 @@ MonoBehaviour:
   m_text: 00:00<voffset=0.4em><size=40%><color=#A6A7A0>:00</voffset></size></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -224,6 +227,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 8517342397334172769}
   - {fileID: 2554077276349421942}
@@ -260,6 +264,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6743068390344208242
 GameObject:
   m_ObjectHideFlags: 0
@@ -273,7 +278,7 @@ GameObject:
   - component: {fileID: 6743068390344208238}
   - component: {fileID: 6743068390344208239}
   - component: {fileID: 6743068390344208240}
-  - component: {fileID: 5111748210163553854}
+  - component: {fileID: 7473307907415548945}
   m_Layer: 0
   m_Name: Image
   m_TagString: Untagged
@@ -291,6 +296,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3742380037853364183}
   m_Father: {fileID: 5469231458517333464}
@@ -324,6 +330,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.94117653, g: 0.35686275, b: 0.35686275, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -372,7 +379,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 2
   m_AspectRatio: 1
---- !u!114 &5111748210163553854
+--- !u!114 &7473307907415548945
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -381,12 +388,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 6743068390344208242}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Difficulty Ring Under
   configDesc: Color of the ring under the pie ring for difficulty.
-  defaultColor: '#F05B5B'
   target: {fileID: 6743068390344208238}
 --- !u!1 &6743068390744830676
 GameObject:
@@ -416,6 +422,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 638178286743512717}
   - {fileID: 8070110842357711317}
@@ -483,6 +490,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6743068390843632451}
   - {fileID: 6743068391608987677}
@@ -539,6 +547,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6743068390843632452
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +576,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6743068390842761775}
   m_RootOrder: 0
@@ -599,6 +609,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.6509804, g: 0.654902, b: 0.627451, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -627,7 +638,7 @@ GameObject:
   - component: {fileID: 709711918365845252}
   - component: {fileID: 1319372490055605982}
   m_Layer: 0
-  m_Name: DefaultWaveUI
+  m_Name: MaterialDefaultWaveUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -643,6 +654,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6743068390842761775}
   - {fileID: 5469231458517333464}
@@ -728,6 +740,7 @@ MonoBehaviour:
   m_ChildControlHeight: 1
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!1 &6743068391608987678
 GameObject:
   m_ObjectHideFlags: 0
@@ -757,6 +770,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6743068390842761775}
   m_RootOrder: 1
@@ -789,6 +803,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -796,8 +811,7 @@ MonoBehaviour:
   m_text: SIMULACRUM
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -912,6 +926,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 8070110842357711317}
   m_RootOrder: 0
@@ -944,6 +959,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -951,8 +967,7 @@ MonoBehaviour:
   m_text: Remaining Enemies
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1059,6 +1074,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 6743068390344208241}
   - {fileID: 6743068390744830675}
@@ -1095,6 +1111,7 @@ MonoBehaviour:
   m_ChildControlHeight: 0
   m_ChildScaleWidth: 0
   m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
 --- !u!114 &5473201348092941909
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1128,7 +1145,7 @@ GameObject:
   - component: {fileID: 119734684558563534}
   - component: {fileID: 4679155703518252049}
   - component: {fileID: 5429398122738223034}
-  - component: {fileID: 489032778921208766}
+  - component: {fileID: 8300051145176058244}
   m_Layer: 0
   m_Name: Top
   m_TagString: Untagged
@@ -1146,6 +1163,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6743068390344208241}
   m_RootOrder: 0
@@ -1178,6 +1196,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.94117653, g: 0.35686275, b: 0.35686275, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1226,7 +1245,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_AspectMode: 2
   m_AspectRatio: 1
---- !u!114 &489032778921208766
+--- !u!114 &8300051145176058244
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1235,12 +1254,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 7852600951020051386}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   configKey: Difficulty Ring Over
   configDesc: Color of the difficulty ring on top.
-  defaultColor: '#F05B5B'
   target: {fileID: 119734684558563534}
 --- !u!1 &7995378765761176135
 GameObject:
@@ -1271,6 +1289,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638178286743512717}
   m_RootOrder: 1
@@ -1303,6 +1322,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1310,8 +1330,7 @@ MonoBehaviour:
   m_text: 00:00<voffset=0.4em><size=40%><color=#A6A7A0>:00</voffset></size></color>
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1421,6 +1440,7 @@ RectTransform:
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 638178286743512717}
   m_RootOrder: 0
@@ -1453,6 +1473,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1460,8 +1481,7 @@ MonoBehaviour:
   m_text: Time Until Next Wave
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
-  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863,
-    type: 2}
+  m_sharedMaterial: {fileID: 5974894920738096863, guid: e120d267a60f3f8439adfddcdc601863, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

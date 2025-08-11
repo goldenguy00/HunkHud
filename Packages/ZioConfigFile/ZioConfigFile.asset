@@ -19,7 +19,7 @@ MonoBehaviour:
   Author: Bubbet
   Name: ZioConfigFile
   Description: ConfigFile but it uses Zio, which means it can do steam cloud.
-  Version: 1.0.0
+  Version: 1.0.2
   Dependencies: 
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
 --- !u!114 &11400000

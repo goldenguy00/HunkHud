@@ -1,3 +1,18 @@
+-   **5.4.2120**
+
+    -   RoR2 BepInExPack specific changes :
+        -   Yet another fix related to HookGen. (https://github.com/risk-of-thunder/MonoMod/commit/56f429a04bf5d285fff65c4eff96066460dc8b50)
+
+-   **5.4.2119**
+
+    -   RoR2 BepInExPack specific changes :
+        -   Add SeekersPatcher and MiscFixes as dependencies.
+
+-   **5.4.2118**
+
+    -   RoR2 BepInExPack specific changes :
+        -   Yet another fix related to HookGen. (https://github.com/risk-of-thunder/MonoMod/commit/21bff4bb27223349f97f4e0534118ae0f7e7b288)
+
 -   **5.4.2117**
 
     -   RoR2 BepInExPack specific changes :

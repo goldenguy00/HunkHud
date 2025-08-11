@@ -1,5 +1,10 @@
 # RiskOfOptions
-![Animated icon made by UnsavedTrash#0001 on discord](https://thumbs.gfycat.com/LimitedFlashyCowbird-size_restricted.gif)
+![Animated icon made by UnsavedTrash#0001 on discord](https://cdn.rune580.dev/roo/images/roo-full.gif)
+
+[![NuGet Version](https://img.shields.io/nuget/v/Rune580.Mods.RiskOfRain2.RiskOfOptions?style=for-the-badge&logo=nuget)](https://www.nuget.org/packages/Rune580.Mods.RiskOfRain2.RiskOfOptions)
+[![Thunderstore Version](https://img.shields.io/thunderstore/v/Rune580/Risk_Of_Options?style=for-the-badge&logo=thunderstore&logoColor=white)](https://thunderstore.io/c/riskofrain2/p/Rune580/Risk_Of_Options/)
+[![Thunderstore Downloads](https://img.shields.io/thunderstore/dt/Rune580/Risk_Of_Options?style=for-the-badge&logo=thunderstore&logoColor=white)](https://thunderstore.io/c/riskofrain2/p/Rune580/Risk_Of_Options/)
+[![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Rune580/RiskOfOptions/build.yml?branch=master&style=for-the-badge&logo=github)](https://github.com/Rune580/RiskOfOptions/actions/workflows/build.yml)
 
 An API to provide a user interface in game to interact with BepInEx ConfigEntry's.
 
@@ -130,75 +135,6 @@ ModSettingsManager.SetModIcon(icon);
 
 # Contact
 
-Discord: Rune#0001
+Discord: @rune
 
 Github: Rune580
-
-# Changelog
-    2.5.3:
-      Merged PR by Bubbet https://github.com/Rune580/RiskOfOptions/pull/28
-        - Abstracts references to bepinexconfig out.
-        - Allows mods to extend off of RoO's options.
-      Updated to preview C# language.
-
-    2.5.2:
-      Fixed descriptions not wrapping.
-
-    2.5.1:
-      Minor improvements to the layout of the mod options menu.
-      Fixed some minor stutters when opening the settings menu for the first time.
-      Removed HookGenPatcher/MMHook as a dependency.
-
-    2.5.0:
-      Added ColorOption.
-      Added ColorPickerUtil for manually opening a color picker.
-      Added 2 new submit modes for input fields:
-        - OnExitOrSubmit
-        - OnSubmit
-        These can be used with the `submitOn` Field in the InputFieldConfig.
-      Fixed an issue where having multiple input fields causes hitching.
-      Fixed an issue where input fields wouldn't visually revert.
-
-    2.4.2:
-      Sliders can now have their values be manually set in the text box. No more finagling the slider to get the value you want.
-        The future is now!
-
-    2.4.1:
-      Fixed category indicators taking up more vertical space than intended.
-
-    2.4.0:
-      Added IntSlider option, which is just a normal slider but it accepts an ConfigEntry<int> instead.
-
-    2.3.2:
-      Added overrides for modGuid and modName when adding an option.
-      CheckBox is now a prefab instead of being copied from a button in game. What does that mean for the normal user?
-        realistically nothing at all, you shouldn't notice anything different. For the dev however, this puts us a step closer
-        to having RiskOfOptions ui elements be accessible to other mods.
-
-    2.3.1:
-      Disable functionality is now fully implemented on all simple options.
-
-    2.3.0:
-      Quite a few things in this update, as always let me know if you have any issues.
-        - Added ChoiceOption, takes an CongiEntry<enum>.
-        - Removed dependency on R2API, I didn't really use it anyways, now you don't have to worry about an unnecessary dependency.
-            haha dependencies bad ;))))))))))))))))
-        - Fixed animation issues with the Mod Options menu while playing in singleplayer.
-        - Added workaround for when a mod embeds it's own settings api (the reason why one would do this alludes me...),
-            as they can break the Mod Options panel.
-
-    2.2.0 - Added GenericButtonOption which allows for devs to supply a UnityAction that is invoked when the button is pressed.
-    Cleaned up a few things. Should work for the newest patch, let me know if you find any issues.
-
-    2.1.0 - Added StringInputFieldOption. Configuration option `restartRequired` has been fully implemented,
-    set this to true to show a restart warning when the option is modified. Description panels now scroll.
-
-    2.0.0 - Massive Rewrite of the entire mod. Now exclusively uses BepInEx ConfigEntry's.
-    Completely new UI, with a working revert button. Added Stepped Slider, and KeyBind options.
-    Mods dependent on 1.0 will not work with 2.0
-
-    1.0.4 - Quick update for SOTV.
-
-	1.0.3 - Added R2API as a dependency because I forgot about that. Also I'm currently rewriting ROO,
-	so hopefully the next update should be a pretty big one. No ETA on that, but progress is good
-	so far.

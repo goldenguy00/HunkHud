@@ -1,0 +1,42 @@
+{
+    "name": "MaterialHud",
+    "rootNamespace": "MaterialHud",
+    "references": [
+        "GUID:2bafac87e7f4b9b418d9448d219b01ab",
+        "GUID:6055be8ebefd69e48b49212b09b47b2f",
+        "GUID:d60799ab2a985554ea1a39cd38695018",
+        "GUID:a44f47cf3ada4435dbc516bad0bc86fe",
+        "GUID:9e24947de15b9834991c9d8411ea37cf",
+        "GUID:84651a3751eca9349aac36a66bba901b"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "Assembly-CSharp.dll",
+        "RoR2.dll",
+        "RoR2BepInExPack.dll",
+        "BepInEx.dll",
+        "Mono.Cecil.dll",
+        "Mono.Cecil.Pdb.dll",
+        "MonoMod.Utils.dll",
+        "MonoMod.RuntimeDetour.dll",
+        "HGUnityUtils.dll",
+        "HGCSharpUtils.dll",
+        "KinematicCharacterController.dll",
+        "LegacyResourcesAPI.dll",
+        "Decalicious.dll",
+        "SimpleJSON.dll",
+        "RiskOfOptions.dll",
+        "Zio.dll",
+        "ZioConfigFile.dll",
+        "ZioRiskOfOptions.dll",
+        "HarmonyXInterop.dll",
+        "0Harmony.dll"
+    ],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

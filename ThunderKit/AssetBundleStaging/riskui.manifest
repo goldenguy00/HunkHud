@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2131476753
+CRC: 2109034255
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 78eddfbe4c9f3a4533d82f25611e61c5
+    Hash: 65c1278e153a9b2365f789f5b472f701
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 946a5cd07e61e38cf12d8f902a1619be
+    Hash: e434310100c4944f724bc3027672319f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -32,8 +32,6 @@ ClassTypes:
 - Class: 90
   Script: {instanceID: 0}
 - Class: 95
-  Script: {instanceID: 0}
-- Class: 114
   Script: {instanceID: 0}
 - Class: 114
   Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
@@ -370,7 +368,6 @@ Assets:
 - Assets/FunnyUIMeme/Assets/Sprites/checkboxCheckedWhite.png
 - Assets/RoR2/Base/Items/WardOnLevel/texWarbannerIcon.png
 - Assets/RoR2/Base/Items/Bear/Bear.asset
-- Assets/TextMesh Pro/FormerResources/Shaders/TMP_SDF.shader
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.asset
@@ -462,8 +459,8 @@ Assets:
 - Assets/RoR2/Base/Items/WardOnLevel/matWarbannerPole.mat
 - Assets/FunnyUIMeme/Assets/RiskUI.prefab
 - Assets/RoR2/Base/Items/WardOnLevel/texWarbannerDiffuse.png
-- Assets/RoR2/Base/Items/WardOnLevel/texWarbannerIcon.asset
 - Assets/RoR2/Base/Items/Bear/Items.Bear.asset
+- Assets/RoR2/Base/Items/WardOnLevel/texWarbannerIcon.asset
 - Assets/RoR2/Base/Core/Null/NullMesh.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Monsoon.png
