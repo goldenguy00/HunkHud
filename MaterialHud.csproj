@@ -84,7 +84,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\FunnyUIMeme\MaterialHud.asmdef" />
-    <None Include="Assets\FunnyUIMeme\RiskUI.dll" />
     <None Include="Assets\FunnyUIMeme\Assets\DifficultyIcons\README.txt" />
   </ItemGroup>
   <ItemGroup>

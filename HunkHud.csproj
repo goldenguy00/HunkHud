@@ -482,10 +482,6 @@
       <HintPath>Packages\BepInExPack\BepInExPack\BepInEx\core\0Harmony.dll</HintPath>
       <Private>False</Private>
     </Reference>
-    <Reference Include="RiskUI">
-      <HintPath>Assets\FunnyUIMeme\RiskUI.dll</HintPath>
-      <Private>False</Private>
-    </Reference>
     <Reference Include="netstandard">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.33f1\Editor\Data\NetStandard\ref\2.1.0\netstandard.dll</HintPath>
       <Private>False</Private>
@@ -1004,6 +1000,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="MaterialHud.csproj">
+      <Project>{FE792FD8-8B9E-3BFA-9E70-636701B34A39}</Project>
+      <Name>MaterialHud</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
