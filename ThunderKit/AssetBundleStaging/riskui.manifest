@@ -1,27 +1,19 @@
 ManifestFileVersion: 0
-CRC: 2109034255
+CRC: 74659814
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 65c1278e153a9b2365f789f5b472f701
+    Hash: bc61d994ae4be6d23b6f8d561d3b3b27
   TypeTreeHash:
     serializedVersion: 2
-    Hash: e434310100c4944f724bc3027672319f
+    Hash: bff6a4c8c4e775ec82f8f284e57afe88
 HashAppended: 0
 ClassTypes:
 - Class: 1
   Script: {instanceID: 0}
-- Class: 4
-  Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
-- Class: 23
-  Script: {instanceID: 0}
 - Class: 28
-  Script: {instanceID: 0}
-- Class: 33
-  Script: {instanceID: 0}
-- Class: 43
   Script: {instanceID: 0}
 - Class: 48
   Script: {instanceID: 0}
@@ -29,36 +21,54 @@ ClassTypes:
   Script: {instanceID: 0}
 - Class: 54
   Script: {instanceID: 0}
-- Class: 90
-  Script: {instanceID: 0}
-- Class: 95
-  Script: {instanceID: 0}
+- Class: 114
+  Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 86710e43de46f6f4bac7c8e50813a599, type: 3}
 - Class: 114
   Script: {fileID: 535236639, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: cae647a10e6ec9e44a8ae5a0946ff0b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 7c4b8e5a12597e845b0edbd0f27f8e58, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 5f7b9730319e8584eb7de33839bd4a73, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 948a8e6b22699fe4887eb1b91887a775, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 1fc03922340cc704083538043d666ae3, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 194d28b6b56079f45a1af097344fc26d, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 3245ec927659c4140ac4f8d17403cc18, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 144885f8d9fc338468e70cdae884e3c8, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 9ea62a578cc3b6449970799026a6ce7b, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 0def715ce03f3e744be1270fe31fa388, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 03374228d7fa3854da79809c0b2c10a2, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: 3312d7739989d2b4e91e6319e9a96d76, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 04fdeb30ae1d36e4e8ac6b1c5a3d350e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
 - Class: 114
@@ -138,8 +148,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -966267668, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: 1539485112, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: 64963404, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1469851606, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -148,8 +156,6 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 463222144, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: -1284244208, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: 877486143, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -630047940, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -157,8 +163,6 @@ ClassTypes:
   Script: {fileID: -573374155, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1693071685, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
-  Script: {fileID: -1864444436, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 224405951, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -208,60 +212,28 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -946661946, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: -201737183, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
-- Class: 114
   Script: {fileID: -101842185, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1694916572, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
-  Script: {fileID: -1746479147, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  Script: {fileID: 11500000, guid: 0cac1b43ce7b84e49b3cfc419ad643d4, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: b9741aad77865ce4b95ac44e75d1703d, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 2a4db7a114972834c8e4117be1d82ba3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
 - Class: 114
-  Script: {fileID: -745384217, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  Script: {fileID: 11500000, guid: f94e6e8e71772104d9491a29a3ed5343, type: 3}
 - Class: 114
-  Script: {fileID: 1755112185, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -55326007, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -1468595796, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -121293455, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -660353803, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 927084362, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -474541677, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 237348783, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: -1753663027, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 1023940606, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 1681914417, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 1943367140, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 208657911, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
-- Class: 114
-  Script: {fileID: 1681300032, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
-- Class: 114
-  Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
-- Class: 114
-  Script: {fileID: 208657911, guid: 296f27627645a344ca0ae31c1d69a7c1, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
-  Script: {instanceID: 0}
-- Class: 137
   Script: {instanceID: 0}
 - Class: 213
   Script: {instanceID: 0}
@@ -282,10 +254,6 @@ SerializeReferenceClassIdentifiers:
   ClassName: RoR2.TimerStringFormatter/Format/Unit
 - AssemblyName: RoR2
   ClassName: RoR2.UI.HealthBarStyle/BarStyle
-- AssemblyName: RoR2
-  ClassName: RoR2.UI.InspectInfo
-- AssemblyName: Unity.Addressables
-  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.GameObject]
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -351,132 +319,67 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Tropical Storm (Tropical Storm).png
-- Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
 - Assets/FunnyUIMeme/Assets/MaterialTimerStringFormatter.asset
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialObjectiveStrip.prefab
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.png
-- Assets/RoR2/Base/Items/Bear/texBearIcon.png
-- Assets/RoR2/Base/UI/HUD/MissingInspectInfoFallbackDef.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_0.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.png
+- Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
+- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
 - Assets/FunnyUIMeme/Assets/Sprites/HitMarker.png
-- Assets/RoR2/Base/Items/Syringe/texSyringeIcon.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Calypso (More Difficulties).png
-- Assets/RoR2/Base/Core/Null/texNullIcon.png
-- Assets/RoR2/Base/Items/Bear/texBearNormal.png
 - Assets/FunnyUIMeme/Assets/Sprites/checkboxCheckedWhite.png
-- Assets/RoR2/Base/Items/WardOnLevel/texWarbannerIcon.png
-- Assets/RoR2/Base/Items/Bear/Bear.asset
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.asset
-- Assets/RoR2/Base/Items/Syringe/texSyringeIcon.png
-- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.png
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Tempest (More Difficulties).png
-- Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialMonsterItemInventory.prefab
-- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
-- Packages/com.unity.postprocessing/PostProcessing/Gizmos/PostProcessLayer.png
-- Assets/RoR2/Base/UI/UILayers/uilTertiaryPanel.asset
-- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-- Assets/PP Profile.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_16.asset
-- Assets/FunnyUIMeme/Assets/Simulacrum/MaterialDefaultWaveUI.prefab
-- Assets/FunnyUIMeme/Assets/MaterialCenti.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/README.txt
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/Void_Coin.png
-- Assets/RoR2/Base/Items/Bear/BearMesh.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_15.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_1.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Pluviculture (ConfigurableDifficulty).png
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/ThunderStorm (More Difficulties).png
-- Assets/FunnyUIMeme/Assets/HudParts/StripContainer.prefab
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_4.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_3.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Armageddon (More Difficulties).png
-- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
-- Assets/RoR2/Base/Items/WardOnLevel/matWarbannerFlag.mat
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_12.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Typhoon (Starstorm 2).png
-- Assets/FunnyUIMeme/Assets/Backups/MaterialAllyCardBackup.prefab
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Super Typhoon (Starstorm 2).png
-- Assets/RoR2/Base/UI/UILayers/uilSecondaryPanel.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Rainstorm.png
-- Assets/RoR2/Base/Items/Bear/texBearDiffuse.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture_2.asset
-- Assets/RoR2/Base/Items/WardOnLevel/Cylinder.asset
-- Assets/RoR2/Base/Items/WardOnLevel/Plane.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_10.asset
-- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow Atlas.png
-- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_14.asset
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Deluge (UntitledDifficultyMod).png
-- Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
-- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
-- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_9.asset
-- Assets/RoR2/Base/Items/WardOnLevel/PickupWarbanner.prefab
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_8.asset
-- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
-- Assets/RoR2/Base/Items/Bear/matBear.mat
-- Assets/RoR2/Base/Shaders/Deferred/HGStandard.shader
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.png
-- Assets/RoR2/Base/Items/Bear/mdlBearAvatar.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_5.asset
 - Assets/FunnyUIMeme/Assets/MaterialClassicRunInfoHudPanel.prefab
+- Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
 - Assets/FunnyUIMeme/Assets/MaterialNonCenti.asset
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Tempest (More Difficulties).png
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialMonsterItemInventory.prefab
+- Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
 - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+- Packages/com.unity.postprocessing/PostProcessing/Gizmos/PostProcessLayer.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialArtifactStatusIcon.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/CircleInner.png
-- Assets/RoR2/Base/Items/Bear/texBearIcon.asset
 - Assets/FunnyUIMeme/Assets/Sprites/ringBelow.png
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Sunny (More Difficulties).png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_7.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_11.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_17.asset
+- Assets/PP Profile.asset
+- Assets/FunnyUIMeme/Assets/Simulacrum/MaterialDefaultWaveUI.prefab
 - Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_6.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture.png
+- Assets/FunnyUIMeme/Assets/MaterialCenti.asset
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/README.txt
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Void_Coin.png
 - Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/SpriteNumberImage.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/Tab.png
-- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow.asset
 - Assets/FunnyUIMeme/Assets/Simulacrum/MaterialSimulacrum.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/checkboxUnCheckedWhite.png
-- Assets/RoR2/Base/Items/WardOnLevel/WardOnLevel.asset
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Inferno (Inferno).png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Charybdis (UntitledDifficultyMod).png
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHeaderDouble.png
-- Assets/RoR2/Base/Items/WardOnLevel/matWarbannerPole.mat
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Pluviculture (ConfigurableDifficulty).png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/ThunderStorm (More Difficulties).png
+- Assets/FunnyUIMeme/Assets/HudParts/StripContainer.prefab
 - Assets/FunnyUIMeme/Assets/RiskUI.prefab
-- Assets/RoR2/Base/Items/WardOnLevel/texWarbannerDiffuse.png
-- Assets/RoR2/Base/Items/Bear/Items.Bear.asset
-- Assets/RoR2/Base/Items/WardOnLevel/texWarbannerIcon.asset
-- Assets/RoR2/Base/Core/Null/NullMesh.asset
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Armageddon (More Difficulties).png
+- Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Typhoon (Starstorm 2).png
+- Assets/FunnyUIMeme/Assets/Backups/MaterialAllyCardBackup.prefab
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Super Typhoon (Starstorm 2).png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Rainstorm.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Monsoon.png
 - Assets/FunnyUIMeme/Assets/HudParts/HealthBarSub.prefab
-- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombStandard Material.mat
-- Assets/RoR2/Base/Core/Null/NullModel.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/circle.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Drizzle.png
+- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
 - Assets/FunnyUIMeme/Assets/Sprites/ringTop.png
 - Assets/FunnyUIMeme/Assets/Sprites/whitepixel.png
 - Assets/FunnyUIMeme/Assets/Sprites/Shift.png
-- Assets/RoR2/Base/Items/Bear/PickupBear.prefab
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Deluge (UntitledDifficultyMod).png
+- Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/CircleOuter.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
-- Assets/RoR2/Base/UI/HUD/UnknownItemInspectInfo.asset
-- Assets/RoR2/Base/Core/Null/matNull.mat
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
 Dependencies: []

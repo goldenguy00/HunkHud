@@ -1,3 +1,8 @@
+-   **5.4.2121**
+
+    -   RoR2 BepInExPack specific changes :
+        -   RoR2BepInExPack: Ensure remaining old dll in the plugins folder doesnt get loaded by BepInEx Chainloader
+
 -   **5.4.2120**
 
     -   RoR2 BepInExPack specific changes :

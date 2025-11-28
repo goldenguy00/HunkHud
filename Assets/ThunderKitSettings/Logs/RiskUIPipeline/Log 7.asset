@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 7
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 2fff3363a4c7d5a469a01906d76d798c, type: 2}
+  creationDate:
+    ticks: 638998834326268582
+  entries:
+  - logLevel: 0
+    internalTime:
+      ticks: 638998834337969972
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Build Completed: ```  ```'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834336103988
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioRiskOfOptions](assetlink://Packages%2fbubbet-zioriskofoptions%2fZioRiskOfOptions.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834335006975
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834334020782
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioConfigFile](assetlink://Packages%2fbubbet-zioconfigfile%2fZioConfigFile.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834333091963
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834332190073
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834331311962
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834330481478
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834329669476
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998834328893083
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998834327862337
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998834327816989
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998834327754341
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Execute Pipeline'
+    context: []

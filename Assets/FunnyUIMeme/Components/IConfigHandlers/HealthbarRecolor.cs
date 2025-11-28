@@ -2,9 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Reflection;
 using RoR2.UI;
-using TMPro;
 using UnityEngine;
-using UnityEngine.UI;
 using ZioConfigFile;
 
 namespace MaterialHud

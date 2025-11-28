@@ -1,5 +1,4 @@
 using HarmonyLib;
-using HunkHud.Components.UI;
 using MaterialHud;
 using RoR2.UI;
 using UnityEngine;

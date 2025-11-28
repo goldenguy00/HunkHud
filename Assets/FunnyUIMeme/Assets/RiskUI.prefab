@@ -6934,6 +6934,63 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4220868394494937154
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 442765708796690755}
+  - component: {fileID: 5869253278519348726}
+  m_Layer: 5
+  m_Name: RightUtilityArea
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &442765708796690755
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220868394494937154}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 7868590715662967266}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: -300, y: 200}
+  m_SizeDelta: {x: 330, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &5869253278519348726
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4220868394494937154}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &4244844869338788855
 GameObject:
   m_ObjectHideFlags: 0
@@ -7785,7 +7842,7 @@ RectTransform:
   - {fileID: 6231329437241762417}
   - {fileID: 5717696154836961196}
   m_Father: {fileID: 7868590715662967266}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13399,13 +13456,14 @@ RectTransform:
   - {fileID: 2530399285467995080}
   - {fileID: 430391160266405901}
   - {fileID: 1584425268366734231}
+  - {fileID: 442765708796690755}
   - {fileID: 4048024242563260029}
   m_Father: {fileID: 7888029891041097127}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 50, y: 13}
+  m_AnchoredPosition: {x: 50.00006, y: 13}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 1, y: 0}
 --- !u!222 &1028667509249278170
@@ -13737,30 +13795,48 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   transformPairs:
-  - name: RightInfoBar
-    transform: {fileID: 0}
-  - name: TopCenterCluster
-    transform: {fileID: 2951964766320532471}
-  - name: ScopeContainer
-    transform: {fileID: 8744544898892292906}
-  - name: CrosshairExtras
-    transform: {fileID: 4399128242426980517}
-  - name: BottomLeftCluster
-    transform: {fileID: 4444635597009570137}
   - name: BossHealthBar
     transform: {fileID: 155226617335194679}
+  - name: ScopeContainer
+    transform: {fileID: 8744544898892292906}
+  - name: SpringCanvas
+    transform: {fileID: 7888029891041097127}
   - name: NotificationArea
     transform: {fileID: 1897040670482528212}
-  - name: UpperLeftCluster
-    transform: {fileID: 3046487362268559648}
+  - name: ScoreboardPanel
+    transform: {fileID: 6754506588757672994}
   - name: SkillDisplayRoot
     transform: {fileID: 4048024242563260029}
-  - name: AllyCardContainer
-    transform: {fileID: 2225356921336194630}
   - name: BuffDisplayRoot
     transform: {fileID: 399925714221478516}
   - name: InventoryDisplayRoot
-    transform: {fileID: 1678240023628053726}
+    transform: {fileID: 7193738492235090798}
+  - name: UpperLeftCluster
+    transform: {fileID: 3046487362268559648}
+  - name: TopCenterCluster
+    transform: {fileID: 2951964766320532471}
+  - name: UpperRightCluster
+    transform: {fileID: 5413006923063750437}
+  - name: LeftCluster
+    transform: {fileID: 1714888344540969559}
+  - name: CrosshairExtras
+    transform: {fileID: 4399128242426980517}
+  - name: RightCluster
+    transform: {fileID: 500027684913477423}
+  - name: BottomLeftCluster
+    transform: {fileID: 4444635597009570137}
+  - name: BottomCenterCluster
+    transform: {fileID: 5671915242031508509}
+  - name: BottomRightCluster
+    transform: {fileID: 7868590715662967266}
+  - name: AllyCardContainer
+    transform: {fileID: 2225356921336194630}
+  - name: RightUtilityArea
+    transform: {fileID: 442765708796690755}
+  - name: RightUtilityRoot
+    transform: {fileID: 442765708796690755}
+  - name: RightInfoBar
+    transform: {fileID: 0}
 --- !u!114 &6347950190227506521
 MonoBehaviour:
   m_ObjectHideFlags: 0

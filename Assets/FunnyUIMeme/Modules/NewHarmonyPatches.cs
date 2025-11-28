@@ -1,7 +1,5 @@
 using System;
-using System.Linq;
 using HarmonyLib;
-using MaterialHud;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
@@ -102,24 +100,24 @@ namespace MaterialHud
         }
 
         /*
-		[HarmonyILManipulator,
-		 HarmonyPatch(typeof(InfiniteTowerWaveController), nameof(InfiniteTowerWaveController.InstantiateUi))]
-		public static void ReplaceWaveUI(ILContext il)
-		{
-			var c = new ILCursor(il);
+        [HarmonyILManipulator,
+         HarmonyPatch(typeof(InfiniteTowerWaveController), nameof(InfiniteTowerWaveController.InstantiateUi))]
+        public static void ReplaceWaveUI(ILContext il)
+        {
+            var c = new ILCursor(il);
 
-			c.GotoNext(
+            c.GotoNext(
                 x => x.MatchLdarg(0),
                 x => x.MatchLdfld<InfiniteTowerWaveController>(nameof(InfiniteTowerWaveController.uiPrefab)));
 
-			c.RemoveRange(2);
-			c.EmitDelegate<Func<InfiniteTowerWaveController, Transform, GameObject>>((controller, transform) =>
-			{
-				var obj = GameObject.Instantiate(RiskUIPlugin.BaseWaveUI, transform);
-				obj.transform.SetSiblingIndex(1);
-				return obj;
-			});
-		}*/
+            c.RemoveRange(2);
+            c.EmitDelegate<Func<InfiniteTowerWaveController, Transform, GameObject>>((controller, transform) =>
+            {
+                var obj = GameObject.Instantiate(RiskUIPlugin.BaseWaveUI, transform);
+                obj.transform.SetSiblingIndex(1);
+                return obj;
+            });
+        }*/
 
         [HarmonyPrefix, HarmonyPatch(typeof(DifficultyDef), nameof(DifficultyDef.GetIconSprite))]
         public static bool SwapIcon(DifficultyDef __instance, ref Sprite __result)
@@ -171,32 +169,41 @@ namespace MaterialHud
             }
         }
 
-        [HarmonyILManipulator, HarmonyPatch(typeof(ItemIcon), nameof(ItemIcon.SetItemIndex))]
+        [HarmonyILManipulator, HarmonyPatch(typeof(ItemIcon), nameof(ItemIcon.SetItemIndex), new Type[] { typeof(ItemIndex), typeof(int), typeof(float) })]
         public static void ItemCount(ILContext il)
         {
             ILCursor[] c = null;
             if (new ILCursor(il).TryFindNext(out c,
-                    x => x.MatchLdfld(typeof(ItemIcon), nameof(ItemIcon.spriteAsNumberManager)),
                     x => x.MatchCallOrCallvirt<SpriteAsNumberManager>(nameof(SpriteAsNumberManager.SetItemCount)),
-                    x => x.MatchLdfld(typeof(ItemIcon), nameof(ItemIcon.spriteAsNumberManager)),
                     x => x.MatchCallOrCallvirt<SpriteAsNumberManager>(nameof(SpriteAsNumberManager.SetVisible))
                 ))
             {
                 c[0].Remove();
-                c[0].Emit<ItemIcon>(OpCodes.Ldfld, nameof(ItemIcon.stackText));
-                c[1].Remove();
-                c[1].EmitDelegate<Action<TextMeshProUGUI, int>>((image, num) =>
+                c[0].Emit(OpCodes.Ldarg_0);
+                c[0].EmitDelegate<Action<SpriteAsNumberManager, int, ItemIcon>>((sanm, num, image) =>
                 {
-                    image.text = "x" + num.ToString();
-                    image.enabled = true;
+                    if (sanm)
+                    {
+                        sanm.SetItemCount(num);
+                    }
+                    else if (image.stackText)
+                    {
+                        image.stackText.text = "x" + num.ToString();
+                        image.stackText.enabled = true;
+                    }
                 });
-                c[2].Remove();
-                c[2].Emit<ItemIcon>(OpCodes.Ldfld, nameof(ItemIcon.stackText));
-                c[3].Remove();
-                c[3].EmitDelegate<Action<TextMeshProUGUI, bool>>((image, num) =>
+                c[1].Remove();
+                c[1].Emit(OpCodes.Ldarg_0);
+                c[1].EmitDelegate<Action<SpriteAsNumberManager, bool, ItemIcon>>((sanm, enabled, image) =>
                 {
-                    image.text = "";
-                    image.enabled = false;
+                    if (sanm)
+                    {
+                        sanm.SetVisible(enabled);
+                    }
+                    else if (image.stackText)
+                    {
+                        image.stackText.enabled = enabled;
+                    }
                 });
             }
         }
@@ -244,15 +251,16 @@ namespace MaterialHud
                 c.EmitDelegate<Action<TMP_Text, string>>(Slurp);
             }
 
-            void Slurp(TMP_Text _, string __)
+
+            void Slurp(TMP_Text text, string texttext)
             {
-                if (_)
-                    _.text = __;
+                if (text)
+                    text.text = texttext;
             }
-            void Slurp2(GameObject _, bool __)
+            void Slurp2(GameObject obj, bool enabled)
             {
-                if (_)
-                    _.SetActive(__);
+                if (obj)
+                    obj.SetActive(enabled);
             }
         }
     }

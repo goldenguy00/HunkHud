@@ -1,6 +1,6 @@
 {
     "name": "BepInExPack",
-    "version_number": "5.4.2120",
+    "version_number": "5.4.2121",
     "website_url": "https://github.com/risk-of-thunder/BepInEx",
     "description": "Unified BepInEx all-in-one modding pack - plugin framework, detour library",
     "dependencies": [

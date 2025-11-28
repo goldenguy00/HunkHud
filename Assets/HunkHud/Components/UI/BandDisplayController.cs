@@ -37,7 +37,7 @@ namespace HunkHud.Components.UI
                     for (int i = 0; i < itemName.Length; i++)
                     {
                         var itemIndex = ItemCatalog.FindItemIndex(itemName[i]);
-                        if (inventory.GetItemCount(itemIndex) > 0)
+                        if (inventory.GetItemCountEffective(itemIndex) > 0)
                         {
                             hasItem = true;
                             break;

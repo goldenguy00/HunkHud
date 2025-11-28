@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: MissingInspectInfoFallbackDef
   m_EditorClassIdentifier:
   Info:
-    Visual: {fileID: 21300000, guid: 11c533a106162d640983972aeb855702, type: 2}
+    Visual: {fileID: 21300000, guid: 28242b66dfb068843ae24a8f292592dd, type: 2}
     TitleToken: INSPECT_INFO_MISSING_TITLE
     DescriptionToken: INSPECT_INFO_MISSING_DESCRIPTION
     FlavorToken: INSPECT_INFO_MISSING_LORE

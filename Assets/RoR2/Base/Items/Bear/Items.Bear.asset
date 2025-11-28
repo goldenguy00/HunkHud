@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier:
   nameToken: ITEM_BEAR_NAME
   displayModelPath:
-  displayModelPrefab: {fileID: 1199917167434115, guid: 6e0459a4cc23a1c4688a1f9a221d1752, type: 2}
+  displayModelPrefab: {fileID: 1127297044305698, guid: 6dbf28324f9830c48a2caa139ff1e8c0, type: 2}
   hidden: 0
   achievementIcon: {fileID: 0}
   requiredExpansion: {fileID: 0}

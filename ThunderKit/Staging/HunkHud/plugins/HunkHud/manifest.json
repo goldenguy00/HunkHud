@@ -5,7 +5,7 @@
     "website_url": "https://discord.gg/xqp5CQM8Cs",
     "description": "Standalone Hud from HUNK",
     "dependencies": [
-        "bbepis-BepInExPack-5.4.2117",
+        "bbepis-BepInExPack-5.4.2121",
         "Bubbet-RiskUI-2.0.0"
     ]
 }

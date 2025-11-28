@@ -27,13 +27,12 @@
         "KinematicCharacterController.dll",
         "LegacyResourcesAPI.dll",
         "Decalicious.dll",
-        "SimpleJSON.dll",
         "RiskOfOptions.dll",
-        "Zio.dll",
+        "SimpleJSON.dll",
         "ZioConfigFile.dll",
-        "ZioRiskOfOptions.dll",
-        "HarmonyXInterop.dll",
-        "0Harmony.dll"
+        "0Harmony.dll",
+        "Zio.dll",
+        "ZioRiskOfOptions.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

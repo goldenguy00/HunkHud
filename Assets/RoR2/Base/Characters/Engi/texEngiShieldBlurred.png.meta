@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 4bac17f629edbb64f973fa20b9b4edfa
-timeCreated: 1744751524
+guid: d9a4f38bee1645b40b6ed9c2d6234f60
+timeCreated: 1754736056
 licenseType: Free
 TextureImporter:
   serializedVersion: 12
@@ -120,5 +120,5 @@ TextureImporter:
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
   userData:
-  assetBundleName: 9ef4aacd9f1d8cdf26be7d101cd6c132.bundle
+  assetBundleName: e7d05e399c13a5aed09d8874e126726b.bundle
   assetBundleVariant:

@@ -1771,7 +1771,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 4205339666279640933}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: -660353803, guid: 78dbee4fe9b74cc498ebbcd917887769, type: 3}
+  m_Script: {fileID: 11500000, guid: 04fdeb30ae1d36e4e8ac6b1c5a3d350e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   text: {fileID: 4205339666809390023}
@@ -1787,11 +1787,11 @@ MonoBehaviour:
   - DIFFICULTY_BAR_9
   ringImage: {fileID: 7377191766511987160}
   ringBehind: {fileID: 4205339666945908344}
-  textRecolorer: {fileID: 0}
-  ringRecolorer: {fileID: 0}
-  ringBehindRecolorer: {fileID: 0}
-  timerTextRecolorer: {fileID: 0}
-  timerCentiTextRecolorer: {fileID: 0}
+  textRecolorer: {fileID: 7220628614091837501}
+  ringRecolorer: {fileID: 8312114355947275550}
+  ringBehindRecolorer: {fileID: 7135748754388368126}
+  timerTextRecolorer: {fileID: 8657729604656754268}
+  timerCentiTextRecolorer: {fileID: 687095149729384496}
   monsterLevel: {fileID: 5805058812809116213}
   levelsPerSegment: 3
 --- !u!1 &4205339666315558050

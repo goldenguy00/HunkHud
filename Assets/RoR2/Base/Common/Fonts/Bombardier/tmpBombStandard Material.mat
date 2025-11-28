@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: tmpBombStandard Material
-  m_Shader: {fileID: 4800000, guid: 9e637d916efb0854ca1a48667cd2cdb6, type: 3}
+  m_Shader: {fileID: 4800000, guid: 920714d23dd0e2b4dae7a19e0cdcb2b1, type: 3}
   m_ValidKeywords:
   - UNDERLAY_ON
   m_InvalidKeywords: []
@@ -34,7 +34,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 43235ba88f954514c8caffdbcabec5ab, type: 3}
+        m_Texture: {fileID: 2800000, guid: 9e408853588ca2a4284d13855a1bb979, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OutlineTex:

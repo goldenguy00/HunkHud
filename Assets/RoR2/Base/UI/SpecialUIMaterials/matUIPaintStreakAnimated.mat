@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: matUIPaintStreakAnimated
-  m_Shader: {fileID: 4800000, guid: f69cd557044fc514ea256d192c2aa050, type: 3}
+  m_Shader: {fileID: 4800000, guid: 2b8e5db92a7cecf4bbe68064468f0985, type: 3}
   m_ValidKeywords:
   - DOUBLESAMPLE
   m_InvalidKeywords: []
@@ -26,11 +26,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _OverlayTex:
-        m_Texture: {fileID: 2800000, guid: 88858ccc96f9ec84c96e653e5339856c, type: 3}
+        m_Texture: {fileID: 2800000, guid: dc602795f5da7634084dd5d8f7eb671e, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _RemapRamp:
-        m_Texture: {fileID: 2800000, guid: 1d7a7a902406e3849b86c19bc85add7b, type: 3}
+        m_Texture: {fileID: 2800000, guid: e0be9157606c9bd498cd1fb8e268efd1, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: {}

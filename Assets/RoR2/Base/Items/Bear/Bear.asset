@@ -18,13 +18,19 @@ MonoBehaviour:
   pickupToken: ITEM_BEAR_PICKUP
   descriptionToken: ITEM_BEAR_DESC
   loreToken: ITEM_BEAR_LORE
-  unlockableDef: {fileID: 11400000, guid: b901c4391f5f93341aca62a080b0f86d, type: 2}
-  pickupModelPrefab: {fileID: 1833727713118131, guid: 38516de28b80fd445ac9d1279a02cbc2, type: 2}
-  pickupIconSprite: {fileID: 21300000, guid: f179fa3707885c2428d4fc276f22f199, type: 2}
+  unlockableDef: {fileID: 11400000, guid: a421ba65f0463334da28cdf2b02de4ab, type: 2}
+  pickupModelPrefab: {fileID: 1224917729640355, guid: c6a10ebff4c8c154f8ed37523a8d0632, type: 2}
+  pickupModelReference:
+    m_AssetGUID:
+    m_SubObjectName:
+    m_SubObjectType:
+  pickupIconSprite: {fileID: 21300000, guid: b03e41baf3136454ba1b94489ad7503a, type: 2}
   isConsumed: 0
   hidden: 0
   canRemove: 1
   tags:
   - 3
   - 11
+  - 22
+  - 31
   requiredExpansion: {fileID: 0}

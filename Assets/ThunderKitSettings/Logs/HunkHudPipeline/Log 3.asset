@@ -1,0 +1,1620 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 3
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
+  creationDate:
+    ticks: 638998860807042065
+  entries:
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860927691081
+    message: '[HunkHudPipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Finished execution'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860926745782
+    message: '[HunkHudPipeline(7 - Zip)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      archived ``` ThunderKit/Staging/HunkHud/plugins/HunkHud ``` into ``` Assets/HunkHud/Thunderstore/Release.zip
+      ```'
+    context:
+    - "Copied Files\r\n\r\n 1. Assets\\HunkHud\\Thunderstore\\CHANGELOG.md\r\n\r\n
+      2. Assets\\HunkHud\\Thunderstore\\CHANGELOG.md.meta\r\n\r\n 3. Assets\\HunkHud\\Thunderstore\\HunkHudDestinationPath.asset\r\n\r\n
+      4. Assets\\HunkHud\\Thunderstore\\HunkHudDestinationPath.asset.meta\r\n\r\n
+      5. Assets\\HunkHud\\Thunderstore\\HunkHudManifest.asset\r\n\r\n 6. Assets\\HunkHud\\Thunderstore\\HunkHudManifest.asset.meta\r\n\r\n
+      7. Assets\\HunkHud\\Thunderstore\\HunkHudPipeline.asset\r\n\r\n 8. Assets\\HunkHud\\Thunderstore\\HunkHudPipeline.asset.meta\r\n\r\n
+      9. Assets\\HunkHud\\Thunderstore\\icon.png\r\n\r\n 10. Assets\\HunkHud\\Thunderstore\\icon.png.meta\r\n\r\n
+      11. Assets\\HunkHud\\Thunderstore\\README.md\r\n\r\n 12. Assets\\HunkHud\\Thunderstore\\README.md.meta\r\n\r\n
+      13. Assets\\HunkHud\\Thunderstore\\Release.zip\r\n\r\n 14. Assets\\HunkHud\\Thunderstore\\Release.zip.meta"
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860919128188
+    message: '[HunkHudPipeline(7 - Zip)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860918586814
+    message: '[HunkHudPipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleted Assets/HunkHud/Thunderstore/Release.zip'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860918003965
+    message: '[HunkHudPipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleting Assets/HunkHud/Thunderstore/Release.zip'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860917405402
+    message: '[HunkHudPipeline(6 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860916796314
+    message: '[HunkHudPipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleted ThunderKit/Staging/HunkHud/plugins/HunkHud/hunkhudassets.manifest'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860916185671
+    message: '[HunkHudPipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleting ThunderKit/Staging/HunkHud/plugins/HunkHud/hunkhudassets.manifest'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860915571155
+    message: '[HunkHudPipeline(5 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860914958227
+    message: '[HunkHudPipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleted ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.manifest'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860914410460
+    message: '[HunkHudPipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Deleting ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.manifest'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860913838689
+    message: '[HunkHudPipeline(4 - Delete)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860912898303
+    message: '[HunkHudPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Creating Thunderstore manifest.json'
+    context:
+    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"HunkHud\",\n    \"author\": \"public_ParticleSystem\",\n   
+      \"version_number\": \"1.0.0\",\n    \"website_url\": \"https://discord.gg/xqp5CQM8Cs\",\n   
+      \"description\": \"Standalone Hud from HUNK\",\n    \"dependencies\": [\n       
+      \"bbepis-BepInExPack-5.4.2121\",\n        \"Bubbet-RiskUI-2.0.0\"\n    ]\n}\r\n```"
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860912275810
+    message: '[HunkHudPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Creating Thunderstore manifest.json'
+    context:
+    - "Manifest.json\r\n```js\r\n{\n    \"name\": \"RiskUI\",\n    \"author\": \"Bubbet\",\n   
+      \"version_number\": \"2.0.0\",\n    \"website_url\": \"https://github.com/Bubbet\",\n   
+      \"description\": \"The first hud replacement mod\",\n    \"dependencies\":
+      [\n        \"bbepis-BepInExPack-5.4.2121\",\n        \"Bubbet-ZioRiskOfOptions-1.0.0\"\n   
+      ]\n}\r\n```"
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860911699411
+    message: '[HunkHudPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860911130230
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      staged ``` Assets/HunkHud/Thunderstore/CHANGELOG.md ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/CHANGELOG.md
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860910560496
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      staged ``` Assets/HunkHud/Thunderstore/README.md ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/README.md
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860910004983
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      staged ``` Assets/HunkHud/Thunderstore/icon.png ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud/icon.png
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860909433303
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      staged ``` Assets/FunnyUIMeme/Thunderstore/README.md ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/README.md
+      ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860908834492
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      staged ``` Assets/FunnyUIMeme/Thunderstore/icon.png ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/icon.png
+      ```'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860908250625
+    message: '[HunkHudPipeline(2 - StageManifestFiles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860907450305
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'HunkHudAssets
+
+      [BandCooldownTracker](assetlink://Assets%2fHunkHud%2fAssets%2fBandCooldownTracker.prefab)
+
+      
+
+      [CustomHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2fCustomHealthBar.prefab)
+
+      
+
+      [ItemNotification](assetlink://Assets%2fHunkHud%2fAssets%2fItemNotification.prefab)
+
+      
+
+      [LuminousGauge](assetlink://Assets%2fHunkHud%2fAssets%2fLuminousGauge.prefab)
+
+      
+
+      [ObjectiveGauge](assetlink://Assets%2fHunkHud%2fAssets%2fObjectiveGauge.prefab)
+
+      
+
+      [RiskUIHunk](assetlink://Assets%2fHunkHud%2fAssets%2fRiskUIHunk.prefab)
+
+      
+
+      [Vignette](assetlink://Assets%2fHunkHud%2fAssets%2fVignette.prefab)
+
+      
+
+      [DodgeOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fDodgeOverlay.controller)
+
+      
+
+      [Flash](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFlash.anim)
+
+      
+
+      [FlashbangOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFlashbangOverlay.anim)
+
+      
+
+      [FlashbangOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFlashbangOverlay.controller)
+
+      
+
+      [FlashbangOverlaySlow](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFlashbangOverlaySlow.controller)
+
+      
+
+      [Flashing](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFlashing.anim)
+
+      
+
+      [FullGauge](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fFullGauge.controller)
+
+      
+
+      [NewItemOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fNewItemOverlay.anim)
+
+      
+
+      [NewOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fNewOverlay.controller)
+
+      
+
+      [Pressed](assetlink://Assets%2fHunkHud%2fAssets%2fanimations%2fPressed.anim)
+
+      
+
+      [BandDisplay](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplay.prefab)
+
+      
+
+      [BandDisplayHealing](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplayHealing.prefab)
+
+      
+
+      [BandDisplayNova](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplayNova.prefab)
+
+      
+
+      [BandDisplayPrefab](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplayPrefab.prefab)
+
+      
+
+      [BandDisplaySacrificial](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplaySacrificial.prefab)
+
+      
+
+      [BandDisplayVoid](assetlink://Assets%2fHunkHud%2fAssets%2fbands%2fBandDisplayVoid.prefab)
+
+      
+
+      [BiomassHolder](assetlink://Assets%2fHunkHud%2fAssets%2fCompat%2fBiomassHolder.prefab)
+
+      
+
+      [GaugeMeter](assetlink://Assets%2fHunkHud%2fAssets%2fCompat%2fGaugeMeter.prefab)
+
+      
+
+      [StyleMeter](assetlink://Assets%2fHunkHud%2fAssets%2fCompat%2fStyleMeter.prefab)
+
+      
+
+      [WeaponPanel](assetlink://Assets%2fHunkHud%2fAssets%2fCompat%2fWeaponPanel.prefab)
+
+      
+
+      [AmmoPanel](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fAmmoPanel.prefab)
+
+      
+
+      [ChargeBar](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fChargeBar.prefab)
+
+      
+
+      [ChargeRing](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fChargeRing.prefab)
+
+      
+
+      [ComboGauge2](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fComboGauge2.prefab)
+
+      
+
+      [CounterFlash](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fCounterFlash.prefab)
+
+      
+
+      [DodgeFlash](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fDodgeFlash.prefab)
+
+      
+
+      [FlashbangOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fFlashbangOverlay.prefab)
+
+      
+
+      [GenericTextPanel](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fGenericTextPanel.prefab)
+
+      
+
+      [ItemGetPopup](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fItemGetPopup.prefab)
+
+      
+
+      [JacketFullGauge](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fJacketFullGauge.prefab)
+
+      
+
+      [OldComboGauge](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fOldComboGauge.prefab)
+
+      
+
+      [StaminaBar](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fStaminaBar.prefab)
+
+      
+
+      [StaticOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fStaticOverlay.prefab)
+
+      
+
+      [WeaponChargeBar](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fWeaponChargeBar.prefab)
+
+      
+
+      [WeaponRadial](assetlink://Assets%2fHunkHud%2fAssets%2fhud%2fWeaponRadial.prefab)
+
+      
+
+      [texHunk2Icon](assetlink://Assets%2fHunkHud%2fAssets%2ficons%2ftexHunk2Icon.png)
+
+      
+
+      [texBulletIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBulletIndicator.asset)
+
+      
+
+      [texBulletIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexBulletIndicator.png)
+
+      
+
+      [texChargeRing](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexChargeRing.asset)
+
+      
+
+      [texChargeRing](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexChargeRing.png)
+
+      
+
+      [texCircularMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexCircularMask.asset)
+
+      
+
+      [texCircularMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexCircularMask.png)
+
+      
+
+      [texCircularShade](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexCircularShade.asset)
+
+      
+
+      [texCircularShade](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexCircularShade.png)
+
+      
+
+      [texFadingBox](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexFadingBox.asset)
+
+      
+
+      [texFadingBox](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexFadingBox.png)
+
+      
+
+      [texHealthBarShade](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHealthBarShade.asset)
+
+      
+
+      [texHealthBarShade](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHealthBarShade.png)
+
+      
+
+      [texHudBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHudBar.asset)
+
+      
+
+      [texHudBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHudBar.png)
+
+      
+
+      [texHunkCursor](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHunkCursor.asset)
+
+      
+
+      [texHunkCursor](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexHunkCursor.png)
+
+      
+
+      [texItemBox](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexItemBox.asset)
+
+      
+
+      [texItemBox](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexItemBox.png)
+
+      
+
+      [texItemExclamation](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexItemExclamation.asset)
+
+      
+
+      [texItemExclamation](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexItemExclamation.png)
+
+      
+
+      [texRadialDefault](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialDefault.asset)
+
+      
+
+      [texRadialDefault](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialDefault.png)
+
+      
+
+      [texRadialInner](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialInner.asset)
+
+      
+
+      [texRadialInner](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialInner.png)
+
+      
+
+      [texRadialOuter](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialOuter.asset)
+
+      
+
+      [texRadialOuter](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialOuter.png)
+
+      
+
+      [texRadialSelection](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialSelection.asset)
+
+      
+
+      [texRadialSelection](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialSelection.png)
+
+      
+
+      [texRadialSelectionOuter](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialSelectionOuter.asset)
+
+      
+
+      [texRadialSelectionOuter](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexRadialSelectionOuter.png)
+
+      
+
+      [texSniperBulletIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexSniperBulletIndicator.asset)
+
+      
+
+      [texSniperBulletIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexSniperBulletIndicator.png)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexTeleporterIcon.asset)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexTeleporterIcon.png)
+
+      
+
+      [texWeakPointIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexWeakPointIndicator.asset)
+
+      
+
+      [texWeakPointIndicator](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexWeakPointIndicator.png)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexWhite.asset)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2ftexWhite.png)
+
+      
+
+      [texDodgeFlash](assetlink://Assets%2fHunkHud%2fAssets%2fvfx%2ftexDodgeFlash.asset)
+
+      
+
+      [texDodgeFlash](assetlink://Assets%2fHunkHud%2fAssets%2fvfx%2ftexDodgeFlash.png)
+
+      
+
+      [texVignette](assetlink://Assets%2fHunkHud%2fAssets%2fvfx%2ftexVignette.asset)
+
+      
+
+      [texVignette](assetlink://Assets%2fHunkHud%2fAssets%2fvfx%2ftexVignette.png)
+
+      
+
+      [texGaugeBackground](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBackground.asset)
+
+      
+
+      [texGaugeBackground](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBackground.png)
+
+      
+
+      [texGaugeBase](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBase.asset)
+
+      
+
+      [texGaugeBase](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBase.png)
+
+      
+
+      [texGaugeBorder](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBorder.asset)
+
+      
+
+      [texGaugeBorder](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeBorder.png)
+
+      
+
+      [texGaugeFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFill.asset)
+
+      
+
+      [texGaugeFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFill.png)
+
+      
+
+      [texGaugeFillActive](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFillActive.asset)
+
+      
+
+      [texGaugeFillActive](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFillActive.png)
+
+      
+
+      [texGaugeFillGain](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFillGain.asset)
+
+      
+
+      [texGaugeFillGain](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexGaugeFillGain.png)
+
+      
+
+      [texStyleA](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleA.asset)
+
+      
+
+      [texStyleA](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleA.png)
+
+      
+
+      [texStyleAFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleAFill.asset)
+
+      
+
+      [texStyleAFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleAFill.png)
+
+      
+
+      [texStyleApocalyptic](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleApocalyptic.asset)
+
+      
+
+      [texStyleApocalyptic](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleApocalyptic.png)
+
+      
+
+      [texStyleB](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleB.asset)
+
+      
+
+      [texStyleB](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleB.png)
+
+      
+
+      [texStyleBadass](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleBadass.asset)
+
+      
+
+      [texStyleBadass](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleBadass.png)
+
+      
+
+      [texStyleBFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleBFill.asset)
+
+      
+
+      [texStyleBFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleBFill.png)
+
+      
+
+      [texStyleC](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleC.asset)
+
+      
+
+      [texStyleC](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleC.png)
+
+      
+
+      [texStyleCFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleCFill.asset)
+
+      
+
+      [texStyleCFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleCFill.png)
+
+      
+
+      [texStyleCrazy](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleCrazy.asset)
+
+      
+
+      [texStyleCrazy](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleCrazy.png)
+
+      
+
+      [texStyleD](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleD.asset)
+
+      
+
+      [texStyleD](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleD.png)
+
+      
+
+      [texStyleDFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleDFill.asset)
+
+      
+
+      [texStyleDFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleDFill.png)
+
+      
+
+      [texStyleDismal](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleDismal.asset)
+
+      
+
+      [texStyleDismal](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleDismal.png)
+
+      
+
+      [texStyleOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleOverlay.asset)
+
+      
+
+      [texStyleOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleOverlay.png)
+
+      
+
+      [texStyleS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleS.asset)
+
+      
+
+      [texStyleS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleS.png)
+
+      
+
+      [texStyleSavage](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSavage.asset)
+
+      
+
+      [texStyleSavage](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSavage.png)
+
+      
+
+      [texStyleSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSFill.asset)
+
+      
+
+      [texStyleSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSFill.png)
+
+      
+
+      [texStyleSickSkills](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSickSkills.asset)
+
+      
+
+      [texStyleSickSkills](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSickSkills.png)
+
+      
+
+      [texStyleSmokinSexyStyle](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSmokinSexyStyle.asset)
+
+      
+
+      [texStyleSmokinSexyStyle](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSmokinSexyStyle.png)
+
+      
+
+      [texStyleSS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSS.asset)
+
+      
+
+      [texStyleSS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSS.png)
+
+      
+
+      [texStyleSSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSFill.asset)
+
+      
+
+      [texStyleSSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSFill.png)
+
+      
+
+      [texStyleSSS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSS.asset)
+
+      
+
+      [texStyleSSS](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSS.png)
+
+      
+
+      [texStyleSSSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSSFill.asset)
+
+      
+
+      [texStyleSSSFill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2ftexStyleSSSFill.png)
+
+      
+
+      [texRebellionIcon](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2ficons%2ftexRebellionIcon.asset)
+
+      
+
+      [texRebellionIcon](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2ficons%2ftexRebellionIcon.png)
+
+      
+
+      [texVirusSampleIcon](assetlink://Assets%2fHunkHud%2fAssets%2ficons%2fitem%2ftexVirusSampleIcon.asset)
+
+      
+
+      [texVirusSampleIcon](assetlink://Assets%2fHunkHud%2fAssets%2ficons%2fitem%2ftexVirusSampleIcon.png)
+
+      
+
+      [texSMGIcon](assetlink://Assets%2fHunkHud%2fAssets%2ficons%2fweapon%2ftexSMGIcon.asset)
+
+      
+
+      [texSMGIcon](assetlink://Assets%2fHunkHud%2fAssets%2ficons%2fweapon%2ftexSMGIcon.png)
+
+      
+
+      [texBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldown.asset)
+
+      
+
+      [texBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldown.png)
+
+      
+
+      [texBandCooldownBlank](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownBlank.asset)
+
+      
+
+      [texBandCooldownBlank](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownBlank.png)
+
+      
+
+      [texBandCooldownFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownFill.asset)
+
+      
+
+      [texBandCooldownFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownFill.png)
+
+      
+
+      [texBandCooldownFillMarked](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownFillMarked.png)
+
+      
+
+      [texBandCooldownFillVoid](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownFillVoid.asset)
+
+      
+
+      [texBandCooldownFillVoid](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownFillVoid.png)
+
+      
+
+      [texBandCooldownHealing](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownHealing.png)
+
+      
+
+      [texBandCooldownHealingEmpty](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownHealingEmpty.png)
+
+      
+
+      [texBandCooldownNova](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownNova.png)
+
+      
+
+      [texBandCooldownNovaEmpty](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownNovaEmpty.png)
+
+      
+
+      [texBandCooldownVoid](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownVoid.asset)
+
+      
+
+      [texBandCooldownVoid](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownVoid.png)
+
+      
+
+      [texBandCooldownVoidBlank](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownVoidBlank.asset)
+
+      
+
+      [texBandCooldownVoidBlank](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBandCooldownVoidBlank.png)
+
+      
+
+      [texBuffSacrificialBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBuffSacrificialBandCooldown.png)
+
+      
+
+      [texBuffSacrificialBandReady](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBands%2ftexBuffSacrificialBandReady.png)
+
+      
+
+      [texBarBaseFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarBaseFill.asset)
+
+      
+
+      [texBarBaseFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarBaseFill.png)
+
+      
+
+      [texBarMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarMask.asset)
+
+      
+
+      [texBarMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarMask.png)
+
+      
+
+      [texBarrierFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarrierFill.asset)
+
+      
+
+      [texBarrierFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBarrierFill.png)
+
+      
+
+      [texBlankFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFill.asset)
+
+      
+
+      [texBlankFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFill.png)
+
+      
+
+      [texBlankFillCollapse](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillCollapse.asset)
+
+      
+
+      [texBlankFillCollapse](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillCollapse.png)
+
+      
+
+      [texBlankFillEcho](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillEcho.png)
+
+      
+
+      [texBlankFillHealth](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillHealth.asset)
+
+      
+
+      [texBlankFillHealth](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillHealth.png)
+
+      
+
+      [texBlankFillInverse](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillInverse.asset)
+
+      
+
+      [texBlankFillInverse](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillInverse.png)
+
+      
+
+      [texBlankFillPattern](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillPattern.asset)
+
+      
+
+      [texBlankFillPattern](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillPattern.png)
+
+      
+
+      [texBlankFillShield](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillShield.asset)
+
+      
+
+      [texBlankFillShield](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillShield.png)
+
+      
+
+      [texBlankFillShiny](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillShiny.asset)
+
+      
+
+      [texBlankFillShiny](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillShiny.png)
+
+      
+
+      [texBlankFillShiny2](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillShiny2.asset)
+
+      
+
+      [texBlankFillTile](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexBlankFillTile.png)
+
+      
+
+      [texExpBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexExpBar.asset)
+
+      
+
+      [texExpBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexExpBar.png)
+
+      
+
+      [texFillFrozen](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexFillFrozen.png)
+
+      
+
+      [texFillLowHealth](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexFillLowHealth.png)
+
+      
+
+      [texFillOSP](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexFillOSP.png)
+
+      
+
+      [texFillShiny2](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexFillShiny2.png)
+
+      
+
+      [texFillTile](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexFillTile.asset)
+
+      
+
+      [texHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBar.asset)
+
+      
+
+      [texHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBar.png)
+
+      
+
+      [texHealthBarBiomass](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomass.asset)
+
+      
+
+      [texHealthBarBiomass](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomass.png)
+
+      
+
+      [texHealthBarBiomassBackground](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassBackground.asset)
+
+      
+
+      [texHealthBarBiomassBackground](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassBackground.png)
+
+      
+
+      [texHealthBarBiomassBase](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassBase.asset)
+
+      
+
+      [texHealthBarBiomassBase](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassBase.png)
+
+      
+
+      [texHealthBarBiomassMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassMask.asset)
+
+      
+
+      [texHealthBarBiomassMask](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthBarBiomassMask.png)
+
+      
+
+      [texHealthFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthFill.asset)
+
+      
+
+      [texHealthFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexHealthFill.png)
+
+      
+
+      [texImmuneBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexImmuneBar.asset)
+
+      
+
+      [texImmuneBar](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexImmuneBar.png)
+
+      
+
+      [texImmunityFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexImmunityFill.png)
+
+      
+
+      [texLunarRuin](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexLunarRuin.png)
+
+      
+
+      [texShieldFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexShieldFill.asset)
+
+      
+
+      [texShieldFill](assetlink://Assets%2fHunkHud%2fAssets%2ftextures%2fBars%2ftexShieldFill.png)
+
+      
+
+      [animGaugeMeter](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fanimGaugeMeter.controller)
+
+      
+
+      [Fill](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fFill.anim)
+
+      
+
+      [Full](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fFull.anim)
+
+      
+
+      [Idle](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fIdle.anim)
+
+      
+
+      [IdleActive](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fIdleActive.anim)
+
+      
+
+      [Reset](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fgauge%2fReset.anim)
+
+      
+
+      [animStyleMeter](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fanimStyleMeter.controller)
+
+      
+
+      [Bad](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fBad.anim)
+
+      
+
+      [Good](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fGood.anim)
+
+      
+
+      [Idle](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fIdle.anim)
+
+      
+
+      [Idle2](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fIdle2.anim)
+
+      
+
+      [Reset](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fstyle%2fReset.anim)
+
+      
+
+      [animWeaponPanel](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fweaponpanel%2fanimWeaponPanel.controller)
+
+      
+
+      [Idle](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fweaponpanel%2fIdle.anim)
+
+      
+
+      [Swap](assetlink://Assets%2fHunkHud%2fAssets%2fdante%2fhud%2fweaponpanel%2fSwap.anim)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [texChevronSimpleTriangle](assetlink://Assets%2fRoR2%2fBase%2fUI%2fChevron%2ftexChevronSimpleTriangle.png)
+
+      
+
+      [texChevronSimpleTriangle](assetlink://Assets%2fRoR2%2fBase%2fUI%2fChevron%2ftexChevronSimpleTriangle.asset)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [TMP
+      - Font Asset Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Font+Asset+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [matUIPaintStreakAnimated](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakAnimated.mat)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.png)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.asset)
+
+      
+
+      [skinMenu](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUISkins%2fskinMenu.asset)
+
+      
+
+      [texUISSOverlay2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUISSOverlay2.png)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [texUIAnimateRampHighlights](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUIAnimateRampHighlights.png)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.asset)
+
+      
+
+      [tmpBombStandard
+      Material](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombStandard+Material.mat)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.png)
+
+      
+
+      
+
+'
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860902209104
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'riskui
+
+      [MaterialCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialCenti.asset)
+
+      
+
+      [MaterialClassicRunInfoHudPanel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialClassicRunInfoHudPanel.prefab)
+
+      
+
+      [MaterialHealthbarStyle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyle.asset)
+
+      
+
+      [MaterialHealthbarStyleMinion](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyleMinion.asset)
+
+      
+
+      [MaterialNonCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialNonCenti.asset)
+
+      
+
+      [MaterialTimerStringFormatter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialTimerStringFormatter.asset)
+
+      
+
+      [RiskUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fRiskUI.prefab)
+
+      
+
+      [MaterialAllyCardBackup](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fBackups%2fMaterialAllyCardBackup.prefab)
+
+      
+
+      [Lunar_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fLunar_Coin.png)
+
+      
+
+      [Money](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoney.png)
+
+      
+
+      [MoneyContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoneyContainer.prefab)
+
+      
+
+      [Void_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fVoid_Coin.png)
+
+      
+
+      [Armageddon
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fArmageddon+(More+Difficulties).png)
+
+      
+
+      [Calypso
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCalypso+(More+Difficulties).png)
+
+      
+
+      [Charybdis
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCharybdis+(UntitledDifficultyMod).png)
+
+      
+
+      [Deluge
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDeluge+(UntitledDifficultyMod).png)
+
+      
+
+      [Drizzle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDrizzle.png)
+
+      
+
+      [Inferno
+      (Inferno)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fInferno+(Inferno).png)
+
+      
+
+      [Monsoon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fMonsoon.png)
+
+      
+
+      [Pluviculture
+      (ConfigurableDifficulty)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fPluviculture+(ConfigurableDifficulty).png)
+
+      
+
+      [Rainstorm](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fRainstorm.png)
+
+      
+
+      [README](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fREADME.txt)
+
+      
+
+      [Sunny
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSunny+(More+Difficulties).png)
+
+      
+
+      [Super
+      Typhoon (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSuper+Typhoon+(Starstorm+2).png)
+
+      
+
+      [Tempest
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTempest+(More+Difficulties).png)
+
+      
+
+      [ThunderStorm
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fThunderStorm+(More+Difficulties).png)
+
+      
+
+      [Tropical
+      Storm (Tropical Storm)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTropical+Storm+(Tropical+Storm).png)
+
+      
+
+      [Typhoon
+      (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTyphoon+(Starstorm+2).png)
+
+      
+
+      [EquipIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fEquipIcon.prefab)
+
+      
+
+      [HealthBarSub](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fHealthBarSub.prefab)
+
+      
+
+      [ItemIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fItemIcon.prefab)
+
+      
+
+      [MaterialAllyCard](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialAllyCard.prefab)
+
+      
+
+      [MaterialArtifactStatusIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialArtifactStatusIcon.prefab)
+
+      
+
+      [MaterialBuffIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialBuffIcon.prefab)
+
+      
+
+      [MaterialChatbox](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialChatbox.prefab)
+
+      
+
+      [MaterialMonsterItemInventory](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialMonsterItemInventory.prefab)
+
+      
+
+      [MaterialObjectiveStrip](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialObjectiveStrip.prefab)
+
+      
+
+      [SkillIconRoot](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSkillIconRoot.prefab)
+
+      
+
+      [StripContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fStripContainer.prefab)
+
+      
+
+      [MaterialDefaultWaveUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialDefaultWaveUI.prefab)
+
+      
+
+      [MaterialSimulacrum](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialSimulacrum.prefab)
+
+      
+
+      [Bold_Circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fBold_Circle.png)
+
+      
+
+      [checkboxCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxCheckedWhite.png)
+
+      
+
+      [checkboxUnCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxUnCheckedWhite.png)
+
+      
+
+      [circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcircle.png)
+
+      
+
+      [CircleCentered](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleCentered.png)
+
+      
+
+      [CircleInner](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleInner.png)
+
+      
+
+      [CircleOuter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleOuter.png)
+
+      
+
+      [HitMarker](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fHitMarker.png)
+
+      
+
+      [ringBelow](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringBelow.png)
+
+      
+
+      [ringTop](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringTop.png)
+
+      
+
+      [Shift](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fShift.png)
+
+      
+
+      [Tab](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fTab.png)
+
+      
+
+      [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
+
+      
+
+      [TMP
+      - Font Asset Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Font+Asset+Icon.psd)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      
+
+'
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860897141033
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860896589516
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/HunkHud.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860893879520
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/HunkHud/plugins/HunkHud
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\HunkHud.pdb\r\n  To: ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.pdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\HunkHud.dll\r\n  To: ThunderKit/Staging/HunkHud/plugins/HunkHud/HunkHud.dll\r\n\r\n"
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860859560922
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Building : ThunderKit/Libraries/HunkHud.dll'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860857186302
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Build Completed: ``` ThunderKit/Libraries/MaterialHud.dll ```'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860853670536
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI
+      ```
+
+'
+    context:
+    - "Assembly Files\r\nFrom: ThunderKit/Libraries\\MaterialHud.pdb\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/MaterialHud.pdb\r\n\r\nFrom:
+      ThunderKit/Libraries\\MaterialHud.dll\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/MaterialHud.dll\r\n\r\n"
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860853161628
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(91,113): warning CS0618:
+      ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex from the ItemTierDef
+      instead'''
+    context:
+    - 'Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs (91:113)
+
+      [Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(91,113):
+      warning CS0618: ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex
+      from the ItemTierDef instead''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs#91)'
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860818577909
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Building : ThunderKit/Libraries/MaterialHud.dll'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860816266455
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[ZioRiskOfOptions](assetlink://Packages%2fbubbet-zioriskofoptions%2fZioRiskOfOptions.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860815565423
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860814715506
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[ZioConfigFile](assetlink://Packages%2fbubbet-zioconfigfile%2fZioConfigFile.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860813871535
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860813175023
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860812473911
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860811727838
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860810693710
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998860809994655
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860808984409
+    message: '[HunkHudPipeline(0 - StageAssemblies)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998860808974345
+    message: '[HunkHudPipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998860808824767
+    message: '[HunkHudPipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Pipeline'
+    context: []

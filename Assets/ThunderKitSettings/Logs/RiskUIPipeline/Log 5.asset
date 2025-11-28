@@ -1,0 +1,247 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 5
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 2fff3363a4c7d5a469a01906d76d798c, type: 2}
+  creationDate:
+    ticks: 638998833225699928
+  entries:
+  - logLevel: 2
+    internalTime:
+      ticks: 638998833273371083
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      StageAssemblies terminated'
+    context:
+    - "Stacktrace\r\nStageAssemblies terminated\r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Build
+      (ThunderKit.Core.Pipelines.Pipeline pipeline, System.String resolvedArtifactPath,
+      System.ValueTuple`4[UnityEditor.Compilation.Assembly,UnityEditorInternal.AssemblyDefinitionAsset,ThunderKit.Core.Pipelines.Jobs.StageAssemblies+AsmDef,ThunderKit.Core.Manifests.Datums.AssemblyDefinitions][]
+      definitions, System.Int32 definitionIndex) [0x00429] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:192](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#192)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Execute (ThunderKit.Core.Pipelines.Pipeline
+      pipeline) [0x00254] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:126](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#126)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Jobs.StageAssemblies.Execute (ThunderKit.Core.Pipelines.Pipeline
+      pipeline) [0x00331] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs:132](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssemblies.cs#132)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.ExecuteJob () [0x0002a] in
+      [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs:281](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs#281)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.ExecuteManifestLoop () [0x00085]
+      in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs:295](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs#295)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.Execute () [0x003ae] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs:225](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs#225) "
+  - logLevel: 2
+    internalTime:
+      ticks: 638998833272841339
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Build Failed: ``` ThunderKit/Libraries/MaterialHud.dll ``` with 21 errors.'
+    context:
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (14:6)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(14,6):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#14)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (17:32)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(17,32):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#17)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (40:32)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(40,32):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#40)'
+    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (52:11)
+
+      [Assets\FunnyUIMeme\RiskUIPlugin.cs(52,11):
+      error CS0433: The type ''Harmony'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#52)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (84:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(84,10):
+      error CS0433: The type ''HarmonyPrefix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#84)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (84:25)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(84,25):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#84)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (124:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(124,10):
+      error CS0433: The type ''HarmonyPrefix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#124)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (124:25)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(124,25):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#124)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (134:32)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(134,32):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#134)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (158:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(158,10):
+      error CS0433: The type ''HarmonyPostfix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#158)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (158:26)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(158,26):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#158)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (161:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(161,10):
+      error CS0433: The type ''HarmonyPrefix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#161)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (161:25)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(161,25):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#161)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (164:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(164,10):
+      error CS0433: The type ''HarmonyPostfix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#164)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (164:26)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(164,26):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#164)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (174:32)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(174,32):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#174)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (204:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(204,10):
+      error CS0433: The type ''HarmonyPrefix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#204)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (204:25)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(204,25):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#204)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (207:10)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(207,10):
+      error CS0433: The type ''HarmonyPrefix'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#207)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (207:25)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(207,25):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#207)'
+    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (210:32)
+
+      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(210,32):
+      error CS0433: The type ''HarmonyPatch'' exists in both ''0Harmony, Version=2.9.0.0,
+      Culture=neutral, PublicKeyToken=null'' and ''0Harmony20, Version=2.0.0.0, Culture=neutral,
+      PublicKeyToken=null''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#210)'
+  - logLevel: 0
+    internalTime:
+      ticks: 638998833237027988
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Building : ThunderKit/Libraries/MaterialHud.dll'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833234229054
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioRiskOfOptions](assetlink://Packages%2fbubbet-zioriskofoptions%2fZioRiskOfOptions.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833233535958
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833232843899
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioConfigFile](assetlink://Packages%2fbubbet-zioconfigfile%2fZioConfigFile.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833232153566
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833231462546
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833230762237
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833230043431
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833229336004
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 1
+    internalTime:
+      ticks: 638998833228641831
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
+      No AssemblyDefinitions found, skipping'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998833227460713
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 638998833227450671
+    message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 638998833227318353
+    message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      Execute Pipeline'
+    context: []

@@ -330,20 +330,20 @@ namespace HunkHud.Components.UI
             {
                 if (this.source.combinedHealth >= this.source.fullCombinedHealth * 0.9f)
                 {
-                    itemCount = attackerBody.inventory.GetItemCount(RoR2Content.Items.Crowbar);
+                    itemCount = attackerBody.inventory.GetItemCountEffective(RoR2Content.Items.Crowbar);
                     if (itemCount > 0)
                     {
                         damage *= 1f + (0.75f * itemCount);
                     }
                 }
 
-                itemCount = attackerBody.inventory.GetItemCount(RoR2Content.Items.NearbyDamageBonus);
+                itemCount = attackerBody.inventory.GetItemCountEffective(RoR2Content.Items.NearbyDamageBonus);
                 if (itemCount > 0 && (this.targetBody.corePosition - attackerBody.corePosition).sqrMagnitude <= 13f * 13f)
                 {
                     damage *= 1f + (itemCount * 0.2f);
                 }
 
-                itemCount = attackerBody.inventory.GetItemCount(DLC1Content.Items.FragileDamageBonus);
+                itemCount = attackerBody.inventory.GetItemCountEffective(DLC1Content.Items.FragileDamageBonus);
                 if (itemCount > 0)
                 {
                     damage *= 1f + (itemCount * 0.2f);
@@ -376,7 +376,7 @@ namespace HunkHud.Components.UI
 
                 if (this.targetBody.inventory)
                 {
-                    itemCount = this.targetBody.inventory.GetItemCount(RoR2Content.Items.ArmorPlate);
+                    itemCount = this.targetBody.inventory.GetItemCountEffective(RoR2Content.Items.ArmorPlate);
                     if (itemCount > 0)
                     {
                         damage = Mathf.Max(1f, damage - (5f * itemCount));
@@ -404,7 +404,7 @@ namespace HunkHud.Components.UI
 
             if (this.targetBody.inventory)
             {
-                itemCount = this.targetBody.inventory.GetItemCount(RoR2Content.Items.MinHealthPercentage);
+                itemCount = this.targetBody.inventory.GetItemCountEffective(RoR2Content.Items.MinHealthPercentage);
                 if (itemCount > 0)
                 {
                     float minHealth = this.source.fullCombinedHealth * (itemCount / 100f);

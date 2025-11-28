@@ -8,10 +8,10 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: matBear
-  m_Shader: {fileID: 4800000, guid: 178190e43bc25894d992635f52f9df88, type: 3}
-  m_ValidKeywords: []
-  m_InvalidKeywords:
+  m_Shader: {fileID: 4800000, guid: 1b4aa71543ef42a4c95cec7974b201e9, type: 3}
+  m_ValidKeywords:
   - DITHER
+  m_InvalidKeywords:
   - _EMISSION
   m_LightmapFlags: 1
   m_EnableInstancingVariants: 1
@@ -63,11 +63,11 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 134c8530a8ef4db4183d532bb36e7ebb, type: 3}
+        m_Texture: {fileID: 2800000, guid: 1878464df94c8dd4583f615838c68562, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _NormalTex:
-        m_Texture: {fileID: 2800000, guid: 3586adfc2837c9746bbaf7b7027d3174, type: 3}
+        m_Texture: {fileID: 2800000, guid: 16347c56ba3ef6246abf3634c31ee15c, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _PrintRamp:

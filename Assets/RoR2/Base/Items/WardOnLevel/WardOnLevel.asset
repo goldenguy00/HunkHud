@@ -19,8 +19,12 @@ MonoBehaviour:
   descriptionToken: ITEM_WARDONLEVEL_DESC
   loreToken: ITEM_WARDONLEVEL_LORE
   unlockableDef: {fileID: 0}
-  pickupModelPrefab: {fileID: 1831109486940272, guid: a2d8488a4d8c1af44a467e83f7ec6d33, type: 2}
-  pickupIconSprite: {fileID: 21300000, guid: ca7ef78ff1997e84d9a56e4ef878ae7e, type: 2}
+  pickupModelPrefab: {fileID: 1073206875985968, guid: 8f368743994f5204d92045501d3b26f8, type: 2}
+  pickupModelReference:
+    m_AssetGUID:
+    m_SubObjectName:
+    m_SubObjectType:
+  pickupIconSprite: {fileID: 21300000, guid: 67d2b1b9cc7d3564a9cd5d8a262b68cd, type: 2}
   isConsumed: 0
   hidden: 0
   canRemove: 1
@@ -28,4 +32,6 @@ MonoBehaviour:
   - 3
   - 4
   - 13
+  - 29
+  - 31
   requiredExpansion: {fileID: 0}

@@ -12,54 +12,54 @@ MonoBehaviour:
   m_Script: {fileID: 1467844994, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: CombatHealthBar
   m_EditorClassIdentifier:
-  barPrefab: {fileID: 1497326063750604, guid: 98caf6a311a44e744bdfe3b1d9e4dfca, type: 2}
+  barPrefab: {fileID: 1733688243337046, guid: ea88855b26d29104aa001734e79d8619, type: 2}
   flashOnHealthCritical: 0
   trailingUnderHealthBarStyle:
     enabled: 1
     baseColor: {r: 1, g: 1, b: 1, a: 1}
-    sprite: {fileID: 21300000, guid: 5f33b432e52782c4ba801a2d3c4636f3, type: 2}
+    sprite: {fileID: 21300000, guid: c6105e05de4b9bc4bab025bf0c2cceb2, type: 2}
     imageType: 1
     sizeDelta: 0
   instantHealthBarStyle:
     enabled: 1
     baseColor: {r: 0.1096244, g: 0.5943396, b: 0, a: 1}
-    sprite: {fileID: 21300000, guid: 108a0142c3b062146a00614678a01c7a, type: 2}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
     imageType: 2
     sizeDelta: 0
   trailingOverHealthBarStyle:
     enabled: 1
     baseColor: {r: 1, g: 0.8, b: 0.2784314, a: 1}
-    sprite: {fileID: 21300000, guid: 108a0142c3b062146a00614678a01c7a, type: 2}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
     imageType: 2
     sizeDelta: 0
   shieldBarStyle:
     enabled: 1
     baseColor: {r: 0.3529412, g: 0.4862745, b: 0.9647059, a: 1}
-    sprite: {fileID: 21300000, guid: 108a0142c3b062146a00614678a01c7a, type: 2}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
     imageType: 2
     sizeDelta: 0
   curseBarStyle:
     enabled: 1
     baseColor: {r: 0.8443396, g: 0.9154437, b: 1, a: 1}
-    sprite: {fileID: 21300000, guid: 974554bd1d3aaa8499800ac54df5b30b, type: 2}
+    sprite: {fileID: 21300000, guid: 92086887afa09864085954c0eb48ecc2, type: 2}
     imageType: 1
     sizeDelta: 0
   barrierBarStyle:
     enabled: 1
     baseColor: {r: 1, g: 0.7562339, b: 0.2971698, a: 0.6509804}
-    sprite: {fileID: 21300000, guid: 108a0142c3b062146a00614678a01c7a, type: 2}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
     imageType: 1
     sizeDelta: 0
   flashBarStyle:
     enabled: 0
     baseColor: {r: 0.70980394, g: 0.91764706, b: 0.5882353, a: 0.45882353}
-    sprite: {fileID: 21300000, guid: 108a0142c3b062146a00614678a01c7a, type: 2}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
     imageType: 0
     sizeDelta: 0
   cullBarStyle:
     enabled: 1
     baseColor: {r: 1, g: 1, b: 1, a: 1}
-    sprite: {fileID: 21300000, guid: 974554bd1d3aaa8499800ac54df5b30b, type: 2}
+    sprite: {fileID: 21300000, guid: 92086887afa09864085954c0eb48ecc2, type: 2}
     imageType: 1
     sizeDelta: 10
   magneticStyle:
@@ -77,13 +77,13 @@ MonoBehaviour:
   lowHealthOverStyle:
     enabled: 1
     baseColor: {r: 0.01886791, g: 0.01886791, b: 0.01886791, a: 0.6431373}
-    sprite: {fileID: 21300000, guid: a35a73175c6e9fb4a90b6adbe9c0cff7, type: 2}
+    sprite: {fileID: 21300000, guid: 7cc0266b4aa67654db59ab58f3923492, type: 2}
     imageType: 0
     sizeDelta: 0
   lowHealthUnderStyle:
     enabled: 0
     baseColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
-    sprite: {fileID: 21300000, guid: 974554bd1d3aaa8499800ac54df5b30b, type: 2}
+    sprite: {fileID: 21300000, guid: 92086887afa09864085954c0eb48ecc2, type: 2}
     imageType: 1
     sizeDelta: 0
   echoDamageStyle:
@@ -95,6 +95,18 @@ MonoBehaviour:
   lunarRuinStyle:
     enabled: 1
     baseColor: {r: 0.5176471, g: 0.7882353, b: 1, a: 0.5803922}
-    sprite: {fileID: 21300000, guid: 994b0e7262f32ac4188cb6d5bcfb8f32, type: 2}
+    sprite: {fileID: 21300000, guid: a0bfb801b5239e740aa01a11754626a4, type: 2}
     imageType: 2
     sizeDelta: -2.7
+  repairingDroneStyle:
+    enabled: 0
+    baseColor: {r: 1, g: 0.50591254, b: 0, a: 1}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
+    imageType: 0
+    sizeDelta: 0
+  collectiveEliteStyle:
+    enabled: 1
+    baseColor: {r: 0.53234494, g: 1, b: 1, a: 1}
+    sprite: {fileID: 21300000, guid: 358b8d25b35f54c4da083bb98d37c841, type: 2}
+    imageType: 0
+    sizeDelta: 0

@@ -8,7 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: matUISkillCD
-  m_Shader: {fileID: 4800000, guid: 63bd9c8542bac2b4d9f39129c2e10269, type: 3}
+  m_Shader: {fileID: 4800000, guid: c0d50557688e601468857af7178e9391, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
   m_LightmapFlags: 4
@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
       _MainTex:
-        m_Texture: {fileID: 2800000, guid: 580986ce30f8fb146989773c85cbc845, type: 3}
+        m_Texture: {fileID: 2800000, guid: fd0da9b4b47dd644a92518ea7904d651, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
       _RemapTex:
-        m_Texture: {fileID: 2800000, guid: 82e0cefd621bce94bac62ee2b72c29ca, type: 3}
+        m_Texture: {fileID: 2800000, guid: 257890916d337ca40ab0d1a5909c5f95, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Ints: {}
