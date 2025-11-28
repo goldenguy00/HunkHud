@@ -1,9 +1,9 @@
 ManifestFileVersion: 0
-CRC: 74659814
+CRC: 1607334531
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: bc61d994ae4be6d23b6f8d561d3b3b27
+    Hash: b8d3618f18dd626e3610e83092d9841b
   TypeTreeHash:
     serializedVersion: 2
     Hash: bff6a4c8c4e775ec82f8f284e57afe88
@@ -326,11 +326,13 @@ Assets:
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialObjectiveStrip.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.png
 - Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
 - Assets/FunnyUIMeme/Assets/Sprites/HitMarker.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Calypso (More Difficulties).png
 - Assets/FunnyUIMeme/Assets/Sprites/checkboxCheckedWhite.png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
 - Assets/FunnyUIMeme/Assets/MaterialClassicRunInfoHudPanel.prefab
 - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
@@ -364,9 +366,11 @@ Assets:
 - Assets/FunnyUIMeme/Assets/RiskUI.prefab
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Armageddon (More Difficulties).png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Typhoon (Starstorm 2).png
 - Assets/FunnyUIMeme/Assets/Backups/MaterialAllyCardBackup.prefab
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Super Typhoon (Starstorm 2).png
+- Assets/FunnyUIMeme/Assets/Sprites/texExtraEquipmentSwapIcon.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Rainstorm.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Monsoon.png
 - Assets/FunnyUIMeme/Assets/HudParts/HealthBarSub.prefab
@@ -379,7 +383,7 @@ Assets:
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Deluge (UntitledDifficultyMod).png
 - Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/CircleOuter.png
-- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+- Assets/FunnyUIMeme/Assets/Sprites/texChevronEngiShield.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
 Dependencies: []
