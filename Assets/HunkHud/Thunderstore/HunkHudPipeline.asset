@@ -112,7 +112,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
   Recursive: 0
   IsFatal: 0
-  Path: <ManifestPluginStaging>/hunkhudassets.manifest
+  Path: <ManifestPluginStaging>/hunkui.manifest
 --- !u!114 &5363681938789526682
 MonoBehaviour:
   m_ObjectHideFlags: 0

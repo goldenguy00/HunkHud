@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 2259760717
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: riskui
+      Dependencies: {}

@@ -66,7 +66,6 @@
     <Compile Include="Assets\HunkHud\Components\UI\ObjectiveChargeDisplay.cs" />
     <Compile Include="Assets\HunkHud\Components\UI\CustomHealthBar.cs" />
     <Compile Include="Assets\HunkHud\Modules\Hooks.cs" />
-    <Compile Include="Assets\HunkHud\Modules\HudAssets.cs" />
     <Compile Include="Assets\HunkHud\Components\HealthBarMover.cs" />
     <Compile Include="Assets\HunkHud\Components\UI\CustomHudElement.cs" />
     <Compile Include="Assets\HunkHud\Components\UI\BandDisplay.cs" />
@@ -480,6 +479,14 @@
     </Reference>
     <Reference Include="0Harmony">
       <HintPath>Packages\BepInExPack\BepInExPack\BepInEx\core\0Harmony.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.Addressables">
+      <HintPath>Packages\Risk of Rain 2\Unity.Addressables.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Unity.ResourceManager">
+      <HintPath>Packages\Risk of Rain 2\Unity.ResourceManager.dll</HintPath>
       <Private>False</Private>
     </Reference>
     <Reference Include="netstandard">

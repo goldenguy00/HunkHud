@@ -3,9 +3,11 @@ using System;
 using MaterialHud;
 using ZioConfigFile;
 using RoR2.UI;
+using HG;
 
 namespace HunkHud.Components
 {
+    [RequireComponent(typeof(CanvasGroup))]
     public abstract class DisplayMover : CustomHudElement, IConfigHandler
     {
         public float delayTimer = 0.1f;
@@ -15,6 +17,7 @@ namespace HunkHud.Components
 
         public Vector3 offset;
 
+        [NonSerialized]
         public CanvasGroup canvas;
 
         [NonSerialized]
@@ -54,7 +57,7 @@ namespace HunkHud.Components
 
         protected virtual void Awake()
         {
-            this.canvas = this.GetComponent<CanvasGroup>() ?? this.gameObject.AddComponent<CanvasGroup>();
+            this.canvas = this.EnsureComponent<CanvasGroup>();
 
             Startup();
 

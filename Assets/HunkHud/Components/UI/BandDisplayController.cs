@@ -1,17 +1,26 @@
 using RoR2;
-using UnityEngine;
-using HunkHud.Modules;
 using RoR2.UI;
+using UnityEngine;
 
 namespace HunkHud.Components.UI
 {
     public class BandDisplayController : CustomHudElement
     {
+        public struct BandDisplayInfo
+        {
+            public ItemIndex[] itemsToDisplay;
+            public GameObject displayPrefab;
+            public string prefabName;
+        }
+
         public HealthBarMover healthBar;
+        public static BandDisplayInfo[] bandInfos = new BandDisplayController.BandDisplayInfo[0];
+
+        private Inventory inventory;
 
         protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            if (this._prevBody)
+            if (!ReferenceEquals(this._prevBody, null))
                 this._prevBody.onInventoryChanged -= this.CheckInventory;
 
             base.HUD_onHudTargetChangedGlobal(newHud);
@@ -22,46 +31,48 @@ namespace HunkHud.Components.UI
 
         private void CheckInventory()
         {
-            var inventory = this.targetMaster ? this.targetMaster.inventory : null;
-            AddOrRemovePrefab("BandDisplay", "FireRing", "IceRing");
-            AddOrRemovePrefab("BandDisplayVoid", "ElementalRingVoid");
-            AddOrRemovePrefab("BandDisplayHealing", "ITEM_HEALING_BAND", "ITEM_BARRIER_BAND");
-            AddOrRemovePrefab("BandDisplayNova", "ITEM_NOVA_BAND");
-            AddOrRemovePrefab("BandDisplaySacrificial", "ITEM_SANDSWEPT_SACRIFICIAL_BAND");
+            this.inventory = this.targetMaster ? this.targetMaster.inventory : null;
+            Util.NullifyIfInvalid(ref inventory);
 
-            void AddOrRemovePrefab(string prefabName, params string[] itemName)
+            for (int i = 0; i < bandInfos.Length; ++i)
             {
-                bool hasItem = false;
-                if (inventory)
+                ref var info = ref bandInfos[i];
+                AddOrRemovePrefab(ref info);
+            }
+        }
+
+        private void AddOrRemovePrefab(ref BandDisplayInfo bandInfo)
+        {
+            bool hasItem = false;
+            if (!ReferenceEquals(inventory, null))
+            {
+                for (int i = 0; i < bandInfo.itemsToDisplay.Length; i++)
                 {
-                    for (int i = 0; i < itemName.Length; i++)
+                    if (inventory.GetItemCountEffective(bandInfo.itemsToDisplay[i]) > 0)
                     {
-                        var itemIndex = ItemCatalog.FindItemIndex(itemName[i]);
-                        if (inventory.GetItemCountEffective(itemIndex) > 0)
-                        {
-                            hasItem = true;
-                            break;
-                        }
+                        hasItem = true;
+                        break;
                     }
                 }
+            }
 
-                var childTransform = this.transform.Find(prefabName);
-                bool hasDisplay = childTransform != null;
+            var existingDisplay = this.transform.Find(bandInfo.prefabName);
+            bool hasDisplay = existingDisplay != null;
 
-                if (hasItem != hasDisplay)
+            if (hasItem != hasDisplay)
+            {
+                if (hasDisplay)
                 {
-                    if (hasDisplay)
-                    {
-                        GameObject.Destroy(childTransform.gameObject);
-                    }
-                    else
-                    {
-                        var child = GameObject.Instantiate(HudAssets.mainAssetBundle.LoadAsset<GameObject>(prefabName), this.transform);
-                        child.name = prefabName;
-                        var display = child.GetComponent<BandDisplay>();
-                        display.healthBar = this.healthBar;
-                        display.hud = this.hud;
-                    }
+                    GameObject.Destroy(existingDisplay.gameObject);
+                }
+                else
+                {
+                    var child = GameObject.Instantiate(bandInfo.displayPrefab, this.transform);
+                    child.name = bandInfo.prefabName;
+
+                    var display = child.GetComponent<BandDisplay>();
+                    display.healthBar = this.healthBar;
+                    display.hud = this.hud;
                 }
             }
         }

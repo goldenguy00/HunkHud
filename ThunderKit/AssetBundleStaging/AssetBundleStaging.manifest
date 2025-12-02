@@ -1,7 +1,7 @@
 ManifestFileVersion: 0
-CRC: 1557925872
+CRC: 2609573766
 AssetBundleManifest:
   AssetBundleInfos:
     Info_0:
-      Name: riskui
+      Name: hunkui
       Dependencies: {}

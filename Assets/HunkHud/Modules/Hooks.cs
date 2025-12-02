@@ -3,6 +3,7 @@ using MaterialHud;
 using RoR2.UI;
 using UnityEngine;
 using HunkHud.Components;
+using HG;
 
 namespace HunkHud.Modules
 {
@@ -13,15 +14,7 @@ namespace HunkHud.Modules
         [HarmonyPostfix]
         private static void CrosshairController_Awake(CrosshairController __instance)
         {
-            __instance.GetOrAddComponent<DynamicCrosshair>();
-        }
-
-        [HarmonyPatch(typeof(RiskUIPlugin), nameof(RiskUIPlugin.CreateHud))]
-        [HarmonyPostfix]
-        private static bool RiskUIPlugin_CreateHud(ref GameObject __result)
-        {
-            __result = HudAssets.mainAssetBundle.LoadAsset<GameObject>("RiskUIHunk");
-            return false;
+            __instance.EnsureComponent<DynamicCrosshair>();
         }
     }
 }

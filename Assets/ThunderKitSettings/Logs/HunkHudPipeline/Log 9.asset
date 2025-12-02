@@ -1,0 +1,1353 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f9af1c6015733a42be940cc462aa7ed, type: 3}
+  m_Name: Log 9
+  m_EditorClassIdentifier: 
+  pipeline: {fileID: 11400000, guid: 1ed4846dadebf694fa7088ea1b0ed2c0, type: 2}
+  creationDate:
+    ticks: 639002787804247271
+  entries:
+  - logLevel: 2
+    internalTime:
+      ticks: 639002787817920531
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Failed to Copy File / Directory from ''ThunderKit/AssetBundleStaging\AssetBundleStaging.manifest''
+      to ''ThunderKit/Staging/RiskUI/plugins/RiskUI\RiskUI.manifest''.'
+    context:
+    - "Stacktrace\r\nFailed to Copy File / Directory from 'ThunderKit/AssetBundleStaging\\AssetBundleStaging.manifest'
+      to 'ThunderKit/Staging/RiskUI/plugins/RiskUI\\RiskUI.manifest'.\r\n\r\n  at
+      UnityEditor.FileUtil.CopyFileOrDirectory (System.String source, System.String
+      dest) [0x00041] in <06837d428b6d46f581d93f9597703696>:0 \r\n\r\n  at UnityEditor.FileUtil.ReplaceFile
+      (System.String src, System.String dst) [0x00012] in <06837d428b6d46f581d93f9597703696>:0
+      \r\n\r\n  at ThunderKit.Pipelines.Jobs.StageAssetBundles.Execute (ThunderKit.Core.Pipelines.Pipeline
+      pipeline) [0x00720] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssetBundles.cs:157](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Jobs\\StageAssetBundles.cs#157)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.ExecuteJob () [0x0000e] in
+      [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs:281](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs#281)
+      \r\n\r\n  at ThunderKit.Core.Pipelines.Pipeline.Execute () [0x00419] in [C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs:227](exceptionsource://C:\\Users\\golde\\Documents\\GitHub\\_ROB\\HunkHUD\\Library\\PackageCache\\com.passivepicasso.thunderkit@5012c9132d\\Editor\\Core\\Pipelines\\Pipeline.cs#227) "
+  - logLevel: 0
+    internalTime:
+      ticks: 639002787817536538
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[HunkHudManifest](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'hunkui
+
+      [HunkAllyCard](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fHunkAllyCard.prefab)
+
+      
+
+      [HunkClassicRunInfoHudPanel](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fHunkClassicRunInfoHudPanel.prefab)
+
+      
+
+      [HunkSimulacrum](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fHunkSimulacrum.prefab)
+
+      
+
+      [HunkUI](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fHunkUI.prefab)
+
+      
+
+      [BandCooldownTracker](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBandCooldownTracker.prefab)
+
+      
+
+      [CustomHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fCustomHealthBar.prefab)
+
+      
+
+      [ItemNotification](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fItemNotification.prefab)
+
+      
+
+      [LuminousGauge](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fLuminousGauge.prefab)
+
+      
+
+      [ObjectiveGauge](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fObjectiveGauge.prefab)
+
+      
+
+      [BandDisplay](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplay.prefab)
+
+      
+
+      [BandDisplayHealing](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplayHealing.prefab)
+
+      
+
+      [BandDisplayNova](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplayNova.prefab)
+
+      
+
+      [BandDisplayPrefab](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplayPrefab.prefab)
+
+      
+
+      [BandDisplaySacrificial](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplaySacrificial.prefab)
+
+      
+
+      [BandDisplayVoid](assetlink://Assets%2fHunkHud%2fAssets%2fMainAssets%2fCustomElements%2fBands%2fBandDisplayVoid.prefab)
+
+      
+
+      [TMP
+      - Font Asset Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Font+Asset+Icon.psd)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.asset)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
+
+      
+
+      [texBlankFillPattern](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillPattern.asset)
+
+      
+
+      [texBarMask](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBarMask.png)
+
+      
+
+      [texItemBox](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexItemBox.asset)
+
+      
+
+      [texBlankFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFill.png)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
+      [texFillShiny2](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexFillShiny2.png)
+
+      
+
+      [texFillOSP](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexFillOSP.png)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
+
+      
+
+      [matExtraEquipmentSwapEffect](assetlink://Assets%2fRoR2%2fDLC3%2fItems%2fExtraEquipment%2fmatExtraEquipmentSwapEffect.mat)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [texHealthBarShade](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexHealthBarShade.asset)
+
+      
+
+      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [texHunk2Icon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ficons%2ftexHunk2Icon.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.asset)
+
+      
+
+      [NewOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2fanimations%2fNewOverlay.controller)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.png)
+
+      
+
+      [texInventoryDisableDebuffIcon2](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffIcon2.png)
+
+      
+
+      [Bombadier_number_texture_12](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_12.asset)
+
+      
+
+      [texBlankFillCollapse](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillCollapse.asset)
+
+      
+
+      [texSolusAmalgamatorEyeRamp](assetlink://Assets%2fRoR2%2fDLC3%2fCharacters%2fSolusAmalgamator%2fTextures%2ftexSolusAmalgamatorEyeRamp.png)
+
+      
+
+      [uilSecondaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilSecondaryPanel.asset)
+
+      
+
+      [Bombadier_Timer_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture_2.asset)
+
+      
+
+      [HGCloudRemap](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [texBlankFillShield](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillShield.png)
+
+      
+
+      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
+
+      
+
+      [texExpBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexExpBar.asset)
+
+      
+
+      [texItemExclamation](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexItemExclamation.asset)
+
+      
+
+      [texHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBar.png)
+
+      
+
+      [matUIPaintStreakFlash](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakFlash.mat)
+
+      
+
+      [texImmuneBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexImmuneBar.png)
+
+      
+
+      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
+
+      
+
+      [texEngiShieldBlurred](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fEngi%2ftexEngiShieldBlurred.png)
+
+      
+
+      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
+
+      
+
+      [texHealthBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBar.asset)
+
+      
+
+      [matUIPaintStreakAnimated](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakAnimated.mat)
+
+      
+
+      [texHealthBarBiomassBackground](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomassBackground.png)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexTeleporterIcon.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.png)
+
+      
+
+      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
+
+      
+
+      [texFadingBox](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexFadingBox.png)
+
+      
+
+      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
+
+      
+
+      [texVirusSampleIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ficons%2fitem%2ftexVirusSampleIcon.png)
+
+      
+
+      [texUIAnimateRampHighlights](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUIAnimateRampHighlights.png)
+
+      
+
+      [texBarBaseFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBarBaseFill.png)
+
+      
+
+      [texImmunityFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexImmunityFill.png)
+
+      
+
+      [texFillTile](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexFillTile.asset)
+
+      
+
+      [texFillLowHealth](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexFillLowHealth.png)
+
+      
+
+      [texFillFrozen](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexFillFrozen.png)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.png)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.png)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
+
+      
+
+      [texHealthBarBiomass](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomass.asset)
+
+      
+
+      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
+
+      
+
+      [texSMGIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ficons%2fweapon%2ftexSMGIcon.png)
+
+      
+
+      [NewItemOverlay](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2fanimations%2fNewItemOverlay.anim)
+
+      
+
+      [texItemExclamation](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexItemExclamation.png)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexTeleporterIcon.png)
+
+      
+
+      [texHealthBarBiomassBase](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomassBase.png)
+
+      
+
+      [texHudBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexHudBar.png)
+
+      
+
+      [texLunarRuin](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexLunarRuin.png)
+
+      
+
+      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
+
+      
+
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [texChevronSimpleTriangle](assetlink://Assets%2fRoR2%2fBase%2fUI%2fChevron%2ftexChevronSimpleTriangle.asset)
+
+      
+
+      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+
+      
+
+      [texRampWhiteAlphaOnly](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampWhiteAlphaOnly.png)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
+
+      
+
+      [texBlankFillCollapse](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillCollapse.png)
+
+      
+
+      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.asset)
+
+      
+
+      [texHudBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexHudBar.asset)
+
+      
+
+      [texCloudDifferenceBW2](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fTiledTextures%2fClouds%2ftexCloudDifferenceBW2.png)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.asset)
+
+      
+
+      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
+
+      
+
+      [texBlankFillEcho](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillEcho.png)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexWhite.asset)
+
+      
+
+      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
+
+      
+
+      [texHealthBarBiomassBase](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomassBase.asset)
+
+      
+
+      [texCircularMask](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexCircularMask.png)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.asset)
+
+      
+
+      [texBlankFillHealth](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillHealth.asset)
+
+      
+
+      [texImmuneBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexImmuneBar.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
+      [texBlankFillShiny2](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillShiny2.asset)
+
+      
+
+      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
+
+      
+
+      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.asset)
+
+      
+
+      [texHealthBarShade](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexHealthBarShade.png)
+
+      
+
+      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
+
+      
+
+      [Bombadier_number_texture_6](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_6.asset)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.asset)
+
+      
+
+      [texBarBaseFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBarBaseFill.asset)
+
+      
+
+      [texCommandoIcon](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fCommando%2ftexCommandoIcon.png)
+
+      
+
+      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
+
+      
+
+      [texChevronSimpleTriangle](assetlink://Assets%2fRoR2%2fBase%2fUI%2fChevron%2ftexChevronSimpleTriangle.png)
+
+      
+
+      [texHealthBarBiomass](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomass.png)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.asset)
+
+      
+
+      [skinMenu](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUISkins%2fskinMenu.asset)
+
+      
+
+      [texRampTwotoneWhite](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampTwotoneWhite.png)
+
+      
+
+      [Bombadier_Timer_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture.png)
+
+      
+
+      [EquipmentDef
+      Icon](assetlink://Assets%2fGizmos%2fRoR2%2fEquipmentDef+Icon.png)
+
+      
+
+      [texCircularShade](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexCircularShade.png)
+
+      
+
+      [texBlankFillTile](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillTile.png)
+
+      
+
+      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+
+      
+
+      [texItemBox](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexItemBox.png)
+
+      
+
+      [texFadingBox](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexFadingBox.asset)
+
+      
+
+      [texBlankFillShield](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillShield.asset)
+
+      
+
+      [texBarMask](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBarMask.asset)
+
+      
+
+      [texUISSOverlay2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUISSOverlay2.png)
+
+      
+
+      [texBlankFillHealth](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillHealth.png)
+
+      
+
+      [texBlankFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFill.asset)
+
+      
+
+      [texExpBar](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexExpBar.png)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexWhite.png)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
+
+      
+
+      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
+
+      
+
+      [texHealthBarBiomassBackground](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexHealthBarBiomassBackground.asset)
+
+      
+
+      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+
+      
+
+      [AmmoPanel](assetlink://Assets%2fHunkHud%2fAssets%2f_OLD%2fAmmoPanel.prefab)
+
+      
+
+      [tmpBombStandard
+      Material](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombStandard+Material.mat)
+
+      
+
+      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
+
+      
+
+      [texBlankFillPattern](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBars%2ftexBlankFillPattern.png)
+
+      
+
+      [texBandCooldownBlank](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownBlank.png)
+
+      
+
+      [texBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldown.png)
+
+      
+
+      [texBandCooldownFill](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownFill.png)
+
+      
+
+      [texBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldown.asset)
+
+      
+
+      [texBandCooldownHealing](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownHealing.png)
+
+      
+
+      [texBandCooldownHealingEmpty](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownHealingEmpty.png)
+
+      
+
+      [texBandCooldownNovaEmpty](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownNovaEmpty.png)
+
+      
+
+      [texBandCooldownFillVoid](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownFillVoid.png)
+
+      
+
+      [texBandCooldownNova](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownNova.png)
+
+      
+
+      [texBuffSacrificialBandCooldown](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBuffSacrificialBandCooldown.png)
+
+      
+
+      [texBuffSacrificialBandReady](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBuffSacrificialBandReady.png)
+
+      
+
+      [texBandCooldownVoidBlank](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownVoidBlank.png)
+
+      
+
+      [texBandCooldownVoid](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownVoid.asset)
+
+      
+
+      [texBandCooldownVoid](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2fBands%2ftexBandCooldownVoid.png)
+
+      
+
+      
+
+'
+  - logLevel: 0
+    internalTime:
+      ticks: 639002787814289808
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      Creating 1 AssetBundles'
+    context:
+    - 'riskui
+
+      [MaterialCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialCenti.asset)
+
+      
+
+      [MaterialClassicRunInfoHudPanel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialClassicRunInfoHudPanel.prefab)
+
+      
+
+      [MaterialHealthbarStyle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyle.asset)
+
+      
+
+      [MaterialHealthbarStyleMinion](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialHealthbarStyleMinion.asset)
+
+      
+
+      [MaterialNonCenti](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialNonCenti.asset)
+
+      
+
+      [MaterialTimerStringFormatter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fMaterialTimerStringFormatter.asset)
+
+      
+
+      [RiskUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fRiskUI.prefab)
+
+      
+
+      [MaterialAllyCardBackup](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fBackups%2fMaterialAllyCardBackup.prefab)
+
+      
+
+      [Lunar_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fLunar_Coin.png)
+
+      
+
+      [Money](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoney.png)
+
+      
+
+      [MoneyContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fMoneyContainer.prefab)
+
+      
+
+      [Void_Coin](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fCurrencyIcons%2fVoid_Coin.png)
+
+      
+
+      [Armageddon
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fArmageddon+(More+Difficulties).png)
+
+      
+
+      [Calypso
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCalypso+(More+Difficulties).png)
+
+      
+
+      [Charybdis
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fCharybdis+(UntitledDifficultyMod).png)
+
+      
+
+      [Deluge
+      (UntitledDifficultyMod)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDeluge+(UntitledDifficultyMod).png)
+
+      
+
+      [Drizzle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fDrizzle.png)
+
+      
+
+      [Inferno
+      (Inferno)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fInferno+(Inferno).png)
+
+      
+
+      [Monsoon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fMonsoon.png)
+
+      
+
+      [Pluviculture
+      (ConfigurableDifficulty)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fPluviculture+(ConfigurableDifficulty).png)
+
+      
+
+      [Rainstorm](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fRainstorm.png)
+
+      
+
+      [README](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fREADME.txt)
+
+      
+
+      [Sunny
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSunny+(More+Difficulties).png)
+
+      
+
+      [Super
+      Typhoon (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fSuper+Typhoon+(Starstorm+2).png)
+
+      
+
+      [Tempest
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTempest+(More+Difficulties).png)
+
+      
+
+      [ThunderStorm
+      (More Difficulties)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fThunderStorm+(More+Difficulties).png)
+
+      
+
+      [Tropical
+      Storm (Tropical Storm)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTropical+Storm+(Tropical+Storm).png)
+
+      
+
+      [Typhoon
+      (Starstorm 2)](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fDifficultyIcons%2fTyphoon+(Starstorm+2).png)
+
+      
+
+      [EquipIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fEquipIcon.prefab)
+
+      
+
+      [HealthBarSub](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fHealthBarSub.prefab)
+
+      
+
+      [ItemIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fItemIcon.prefab)
+
+      
+
+      [MaterialAllyCard](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialAllyCard.prefab)
+
+      
+
+      [MaterialArtifactStatusIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialArtifactStatusIcon.prefab)
+
+      
+
+      [MaterialBuffIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialBuffIcon.prefab)
+
+      
+
+      [MaterialChatbox](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialChatbox.prefab)
+
+      
+
+      [MaterialMonsterItemInventory](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialMonsterItemInventory.prefab)
+
+      
+
+      [MaterialObjectiveStrip](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fMaterialObjectiveStrip.prefab)
+
+      
+
+      [SkillIconRoot](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSkillIconRoot.prefab)
+
+      
+
+      [SpriteNumberImage](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSpriteNumberImage.prefab)
+
+      
+
+      [StripContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fStripContainer.prefab)
+
+      
+
+      [MaterialDefaultWaveUI](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialDefaultWaveUI.prefab)
+
+      
+
+      [MaterialSimulacrum](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSimulacrum%2fMaterialSimulacrum.prefab)
+
+      
+
+      [Bold_Circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fBold_Circle.png)
+
+      
+
+      [checkboxCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxCheckedWhite.png)
+
+      
+
+      [checkboxUnCheckedWhite](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcheckboxUnCheckedWhite.png)
+
+      
+
+      [circle](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fcircle.png)
+
+      
+
+      [CircleCentered](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleCentered.png)
+
+      
+
+      [CircleInner](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleInner.png)
+
+      
+
+      [CircleOuter](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fCircleOuter.png)
+
+      
+
+      [HitMarker](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fHitMarker.png)
+
+      
+
+      [ringBelow](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringBelow.png)
+
+      
+
+      [ringTop](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fringTop.png)
+
+      
+
+      [Shift](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fShift.png)
+
+      
+
+      [Tab](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fTab.png)
+
+      
+
+      [texChevronEngiShield](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexChevronEngiShield.png)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
+      [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
+
+      
+
+      [TMP
+      - Font Asset Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Font+Asset+Icon.psd)
+
+      
+
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.png)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
+
+      
+
+      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [matExtraEquipmentSwapEffect](assetlink://Assets%2fRoR2%2fDLC3%2fItems%2fExtraEquipment%2fmatExtraEquipmentSwapEffect.mat)
+
+      
+
+      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexTeleporterIcon.png)
+
+      
+
+      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.asset)
+
+      
+
+      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+
+      
+
+      [texRampWhiteAlphaOnly](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampWhiteAlphaOnly.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.png)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
+
+      
+
+      [texInventoryDisableDebuffIcon2](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffIcon2.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.asset)
+
+      
+
+      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
+
+      
+
+      [uilSecondaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilSecondaryPanel.asset)
+
+      
+
+      [Bombadier_number_texture_12](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_12.asset)
+
+      
+
+      [texSolusAmalgamatorEyeRamp](assetlink://Assets%2fRoR2%2fDLC3%2fCharacters%2fSolusAmalgamator%2fTextures%2ftexSolusAmalgamatorEyeRamp.png)
+
+      
+
+      [texCloudDifferenceBW2](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fTiledTextures%2fClouds%2ftexCloudDifferenceBW2.png)
+
+      
+
+      [Bombadier_Timer_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture_2.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.asset)
+
+      
+
+      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.asset)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexWhite.asset)
+
+      
+
+      [HGCloudRemap](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
+
+      
+
+      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
+
+      
+
+      [matUIPaintStreakFlash](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakFlash.mat)
+
+      
+
+      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
+      [texEngiShieldBlurred](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fEngi%2ftexEngiShieldBlurred.png)
+
+      
+
+      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
+
+      
+
+      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
+
+      
+
+      [matUIPaintStreakAnimated](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakAnimated.mat)
+
+      
+
+      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.asset)
+
+      
+
+      [texTeleporterIcon](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexTeleporterIcon.asset)
+
+      
+
+      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.asset)
+
+      
+
+      [Bombadier_number_texture_6](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_6.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.png)
+
+      
+
+      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
+
+      
+
+      [texCommandoIcon](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fCommando%2ftexCommandoIcon.png)
+
+      
+
+      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
+
+      
+
+      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.asset)
+
+      
+
+      [skinMenu](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUISkins%2fskinMenu.asset)
+
+      
+
+      [texRampTwotoneWhite](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampTwotoneWhite.png)
+
+      
+
+      [Bombadier_Timer_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture.png)
+
+      
+
+      [EquipmentDef
+      Icon](assetlink://Assets%2fGizmos%2fRoR2%2fEquipmentDef+Icon.png)
+
+      
+
+      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+
+      
+
+      [texUISSOverlay2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUISSOverlay2.png)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
+
+      
+
+      [texWhite](assetlink://Assets%2fHunkHud%2fAssets%2fVFX%2ftextures%2ftexWhite.png)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
+
+      
+
+      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
+
+      
+
+      [texUIAnimateRampHighlights](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUIAnimateRampHighlights.png)
+
+      
+
+      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+
+      
+
+      [tmpBombStandard
+      Material](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombStandard+Material.mat)
+
+      
+
+      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.png)
+
+      
+
+      
+
+'
+  - logLevel: 3
+    internalTime:
+      ticks: 639002787806201164
+    message: '[HunkHudPipeline(1 - StageAssetBundles)](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Job'
+    context: []
+  - logLevel: 0
+    internalTime:
+      ticks: 639002787806075983
+    message: '[HunkHudPipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Clearing PipelineJob error states'
+    context: []
+  - logLevel: 3
+    internalTime:
+      ticks: 639002787805934618
+    message: '[HunkHudPipeline](assetlink://Assets%2fHunkHud%2fThunderstore%2fHunkHudPipeline.asset)
+      Execute Pipeline'
+    context: []

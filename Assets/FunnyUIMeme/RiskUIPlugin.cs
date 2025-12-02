@@ -31,12 +31,12 @@ namespace MaterialHud
     [BepInPlugin("bubbet.riskui", "Risk UI", "1.5.0")]
     public class RiskUIPlugin : BaseUnityPlugin
     {
-        internal static GameObject _newHud;
-        internal static GameObject _newClassicRunHud;
-        internal static GameObject _newSimulacrumHud;
-        internal static GameObject _allyCard;
-        internal static GameObject BaseWaveUI;
-        internal static GameObject EnemyInfoPanel;
+        public static GameObject _newHud;
+        public static GameObject _newClassicRunHud;
+        public static GameObject _newSimulacrumHud;
+        public static GameObject _allyCard;
+        public static GameObject BaseWaveUI;
+        public static GameObject EnemyInfoPanel;
 
         public static readonly Dictionary<string, Sprite> DifficultyIconMap = new();
         public static ZioConfigEntry<Color> VoidColor;

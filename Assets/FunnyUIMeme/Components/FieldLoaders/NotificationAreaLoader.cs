@@ -17,13 +17,13 @@ namespace MaterialHud
         private static GameObject droneRepairNotificationPanel => Addressables.LoadAssetAsync<GameObject>("Assets/RoR2/DLC3/UI/NotificationPanels/DroneRepairNotificationPanel.prefab").WaitForCompletion(); 
 		public void Start()
 		{
-			controller.genericNotificationPrefab = genericNotificationPrefab;
-			controller.genericTransformationNotificationPrefab = genericTransformationNotificationPrefab;
-			controller.contagiousVoidTransformationNotificationPrefab = contagiousVoidTransformationNotificationPrefab;
-			controller.cloverVoidTransformationNotificationPrefab = cloverVoidTransformationNotificationPrefab;
-            controller.regeneratingScrapRegenTransformationNotificationPrefab = regeneratingScrapRegenTransformationNotificationPrefab;
-            controller.LowerPricedChestsRegenTransformationNotificationPrefab = lowerPricedChestsRegenTransformationNotificationPanel;
-            controller.droneRepairNotificationPrefab = droneRepairNotificationPanel;
+			controller.genericNotificationPrefab ??= genericNotificationPrefab;
+			controller.genericTransformationNotificationPrefab ??= genericTransformationNotificationPrefab;
+			controller.contagiousVoidTransformationNotificationPrefab ??= contagiousVoidTransformationNotificationPrefab;
+			controller.cloverVoidTransformationNotificationPrefab ??= cloverVoidTransformationNotificationPrefab;
+            controller.regeneratingScrapRegenTransformationNotificationPrefab ??= regeneratingScrapRegenTransformationNotificationPrefab;
+            controller.LowerPricedChestsRegenTransformationNotificationPrefab ??= lowerPricedChestsRegenTransformationNotificationPanel;
+            controller.droneRepairNotificationPrefab ??= droneRepairNotificationPanel;
         }
 	}
 }

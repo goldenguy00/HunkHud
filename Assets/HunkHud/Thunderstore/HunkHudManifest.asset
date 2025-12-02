@@ -59,7 +59,6 @@ MonoBehaviour:
   Version: 1.0.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
-  - {fileID: 11400000, guid: e46a484df6cb5c54cb1e2592799bd0b0, type: 2}
 --- !u!114 &2266209334223278594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -90,9 +89,9 @@ MonoBehaviour:
   StagingPaths:
   - <ManifestPluginStaging>
   assetBundles:
-  - assetBundleName: HunkHudAssets
+  - assetBundleName: hunkui
     assets:
-    - {fileID: 102900000, guid: a0b423dc65806774989c6478d3a30534, type: 3}
+    - {fileID: 102900000, guid: ca21a016da2c0704ca8322228f71e5c1, type: 3}
 --- !u!114 &9216541630116768853
 MonoBehaviour:
   m_ObjectHideFlags: 0
