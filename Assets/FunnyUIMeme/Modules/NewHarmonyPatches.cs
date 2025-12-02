@@ -4,7 +4,6 @@ using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
 using RoR2.UI;
-using TMPro;
 using UnityEngine;
 
 namespace MaterialHud
@@ -141,23 +140,8 @@ namespace MaterialHud
             else Log.Error("AllyCardManager.Awake");
         }
 
-        //[HarmonyILManipulator, HarmonyPatch(typeof(VoidSurvivorController), nameof(VoidSurvivorController.OnEnable))]
-        public static void MoveVoidSurvivorController(ILContext il)
-        {
-            var c = new ILCursor(il);
-            if (c.TryGotoNext(x => x.MatchLdarg(0), x => x.MatchLdfld<VoidSurvivorController>("overlayChildLocatorEntry")))
-            {
-                c.RemoveRange(2);
-                c.Emit(OpCodes.Ldstr, "BottomLeftCluster");
-            }
-            else Log.Error("VoidSurvivorController.OnEnable");
-        }
-
         [HarmonyPostfix, HarmonyPatch(typeof(EnemyInfoPanel), nameof(EnemyInfoPanel.Init))]
         public static void ChangeMonsterInventory() => EnemyInfoPanel.panelPrefab = RiskUIPlugin.EnemyInfoPanel;
-
-        [HarmonyPrefix, HarmonyPatch(typeof(ScoreboardStrip), nameof(ScoreboardStrip.ResetNavIndicators))]
-        public static bool ResetNav() => false;
 
         [HarmonyPostfix, HarmonyPatch(typeof(HUD), nameof(HUD.DeactivateScoreboard))]
         public static void Unselect(HUD __instance)
@@ -166,101 +150,6 @@ namespace MaterialHud
             {
                 ctrl.eventSystem.SetSelectedGameObject(null);
                 ctrl.eventSystem.currentSelectedButton = null;
-            }
-        }
-
-        [HarmonyILManipulator, HarmonyPatch(typeof(ItemIcon), nameof(ItemIcon.SetItemIndex), new Type[] { typeof(ItemIndex), typeof(int), typeof(float) })]
-        public static void ItemCount(ILContext il)
-        {
-            ILCursor[] c = null;
-            if (new ILCursor(il).TryFindNext(out c,
-                    x => x.MatchCallOrCallvirt<SpriteAsNumberManager>(nameof(SpriteAsNumberManager.SetItemCount)),
-                    x => x.MatchCallOrCallvirt<SpriteAsNumberManager>(nameof(SpriteAsNumberManager.SetVisible))
-                ))
-            {
-                c[0].Remove();
-                c[0].Emit(OpCodes.Ldarg_0);
-                c[0].EmitDelegate<Action<SpriteAsNumberManager, int, ItemIcon>>((sanm, num, image) =>
-                {
-                    if (sanm)
-                    {
-                        sanm.SetItemCount(num);
-                    }
-                    else if (image.stackText)
-                    {
-                        image.stackText.text = "x" + num.ToString();
-                        image.stackText.enabled = true;
-                    }
-                });
-                c[1].Remove();
-                c[1].Emit(OpCodes.Ldarg_0);
-                c[1].EmitDelegate<Action<SpriteAsNumberManager, bool, ItemIcon>>((sanm, enabled, image) =>
-                {
-                    if (sanm)
-                    {
-                        sanm.SetVisible(enabled);
-                    }
-                    else if (image.stackText)
-                    {
-                        image.stackText.enabled = enabled;
-                    }
-                });
-            }
-        }
-
-        [HarmonyPrefix, HarmonyPatch(typeof(ScoreboardStrip), nameof(ScoreboardStrip.UpdateItemCountText))]
-        public static bool NoCount() => false;
-
-        [HarmonyPrefix, HarmonyPatch(typeof(InspectPanelLocator), nameof(InspectPanelLocator.Awake))]
-        public static bool NoPanel() => false;
-
-        [HarmonyILManipulator, HarmonyPatch(typeof(ContextManager), nameof(ContextManager.Update))]
-        public static void NoInspect(ILContext il)
-        {
-            var c = new ILCursor(il);
-            c.Index = c.Instrs.Count - 1;
-
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(typeof(GameObject), nameof(GameObject.SetActive))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<GameObject, bool>>(Slurp2);
-            }
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(AccessTools.PropertySetter(typeof(TMP_Text), nameof(TMP_Text.text)))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<TMP_Text, string>>(Slurp);
-            }
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(AccessTools.PropertySetter(typeof(TMP_Text), nameof(TMP_Text.text)))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<TMP_Text, string>>(Slurp);
-            }
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(typeof(GameObject), nameof(GameObject.SetActive))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<GameObject, bool>>(Slurp2);
-            }
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(AccessTools.PropertySetter(typeof(TMP_Text), nameof(TMP_Text.text)))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<TMP_Text, string>>(Slurp);
-            }
-            if (c.TryGotoPrev(x => x.MatchCallOrCallvirt(AccessTools.PropertySetter(typeof(TMP_Text), nameof(TMP_Text.text)))))
-            {
-                c.Remove();
-                c.EmitDelegate<Action<TMP_Text, string>>(Slurp);
-            }
-
-
-            void Slurp(TMP_Text text, string texttext)
-            {
-                if (text)
-                    text.text = texttext;
-            }
-            void Slurp2(GameObject obj, bool enabled)
-            {
-                if (obj)
-                    obj.SetActive(enabled);
             }
         }
     }

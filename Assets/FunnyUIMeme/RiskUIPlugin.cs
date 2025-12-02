@@ -1,17 +1,15 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Runtime.CompilerServices;
 using System.Security;
 using System.Security.Permissions;
 using BepInEx;
 using BepInEx.Bootstrap;
 using HarmonyLib;
-using HG;
 using RiskOfOptions;
 using RiskOfOptions.Options;
 using RoR2;
-using RoR2.Scripts.GameBehaviors.UI;
-using RoR2.UI;
 using SimpleJSON;
 using UnityEngine;
 using Zio;
@@ -30,7 +28,7 @@ namespace MaterialHud
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
     [BepInDependency("bubbet.zioriskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInPlugin("bubbet.riskui", "Risk UI", "1.4.0")]
+    [BepInPlugin("bubbet.riskui", "Risk UI", "1.5.0")]
     public class RiskUIPlugin : BaseUnityPlugin
     {
         internal static GameObject _newHud;
@@ -57,6 +55,16 @@ namespace MaterialHud
         public void Awake()
         {
             Log.Init(Logger);
+            
+            LoadAssets();
+
+            harm = new Harmony(Info.Metadata.GUID);
+            patcher = new PatchClassProcessor(harm, typeof(NewHarmonyPatches));
+
+            RoR2Application.onLoad += OnLoad;
+        }
+        private void LoadAssets()
+        {
             var path = Path.GetDirectoryName(Info.Location);
             try
             {
@@ -69,11 +77,6 @@ namespace MaterialHud
             }
             catch { }
 
-            harm = new Harmony(Info.Metadata.GUID);
-            patcher = new PatchClassProcessor(harm, typeof(NewHarmonyPatches));
-
-            RoR2Application.onLoad += OnLoad;
-
             var assetBundle = AssetBundle.LoadFromFile(Path.Combine(path, "riskui"));
             _newHud = assetBundle.LoadAsset<GameObject>("RiskUI");
             _newClassicRunHud = assetBundle.LoadAsset<GameObject>("MaterialClassicRunInfoHudPanel");
@@ -83,7 +86,6 @@ namespace MaterialHud
             EnemyInfoPanel = assetBundle.LoadAsset<GameObject>("MaterialMonsterItemInventory");
 
             CreateIconMap(assetBundle);
-            EditShit(assetBundle);
         }
 
         private void CreateIconMap(AssetBundle assetBundle)
@@ -102,127 +104,6 @@ namespace MaterialHud
             DifficultyIconMap["DIFFICULTY_EASY_NAME"] = assetBundle.LoadAsset<Sprite>("Drizzle");
             DifficultyIconMap["DIFFICULTY_NORMAL_NAME"] = assetBundle.LoadAsset<Sprite>("Rainstorm");
             DifficultyIconMap["DIFFICULTY_HARD_NAME"] = assetBundle.LoadAsset<Sprite>("Monsoon");
-        }
-
-        private void EditShit(AssetBundle assetBundle)
-        {
-            var hud = RiskUIPlugin._newHud.GetComponent<HUD>();
-
-            var skillIconRoot = assetBundle.LoadAsset<GameObject>("SkillIconRoot");
-            var hpBarSub = assetBundle.LoadAsset<GameObject>("HealthBarSub");
-            var chatbox = assetBundle.LoadAsset<GameObject>("MaterialChatbox");
-            var artifactIcon = assetBundle.LoadAsset<GameObject>("MaterialArtifactStatusIcon");
-            var objectivePanel = assetBundle.LoadAsset<GameObject>("MaterialObjectiveStrip");
-            var skillIcon = hud.skillIcons;
-            var buffIcon = hud.buffDisplay.buffIconPrefab;
-            var itemDisplay = hud.itemInventoryDisplay.gameObject;
-            var equipIcon = hud.equipmentIcons;
-
-            objectivePanel.EnsureComponent<UIInputPassthrough>();
-            objectivePanel.EnsureComponent<MPEventSystemLocator>();
-            objectivePanel.EnsureComponent<ObjectiveStripAnimationParams>().Params =
-            new List<ObjectiveStripAnimationParam>
-            {
-                new() { Param = "enterAlphaStartPercent", Value = 0.25f },
-                new() { Param = "enterAlphaEndPercent", Value = 0.5f },
-                new() { Param = "enterHeightStartPercent", Value = 0f },
-                new() { Param = "enterHeightEndPercent", Value = 0.25f },
-            };
-
-            if (objectivePanel.transform.Find("Checkbox"))
-                objectivePanel.transform.Find("Checkbox").SetParent(objectivePanel.transform.Find("Label"));
-
-            buffIcon.EnsureComponent<UIInputPassthrough>();
-            buffIcon.EnsureComponent<MPEventSystemLocator>();
-            var b = buffIcon.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            //equip icons
-            equipIcon[0].gameObject.EnsureComponent<MPEventSystemLocator>();
-            equipIcon[0].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = equipIcon[0].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            equipIcon[1].gameObject.EnsureComponent<MPEventSystemLocator>();
-            equipIcon[1].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = equipIcon[1].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            // skill icons
-            skillIcon[0].gameObject.EnsureComponent<MPEventSystemLocator>();
-            skillIcon[0].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = skillIcon[0].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            skillIcon[1].gameObject.EnsureComponent<MPEventSystemLocator>();
-            skillIcon[1].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = skillIcon[1].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            skillIcon[2].gameObject.EnsureComponent<MPEventSystemLocator>();
-            skillIcon[2].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = skillIcon[2].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            skillIcon[3].gameObject.EnsureComponent<MPEventSystemLocator>();
-            skillIcon[3].gameObject.EnsureComponent<UIInputPassthrough>();
-            b = skillIcon[3].gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            itemDisplay.EnsureComponent<UIInputPassthrough>();
-            itemDisplay.EnsureComponent<MPEventSystemLocator>();
-            b = itemDisplay.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            hud.scoreboardPanel.EnsureComponent<UIInputPassthrough>();
-            hud.scoreboardPanel.EnsureComponent<MPEventSystemLocator>();
-
-            var scoreboard = hud.scoreboardPanel.GetComponent<ScoreboardController>();
-            scoreboard.stripPrefab.EnsureComponent<UIInputPassthrough>();
-
-            var strip = scoreboard.stripPrefab.GetComponent<ScoreboardStrip>();
-            strip.eventSystemLocator = scoreboard.stripPrefab.EnsureComponent<MPEventSystemLocator>();
-
-            strip.equipmentIcon.gameObject.EnsureComponent<UIInputPassthrough>();
-            strip.equipmentIcon.gameObject.EnsureComponent<MPEventSystemLocator>();
-            b = strip.gameObject.EnsureComponent<MPButton>();
-            b.disableGamepadClick = true;
-            b.disablePointerClick = true;
-
-            chatbox.EnsureComponent<UIInputPassthrough>();
-            chatbox.EnsureComponent<MPEventSystemLocator>();
-
-            artifactIcon.EnsureComponent<UIInputPassthrough>();
-            artifactIcon.EnsureComponent<MPEventSystemLocator>();
-
-            hpBarSub.EnsureComponent<UIInputPassthrough>();
-            hpBarSub.EnsureComponent<MPEventSystemLocator>();
-
-            skillIconRoot.EnsureComponent<UIInputPassthrough>();
-            skillIconRoot.EnsureComponent<MPEventSystemLocator>();
-
-            RiskUIPlugin.EnemyInfoPanel.EnsureComponent<UIInputPassthrough>();
-            RiskUIPlugin.EnemyInfoPanel.EnsureComponent<MPEventSystemLocator>();
-
-            RiskUIPlugin._allyCard.EnsureComponent<UIInputPassthrough>();
-            RiskUIPlugin._allyCard.EnsureComponent<MPEventSystemLocator>();
-
-            RiskUIPlugin._newClassicRunHud.EnsureComponent<UIInputPassthrough>();
-            RiskUIPlugin._newClassicRunHud.EnsureComponent<MPEventSystemLocator>();
-
-            RiskUIPlugin._newSimulacrumHud.EnsureComponent<UIInputPassthrough>();
-            RiskUIPlugin._newSimulacrumHud.EnsureComponent<MPEventSystemLocator>();
-
-            RiskUIPlugin.BaseWaveUI.EnsureComponent<UIInputPassthrough>();
-            RiskUIPlugin.BaseWaveUI.EnsureComponent<MPEventSystemLocator>();
         }
 
         private void OnLoad()
@@ -270,6 +151,7 @@ namespace MaterialHud
 
         private void EnabledChanged(ZioConfigEntryBase arg1, object arg2, bool arg3) => EnabledChanged();
 
+        [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
         private void MakeRiskofOptions()
         {
             if(icon)

@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeline: {fileID: 11400000, guid: 2fff3363a4c7d5a469a01906d76d798c, type: 2}
   creationDate:
-    ticks: 638998865625082298
+    ticks: 639002066803864177
   entries:
   - logLevel: 3
     internalTime:
-      ticks: 638998865949942295
+      ticks: 639002067116846628
     message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Finished execution'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865949343450
+      ticks: 639002067116163920
     message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       archived ``` ThunderKit/Staging/RiskUI/plugins/RiskUI ``` into ``` Assets/FunnyUIMeme/Thunderstore/Release.zip
       ```'
@@ -39,61 +39,61 @@ MonoBehaviour:
       13. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset\r\n\r\n 14. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset.meta"
   - logLevel: 3
     internalTime:
-      ticks: 638998865944858815
+      ticks: 639002067110060208
     message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865944316872
+      ticks: 639002067109110962
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleted Assets/FunnyUIMeme/Thunderstore/Release.zip'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865943762412
+      ticks: 639002067108363129
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting Assets/FunnyUIMeme/Thunderstore/Release.zip'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865943187842
+      ticks: 639002067107661806
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865942639553
+      ticks: 639002067106973056
     message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/riskui.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865941867022
+      ticks: 639002067106235248
     message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865941069936
+      ticks: 639002067105550201
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleted ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865940477959
+      ticks: 639002067104862413
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865939892091
+      ticks: 639002067104204691
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865939289000
+      ticks: 639002067103550070
     message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Creating Thunderstore manifest.json'
     context:
@@ -104,33 +104,33 @@ MonoBehaviour:
       ]\n}\r\n```"
   - logLevel: 3
     internalTime:
-      ticks: 638998865938684243
+      ticks: 639002067102872188
     message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865938074168
+      ticks: 639002067102025747
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staged ``` Assets/FunnyUIMeme/Thunderstore/README.md ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/README.md
       ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865937190206
+      ticks: 639002067101012735
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staged ``` Assets/FunnyUIMeme/Thunderstore/icon.png ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/icon.png
       ```'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865936317205
+      ticks: 639002067100166678
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865697905090
+      ticks: 639002066868297570
     message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Creating 1 AssetBundles'
     context:
@@ -300,6 +300,10 @@ MonoBehaviour:
 
       
 
+      [SpriteNumberImage](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fSpriteNumberImage.prefab)
+
+      
+
       [StripContainer](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fHudParts%2fStripContainer.prefab)
 
       
@@ -360,6 +364,14 @@ MonoBehaviour:
 
       
 
+      [texChevronEngiShield](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexChevronEngiShield.png)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
       [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
 
       
@@ -392,12 +404,64 @@ MonoBehaviour:
 
       
 
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.png)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
+
+      
+
+      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
       [TMP
       - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
 
       
 
+      [matExtraEquipmentSwapEffect](assetlink://Assets%2fRoR2%2fDLC3%2fItems%2fExtraEquipment%2fmatExtraEquipmentSwapEffect.mat)
+
+      
+
+      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
+
+      
+
       [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
 
       
 
@@ -406,24 +470,266 @@ MonoBehaviour:
 
       
 
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.asset)
+
+      
+
+      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+
+      
+
+      [texRampWhiteAlphaOnly](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampWhiteAlphaOnly.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.png)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
+
+      
+
+      [texInventoryDisableDebuffIcon2](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffIcon2.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.asset)
+
+      
+
+      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
+
+      
+
+      [uilSecondaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilSecondaryPanel.asset)
+
+      
+
+      [Bombadier_number_texture_12](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_12.asset)
+
+      
+
+      [texSolusAmalgamatorEyeRamp](assetlink://Assets%2fRoR2%2fDLC3%2fCharacters%2fSolusAmalgamator%2fTextures%2ftexSolusAmalgamatorEyeRamp.png)
+
+      
+
+      [texCloudDifferenceBW2](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fTiledTextures%2fClouds%2ftexCloudDifferenceBW2.png)
+
+      
+
+      [Bombadier_Timer_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture_2.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.asset)
+
+      
+
+      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.asset)
+
+      
+
+      [HGCloudRemap](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
+
+      
+
+      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
+
+      
+
+      [matUIPaintStreakFlash](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakFlash.mat)
+
+      
+
+      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
+      [texEngiShieldBlurred](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fEngi%2ftexEngiShieldBlurred.png)
+
+      
+
+      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
+
+      
+
+      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
+
+      
+
+      [matUIPaintStreakAnimated](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakAnimated.mat)
+
+      
+
+      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.png)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.asset)
+
+      
+
+      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.asset)
+
+      
+
+      [Bombadier_number_texture_6](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_6.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.png)
+
+      
+
+      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
+
+      
+
+      [texCommandoIcon](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fCommando%2ftexCommandoIcon.png)
+
+      
+
+      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
+
+      
+
+      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.asset)
+
+      
+
+      [skinMenu](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUISkins%2fskinMenu.asset)
+
+      
+
+      [texRampTwotoneWhite](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampTwotoneWhite.png)
+
+      
+
+      [Bombadier_Timer_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture.png)
+
+      
+
+      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+
+      
+
+      [texUISSOverlay2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUISSOverlay2.png)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
+
+      
+
+      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
+
+      
+
+      [texUIAnimateRampHighlights](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUIAnimateRampHighlights.png)
+
+      
+
+      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.asset)
+
+      
+
+      [tmpBombStandard
+      Material](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombStandard+Material.mat)
+
+      
+
+      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
+
+      
+
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.png)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
+
+      
+
       
 
 '
   - logLevel: 3
     internalTime:
-      ticks: 638998865691843239
+      ticks: 639002066861440931
     message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865691262637
+      ticks: 639002066860940343
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Build Completed: ``` ThunderKit/Libraries/MaterialHud.dll ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865685979491
+      ticks: 639002066856391885
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI
       ```
@@ -434,7 +740,7 @@ MonoBehaviour:
       ThunderKit/Libraries\\MaterialHud.dll\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/MaterialHud.dll\r\n\r\n"
   - logLevel: 1
     internalTime:
-      ticks: 638998865685092970
+      ticks: 639002066855871168
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(91,113): warning CS0618:
       ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex from the ItemTierDef
@@ -447,79 +753,79 @@ MonoBehaviour:
       from the ItemTierDef instead''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs#91)'
   - logLevel: 0
     internalTime:
-      ticks: 638998865642628750
+      ticks: 639002066819410660
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Building : ThunderKit/Libraries/MaterialHud.dll'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865639354945
+      ticks: 639002066816663807
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioRiskOfOptions](assetlink://Packages%2fbubbet-zioriskofoptions%2fZioRiskOfOptions.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865638084586
+      ticks: 639002066815647500
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865636415883
+      ticks: 639002066814308600
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioConfigFile](assetlink://Packages%2fbubbet-zioconfigfile%2fZioConfigFile.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865634198297
+      ticks: 639002066813375739
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865633161829
+      ticks: 639002066812486210
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865632164201
+      ticks: 639002066811551647
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865631133645
+      ticks: 639002066809813303
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865629733588
+      ticks: 639002066808908309
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638998865628870787
+      ticks: 639002066808143191
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865627493250
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      ticks: 639002066806866201
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638998865627365070
-    message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      ticks: 639002066805765071
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Clearing PipelineJob error states'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638998865627084956
-    message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
+      ticks: 639002066805540717
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Pipeline'
     context: []

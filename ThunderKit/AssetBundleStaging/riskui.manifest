@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 1607334531
+CRC: 2291594861
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: b8d3618f18dd626e3610e83092d9841b
+    Hash: ac11667206db9f1b116371247bdd5511
   TypeTreeHash:
     serializedVersion: 2
-    Hash: bff6a4c8c4e775ec82f8f284e57afe88
+    Hash: d9c11c759deffadd4c07a2e634bacfb9
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -28,15 +28,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 535236639, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
@@ -82,11 +80,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 1698535915, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -586095555, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 1407764973, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -337221655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -798650217, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 535236639, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1154994686, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -148,6 +150,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -966267668, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: 1539485112, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 64963404, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1469851606, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
@@ -160,11 +164,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -630047940, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: 1437645409, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -573374155, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1693071685, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 224405951, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1276946932, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -103623725, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -174,11 +182,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -1175615446, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -2030536698, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: 1390580703, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1630511094, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -432102721, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 1044368294, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1638520407, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -187,6 +199,8 @@ ClassTypes:
   Script: {fileID: 402010724, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1630124647, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1226556540, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1833123084, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -212,9 +226,15 @@ ClassTypes:
 - Class: 114
   Script: {fileID: -946661946, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
+  Script: {fileID: -201737183, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
   Script: {fileID: -101842185, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1694916572, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -139579172, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1756662517, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cac1b43ce7b84e49b3cfc419ad643d4, type: 3}
 - Class: 114
@@ -231,6 +251,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 3e729ab46e5b25248befa1c8cef7af6e, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
+- Class: 114
+  Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
 - Class: 115
   Script: {instanceID: 0}
 - Class: 128
@@ -249,11 +271,23 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: RoR2
   ClassName: ChildLocator/NameTransformPair
 - AssemblyName: RoR2
+  ClassName: RoR2.Scripts.GameBehaviors.UI.ObjectiveStripAnimationParam
+- AssemblyName: RoR2
   ClassName: RoR2.TimerStringFormatter/Format
 - AssemblyName: RoR2
   ClassName: RoR2.TimerStringFormatter/Format/Unit
 - AssemblyName: RoR2
   ClassName: RoR2.UI.HealthBarStyle/BarStyle
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.InspectInfo
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.UISkinData/ButtonStyle
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.UISkinData/PanelStyle
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.UISkinData/ScrollRectStyle
+- AssemblyName: RoR2
+  ClassName: RoR2.UI.UISkinData/TextStyle
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -319,71 +353,142 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Tropical Storm (Tropical Storm).png
-- Assets/FunnyUIMeme/Assets/MaterialTimerStringFormatter.asset
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialObjectiveStrip.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.png
-- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
+- Assets/FunnyUIMeme/Assets/MaterialTimerStringFormatter.asset
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialObjectiveStrip.prefab
+- Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.png
+- Assets/RoR2/Base/UI/AR/texUICornerTier2.asset
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.asset
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.png
 - Assets/FunnyUIMeme/Assets/Sprites/HitMarker.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Calypso (More Difficulties).png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_16.asset
+- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.png
+- Assets/RoR2/Base/UI/AR/texUICornerTier2.png
 - Assets/FunnyUIMeme/Assets/Sprites/checkboxCheckedWhite.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
-- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_17.asset
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
-- Assets/FunnyUIMeme/Assets/MaterialClassicRunInfoHudPanel.prefab
 - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-- Assets/FunnyUIMeme/Assets/MaterialNonCenti.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Tempest (More Difficulties).png
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialMonsterItemInventory.prefab
 - Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
-- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialMonsterItemInventory.prefab
+- Assets/RoR2/DLC3/Items/ExtraEquipment/matExtraEquipmentSwapEffect.mat
+- Assets/RoR2/Base/Core/Null/texNullIcon.png
 - Packages/com.unity.postprocessing/PostProcessing/Gizmos/PostProcessLayer.png
-- Assets/FunnyUIMeme/Assets/HudParts/MaterialArtifactStatusIcon.prefab
-- Assets/FunnyUIMeme/Assets/Sprites/CircleInner.png
-- Assets/FunnyUIMeme/Assets/Sprites/ringBelow.png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Sunny (More Difficulties).png
+- Assets/RoR2/Base/Items/Syringe/texSyringeIcon.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_15.asset
 - Assets/PP Profile.asset
+- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow Atlas.png
 - Assets/FunnyUIMeme/Assets/Simulacrum/MaterialDefaultWaveUI.prefab
-- Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
 - Assets/FunnyUIMeme/Assets/MaterialCenti.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/README.txt
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Void_Coin.png
-- Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
-- Assets/FunnyUIMeme/Assets/Sprites/Tab.png
-- Assets/FunnyUIMeme/Assets/Simulacrum/MaterialSimulacrum.prefab
-- Assets/FunnyUIMeme/Assets/Sprites/checkboxUnCheckedWhite.png
-- Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Inferno (Inferno).png
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Charybdis (UntitledDifficultyMod).png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdrop.asset
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHeaderDouble.png
+- Assets/RoR2/Base/Common/ColorRamps/texRampWhiteAlphaOnly.png
+- Assets/RoR2/Base/UI/HUD/texUIFlashSquare1.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdrop.png
+- Assets/RoR2/Base/Items/Bear/texBearIcon.png
+- Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffIcon2.png
+- Assets/RoR2/Base/UI/HUD/texUIFlashSquare1.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_10.asset
+- Assets/RoR2/Base/UI/UILayers/uilSecondaryPanel.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_12.asset
+- Assets/RoR2/DLC3/Characters/SolusAmalgamator/Textures/texSolusAmalgamatorEyeRamp.png
+- Assets/RoR2/Base/Common/TiledTextures/Clouds/texCloudDifferenceBW2.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Pluviculture (ConfigurableDifficulty).png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/ThunderStorm (More Difficulties).png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture_2.asset
 - Assets/FunnyUIMeme/Assets/HudParts/StripContainer.prefab
-- Assets/FunnyUIMeme/Assets/RiskUI.prefab
+- Assets/RoR2/Base/UI/UILayers/uilTertiaryPanel.asset
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Armageddon (More Difficulties).png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Font Asset Icon.psd
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIMainHealthbar.asset
+- Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffFrame.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Typhoon (Starstorm 2).png
 - Assets/FunnyUIMeme/Assets/Backups/MaterialAllyCardBackup.prefab
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Super Typhoon (Starstorm 2).png
-- Assets/FunnyUIMeme/Assets/Sprites/texExtraEquipmentSwapIcon.png
+- Assets/RoR2/Base/Shaders/FX/HGCloudRemap.shader
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Rainstorm.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_9.asset
+- Assets/FunnyUIMeme/Assets/HudParts/SpriteNumberImage.prefab
+- Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakFlash.mat
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_4.asset
+- Assets/RoR2/Base/UI/HUD/UnknownItemInspectInfo.asset
+- Assets/RoR2/DLC3/UI/Textures/texExtraEquipmentSwapIcon.png
+- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
+- Assets/RoR2/Base/Characters/Engi/texEngiShieldBlurred.png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Deluge (UntitledDifficultyMod).png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_14.asset
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+- Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
+- Assets/RoR2/Base/UI/HUD/MissingInspectInfoFallbackDef.asset
+- Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakAnimated.mat
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_5.asset
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
+- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
+- Assets/RoR2/DLC3/UI/Textures/texExtraEquipmentSwapIcon.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_3.asset
+- Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_6.asset
+- Assets/FunnyUIMeme/Assets/MaterialClassicRunInfoHudPanel.prefab
+- Assets/FunnyUIMeme/Assets/MaterialNonCenti.asset
+- Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffFrame.png
+- Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialArtifactStatusIcon.prefab
+- Assets/FunnyUIMeme/Assets/Sprites/CircleInner.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_11.asset
+- Assets/FunnyUIMeme/Assets/Sprites/ringBelow.png
+- Assets/RoR2/Base/Characters/Commando/texCommandoIcon.png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Sunny (More Difficulties).png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_0.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_1.asset
+- Assets/RoR2/Base/UI/texDetailPanel.asset
+- Assets/RoR2/Base/UI/UISkins/skinMenu.asset
+- Assets/RoR2/Base/Common/ColorRamps/texRampTwotoneWhite.png
+- Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
+- Assets/Gizmos/RoR2/EquipmentDef Icon.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
+- Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
+- Assets/FunnyUIMeme/Assets/Sprites/Tab.png
+- Assets/FunnyUIMeme/Assets/Simulacrum/MaterialSimulacrum.prefab
+- Assets/RoR2/Base/UI/SpecialUIMaterials/texUISSOverlay2.png
+- Assets/FunnyUIMeme/Assets/Sprites/checkboxUnCheckedWhite.png
+- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_7.asset
+- Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.png
+- Assets/RoR2/Base/Shaders/UI/HGUIAnimateAlpha.shader
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Inferno (Inferno).png
+- Assets/FunnyUIMeme/Assets/DifficultyIcons/Charybdis (UntitledDifficultyMod).png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.asset
+- Assets/RoR2/Base/Items/Syringe/texSyringeIcon.asset
+- Assets/FunnyUIMeme/Assets/RiskUI.prefab
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_8.asset
+- Assets/RoR2/Base/UI/SpecialUIMaterials/texUIAnimateRampHighlights.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture.png
+- Assets/FunnyUIMeme/Assets/Sprites/texExtraEquipmentSwapIcon.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Monsoon.png
+- Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombStandard Material.mat
 - Assets/FunnyUIMeme/Assets/HudParts/HealthBarSub.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/circle.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Drizzle.png
-- Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
 - Assets/FunnyUIMeme/Assets/Sprites/ringTop.png
 - Assets/FunnyUIMeme/Assets/Sprites/whitepixel.png
+- Assets/RoR2/Base/UI/texDetailPanel.png
 - Assets/FunnyUIMeme/Assets/Sprites/Shift.png
-- Assets/FunnyUIMeme/Assets/DifficultyIcons/Deluge (UntitledDifficultyMod).png
-- Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
-- Assets/FunnyUIMeme/Assets/Sprites/CircleOuter.png
 - Assets/FunnyUIMeme/Assets/Sprites/texChevronEngiShield.png
+- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.asset
+- Assets/FunnyUIMeme/Assets/Sprites/CircleOuter.png
+- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
 Dependencies: []

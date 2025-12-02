@@ -759,7 +759,7 @@ MonoBehaviour:
   expandedChatboxRect: {fileID: 2759454553290816698}
   scrollRect: {fileID: 6889388077748409450}
   fadeGroup: {fileID: 4402093968713804422}
-  allowExpandedChatbox: 0
+  allowExpandedChatbox: 1
   deselectAfterSubmitChat: 1
   deactivateInputFieldIfInactive: 1
   fadeWait: 5

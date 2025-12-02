@@ -14,17 +14,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pipeline: {fileID: 11400000, guid: 2fff3363a4c7d5a469a01906d76d798c, type: 2}
   creationDate:
-    ticks: 638904624168316031
+    ticks: 639001147704637959
   entries:
   - logLevel: 3
     internalTime:
-      ticks: 638904624583359709
+      ticks: 639001148048126069
     message: '[RiskUIPipeline](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Finished execution'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624583056180
+      ticks: 639001148047461030
     message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       archived ``` ThunderKit/Staging/RiskUI/plugins/RiskUI ``` into ``` Assets/FunnyUIMeme/Thunderstore/Release.zip
       ```'
@@ -39,98 +39,98 @@ MonoBehaviour:
       13. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset\r\n\r\n 14. Assets\\FunnyUIMeme\\Thunderstore\\RiskUIPipeline.asset.meta"
   - logLevel: 3
     internalTime:
-      ticks: 638904624577731966
+      ticks: 639001148041428179
     message: '[RiskUIPipeline(7 - Zip)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624577109012
+      ticks: 639001148040758328
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleted Assets/FunnyUIMeme/Thunderstore/Release.zip'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624576273286
+      ticks: 639001148040078468
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting Assets/FunnyUIMeme/Thunderstore/Release.zip'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624575892068
+      ticks: 639001148039398794
     message: '[RiskUIPipeline(6 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624575564754
+      ticks: 639001148038517693
     message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/riskui.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624575246251
+      ticks: 639001148037584440
     message: '[RiskUIPipeline(5 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624574954247
+      ticks: 639001148036863002
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleted ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624574635515
+      ticks: 639001148036167597
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Deleting ThunderKit/Staging/RiskUI/plugins/RiskUI/RiskUI.manifest'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624574310276
+      ticks: 639001148035517268
     message: '[RiskUIPipeline(4 - Delete)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624573983943
+      ticks: 639001148034866270
     message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Creating Thunderstore manifest.json'
     context:
     - "Manifest.json\r\n```js\r\n{\n    \"name\": \"RiskUI\",\n    \"author\": \"Bubbet\",\n   
       \"version_number\": \"2.0.0\",\n    \"website_url\": \"https://github.com/Bubbet\",\n   
       \"description\": \"The first hud replacement mod\",\n    \"dependencies\":
-      [\n        \"bbepis-BepInExPack-5.4.2120\",\n        \"Bubbet-ZioRiskOfOptions-1.0.0\"\n   
+      [\n        \"bbepis-BepInExPack-5.4.2121\",\n        \"Bubbet-ZioRiskOfOptions-1.0.0\"\n   
       ]\n}\r\n```"
   - logLevel: 3
     internalTime:
-      ticks: 638904624573642549
+      ticks: 639001148034198595
     message: '[RiskUIPipeline(3 - StageThunderstoreManifest)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624573348418
+      ticks: 639001148033315131
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staged ``` Assets/FunnyUIMeme/Thunderstore/README.md ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/README.md
       ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624572932624
+      ticks: 639001148032282977
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staged ``` Assets/FunnyUIMeme/Thunderstore/icon.png ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI/icon.png
       ```'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624572539875
+      ticks: 639001148031515221
     message: '[RiskUIPipeline(2 - StageManifestFiles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624257006933
+      ticks: 639001147797530056
     message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Creating 1 AssetBundles'
     context:
@@ -360,118 +360,15 @@ MonoBehaviour:
 
       
 
+      [texChevronEngiShield](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexChevronEngiShield.png)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
       [whitepixel](assetlink://Assets%2fFunnyUIMeme%2fAssets%2fSprites%2fwhitepixel.png)
-
-      
-
-      [TMP
-      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
-
-      
-
-      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
-
-      
-
-      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
-
-      
-
-      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
-
-      
-
-      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
-
-      
-
-      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
-
-      
-
-      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
-
-      
-
-      [texBearNormal](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearNormal.png)
-
-      
-
-      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
-
-      
-
-      [texWarbannerIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerIcon.png)
-
-      
-
-      [Bear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fBear.asset)
-
-      
-
-      [TMP
-      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
-
-      
-
-      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
-
-      
-
-      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
-
-      
-
-      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
-
-      
-
-      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
-
-      
-
-      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
-
-      
-
-      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
-
-      
-
-      [PP
-      Profile](assetlink://Assets%2fPP+Profile.asset)
-
-      
-
-      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
-
-      
-
-      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
-
-      
-
-      [BearMesh](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fBearMesh.asset)
-
-      
-
-      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
-
-      
-
-      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
-
-      
-
-      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
-
-      
-
-      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
-
-      
-
-      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
 
       
 
@@ -480,7 +377,141 @@ MonoBehaviour:
 
       
 
-      [matWarbannerFlag](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fmatWarbannerFlag.mat)
+      [TMP_SDF-Mobile](assetlink://Assets%2fTextMesh+Pro%2fShaders%2fTMP_SDF-Mobile.shader)
+
+      
+
+      [LiberationSans
+      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
+
+      
+
+      [TMP
+      - Text Component Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Text+Component+Icon.psd)
+
+      
+
+      [LiberationSans
+      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
+
+      
+
+      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.png)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.asset)
+
+      
+
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.png)
+
+      
+
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.asset)
+
+      
+
+      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
+
+      
+
+      [texUIOutlineOnly](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIOutlineOnly.asset)
+
+      
+
+      [Bombadier_number_texture_16](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_16.asset)
+
+      
+
+      [texUICornerTier2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fAR%2ftexUICornerTier2.png)
+
+      
+
+      [texUIBackdropFadedEnds](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdropFadedEnds.png)
+
+      
+
+      [TMP
+      - Input Field Icon](assetlink://Packages%2fcom.unity.textmeshpro%2fEditor+Resources%2fGizmos%2fTMP+-+Input+Field+Icon.psd)
+
+      
+
+      [matExtraEquipmentSwapEffect](assetlink://Assets%2fRoR2%2fDLC3%2fItems%2fExtraEquipment%2fmatExtraEquipmentSwapEffect.mat)
+
+      
+
+      [texNullIcon](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2ftexNullIcon.png)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.png)
+
+      
+
+      [PostProcessLayer](assetlink://Packages%2fcom.unity.postprocessing%2fPostProcessing%2fGizmos%2fPostProcessLayer.png)
+
+      
+
+      [Bombadier_number_texture_15](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_15.asset)
+
+      
+
+      [PP
+      Profile](assetlink://Assets%2fPP+Profile.asset)
+
+      
+
+      [texAlphaGradient2](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fVFX%2fParticleMasks%2ftexAlphaGradient2.png)
+
+      
+
+      [tmpBombDropshadow
+      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.asset)
+
+      
+
+      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+
+      
+
+      [texRampWhiteAlphaOnly](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampWhiteAlphaOnly.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.png)
+
+      
+
+      [texUIBackdrop](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIBackdrop.png)
+
+      
+
+      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.png)
+
+      
+
+      [texInventoryDisableDebuffIcon2](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffIcon2.png)
+
+      
+
+      [texUIFlashSquare1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2ftexUIFlashSquare1.asset)
+
+      
+
+      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
 
       
 
@@ -492,94 +523,15 @@ MonoBehaviour:
 
       
 
+      [texSolusAmalgamatorEyeRamp](assetlink://Assets%2fRoR2%2fDLC3%2fCharacters%2fSolusAmalgamator%2fTextures%2ftexSolusAmalgamatorEyeRamp.png)
+
+      
+
+      [texCloudDifferenceBW2](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fTiledTextures%2fClouds%2ftexCloudDifferenceBW2.png)
+
+      
+
       [Bombadier_Timer_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_Timer_texture_2.asset)
-
-      
-
-      [Cylinder](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fCylinder.asset)
-
-      
-
-      [texBearDiffuse](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearDiffuse.png)
-
-      
-
-      [Plane](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fPlane.asset)
-
-      
-
-      [Bombadier_number_texture_10](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_10.asset)
-
-      
-
-      [tmpBombDropshadow
-      Atlas](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow+Atlas.png)
-
-      
-
-      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
-
-      
-
-      [LiberationSans
-      SDF](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF.asset)
-
-      
-
-      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
-
-      
-
-      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
-
-      
-
-      [PickupWarbanner](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fPickupWarbanner.prefab)
-
-      
-
-      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
-
-      
-
-      [matBear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fmatBear.mat)
-
-      
-
-      [HGStandard](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fDeferred%2fHGStandard.shader)
-
-      
-
-      [texUICleanButton](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUICleanButton.png)
-
-      
-
-      [mdlBearAvatar](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fmdlBearAvatar.asset)
-
-      
-
-      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
-
-      
-
-      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
-
-      
-
-      [LiberationSans
-      SDF - Fallback](assetlink://Assets%2fTextMesh+Pro%2fResources%2fFonts+%26+Materials%2fLiberationSans+SDF+-+Fallback.asset)
-
-      
-
-      [texBearIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2ftexBearIcon.asset)
-
-      
-
-      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
-
-      
-
-      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
 
       
 
@@ -587,7 +539,71 @@ MonoBehaviour:
 
       
 
-      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
+      [uilTertiaryPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUILayers%2fuilTertiaryPanel.asset)
+
+      
+
+      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
+
+      
+
+      [HGCloudRemap](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fFX%2fHGCloudRemap.shader)
+
+      
+
+      [Bombadier_number_texture_9](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_9.asset)
+
+      
+
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.asset)
+
+      
+
+      [matUIPaintStreakFlash](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakFlash.mat)
+
+      
+
+      [Bombadier_number_texture_4](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_4.asset)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.png)
+
+      
+
+      [texEngiShieldBlurred](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fEngi%2ftexEngiShieldBlurred.png)
+
+      
+
+      [Bombadier_number_texture_14](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_14.asset)
+
+      
+
+      [MissingInspectInfoFallbackDef](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fMissingInspectInfoFallbackDef.asset)
+
+      
+
+      [matUIPaintStreakAnimated](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2fmatUIPaintStreakAnimated.mat)
+
+      
+
+      [Bombadier_number_texture_5](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_5.asset)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.png)
+
+      
+
+      [texExtraEquipmentSwapIcon](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexExtraEquipmentSwapIcon.asset)
+
+      
+
+      [Bombadier_number_texture_3](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_3.asset)
+
+      
+
+      [texTempItemsTimer](assetlink://Assets%2fRoR2%2fDLC3%2fUI%2fTextures%2ftexTempItemsTimer.asset)
 
       
 
@@ -595,39 +611,39 @@ MonoBehaviour:
 
       
 
-      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+      [texUIOutlineOnly](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIOutlineOnly.png)
 
       
 
-      [SpriteNumberImage](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fSpriteNumberImage.prefab)
+      [texInventoryDisableDebuffFrame](assetlink://Assets%2fRoR2%2fDLC3%2fCommon%2fBuffs%2fbdInventoryDisable%2ftexInventoryDisableDebuffFrame.png)
 
       
 
-      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+      [Bombadier_number_texture_11](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_11.asset)
 
       
 
-      [WardOnLevel](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fWardOnLevel.asset)
+      [texCommandoIcon](assetlink://Assets%2fRoR2%2fBase%2fCharacters%2fCommando%2ftexCommandoIcon.png)
 
       
 
-      [matWarbannerPole](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2fmatWarbannerPole.mat)
+      [Bombadier_number_texture_0](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_0.asset)
 
       
 
-      [texUIHeaderDouble](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHeaderDouble.png)
+      [Bombadier_number_texture_1](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_1.asset)
 
       
 
-      [texWarbannerDiffuse](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerDiffuse.png)
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.asset)
 
       
 
-      [Items.Bear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fItems.Bear.asset)
+      [skinMenu](assetlink://Assets%2fRoR2%2fBase%2fUI%2fUISkins%2fskinMenu.asset)
 
       
 
-      [texWarbannerIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fWardOnLevel%2ftexWarbannerIcon.asset)
+      [texRampTwotoneWhite](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fColorRamps%2ftexRampTwotoneWhite.png)
 
       
 
@@ -635,7 +651,51 @@ MonoBehaviour:
 
       
 
-      [NullMesh](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fNullMesh.asset)
+      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+
+      
+
+      [texUISSOverlay2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUISSOverlay2.png)
+
+      
+
+      [tmpBombDropshadow](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fFonts%2fBombardier%2ftmpBombDropshadow.asset)
+
+      
+
+      [Bombadier_number_texture_7](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_7.asset)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.png)
+
+      
+
+      [HGUIAnimateAlpha](assetlink://Assets%2fRoR2%2fBase%2fShaders%2fUI%2fHGUIAnimateAlpha.shader)
+
+      
+
+      [texUIHighlightHeader](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightHeader.asset)
+
+      
+
+      [texSyringeIcon](assetlink://Assets%2fRoR2%2fBase%2fItems%2fSyringe%2ftexSyringeIcon.asset)
+
+      
+
+      [Bombadier_number_texture_8](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_8.asset)
+
+      
+
+      [texUIAnimateRampHighlights](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpecialUIMaterials%2ftexUIAnimateRampHighlights.png)
+
+      
+
+      [Bombadier_number_texture](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture.png)
+
+      
+
+      [texUIMainHealthbar](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIMainHealthbar.asset)
 
       
 
@@ -644,27 +704,19 @@ MonoBehaviour:
 
       
 
-      [NullModel](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fNullModel.prefab)
+      [Bombadier_number_texture_17](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_17.asset)
 
       
 
-      [PickupBear](assetlink://Assets%2fRoR2%2fBase%2fItems%2fBear%2fPickupBear.prefab)
+      [texUIHighlightBoxOutline](assetlink://Assets%2fRoR2%2fBase%2fUI%2fGeneric+UI%2fTextures%2ftexUIHighlightBoxOutline.asset)
 
       
 
-      [Bombadier_number_texture_2](assetlink://Assets%2fRoR2%2fBase%2fUI%2fSpriteText%2fVisual_Assets%2fBombadier_number_texture_2.asset)
+      [texDetailPanel](assetlink://Assets%2fRoR2%2fBase%2fUI%2ftexDetailPanel.png)
 
       
 
-      [UnknownItemInspectInfo](assetlink://Assets%2fRoR2%2fBase%2fUI%2fHUD%2fUnknownItemInspectInfo.asset)
-
-      
-
-      [matNull](assetlink://Assets%2fRoR2%2fBase%2fCore%2fNull%2fmatNull.mat)
-
-      
-
-      [LiberationSans](assetlink://Assets%2fTextMesh+Pro%2fFonts%2fLiberationSans.ttf)
+      [texMysteryIcon](assetlink://Assets%2fRoR2%2fBase%2fCommon%2fMiscIcons%2ftexMysteryIcon.asset)
 
       
 
@@ -673,19 +725,19 @@ MonoBehaviour:
 '
   - logLevel: 3
     internalTime:
-      ticks: 638904624245838903
+      ticks: 639001147781023398
     message: '[RiskUIPipeline(1 - StageAssetBundles)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624245516826
+      ticks: 639001147780513175
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Build Completed: ``` ThunderKit/Libraries/MaterialHud.dll ```'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624239384088
+      ticks: 639001147775936096
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       staging ``` ThunderKit/Libraries ``` in ``` ThunderKit/Staging/RiskUI/plugins/RiskUI
       ```
@@ -696,853 +748,92 @@ MonoBehaviour:
       ThunderKit/Libraries\\MaterialHud.dll\r\n  To: ThunderKit/Staging/RiskUI/plugins/RiskUI/MaterialHud.dll\r\n\r\n"
   - logLevel: 1
     internalTime:
-      ticks: 638904624238418670
+      ticks: 639001147775388147
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(159,85): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (159:85)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(159,85):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#159)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624237564001
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(141,86): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (141:86)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(141,86):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#141)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624237123427
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(141,64): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (141:64)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(141,64):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#141)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624236799002
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(130,24): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (130:24)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(130,24):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#130)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624236479594
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(127,50): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (127:50)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(127,50):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#127)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624236169515
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(92,63): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (92:63)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(92,63):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#92)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624235856157
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(75,33): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (75:33)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(75,33):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#75)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624235541285
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(62,33): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (62:33)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(62,33):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#62)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624235168561
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(49,33): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (49:33)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(49,33):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#49)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624234873177
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(32,90): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (32:90)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(32,90):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#32)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624234557384
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(32,68): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (32:68)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(32,68):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#32)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624233828800
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(27,86): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (27:86)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(27,86):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#27)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624233168946
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(27,64): warning CS0436: The
-      type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs (27:64)
-
-      [Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs(27,64):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\NewHarmonyPatches.cs#27)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624232771291
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\RiskUIPlugin.cs(344,58): warning CS0436: The type ''IConfigHandler''
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (344:58)
-
-      [Assets\FunnyUIMeme\RiskUIPlugin.cs(344,58):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#344)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624232448068
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\RiskUIPlugin.cs(339,22): warning CS0436: The type ''ConfigHelper''
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (339:22)
-
-      [Assets\FunnyUIMeme\RiskUIPlugin.cs(339,22):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#339)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624232152954
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\RiskUIPlugin.cs(338,20): warning CS0436: The type ''ConfigHelper''
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (338:20)
-
-      [Assets\FunnyUIMeme\RiskUIPlugin.cs(338,20):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#338)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624231850799
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\RiskUIPlugin.cs(337,16): warning CS0436: The type ''ConfigHelper''
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (337:16)
-
-      [Assets\FunnyUIMeme\RiskUIPlugin.cs(337,16):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#337)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624231534754
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\RiskUIPlugin.cs(333,14): warning CS0436: The type ''ConfigHelper''
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\RiskUIPlugin.cs (333:14)
-
-      [Assets\FunnyUIMeme\RiskUIPlugin.cs(333,14):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\RiskUIPlugin.cs#333)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624231181051
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(91,8): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (91:8)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(91,8):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#91)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624230876973
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(76,8): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (76:8)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(76,8):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#76)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624230549759
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(74,32): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (74:32)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(74,32):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#74)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624229945735
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(72,24): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (72:24)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(72,24):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#72)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624229289805
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(93,113): warning CS0618:
+      Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(91,113): warning CS0618:
       ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex from the ItemTierDef
       instead'''
     context:
-    - 'Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs (93:113)
+    - 'Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs (91:113)
 
-      [Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(93,113):
+      [Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs(91,113):
       warning CS0618: ''ItemDef.darkColorIndex'' is obsolete: ''Get darkColorIndex
-      from the ItemTierDef instead''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs#93)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624228956356
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(29,9): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (29:9)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(29,9):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#29)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624228659426
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs(80,20): warning
-      CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs (80:20)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs(80,20):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs#80)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624228352503
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(151,27):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (151:27)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(151,27):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#151)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624227998900
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(150,25):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (150:25)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(150,25):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#150)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624227685433
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(149,20):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (149:20)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(149,20):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#149)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624227364833
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(148,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (148:19)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(148,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#148)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624226810691
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(147,24):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (147:24)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(147,24):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#147)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624226206352
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(146,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (146:19)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(146,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#146)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624225863299
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs(39,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs
-      (39:19)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs(39,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs#39)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624225566059
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\BepinVerticalSpacing.cs(28,18): warning CS0436:
-      The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\BepinVerticalSpacing.cs (28:18)
-
-      [Assets\FunnyUIMeme\Components\BepinVerticalSpacing.cs(28,18):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\BepinVerticalSpacing.cs#28)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624225250841
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(17,66): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (17:66)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(17,66):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#17)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624224940420
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Modules\ConfigHelper.cs(16,58): warning CS0436: The type
-      ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Modules\ConfigHelper.cs (16:58)
-
-      [Assets\FunnyUIMeme\Modules\ConfigHelper.cs(16,58):
-      warning CS0436: The type ''RiskUIPlugin'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''
-      conflicts with the imported type ''RiskUIPlugin'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/RiskUIPlugin.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Modules\ConfigHelper.cs#16)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624224654240
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs(38,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs (38:19)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs(38,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs#38)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624224371526
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs(37,19): warning
-      CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs (37:19)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs(37,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs#37)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624223564109
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs(21,28):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs
-      (21:28)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs(21,28):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs#21)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624222750765
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\BepinScaleController.cs(15,19): warning CS0436:
-      The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\BepinScaleController.cs (15:19)
-
-      [Assets\FunnyUIMeme\Components\BepinScaleController.cs(15,19):
-      warning CS0436: The type ''ConfigHelper'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''
-      conflicts with the imported type ''ConfigHelper'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Modules/ConfigHelper.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\BepinScaleController.cs#15)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624222310124
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(20,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (20:10)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(20,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#20)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624222032966
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(19,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (19:10)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(19,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#19)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624221757297
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(18,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (18:10)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(18,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#18)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624221518104
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(17,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (17:10)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(17,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#17)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624221260625
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(16,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (16:10)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(16,10):
-      warning CS0436: The type ''RedToColorRemapperIndividual'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''
-      conflicts with the imported type ''RedToColorRemapperIndividual'' in ''RiskUI,
-      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null''. Using the type defined
-      in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/RedToColorRemapperIndividual.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#16)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624221005344
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs(7,46): warning
-      CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs (7:46)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs(7,46):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\TextSizeBepin.cs#7)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624220764997
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs(9,64):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs
-      (9:64)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs(9,64):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\RedToColorRemapperIndividual.cs#9)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624220581475
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs(7,57):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs
-      (7:57)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs(7,57):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\BepinConfigParentManager.cs#7)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624220362746
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs(6,52):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs (6:52)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs(6,52):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\HideFromBepinConfig.cs#6)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624219800850
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs(12,49): warning
-      CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs (12:49)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs(12,49):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\HealthbarRecolor.cs#12)'
-  - logLevel: 1
-    internalTime:
-      ticks: 638904624219583821
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
-      Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(10,57):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.'
-    context:
-    - 'Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs
-      (10:57)
-
-      [Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs(10,57):
-      warning CS0436: The type ''IConfigHandler'' in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''
-      conflicts with the imported type ''IConfigHandler'' in ''RiskUI, Version=1.0.0.0,
-      Culture=neutral, PublicKeyToken=null''. Using the type defined in ''C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets/FunnyUIMeme/Components/IConfigHandlers/IConfigHandler.cs''.](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\IConfigHandlers\DifficultyTextController.cs#10)'
+      from the ItemTierDef instead''](exceptionsource://C:\Users\golde\Documents\GitHub\_ROB\HunkHUD\Assets\FunnyUIMeme\Components\Icons\MaterialItemIcon.cs#91)'
   - logLevel: 0
     internalTime:
-      ticks: 638904624177549214
+      ticks: 639001147720178248
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
       Building : ThunderKit/Libraries/MaterialHud.dll'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624175648130
+      ticks: 639001147717207923
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioRiskOfOptions](assetlink://Packages%2fbubbet-zioriskofoptions%2fZioRiskOfOptions.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624175156419
+      ticks: 639001147716458109
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[Risk_Of_Options](assetlink://Packages%2frune580-risk_of_options%2fRisk_Of_Options.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624174783809
+      ticks: 639001147715717188
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[ZioConfigFile](assetlink://Packages%2fbubbet-zioconfigfile%2fZioConfigFile.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624174443308
+      ticks: 639001147714786231
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInExPack](assetlink://Packages%2fbbepis-bepinexpack%2fBepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624174098215
+      ticks: 639001147713887811
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[MiscFixes](assetlink://Packages%2fscore-miscfixes%2fMiscFixes.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624173511600
+      ticks: 639001147713134951
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[SeekersPatcher](assetlink://Packages%2fpseudopulse-seekerspatcher%2fSeekersPatcher.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624173180287
+      ticks: 639001147712384851
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RoR2BepInExPack](assetlink://Packages%2friskofthunder-ror2bepinexpack%2fRoR2BepInExPack.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624172801219
+      ticks: 639001147711606406
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[FixPluginTypesSerialization](assetlink://Packages%2friskofthunder-fixplugintypesserialization%2fFixPluginTypesSerialization.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 1
     internalTime:
-      ticks: 638904624172180228
+      ticks: 639001147710516967
     message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       No AssemblyDefinitions found, skipping'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624170399200
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      ticks: 639001147706785964
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Job'
     context: []
   - logLevel: 0
     internalTime:
-      ticks: 638904624170399200
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      ticks: 639001147706755587
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Clearing PipelineJob error states'
     context: []
   - logLevel: 3
     internalTime:
-      ticks: 638904624170211996
-    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[RiskUIManifest](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIManifest.asset)
+      ticks: 639001147706537864
+    message: '[RiskUIPipeline(0 - StageAssemblies)](assetlink://Assets%2fFunnyUIMeme%2fThunderstore%2fRiskUIPipeline.asset)[BepInEx_GUI](assetlink://Packages%2friskofthunder-bepinex_gui%2fBepInEx_GUI.asset)
       Execute Pipeline'
     context: []

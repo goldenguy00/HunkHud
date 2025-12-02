@@ -1,10 +1,36 @@
 # Important Facts:
-Better UI is probably broken, to fix it disable stats display's background and dps meter's background.
-
 The mod has risk of options support, you probably want to install it.
 
 # Change Log:
-1.0.0 - Initial Release
+1.5.0
+- The return of the king
+- Added Inspect Panel support
+- Added DLC3 character support
+- Scoreboard avatar icon
+- Safer hooks, no more getting stuck at 99% when things go wrong
+
+1.4.0
+- Added zio risk of options dependency.
+- Forced all the config entries to be generated at game start, and not as the components awake.
+- Removed soft dependencies for synergies.
+- Probably more stuff i forgot about because i havent updated this mod in months.
+
+1.3.1
+- Enabled cursor for gamepad in scoreboard.
+- Added monster level text.
+
+1.3.0
+- Fixed icon positioning for extra skill slots.
+- Changed descriptions for some of the configs
+- Made the ally card a little wider to help with text jumbling
+- Enabled the remaining healthbarstyles, but colored them transparent by default
+
+1.2.0
+- Fixed healthbar coloring not being different from ally
+- Added scaling for each hud quadrant
+- Added font size for chat
+- Added new positions for bufficons
+- Removed MipMap from sprites
 
 1.1.0
 - Readme changes
@@ -16,28 +42,7 @@ The mod has risk of options support, you probably want to install it.
 - Replaced eclipse hud, because they seem to be identical to classic run  
 - Disable Synergies hud update/awake until they update their mod ![yes i probably could have fixed it from my end using il](https://cdn.discordapp.com/attachments/282371226049970176/972227744031199312/unknown.png)
 
-1.2.0
-- Fixed healthbar coloring not being different from ally
-- Added scaling for each hud quadrant
-- Added font size for chat
-- Added new positions for bufficons
-- Removed MipMap from sprites
-
-1.3.0
-- Fixed icon positioning for extra skill slots.
-- Changed descriptions for some of the configs
-- Made the ally card a little wider to help with text jumbling
-- Enabled the remaining healthbarstyles, but colored them transparent by default
-
-1.3.1
-- Enabled cursor for gamepad in scoreboard.
-- Added monster level text.
-
-1.4.0
-- Added zio risk of options dependency.
-- Forced all the config entries to be generated at game start, and not as the components awake.
-- Removed soft dependencies for synergies.
-- Probably more stuff i forgot about because i havent updated this mod in months.
+1.0.0 - Initial Release
 
 # Images:
 ![](https://cdn.discordapp.com/attachments/567852222419828736/972017499958829096/unknown.png)

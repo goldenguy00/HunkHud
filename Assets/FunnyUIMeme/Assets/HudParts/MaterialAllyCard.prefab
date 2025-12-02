@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 4618250229173158668}
   - component: {fileID: 8930688559896589689}
   - component: {fileID: 8698225611070602285}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: PortraitMask
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -123,7 +123,7 @@ GameObject:
   - component: {fileID: 4530847640166802306}
   - component: {fileID: 5699762133100793913}
   - component: {fileID: 4384555096799024210}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: HealthTextContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 8396561112677854688}
   - component: {fileID: 4441081852142604347}
   - component: {fileID: 874591825157861973}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CurrentHealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -361,7 +361,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7275584214889776082}
   - component: {fileID: 7346724059164979417}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: BarRoots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -428,7 +428,7 @@ GameObject:
   - component: {fileID: 2057395455269980417}
   - component: {fileID: 7301057047556525985}
   - component: {fileID: 5259353410418344886}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MaterialAllyCard
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -603,7 +603,7 @@ GameObject:
   - component: {fileID: 3953857536470019629}
   - component: {fileID: 9157247593108489134}
   - component: {fileID: 8255403451392735809}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Slash
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -753,7 +753,7 @@ GameObject:
   - component: {fileID: 3344462921540997525}
   - component: {fileID: 9124812992897112840}
   - component: {fileID: 4238723624918491227}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: DroneHasItem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -829,7 +829,7 @@ GameObject:
   - component: {fileID: 6058978680239729093}
   - component: {fileID: 6753066365995626244}
   - component: {fileID: 7765027849963373297}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Portrait
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -905,7 +905,7 @@ GameObject:
   - component: {fileID: 9141459933100522262}
   - component: {fileID: 6631667728158741722}
   - component: {fileID: 4600140564193822431}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Dead
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -981,7 +981,7 @@ GameObject:
   - component: {fileID: 4344166587194052344}
   - component: {fileID: 3202651361809278580}
   - component: {fileID: 1845958995264296756}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: CriticallyHurt
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1059,7 +1059,7 @@ GameObject:
   - component: {fileID: 6126047896095723272}
   - component: {fileID: 3751472850286376000}
   - component: {fileID: 6154972208609062113}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Healthbar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1353,7 +1353,7 @@ GameObject:
   - component: {fileID: 5882817142316451408}
   - component: {fileID: 6729565645270027480}
   - component: {fileID: 3407217468673238114}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: NameLabel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1510,7 +1510,7 @@ GameObject:
   - component: {fileID: 5283164528026128129}
   - component: {fileID: 2154417410962060218}
   - component: {fileID: 4475586134305258399}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   - component: {fileID: 2159375677154880914}
   - component: {fileID: 3045177978677733875}
   - component: {fileID: 5894869091485187371}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: MaxHealthText
   m_TagString: Untagged
   m_Icon: {fileID: 0}
