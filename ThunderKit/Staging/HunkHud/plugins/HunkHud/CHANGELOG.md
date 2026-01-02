@@ -1,4 +1,22 @@
 # Changelog
+`1.0.4`
+- Hunk compat
+- Fixed icon placements
+
+`1.0.3`
+- Fixed for latest RiskUI version
+
+`1.0.2`
+- No idea tbh
+
+`1.0.1`
+
+- Fixed some misalignments/minor layout errors
+- Fixed LG incompat
+
+`1.0.0`
+
+- AC update
 
 `0.2.5`
 

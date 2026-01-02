@@ -16,7 +16,7 @@ namespace HunkHud.Components.UI
 
         private void FixedUpdate()
         {
-            var buffCount = this.targetBody ? this.targetBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff) : 0;
+            var buffCount = this.targetCharacterBody ? this.targetCharacterBody.GetBuffCount(DLC2Content.Buffs.IncreasePrimaryDamageBuff) : 0;
             if (buffCount == 0)
             {
                 this.baseHolder.SetActive(false);

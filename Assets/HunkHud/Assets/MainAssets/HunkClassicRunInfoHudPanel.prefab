@@ -551,7 +551,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   delayTimer: 0.1
-  activeInterval: 3
+  activeInterval: 4
   activeTimer: 8
   smoothSpeed: 4
   offset: {x: 0, y: 0, z: 0}
+--- !u!225 &5614397381101114842
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8987263620377482140}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0

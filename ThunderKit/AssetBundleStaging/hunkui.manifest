@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 2960668741
+CRC: 1814102906
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 42ba5c7ab2768b90bd36c6036db865fa
+    Hash: 891f3ff4950db2d113f18af861a93010
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 9e5c35794ba562c4f159412abeffae65
+    Hash: 49ee9d813ae3fca8942b1e9a29331a53
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -278,6 +278,8 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: 8e6292b2c06870d4495f009f912b9600, type: 3}
 - Class: 114
+  Script: {fileID: 11500000, guid: 569b44a03f665f942880c8705bd3ad5a, type: 3}
+- Class: 114
   Script: {fileID: 11500000, guid: bf315d3139dd83c41aa4fae98704bfee, type: 3}
 - Class: 114
   Script: {fileID: -667331979, guid: 67dfb1fdfb2b407222eda8e23ac8b724, type: 3}
@@ -431,13 +433,13 @@ Assets:
 - Assets/RoR2/Base/Shaders/FX/HGCloudRemap.shader
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillShield.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_9.asset
+- Assets/HunkHud/Assets/VFX/textures/Bars/texImmuneBar.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texExpBar.asset
-- Assets/HunkHud/Assets/VFX/textures/texItemExclamation.asset
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBar.png
-- Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownHealingEmpty.png
+- Assets/HunkHud/Assets/VFX/textures/texItemExclamation.asset
 - Assets/FunnyUIMeme/Assets/HudParts/SpriteNumberImage.prefab
 - Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakFlash.mat
-- Assets/HunkHud/Assets/VFX/textures/Bars/texImmuneBar.png
+- Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownHealingEmpty.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_4.asset
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldown.png
 - Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
@@ -494,6 +496,7 @@ Assets:
 - Assets/HunkHud/Assets/VFX/icons/weapon/texSMGIcon.png
 - Assets/HunkHud/Assets/MainAssets/CustomElements/Bands/BandDisplay.prefab
 - Assets/HunkHud/Assets/VFX/textures/texItemExclamation.png
+- Assets/HunkHud/Assets/VFX/infinity-symbol-png-infinity-icon-clipart-best-19.png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
 - Assets/HunkHud/Assets/MainAssets/CustomElements/BandCooldownTracker.prefab
 - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
@@ -515,6 +518,7 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillCollapse.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_10.asset
 - Assets/RoR2/Base/UI/HUD/texUIFlashSquare1.asset
+- Assets/RoR2/Base/UI/SpecialUIMaterials/matHealthSubBar.mat
 - Assets/HunkHud/Assets/VFX/textures/texHudBar.asset
 - Assets/RoR2/Base/Common/TiledTextures/Clouds/texCloudDifferenceBW2.png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.asset
@@ -534,6 +538,7 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texImmuneBar.asset
 - Assets/RoR2/DLC3/UI/Textures/texExtraEquipmentSwapIcon.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillShiny2.asset
+- Assets/RoR2/Base/Shaders/UI/HealthBar.shader
 - Assets/RoR2/Base/UI/HUD/MissingInspectInfoFallbackDef.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_5.asset
 - Assets/HunkHud/Assets/MainAssets/CustomElements/ItemNotification.prefab

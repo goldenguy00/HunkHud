@@ -1,8 +1,10 @@
 using RoR2;
 using RoR2.UI;
+using UnityEngine;
 
 namespace HunkHud.Components
 {
+    [RequireComponent(typeof(MoneyText))]
     public class MoneyDisplayMover : DisplayMover
     {
         public CostTypeIndex costType;
@@ -44,7 +46,7 @@ namespace HunkHud.Components
         {
             base.HUD_onHudTargetChangedGlobal(newHud);
 
-            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
+            this.interactionDriver = this.targetCharacterBody ? this.targetCharacterBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

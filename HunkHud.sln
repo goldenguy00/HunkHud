@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HunkHud", "HunkHud.csproj", "{07481A0D-6171-7FB9-9E23-63774800CBA0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MaterialHud", "MaterialHud.csproj", "{FE792FD8-8B9E-3BFA-9E70-636701B34A39}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiskUI", "RiskUI.csproj", "{D3A9DD13-F33A-D827-8414-F803835855D3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,10 +15,10 @@ Global
 		{07481A0D-6171-7FB9-9E23-63774800CBA0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07481A0D-6171-7FB9-9E23-63774800CBA0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07481A0D-6171-7FB9-9E23-63774800CBA0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FE792FD8-8B9E-3BFA-9E70-636701B34A39}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FE792FD8-8B9E-3BFA-9E70-636701B34A39}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FE792FD8-8B9E-3BFA-9E70-636701B34A39}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FE792FD8-8B9E-3BFA-9E70-636701B34A39}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D3A9DD13-F33A-D827-8414-F803835855D3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D3A9DD13-F33A-D827-8414-F803835855D3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D3A9DD13-F33A-D827-8414-F803835855D3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D3A9DD13-F33A-D827-8414-F803835855D3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

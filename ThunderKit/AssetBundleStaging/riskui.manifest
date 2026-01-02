@@ -1,12 +1,12 @@
 ManifestFileVersion: 0
-CRC: 649174868
+CRC: 586532081
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 3c46b5c6cea87b6c64b4c7dfafe73c9f
+    Hash: 637e79f1c1dd1343aaf84ea577cba99d
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 216b9788d081c6c2d729f02b30539c69
+    Hash: fb7b109de3991b0b9a84cad17f4f0234
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -41,8 +41,6 @@ ClassTypes:
   Script: {fileID: 11500000, guid: cae647a10e6ec9e44a8ae5a0946ff0b2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 7c4b8e5a12597e845b0edbd0f27f8e58, type: 3}
-- Class: 114
-  Script: {fileID: 11500000, guid: dffd04df1bbdbfc49aebfa48e395f193, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 5f7b9730319e8584eb7de33839bd4a73, type: 3}
 - Class: 114
@@ -375,7 +373,6 @@ Assets:
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_17.asset
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
 - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-- Assets/HunkHud/Assets/VFX/textures/texTeleporterIcon.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Tempest (More Difficulties).png
 - Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialMonsterItemInventory.prefab
@@ -395,7 +392,6 @@ Assets:
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHeaderDouble.png
 - Assets/RoR2/Base/Common/ColorRamps/texRampWhiteAlphaOnly.png
 - Assets/RoR2/Base/UI/HUD/texUIFlashSquare1.png
-- Assets/HunkHud/Assets/MainAssets/CustomElements/ObjectiveGauge.prefab
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdrop.png
 - Assets/RoR2/Base/Items/Bear/texBearIcon.png
 - Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffIcon2.png
@@ -420,7 +416,6 @@ Assets:
 - Assets/RoR2/Base/Shaders/FX/HGCloudRemap.shader
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Rainstorm.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_9.asset
-- Assets/HunkHud/Assets/VFX/textures/texWhite.asset
 - Assets/FunnyUIMeme/Assets/HudParts/SpriteNumberImage.prefab
 - Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakFlash.mat
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_4.asset
@@ -440,7 +435,6 @@ Assets:
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
 - Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
 - Assets/RoR2/DLC3/UI/Textures/texExtraEquipmentSwapIcon.asset
-- Assets/HunkHud/Assets/VFX/textures/texTeleporterIcon.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_3.asset
 - Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_6.asset
@@ -460,8 +454,8 @@ Assets:
 - Assets/RoR2/Base/UI/UISkins/skinMenu.asset
 - Assets/RoR2/Base/Common/ColorRamps/texRampTwotoneWhite.png
 - Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
 - Assets/Gizmos/RoR2/EquipmentDef Icon.png
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
 - Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
 - Assets/FunnyUIMeme/Assets/Sprites/Tab.png
@@ -471,9 +465,8 @@ Assets:
 - Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_7.asset
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
-- Assets/HunkHud/Assets/VFX/textures/texWhite.png
-- Assets/RoR2/Base/Shaders/UI/HGUIAnimateAlpha.shader
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.png
+- Assets/RoR2/Base/Shaders/UI/HGUIAnimateAlpha.shader
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Inferno (Inferno).png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Charybdis (UntitledDifficultyMod).png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.asset

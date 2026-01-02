@@ -3,6 +3,7 @@ using UnityEngine;
 
 namespace HunkHud.Components
 {
+    [RequireComponent(typeof(AllyCardController))]
     public class AllyHealthBarMover : DisplayMover
     {
         private AllyCardController cardController;

@@ -1,0 +1,88 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>R2API.Skins</name>
+    </assembly>
+    <members>
+        <member name="T:R2API.SkinDefInfo">
+            <summary>
+            A container struct for all SkinDef parameters.
+            Use this to set skinDef values, then call CreateNewSkinDef().
+            </summary>
+        </member>
+        <member name="T:R2API.SkinIDRS">
+            <summary>
+            Class for adding Skin Specific ItemDisplayRuleSets for skin defs.
+            </summary>
+        </member>
+        <member name="M:R2API.SkinIDRS.AddPair(RoR2.SkinDef,RoR2.ItemDisplayRuleSet)">
+            <summary>
+            Adds a pair of SkinDef and ItemDisplayRuleSet
+            <para>Ingame, once the Skin is applied to the model, the default IDRS will be swapped for the one specified in <paramref name="ruleSet"/></para>
+            </summary>
+            <param name="skinDef"></param>
+            <param name="ruleSet"></param>
+            <returns>True if added succesfully, false otherwise</returns>
+        </member>
+        <member name="M:R2API.Skins.CreateSkinIcon(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)">
+            <summary>
+            Creates a skin icon sprite styled after the ones already in the game.
+            </summary>
+            <param name="top">The color of the top portion</param>
+            <param name="right">The color of the right portion</param>
+            <param name="bottom">The color of the bottom portion</param>
+            <param name="left">The color of the left portion</param>
+            <returns>The icon sprite</returns>
+        </member>
+        <member name="M:R2API.Skins.CreateSkinIcon(UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color,UnityEngine.Color)">
+            <summary>
+            Creates a skin icon sprite styled after the ones already in the game.
+            </summary>
+            <param name="top">The color of the top portion</param>
+            <param name="right">The color of the right portion</param>
+            <param name="bottom">The color of the bottom portion</param>
+            <param name="left">The color of the left portion</param>
+            <param name="line">The color of the dividing lines</param>
+            <returns></returns>
+        </member>
+        <member name="M:R2API.Skins.CreateNewSkinDef(R2API.SkinDefInfo)">
+            <summary>
+            Creates a new SkinDef from a SkinDefInfo.
+            Note that this prevents null-refs by disabling SkinDef awake while the SkinDef is being created.
+            The things that occur during awake are performed when first applied to a character instead.
+            </summary>
+            <param name="skin"></param>
+            <returns></returns>
+        </member>
+        <member name="M:R2API.Skins.AddSkinToCharacter(UnityEngine.GameObject,R2API.SkinDefInfo)">
+            <summary>
+            Adds a skin to the body prefab for a character.
+            Will attempt to create a default skin if one is not present.
+            Must be called during plugin Awake or OnEnable. If called afterwards the new skins must be added to bodycatalog manually.
+            </summary>
+            <param name="bodyPrefab">The body to add the skin to</param>
+            <param name="skin">The SkinDefInfo for the skin to add</param>
+            <returns>True if successful</returns>
+        </member>
+        <member name="M:R2API.Skins.AddSkinToCharacter(UnityEngine.GameObject,RoR2.SkinDef)">
+            <summary>
+            Adds a skin to the body prefab for a character.
+            Will attempt to create a default skin if one is not present.
+            Must be called during plugin Awake or OnEnable. If called afterwards the new skins must be added to bodycatalog manually.
+            </summary>
+            <param name="bodyPrefab">The body to add the skin to</param>
+            <param name="skin">The SkinDef to add</param>
+            <returns>True if successful</returns>
+        </member>
+        <member name="F:R2API.Skins.PluginVersion">
+            <summary>
+            Version of the plugin, should be matching with the thunderstore package.
+            </summary>
+        </member>
+        <member name="T:R2API.AutoVersionGen.AutoVersionAttribute">
+            <summary>
+            Add a PluginVersion field to the attribut-ed class filled from the thunderstore.toml versionNumber field
+            </summary>
+        </member>
+    </members>
+</doc>

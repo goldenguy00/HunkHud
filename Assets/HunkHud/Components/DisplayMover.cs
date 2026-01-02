@@ -3,7 +3,6 @@ using System;
 using MaterialHud;
 using ZioConfigFile;
 using RoR2.UI;
-using HG;
 
 namespace HunkHud.Components
 {
@@ -41,7 +40,10 @@ namespace HunkHud.Components
             _configEntry = ConfigHelper.Bind("HunkHud", this.GetType().Name, true, "Enable or disable moving this hud element");
         }
 
-        public void SetActive() => SetActive(this.activeInterval);
+        public void SetActive()
+        {
+            SetActive(this.activeInterval);
+        }
 
         public virtual void SetActive(float time)
         {
@@ -57,7 +59,7 @@ namespace HunkHud.Components
 
         protected virtual void Awake()
         {
-            this.canvas = this.EnsureComponent<CanvasGroup>();
+            this.canvas = this.GetComponent<CanvasGroup>();
 
             Startup();
 

@@ -172,6 +172,7 @@ GameObject:
   - component: {fileID: 7167250156666202569}
   - component: {fileID: 7807853354880697627}
   - component: {fileID: 2957932944526751981}
+  - component: {fileID: 6482993215986332668}
   m_Layer: 5
   m_Name: ItemIcon
   m_TagString: Untagged
@@ -345,6 +346,22 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7167250156666202569}
   m_OnClick:
     m_PersistentCalls:
+      m_Calls: []
+  allowAllEventSystems: 0
+  submitOnPointerUp: 0
+  selectOnPointerEnter: 1
+  disablePointerClick: 1
+  disableGamepadClick: 1
+  useBaseGamepadClick: 0
+  requiredTopLayer: {fileID: 0}
+  onFindSelectableLeft:
+    m_PersistentCalls:
+      m_Calls: []
+  onFindSelectableRight:
+    m_PersistentCalls:
+      m_Calls: []
+  onSelect:
+    m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 5329655812397853336}
         m_TargetAssemblyTypeName: RoR2.UI.ItemIcon, RoR2
@@ -358,22 +375,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  allowAllEventSystems: 0
-  submitOnPointerUp: 0
-  selectOnPointerEnter: 1
-  disablePointerClick: 0
-  disableGamepadClick: 0
-  useBaseGamepadClick: 0
-  requiredTopLayer: {fileID: 0}
-  onFindSelectableLeft:
-    m_PersistentCalls:
-      m_Calls: []
-  onFindSelectableRight:
-    m_PersistentCalls:
-      m_Calls: []
-  onSelect:
-    m_PersistentCalls:
-      m_Calls: []
   onDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -403,6 +404,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   layerToFind: {fileID: 11400000, guid: 916a799074458e14bb8ec5715c3dbf05, type: 2}
+--- !u!114 &6482993215986332668
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5540232716240821402}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 590580972, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  OnlyAllowMovement: 1
 --- !u!1 &7990826325217541210
 GameObject:
   m_ObjectHideFlags: 0

@@ -30,7 +30,8 @@
         "ZioConfigFile.dll",
         "0Harmony.dll",
         "Unity.Addressables.dll",
-        "Unity.ResourceManager.dll"
+        "Unity.ResourceManager.dll",
+        "HunkMod.dll"
     ],
     "autoReferenced": true,
     "defineConstraints": [],

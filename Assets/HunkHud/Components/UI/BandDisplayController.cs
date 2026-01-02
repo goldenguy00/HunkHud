@@ -20,13 +20,13 @@ namespace HunkHud.Components.UI
 
         protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            if (!ReferenceEquals(this._prevBody, null))
-                this._prevBody.onInventoryChanged -= this.CheckInventory;
+            if (!ReferenceEquals(this.targetCharacterBody, null))
+                this.targetCharacterBody.onInventoryChanged -= this.CheckInventory;
 
             base.HUD_onHudTargetChangedGlobal(newHud);
 
-            if (this.targetBody)
-                this.targetBody.onInventoryChanged += this.CheckInventory;
+            if (this.targetCharacterBody)
+                this.targetCharacterBody.onInventoryChanged += this.CheckInventory;
         }
 
         private void CheckInventory()

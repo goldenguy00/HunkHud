@@ -2,6 +2,7 @@ using System.Diagnostics.CodeAnalysis;
 using System.Security;
 using System.Security.Permissions;
 using BepInEx;
+using BepInEx.Configuration;
 using HarmonyLib;
 using HG;
 using HunkHud.Components.UI;
@@ -28,9 +29,11 @@ namespace HunkHud
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "1.0.0";
+        public const string VERSION = "1.0.4";
 
         public static AssetBundle mainAssetBundle;
+
+        public static ConfigFile activeConfig;
 
         private static Harmony harm;
         private static PatchClassProcessor patcher;
@@ -100,5 +103,10 @@ namespace HunkHud
                 itemsToDisplay = items
             });
         }
+
+        //public static GameObject CreateHud() => _newHud;
+        //public static GameObject CreateClassicRunHud() => _newClassicRunHud;
+        //public static GameObject CreateSimulcrum() => _newSimulacrumHud;
+        //public static GameObject CreateAllyCard() => _allyCard;
     }
 }

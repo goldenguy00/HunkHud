@@ -10,7 +10,7 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            var source = this.targetBody ? this.targetBody.healthComponent : null;
+            var source = this.targetCharacterBody ? this.targetCharacterBody.healthComponent : null;
             if (!source)
                 return;
 
@@ -19,7 +19,7 @@ namespace HunkHud.Components
             if (currentHp / maxHp < 0.99f)
                 this.SetActive();
 
-            var newLevel = HG.Convert.FloorToUIntClamped(this.targetBody.level);
+            var newLevel = HG.Convert.FloorToUIntClamped(this.targetCharacterBody.level);
             if (newLevel != this.prevLevel)
             {
                 this.prevLevel = newLevel;
@@ -40,7 +40,7 @@ namespace HunkHud.Components
         {
             base.HUD_onHudTargetChangedGlobal(newHud);
 
-            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
+            this.interactionDriver = this.targetCharacterBody ? this.targetCharacterBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

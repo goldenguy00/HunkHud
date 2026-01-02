@@ -5,8 +5,6 @@ namespace HunkHud.Components
 {
     public class SkillIconMover : DisplayMover
     {
-        private int prevStocks;
-
         protected override void Awake()
         {
             base.Awake();
@@ -16,23 +14,53 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            var newStocks = this.targetBody?.equipmentSlot?.stock ?? 0;
-            if (newStocks != prevStocks)
+            CheckEquipment();
+            CheckSkills();
+        }
+        private void CheckEquipment()
+        {
+            var inventory = this.targetCharacterBody ? this.targetCharacterBody.inventory : null;
+            if (!inventory)
+                return;
+
+            for (int i = 0; i < inventory._equipmentStateSlots?.Length; i++)
             {
-                this.prevStocks = newStocks;
-                this.SetActive();
+                for (int j = 0; j < inventory._equipmentStateSlots[i]?.Length; j++)
+                {
+                    if (inventory._equipmentStateSlots[i][j].isPerfomingRecharge)
+                    {
+                        this.SetActive();
+                        return;
+                    }
+                }
+            }
+        }
+
+        private void CheckSkills()
+        {
+            var skillLoc = this.targetCharacterBody ? this.targetCharacterBody.skillLocator : null;
+            if (!skillLoc)
+                return;
+
+            for (int i = 0; i < skillLoc.allSkills?.Length; i++)
+            {
+                if (skillLoc.allSkills[i].stock < skillLoc.allSkills[i].maxStock)
+                {
+                    this.SetActive();
+                    return;
+                }
             }
         }
 
         protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            if (this._prevBody)
-                this._prevBody.onSkillActivatedAuthority -= this.OnSkillActivatedAuthority;
+            if (!ReferenceEquals(this.targetCharacterBody, null))
+                this.targetCharacterBody.onSkillActivatedAuthority -= this.OnSkillActivatedAuthority;
 
             base.HUD_onHudTargetChangedGlobal(newHud);
 
-            if (this.targetBody)
-                this.targetBody.onSkillActivatedAuthority += this.OnSkillActivatedAuthority;
+            if (this.targetCharacterBody)
+                this.targetCharacterBody.onSkillActivatedAuthority += this.OnSkillActivatedAuthority;
         }
 
         private void OnSkillActivatedAuthority(GenericSkill skill)

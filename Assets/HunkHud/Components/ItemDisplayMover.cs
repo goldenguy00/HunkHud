@@ -25,27 +25,27 @@ namespace HunkHud.Components
 
         public override void CheckForActivity()
         {
-            if (this.interactionDriver)
+            if (!this.interactionDriver)
+                return;
+
+            var interactable = this.interactionDriver.currentInteractable ? this.interactionDriver.currentInteractable.GetComponent<PurchaseInteraction>() : null;
+            if (interactable && CostTypeIndex.WhiteItem <= interactable.costType && interactable.costType <= CostTypeIndex.TreasureCacheVoidItem)
             {
-                var interactable = this.interactionDriver.currentInteractable ? this.interactionDriver.currentInteractable.GetComponent<PurchaseInteraction>() : null;
-                if (interactable && CostTypeIndex.WhiteItem <= interactable.costType && interactable.costType <= CostTypeIndex.TreasureCacheVoidItem)
-                {
-                    SetActive();
-                }
+                SetActive();
             }
         }
 
         protected override void HUD_onHudTargetChangedGlobal(HUD newHud)
         {
-            if (this._prevBody)
-                this._prevBody.onInventoryChanged -= this.SetActive;
+            if (!ReferenceEquals(this.targetCharacterBody, null))
+                this.targetCharacterBody.onInventoryChanged -= this.SetActive;
 
             base.HUD_onHudTargetChangedGlobal(newHud);
 
-            if (this.targetBody)
-                this.targetBody.onInventoryChanged += this.SetActive;
+            if (this.targetCharacterBody)
+                this.targetCharacterBody.onInventoryChanged += this.SetActive;
 
-            this.interactionDriver = this.targetBody ? this.targetBody.GetComponent<InteractionDriver>() : null;
+            this.interactionDriver = this.targetCharacterBody ? this.targetCharacterBody.GetComponent<InteractionDriver>() : null;
         }
     }
 }

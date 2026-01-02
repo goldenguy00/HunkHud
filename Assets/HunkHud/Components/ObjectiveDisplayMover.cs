@@ -12,7 +12,7 @@ namespace HunkHud.Components
         {
             base.Awake();
             this.offset = new UnityEngine.Vector3(400f, 100f, 0f);
-
+            this.activeInterval = 3f;
             this.objectivePanel = this.GetComponentInChildren<ObjectivePanelController>();
             GlobalEventManager.onTeamLevelUp += this.GlobalEventManager_onTeamLevelUp;
         }

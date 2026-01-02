@@ -2,6 +2,14 @@
 The mod has risk of options support, you probably want to install it.
 
 # Change Log:
+1.5.2
+- Fixed broken compat
+
+1.5.1
+- Fixed item layout issues
+- Improved general interactability for inspect panel
+- Fixed LG incompat
+
 1.5.0
 - The return of the king
 - Added Inspect Panel support

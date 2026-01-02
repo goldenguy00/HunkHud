@@ -67,15 +67,15 @@ namespace HunkHud.Components.UI
 
         private void FixedUpdate()
         {
-            if (this.targetBody && this.healthBar)
+            if (this.targetCharacterBody && this.healthBar)
             {
-                if (this.targetBody.HasBuff(BuffCatalog.FindBuffIndex(this.buffName)))
+                if (this.targetCharacterBody.HasBuff(BuffCatalog.FindBuffIndex(this.buffName)))
                 {
                     SetRingReady();
                     return;
                 }
 
-                var newBuffs = this.targetBody.GetBuffCount(BuffCatalog.FindBuffIndex(this.cooldownName));
+                var newBuffs = this.targetCharacterBody.GetBuffCount(BuffCatalog.FindBuffIndex(this.cooldownName));
                 if (newBuffs > 0)
                 {
                     SetRingCooldown(newBuffs);

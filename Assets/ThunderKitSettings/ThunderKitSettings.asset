@@ -35,4 +35,5 @@ MonoBehaviour:
   QuickAccessManifests:
   - {fileID: 11400000, guid: e46a484df6cb5c54cb1e2592799bd0b0, type: 2}
   - {fileID: 11400000, guid: 4024e16e97ddd0d49a5588b9c9de081c, type: 2}
+  - {fileID: 11400000, guid: 9c17f762567cffe40a1726f22264dca6, type: 2}
   ImportConfiguration: {fileID: 11400000, guid: 564b6f24f8d92b042ad7c18e5d4ba1c5, type: 2}
