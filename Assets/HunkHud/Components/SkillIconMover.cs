@@ -22,10 +22,10 @@ namespace HunkHud.Components
             var inventory = this.targetCharacterBody ? this.targetCharacterBody.inventory : null;
             if (!inventory)
                 return;
-
-            for (int i = 0; i < inventory._equipmentStateSlots?.Length; i++)
+            /*
+            for (int i = 0; i < inventory._equipmentSlots?.Length; i++)
             {
-                for (int j = 0; j < inventory._equipmentStateSlots[i]?.Length; j++)
+                for (int j = 0; j < inventory._equipmentSlots[i]?.Length; j++)
                 {
                     if (inventory._equipmentStateSlots[i][j].isPerfomingRecharge)
                     {
@@ -33,7 +33,7 @@ namespace HunkHud.Components
                         return;
                     }
                 }
-            }
+            }*/
         }
 
         private void CheckSkills()

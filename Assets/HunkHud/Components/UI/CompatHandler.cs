@@ -46,8 +46,11 @@ namespace HunkHud.Components.UI
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
         private void HunkCompat()
         {
-            SetupHealthbarWeaponIcon();
-            MainContainer();
+            if (this.targetMaster.bodyPrefab.GetComponent<HunkController>())
+            {
+                SetupHealthbarWeaponIcon();
+                MainContainer();
+            }
         }
 
         [MethodImpl(MethodImplOptions.NoInlining | MethodImplOptions.NoOptimization)]
@@ -167,14 +170,6 @@ namespace HunkHud.Components.UI
 
         private void SetupHealthbarWeaponIcon()
         {
-            if (!this.targetMaster.bodyPrefab.GetComponent<HunkController>())
-            {
-                characterDisplay.SetActive(value: true);
-                characterDisplay.SetActive(value: false);
-                gunDisplay.SetActive(value: false);
-                return;
-            }
-
             characterDisplay.SetActive(value: false);
             biomassDisplay.SetActive(value: false);
             gunDisplay.SetActive(value: true);

@@ -1,4 +1,7 @@
 # Changelog
+`1.0.5`
+- Fixed Hunk compat
+
 `1.0.4`
 - Hunk compat
 - Fixed icon placements
