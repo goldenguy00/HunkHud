@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 2824292875
+CRC: 4137608611
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: d7e76d6ed090541f30da1f3747e46f22
+    Hash: 1aaad52b8d3f6be0f3a076e20c1c224f
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 3ebeb06a754f10ab3f17f8ee0102a15d
+    Hash: 2fbe7456872bf335e2d654a010ce47a6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: d7e76d6ed090541f30da1f3747e46f22
+    Hash: 1aaad52b8d3f6be0f3a076e20c1c224f
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -90,6 +90,8 @@ ClassTypes:
   Script: {fileID: 1407764973, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -337221655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 154454898, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1462100833, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -403,6 +405,7 @@ Assets:
 - Assets/RoR2/DLC4/texKarmaIconLevel4Active.png
 - Assets/RoR2/DLC4/texKarmaIconLevel5Active.png
 - Assets/FunnyUIMeme/Assets/Simulacrum/MaterialDefaultWaveUI.prefab
+- Assets/RoR2/Base/UI/Chevron/texChevronSimpleTriangle.asset
 - Assets/FunnyUIMeme/Assets/MaterialCenti.asset
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/README.txt
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Void_Coin.png
@@ -472,12 +475,13 @@ Assets:
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_0.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_1.asset
 - Assets/RoR2/Base/UI/texDetailPanel.asset
-- Assets/RoR2/Base/UI/UISkins/skinMenu.asset
+- Assets/RoR2/Base/UI/Chevron/texChevronSimpleTriangle.png
 - Assets/RoR2/Base/Common/ColorRamps/texRampTwotoneWhite.png
 - Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
 - Assets/RoR2/DLC4/texKarmaIconLevel6Active.png
-- Assets/Gizmos/RoR2/EquipmentDef Icon.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
+- Assets/RoR2/Base/UI/UISkins/skinMenu.asset
+- Assets/Gizmos/RoR2/EquipmentDef Icon.png
 - Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
 - Assets/FunnyUIMeme/Assets/Sprites/Tab.png

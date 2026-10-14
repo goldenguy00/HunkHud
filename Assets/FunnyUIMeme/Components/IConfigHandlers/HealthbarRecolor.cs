@@ -111,9 +111,11 @@ namespace MaterialHud
 			SetupConfig("Cull", "Cull refers to things like guillotine / freeze, and is only seen when an allied minion (turret / zoea / drone, etc..) is hit by a Glacial Elite's death effect radius. Cull can't be applied to players however.", style, "cullBarStyle", b);
 			SetupConfig("Low Health Over", "Color for delicate watches and things like that.", style, "lowHealthOverStyle", b);
 			SetupConfig("Low Health Under", "?", style, "lowHealthUnderStyle", b);
-			SetupConfig("Magnetic", "A unused??? healthbar style.", style, "magneticStyle", b);
 			SetupConfig("OSP", "One shot protection color.", style, "ospStyle", b);
-		}
+            SetupConfig("Echo Damage", "Pending warped echo damage", style, "echoDamageStyle", b);
+            SetupConfig("Lunar Ruin", "Lunar Ruin recolor", style, "lunarRuinStyle", b);
+            SetupConfig("Acolyte Regen", "Acolyte's potential healing", style, "regainableHealthStyle", b);
+        }
 
 		public void Startup()
 		{

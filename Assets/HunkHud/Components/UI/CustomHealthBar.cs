@@ -1,6 +1,6 @@
-using System;
 using RoR2;
 using RoR2.UI;
+using System;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -74,6 +74,7 @@ namespace HunkHud.Components.UI
         public CustomBarInfo shieldFill;
         public CustomBarInfo damageFill;
 
+        public CustomBarInfo rallyFill;
         public CustomBarInfo healingFill;
         public CustomBarInfo curseFill;
         public CustomBarInfo barrierFill;
@@ -160,6 +161,7 @@ namespace HunkHud.Components.UI
             Apply(ref healthFill);
             Apply(ref shieldFill);
             Apply(ref damageFill);
+            Apply(ref rallyFill);
         }
 
         private void ApplyCustomBars()
@@ -191,6 +193,7 @@ namespace HunkHud.Components.UI
             this.healthFill.enabled = false;
             this.healingFill.enabled = false;
             this.lowHealthFill.enabled = false;
+            this.rallyFill.enabled = false;
 
             this.shieldFill.enabled = false;
             this.barrierFill.enabled = false;
@@ -222,7 +225,8 @@ namespace HunkHud.Components.UI
             }
 
             HealthComponent.HealthBarValues barValues = this.source.GetHealthBarValues();
-            var missingHealthFraction = 1f - (barValues.healthFraction + barValues.shieldFraction);
+            var combinedHealthFraction = barValues.healthFraction + barValues.shieldFraction;
+            var missingHealthFraction = 1f - combinedHealthFraction;
             var reducedHealthFraction = 1f - barValues.curseFraction;
 
             var collapseFraction = Mathf.Clamp01(this.GetCollapseFraction() * reducedHealthFraction);
@@ -240,7 +244,7 @@ namespace HunkHud.Components.UI
             this.healthFill.targetFill = healthFillAmount;
             this.healthFill.currentFill = Mathf.Min(healthFillAmount, this.healthFill.currentFill);
 
-            var combinedHealthFillAmount = Util.Remap(barValues.healthFraction + barValues.shieldFraction, 0f, 1f, this.minFill, this.maxFill);
+            var combinedHealthFillAmount = Util.Remap(combinedHealthFraction, 0f, 1f, this.minFill, this.maxFill);
             this.damageFill.targetFill = combinedHealthFillAmount;
             this.damageFill.currentFill = Mathf.Max(combinedHealthFillAmount, this.damageFill.currentFill);
             this.damageFill.enabled = this.damageFill.currentFill > combinedHealthFillAmount;
@@ -248,6 +252,11 @@ namespace HunkHud.Components.UI
             this.shieldFill.enabled = barValues.shieldFraction > 0f;
             this.shieldFill.targetFill = combinedHealthFillAmount;
             this.shieldFill.currentFill = Mathf.Min(combinedHealthFillAmount, this.shieldFill.currentFill);
+
+            var rallyFillAmount = Util.Remap(combinedHealthFraction + barValues.regainableHealthFraction, 0f, 1f, this.minFill, this.maxFill);
+            this.rallyFill.enabled = barValues.regainableHealthFraction > 0f;
+            this.rallyFill.targetFill = rallyFillAmount;
+            this.rallyFill.currentFill = Mathf.Max(combinedHealthFillAmount, this.rallyFill.currentFill);
 
             // remap
             Remap(ref this.healingFill, barValues.healthFraction, enabled: this.healthFill.currentFill < this.healthFill.targetFill, inverse: false);
@@ -260,7 +269,7 @@ namespace HunkHud.Components.UI
             Remap(ref this.curseFill, barValues.curseFraction, enabled: barValues.curseFraction > 0f, inverse: true);
             Remap(ref this.ospFill, barValues.ospFraction + missingHealthFraction, enabled: barValues.ospFraction > 0f, inverse: true);
 
-            Remap(ref this.delayedDamageMask, barValues.healthFraction + barValues.shieldFraction, enabled: true, inverse: false);
+            Remap(ref this.delayedDamageMask, combinedHealthFraction, enabled: true, inverse: false);
             Remap(ref this.collapseFill, collapseFraction + missingHealthFraction, enabled: collapseFraction > 0f && this.targetBody.HasBuff(DLC1Content.Buffs.Fracture), inverse: true);
             Remap(ref this.echoFill, barValues.echoFraction + missingHealthFraction, enabled: barValues.echoFraction > 0f && this.targetBody.HasBuff(DLC2Content.Buffs.DelayedDamageDebuff), inverse: true);
 

@@ -3,6 +3,18 @@ The mod has risk of options support, you probably want to install it.
 
 # Change Log:
 
+1.6.3
+- Fixed inspect panel
+- Added color remapping to acolyte regen, lunar ruin, and warped echo
+- Updated github link. submit RiskUI bug reports there
+
+1.6.2
+- Fixed equipment icon not updating
+- Added Acolyte support
+
+1.6.1
+- Zio hates me grah
+
 1.6.0
 - Updated for DLC4
 - Added a variety of Zio safety measures

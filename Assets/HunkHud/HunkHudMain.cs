@@ -9,6 +9,7 @@ using HunkHud.Components.UI;
 using HunkHud.Modules;
 using MaterialHud;
 using RoR2;
+using RoR2.UI;
 using UnityEngine;
 
 [assembly: SuppressMessage("CodeQuality", "IDE0051:Remove unused private members", Justification = "<Pending>")]
@@ -29,7 +30,7 @@ namespace HunkHud
         public const string GUID = "com." + MODAUTHOR + "." + MODNAME;
         public const string MODAUTHOR = "public_ParticleSystem";
         public const string MODNAME = "HunkHud";
-        public const string VERSION = "1.1.0";
+        public const string VERSION = "1.1.2";
 
         public static AssetBundle mainAssetBundle;
 

@@ -1,5 +1,11 @@
 # Changelog
 
+`1.1.2`
+- Added Acolyte support
+
+`1.1.1`
+- Grah
+
 `1.1.0`
 - Updated for DLC4
 

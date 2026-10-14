@@ -1,8 +1,8 @@
 {
     "name": "RiskUI",
     "author": "Bubbet",
-    "version_number": "1.5.2",
-    "website_url": "https://github.com/Bubbet",
+    "version_number": "1.6.3",
+    "website_url": "https://github.com/goldenguy00/HunkHud",
     "description": "The first hud replacement mod",
     "dependencies": [
         "bbepis-BepInExPack-5.4.2121",

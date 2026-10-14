@@ -1509,6 +1509,7 @@ GameObject:
   - component: {fileID: 5408162983378068666}
   - component: {fileID: 2230059014871003630}
   - component: {fileID: 1553096752791747274}
+  - component: {fileID: 7176731520210756617}
   m_Layer: 5
   m_Name: EquipmentContainer
   m_TagString: Untagged
@@ -1561,7 +1562,7 @@ MonoBehaviour:
   targetEquipmentSlot: {fileID: 0}
   displayRoot: {fileID: 0}
   iconImage: {fileID: 5407459184018359357}
-  asyncIconImage: {fileID: 0}
+  asyncIconImage: {fileID: 7176731520210756617}
   cooldownText: {fileID: 0}
   stockText: {fileID: 0}
   stockFlashPanelObject: {fileID: 0}
@@ -1700,7 +1701,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6242825063938736696}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3374219521890201563}
+        m_TargetAssemblyTypeName: RoR2.UI.EquipmentIcon, RoR2
+        m_MethodName: ItemClicked
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   allowAllEventSystems: 0
   submitOnPointerUp: 0
   selectOnPointerEnter: 1
@@ -1716,19 +1729,7 @@ MonoBehaviour:
       m_Calls: []
   onSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3374219521890201563}
-        m_TargetAssemblyTypeName: RoR2.UI.EquipmentIcon, RoR2
-        m_MethodName: ItemClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
   onDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -1849,6 +1850,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   OnlyAllowMovement: 1
+--- !u!114 &7176731520210756617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5797024700862794643}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1462100833, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadOnAssigned: 1
+  unloadType: 2
+  disableWhileLoading: 0
+  renderer: {fileID: 5407459184018359357}
+  secondaryRenderers: []
+  initialized: 0
 --- !u!1 &5832031755947593291
 GameObject:
   m_ObjectHideFlags: 0

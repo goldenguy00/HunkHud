@@ -55,7 +55,7 @@ MonoBehaviour:
   Author: Bubbet
   Name: RiskUI
   Description: The first hud replacement mod
-  Version: 1.6.0
+  Version: 1.6.3
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: 7e223af718a9b1766e42836ea3d31194, type: 2}
@@ -73,7 +73,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   StagingPaths:
   - <ManifestPluginStaging>
-  url: https://github.com/Bubbet
+  url: https://github.com/goldenguy00/HunkHud
 --- !u!114 &6004529491268351232
 MonoBehaviour:
   m_ObjectHideFlags: 0

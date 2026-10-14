@@ -12,8 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 1467844994, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: MaterialHealthbarStyle
   m_EditorClassIdentifier: 
-  barPrefab: {fileID: 8705524854077303253, guid: 6e974525afc45df4bb342e45aeb7f909,
-    type: 3}
+  barPrefab: {fileID: 8705524854077303253, guid: 6e974525afc45df4bb342e45aeb7f909, type: 3}
   flashOnHealthCritical: 0
   trailingUnderHealthBarStyle:
     enabled: 1
@@ -51,6 +50,12 @@ MonoBehaviour:
     sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
     imageType: 1
     sizeDelta: 0
+  hullBarStyle:
+    enabled: 0
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    sprite: {fileID: 0}
+    imageType: 0
+    sizeDelta: 0
   flashBarStyle:
     enabled: 1
     baseColor: {r: 0, g: 1, b: 0.9322076, a: 1}
@@ -64,7 +69,7 @@ MonoBehaviour:
     imageType: 1
     sizeDelta: 0
   magneticStyle:
-    enabled: 1
+    enabled: 0
     baseColor: {r: 0.11175728, g: 1, b: 0, a: 0}
     sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
     imageType: 1
@@ -84,6 +89,48 @@ MonoBehaviour:
   lowHealthUnderStyle:
     enabled: 1
     baseColor: {r: 1, g: 0, b: 0, a: 0}
+    sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
+    imageType: 1
+    sizeDelta: 0
+  echoDamageStyle:
+    enabled: 1
+    baseColor: {r: 0.3764706, g: 0.10980392, b: 0.09019608, a: 0.7882353}
+    sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
+    imageType: 1
+    sizeDelta: 0
+  lunarRuinStyle:
+    enabled: 1
+    baseColor: {r: 0.5176471, g: 0.7882353, b: 1, a: 0.5803922}
+    sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
+    imageType: 1
+    sizeDelta: 0
+  repairingDroneStyle:
+    enabled: 0
+    baseColor: {r: 1, g: 0.5058824, b: 0, a: 1}
+    sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
+    imageType: 1
+    sizeDelta: 0
+  collectiveEliteStyle:
+    enabled: 0
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    sprite: {fileID: 0}
+    imageType: 0
+    sizeDelta: 0
+  acolyteSacrificeStyle:
+    enabled: 0
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    sprite: {fileID: 0}
+    imageType: 0
+    sizeDelta: 0
+  disabledHealStyle:
+    enabled: 0
+    baseColor: {r: 0, g: 0, b: 0, a: 0}
+    sprite: {fileID: 0}
+    imageType: 0
+    sizeDelta: 0
+  regainableHealthStyle:
+    enabled: 1
+    baseColor: {r: 0, g: 0.38679248, b: 0.021007009, a: 1}
     sprite: {fileID: 21300000, guid: a6a28f754bda29b4089ebc3e182452b6, type: 3}
     imageType: 1
     sizeDelta: 0

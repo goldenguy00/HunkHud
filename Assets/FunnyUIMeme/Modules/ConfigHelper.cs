@@ -22,7 +22,7 @@ namespace MaterialHud
 		public static Dictionary<string, ZioConfigEntryBase> Entries = new();
 		public static ZioConfigEntry<int> _selectedProfile;
 		private static IntSliderConfig option;
-		public static ZioConfigFile.ZioConfigFile SelectedProfile;
+		public static ZioConfigFile.ZioConfigFile LoadedProfile;
         public static bool NeverBeforeInitialized;
 
         public static void Init()
@@ -32,7 +32,6 @@ namespace MaterialHud
             _selectedProfile = ActiveConfigFile.Bind("Profiles", "Selected Profile", 0, "Currently selected profile.");
 			//_useZio = ActiveConfigFile.Bind("Profiles", "Use Zio", true, "Disable this setting to use local profile saving instead of cloud saves.");
 
-			var configs = new List<ZioConfigFile.ZioConfigFile>();
             try
             {
                 foreach (var path in RoR2Application.cloudStorage.EnumerateFiles(new UPath("/RiskUI/")))
@@ -44,7 +43,7 @@ namespace MaterialHud
                         if (Guid.TryParse(pathName, out var guid))
                         {
                             Log.Debug("Found zio config file " + guid.ToString());
-                            configs.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, path, true, RiskUIPlugin.instance));
+                            ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, $"/RiskUI/{guid}", true, RiskUIPlugin.instance));
                         }
                         else
                         {
@@ -64,12 +63,11 @@ namespace MaterialHud
                 Log.Debug("Performing first time Zio init.");
 
                 NeverBeforeInitialized = true;
-                configs.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, $"/RiskUI/{Guid.NewGuid()}", true, RiskUIPlugin.instance));
+                ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, $"/RiskUI/{new Guid()}", true, RiskUIPlugin.instance));
             }
 
-			ConfigFiles = configs.OrderBy(x => x.FilePath.FullName).ToList();
             _selectedProfile.Value = Math.Clamp(_selectedProfile.Value, 0, ConfigFiles.Count - 1);
-			SelectedProfile = ConfigFiles[_selectedProfile.Value];
+			LoadedProfile = ConfigFiles[_selectedProfile.Value];
 
             if (RiskUIPlugin.RiskOfOptionsEnabled)
                 MakeSelectedProfileOptions();
@@ -88,20 +86,18 @@ namespace MaterialHud
 			ModSettingsManager.AddOption(new GenericButtonOption("Add Profile", "Profiles", "Adds new profile. Select and restart game to use.", "Add", () =>
             {
                 ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, new UPath($"/RiskUI/{Guid.NewGuid()}"), true, RiskUIPlugin.instance));
-                ConfigFiles = ConfigFiles.OrderBy(x => x.FilePath.FullName).ToList();
                 option.max = ConfigFiles.Count - 1;
 				_selectedProfile.Value = ConfigFiles.Count - 1;
             }));
 			ModSettingsManager.AddOption(new GenericButtonOption("Delete Profile", "Profiles", "Delete Selected Profile. Cannot delete active profile.", "Delete", () =>
 			{
 				var configToDelete = ConfigFiles.ElementAtOrDefault(_selectedProfile.Value);
-				if (ConfigFiles.Count > 1 && configToDelete != null && configToDelete != SelectedProfile)
+				if (ConfigFiles.Count > 1 && configToDelete != null && configToDelete != LoadedProfile)
                 {
                     RoR2Application.cloudStorage.DeleteFile(configToDelete.FilePath);
                     ConfigFiles.Remove(configToDelete);
 					option.max = ConfigFiles.Count - 1;
-                    ConfigFiles = ConfigFiles.OrderBy(x => x.FilePath.FullName).ToList();
-					_selectedProfile.Value = ConfigFiles.IndexOf(SelectedProfile);
+					_selectedProfile.Value = ConfigFiles.IndexOf(LoadedProfile);
                 }
             }));
 		}
@@ -129,12 +125,12 @@ namespace MaterialHud
 
         private static void UpdateSelectedProfile(ZioConfigEntryBase configEntry, object _, bool __)
         {
-            if (SelectedProfile == null)
+            if (LoadedProfile == null)
             {
                 Log.Error($"UpdateSelectedProfile: Profile num {_selectedProfile.Value} does not exist");
                 return;
             }
-            if (!SelectedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
+            if (!LoadedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
             {
                 Log.Error($"UpdateSelectedProfile: Config entry {configEntry.Definition.Key} does not exist in profile num {_selectedProfile.Value}");
                 return;
@@ -145,12 +141,12 @@ namespace MaterialHud
 
 		private static void ApplyConfigProfile(ZioConfigEntryBase configEntry)
         {
-            if (SelectedProfile == null)
+            if (LoadedProfile == null)
             {
                 Log.Error($"ApplyConfigProfile: Profile num {_selectedProfile.Value} does not exist");
                 return;
             }
-            if (!SelectedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
+            if (!LoadedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
             {
                 Log.Error($"ApplyConfigProfile: Config entry {configEntry.Definition.Key} does not exist in profile num {_selectedProfile.Value}");
                 return;
