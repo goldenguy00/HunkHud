@@ -1,9 +1,10 @@
-using System;
 using HarmonyLib;
 using Mono.Cecil.Cil;
 using MonoMod.Cil;
 using RoR2;
 using RoR2.UI;
+using System;
+using TMPro;
 using UnityEngine;
 
 namespace MaterialHud

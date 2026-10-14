@@ -16,24 +16,31 @@ namespace HunkHud.Components
         {
             CheckEquipment();
             CheckSkills();
+
+            if (this.targetCharacterBody && this.targetCharacterBody.keyItemSlot && this.targetCharacterBody.keyItemSlot.keyItem != KeyItemIndex.None)
+            { 
+                if (this.targetCharacterBody.keyItemSlot.BehaviorIsReadyToExecute())
+                    SetActive();
+            }
         }
         private void CheckEquipment()
         {
             var inventory = this.targetCharacterBody ? this.targetCharacterBody.inventory : null;
             if (!inventory)
                 return;
-            /*
+            
             for (int i = 0; i < inventory._equipmentSlots?.Length; i++)
             {
-                for (int j = 0; j < inventory._equipmentSlots[i]?.Length; j++)
+                var slot = inventory._equipmentSlots[i];
+                for (int j = 0; j < slot._sets?.Length; j++)
                 {
-                    if (inventory._equipmentStateSlots[i][j].isPerfomingRecharge)
+                    if (slot._sets[j].isPerfomingRecharge)
                     {
                         this.SetActive();
                         return;
                     }
                 }
-            }*/
+            }
         }
 
         private void CheckSkills()
@@ -60,7 +67,9 @@ namespace HunkHud.Components
             base.HUD_onHudTargetChangedGlobal(newHud);
 
             if (this.targetCharacterBody)
+            {
                 this.targetCharacterBody.onSkillActivatedAuthority += this.OnSkillActivatedAuthority;
+            }
         }
 
         private void OnSkillActivatedAuthority(GenericSkill skill)

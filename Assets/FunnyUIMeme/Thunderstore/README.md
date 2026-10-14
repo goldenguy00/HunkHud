@@ -2,6 +2,12 @@
 The mod has risk of options support, you probably want to install it.
 
 # Change Log:
+
+1.6.0
+- Updated for DLC4
+- Added a variety of Zio safety measures
+- Hud profiles now require a restart to be selected due to lag
+
 1.5.2
 - Fixed broken compat
 

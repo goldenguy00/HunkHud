@@ -1,15 +1,20 @@
 ManifestFileVersion: 0
-CRC: 1814102906
+CRC: 2960695883
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 891f3ff4950db2d113f18af861a93010
+    Hash: d6f2fede36d031d8a559b6815946284b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 49ee9d813ae3fca8942b1e9a29331a53
+    Hash: ae8af7ebaf7993bbfdd32a52bdfda589
+  IncrementalBuildHash:
+    serializedVersion: 2
+    Hash: d6f2fede36d031d8a559b6815946284b
 HashAppended: 0
 ClassTypes:
 - Class: 1
+  Script: {instanceID: 0}
+- Class: 4
   Script: {instanceID: 0}
 - Class: 21
   Script: {instanceID: 0}
@@ -32,13 +37,13 @@ ClassTypes:
 - Class: 114
   Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
 - Class: 114
-  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-- Class: 114
   Script: {fileID: 11500000, guid: 31a19414c41e5ae4aae2af33fee712f6, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 1aa08ab6e0800fa44ae55d278d1423e3, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
 - Class: 114
@@ -109,6 +114,8 @@ ClassTypes:
   Script: {fileID: 1407764973, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -337221655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -1462100833, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -798650217, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -187,6 +194,10 @@ ClassTypes:
   Script: {fileID: 877486143, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -630047940, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -991667990, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: -461905288, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: 1437645409, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -320,6 +331,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: RoR2.UI.UISkinData/ScrollRectStyle
 - AssemblyName: RoR2
   ClassName: RoR2.UI.UISkinData/TextStyle
+- AssemblyName: Unity.Addressables
+  ClassName: UnityEngine.AddressableAssets.AssetReferenceT`1[UnityEngine.Sprite]
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.FaceInfo_Legacy
 - AssemblyName: Unity.TextMeshPro
@@ -358,6 +371,8 @@ SerializeReferenceClassIdentifiers:
   ClassName: UnityEngine.Events.PersistentListenerMode
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.UnityEvent
+- AssemblyName: UnityEngine.CoreModule
+  ClassName: UnityEngine.Events.UnityEvent`1[UnityEngine.GameObject]
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.RectOffset
 - AssemblyName: UnityEngine.TextCoreFontEngineModule
@@ -403,11 +418,13 @@ Assets:
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texFillShiny2.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texFillOSP.png
+- Assets/RoR2/DLC4/texKarmaIconLevel5Active.png
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Text Component Icon.psd
+- Assets/RoR2/DLC4/texKarmaIconLevel4Active.png
 - Assets/RoR2/Base/Items/Syringe/texSyringeIcon.png
 - Assets/RoR2/DLC3/Items/ExtraEquipment/matExtraEquipmentSwapEffect.mat
-- Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
 - Packages/com.unity.postprocessing/PostProcessing/Gizmos/PostProcessLayer.png
+- Assets/FunnyUIMeme/Assets/HudParts/SkillIconRoot.prefab
 - Assets/HunkHud/Assets/VFX/textures/texHealthBarShade.asset
 - Assets/HunkHud/Assets/MainAssets/CustomElements/Bands/BandDisplayHealing.prefab
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_15.asset
@@ -421,6 +438,7 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldown.asset
 - Assets/RoR2/Base/UI/HUD/texUIFlashSquare1.png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdrop.png
+- Assets/FunnyUIMeme/Assets/HudParts/KeyItemSlot.prefab
 - Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffIcon2.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_12.asset
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillCollapse.asset
@@ -455,19 +473,22 @@ Assets:
 - Assets/FunnyUIMeme/Assets/MaterialHealthbarStyle.asset
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownNovaEmpty.png
 - Assets/HunkHud/Assets/VFX/textures/texTeleporterIcon.asset
-- Assets/FunnyUIMeme/Assets/MaterialClassicRunInfoHudPanel.prefab
+- Assets/FunnyUIMeme/Assets/HudParts/MaterialClassicRunInfoHudPanel.prefab
 - Assets/FunnyUIMeme/Assets/MaterialNonCenti.asset
 - Assets/RoR2/DLC3/Common/Buffs/bdInventoryDisable/texInventoryDisableDebuffFrame.png
+- Assets/RoR2/DLC4/texKarmaIconLevel1Active.png
 - Assets/HunkHud/Assets/MainAssets/CustomElements/Bands/BandDisplayNova.prefab
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_11.asset
 - Assets/FunnyUIMeme/Assets/Sprites/ringBelow.png
 - Assets/HunkHud/Assets/VFX/textures/texFadingBox.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_1.asset
+- Assets/RoR2/DLC4/texKarmaIconLevel6Active.png
 - Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
 - Assets/RoR2/Base/Common/Fonts/Bombardier/tmpBombDropshadow.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_7.asset
 - Assets/RoR2/Base/Shaders/UI/HGUIAnimateAlpha.shader
+- Assets/RoR2/DLC4/texKarmaIconLevel7Active.png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.asset
 - Assets/RoR2/Base/Items/Syringe/texSyringeIcon.asset
 - Assets/HunkHud/Assets/VFX/icons/item/texVirusSampleIcon.png
@@ -476,12 +497,13 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texImmunityFill.png
 - Assets/FunnyUIMeme/Assets/Sprites/circle.png
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownVoid.png
+- Assets/HunkHud/Assets/VFX/textures/Bars/texFillFrozen.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texFillTile.asset
-- Assets/HunkHud/Assets/VFX/textures/Bars/texFillLowHealth.png
 - Assets/HunkHud/Assets/MainAssets/CustomElements/Bands/BandDisplaySacrificial.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/texChevronEngiShield.png
 - Assets/RoR2/Base/UI/texDetailPanel.png
-- Assets/HunkHud/Assets/VFX/textures/Bars/texFillFrozen.png
+- Assets/RoR2/DLC4/texKarmaIconLevel3Active.png
+- Assets/HunkHud/Assets/VFX/textures/Bars/texFillLowHealth.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
 - Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.png
@@ -500,8 +522,9 @@ Assets:
 - Packages/com.unity.textmeshpro/Editor Resources/Gizmos/TMP - Input Field Icon.psd
 - Assets/HunkHud/Assets/MainAssets/CustomElements/BandCooldownTracker.prefab
 - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
-- Assets/HunkHud/Assets/VFX/textures/texTeleporterIcon.png
+- Assets/RoR2/DLC4/texCursedDisabled.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialBuffIcon.prefab
+- Assets/HunkHud/Assets/VFX/textures/texTeleporterIcon.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBarBiomassBase.png
 - Assets/HunkHud/Assets/VFX/textures/texHudBar.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texLunarRuin.png
@@ -562,6 +585,7 @@ Assets:
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
 - Assets/Gizmos/RoR2/EquipmentDef Icon.png
 - Assets/HunkHud/Assets/VFX/textures/texCircularShade.png
+- Assets/RoR2/DLC4/texKarmaIconLevel2Active.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillTile.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
 - Assets/HunkHud/Assets/VFX/textures/texItemBox.png
@@ -574,10 +598,12 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillHealth.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texExpBar.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFill.asset
+- Assets/RoR2/DLC4/texRentalItemIcon.png
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Lunar_Coin.png
 - Assets/HunkHud/Assets/VFX/textures/texWhite.png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightHeader.png
 - Assets/FunnyUIMeme/Assets/RiskUI.prefab
+- Assets/RoR2/DLC4/texKarmaIconLevel8Active.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_8.asset
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBarBiomassBackground.asset
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture.png
@@ -592,6 +618,7 @@ Assets:
 - Assets/FunnyUIMeme/Assets/Sprites/whitepixel.png
 - Assets/FunnyUIMeme/Assets/Sprites/Shift.png
 - Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset
+- Assets/RoR2/DLC4/texKarmaIconLevel0Active.png
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownNova.png
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
 - Assets/HunkHud/Assets/VFX/textures/Bars/texBlankFillPattern.png

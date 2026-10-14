@@ -80,6 +80,7 @@ MonoBehaviour:
   overrideBodyText: 
   disableTitleRichText: 0
   disableBodyRichText: 0
+  removeTooltipOnDeselect: 1
 --- !u!114 &7577031876415190831
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -92,11 +93,10 @@ MonoBehaviour:
   m_Script: {fileID: -1655364978, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  targetInventory: {fileID: 0}
   targetEquipmentSlot: {fileID: 0}
   displayRoot: {fileID: 1956904508059615808}
-  playerCharacterMasterController: {fileID: 0}
   iconImage: {fileID: 328295984358269671}
+  asyncIconImage: {fileID: 2466424328521701567}
   cooldownText: {fileID: 9133252235612325776}
   stockText: {fileID: 727751654534917911}
   stockFlashPanelObject: {fileID: 0}
@@ -104,6 +104,7 @@ MonoBehaviour:
   isReadyPanelObject: {fileID: 0}
   isAutoCastPanelObject: {fileID: 4720267281894540525}
   extraEquipmentSwapObject: {fileID: 8295537965238752250}
+  activationKeyDisplayObject: {fileID: 8246290504917335295}
   tooltipProvider: {fileID: 6715375273691107170}
   displayAlternateEquipment: 0
 --- !u!114 &4993948498340120930
@@ -140,6 +141,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -1475,6 +1477,7 @@ GameObject:
   - component: {fileID: 603636401730018743}
   - component: {fileID: 998291409695094717}
   - component: {fileID: 328295984358269671}
+  - component: {fileID: 2466424328521701567}
   m_Layer: 5
   m_Name: IconPanel
   m_TagString: Untagged
@@ -1538,6 +1541,24 @@ MonoBehaviour:
     y: 0
     width: 1
     height: 1
+--- !u!114 &2466424328521701567
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7556777876375659151}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -1462100833, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadOnAssigned: 1
+  unloadType: 2
+  disableWhileLoading: 0
+  renderer: {fileID: 328295984358269671}
+  secondaryRenderers: []
+  initialized: 0
 --- !u!1 &8246290504917335295
 GameObject:
   m_ObjectHideFlags: 0

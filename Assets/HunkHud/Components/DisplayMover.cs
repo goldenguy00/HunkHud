@@ -57,8 +57,10 @@ namespace HunkHud.Components
             this.SetActive(8f);
         }
 
-        protected virtual void Awake()
+        protected override void Awake()
         {
+            base.Awake();
+
             this.canvas = this.GetComponent<CanvasGroup>();
 
             Startup();

@@ -26,9 +26,9 @@ using SearchableAttribute = HG.Reflection.SearchableAttribute;
 
 namespace MaterialHud
 {
-    [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInDependency("bubbet.zioriskofoptions", BepInDependency.DependencyFlags.SoftDependency)]
-    [BepInPlugin("bubbet.riskui", "Risk UI", "1.5.2")]
+    [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInDependency("bubbet.zioriskofoptions", BepInDependency.DependencyFlags.HardDependency)]
+    [BepInPlugin("bubbet.riskui", "Risk UI", "1.6.0")]
     public class RiskUIPlugin : BaseUnityPlugin
     {
         public static GameObject _newHud;
@@ -42,18 +42,17 @@ namespace MaterialHud
         public static ZioConfigEntry<Color> VoidColor;
         public static ZioConfigEntry<Color> InfusionColor;
         public static ZioConfigEntry<Color> VoidShieldColor;
-        public static ZioConfigFile.ZioConfigFile ConfigFile;
         private string description;
         private Sprite icon;
         public static ZioConfigEntry<bool> Enabled;
         private Harmony harm;
         private PatchClassProcessor patcher;
-        public static readonly List<ZioConfigFile.ZioConfigFile> ConfigFiles = new();
-        public static bool NeverBeforeInitialized;
 
         public static bool RiskOfOptionsEnabled => Chainloader.PluginInfos.ContainsKey("bubbet.zioriskofoptions"); //"com.rune580.riskofoptions");
+        public static RiskUIPlugin instance { get; private set; }
         public void Awake()
         {
+            instance = this;
             Log.Init(Logger);
             
             LoadAssets();
@@ -108,19 +107,7 @@ namespace MaterialHud
 
         private void OnLoad()
         {
-            ConfigFile = new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, "/RiskUI.cfg", true, this);
-            
-            foreach (var path in RoR2Application.cloudStorage.EnumeratePaths(new UPath("/RiskUI/")))
-            {
-                ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, path, true, this));
-            }
-
-            if (ConfigFiles.Count < 1)
-            {
-                NeverBeforeInitialized = true;
-                ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, $"/RiskUI/{new Guid()}",
-                    true, this));
-            }
+            ConfigHelper.Init();
 
             Enabled = ConfigHelper.Bind("General", "Enabled", true, "Should the hud be replaced. Only updates on hud awake, so stage change and starting new runs.");
             Enabled.SettingChanged += EnabledChanged;

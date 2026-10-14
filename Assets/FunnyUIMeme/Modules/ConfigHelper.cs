@@ -1,9 +1,13 @@
-using System;
-using System.Collections.Generic;
+using BepInEx.Configuration;
 using JetBrains.Annotations;
 using RiskOfOptions;
 using RiskOfOptions.OptionConfigs;
 using RiskOfOptions.Options;
+using RoR2;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Runtime.CompilerServices;
 using Zio;
 using ZioConfigFile;
 using ZioRiskOfOptions;
@@ -12,56 +16,94 @@ using Color = UnityEngine.Color;
 namespace MaterialHud
 {
 	public static class ConfigHelper
-	{
-		public static ZioConfigFile.ZioConfigFile whichFile => RiskUIPlugin.ConfigFile;
-		public static List<ZioConfigFile.ZioConfigFile> configFiles => RiskUIPlugin.ConfigFiles;
+    {
+        public static List<ZioConfigFile.ZioConfigFile> ConfigFiles = new();
+        public static ZioConfigFile.ZioConfigFile ActiveConfigFile;
 		public static Dictionary<string, ZioConfigEntryBase> Entries = new();
-		private static ZioConfigEntry<int> _selectedProfile;
+		public static ZioConfigEntry<int> _selectedProfile;
 		private static IntSliderConfig option;
+		public static ZioConfigFile.ZioConfigFile SelectedProfile;
+        public static bool NeverBeforeInitialized;
 
-		public static int SelectedProfile
+        public static void Init()
 		{
-			get
-			{
-				if (_selectedProfile is not null) return _selectedProfile.Value;
-				_selectedProfile = whichFile.Bind("Profiles", "Selected Profile", 0, "Currently selected profile.");
-				_selectedProfile.SettingChanged += (_, profile, _) => SelectedProfile = (int)profile;
-				if (RiskUIPlugin.RiskOfOptionsEnabled)
-					MakeSelectedProfileOptions();
+			ActiveConfigFile = new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, "/RiskUI.cfg", true, RiskUIPlugin.instance);
 
-				return _selectedProfile.Value;
-			}
-			set
-			{
-				_selectedProfile.Value = value;
-				foreach (var entryPair in whichFile)
-				{
-					if (entryPair.Key == _selectedProfile.Definition) continue;
-					ApplyConfigProfile(entryPair.Value);
-				}
-			}
-		}
+            _selectedProfile = ActiveConfigFile.Bind("Profiles", "Selected Profile", 0, "Currently selected profile.");
+			//_useZio = ActiveConfigFile.Bind("Profiles", "Use Zio", true, "Disable this setting to use local profile saving instead of cloud saves.");
 
-		private static void MakeSelectedProfileOptions()
+			var configs = new List<ZioConfigFile.ZioConfigFile>();
+            try
+            {
+                foreach (var path in RoR2Application.cloudStorage.EnumerateFiles(new UPath("/RiskUI/")))
+                {
+                    if (!path.IsNull && !path.Equals(UPath.Root) && !path.Equals(UPath.Empty))
+                    {
+						Log.Debug("Found file " + path.ToString());
+                        var pathName = path.FullName.Replace("/RiskUI/", string.Empty);
+                        if (Guid.TryParse(pathName, out var guid))
+                        {
+                            Log.Debug("Found zio config file " + guid.ToString());
+                            configs.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, path, true, RiskUIPlugin.instance));
+                        }
+                        else
+                        {
+                            Log.Error("Failed to parse " + pathName);
+                        }
+                    }
+                    else
+                    {
+                        Log.Error("Invalid path " + path.ToString());
+                    }
+                }
+            }
+            catch (Exception e) { Log.Error(e); }
+
+            if (ConfigFiles.Count < 1)
+            {
+                Log.Debug("Performing first time Zio init.");
+
+                NeverBeforeInitialized = true;
+                configs.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, $"/RiskUI/{Guid.NewGuid()}", true, RiskUIPlugin.instance));
+            }
+
+			ConfigFiles = configs.OrderBy(x => x.FilePath.FullName).ToList();
+            _selectedProfile.Value = Math.Clamp(_selectedProfile.Value, 0, ConfigFiles.Count - 1);
+			SelectedProfile = ConfigFiles[_selectedProfile.Value];
+
+            if (RiskUIPlugin.RiskOfOptionsEnabled)
+                MakeSelectedProfileOptions();
+
+        }
+
+		[MethodImpl(MethodImplOptions.NoInlining)]
+        public static void MakeSelectedProfileOptions()
 		{
 			option = new IntSliderConfig
 			{
-				max = configFiles.Count - 1
+				max = ConfigFiles.Count - 1,
+				restartRequired = true
 			};
 			ModSettingsManager.AddOption(new ZioIntSliderOption(_selectedProfile, option));
-			ModSettingsManager.AddOption(new GenericButtonOption("Add Profile", "Profiles", () =>
+			ModSettingsManager.AddOption(new GenericButtonOption("Add Profile", "Profiles", "Adds new profile. Select and restart game to use.", "Add", () =>
+            {
+                ConfigFiles.Add(new ZioConfigFile.ZioConfigFile(RoR2Application.cloudStorage, new UPath($"/RiskUI/{Guid.NewGuid()}"), true, RiskUIPlugin.instance));
+                ConfigFiles = ConfigFiles.OrderBy(x => x.FilePath.FullName).ToList();
+                option.max = ConfigFiles.Count - 1;
+				_selectedProfile.Value = ConfigFiles.Count - 1;
+            }));
+			ModSettingsManager.AddOption(new GenericButtonOption("Delete Profile", "Profiles", "Delete Selected Profile. Cannot delete active profile.", "Delete", () =>
 			{
-				configFiles.Add(new ZioConfigFile.ZioConfigFile(whichFile.FileSystem,
-					$"{whichFile.FilePath.GetDirectory()}/RiskUI/{new Guid()}", true,
-					whichFile.OwnerMetadata));
-				option.max = configFiles.Count - 1;
-			}));
-			ModSettingsManager.AddOption(new GenericButtonOption("Delete Profile", "Profiles", () =>
-			{
-				whichFile.FileSystem.DeleteFile(configFiles[SelectedProfile].FilePath);
-				configFiles.RemoveAt(SelectedProfile);
-				option.max = configFiles.Count - 1;
-			}));
+				var configToDelete = ConfigFiles.ElementAtOrDefault(_selectedProfile.Value);
+				if (ConfigFiles.Count > 1 && configToDelete != null && configToDelete != SelectedProfile)
+                {
+                    RoR2Application.cloudStorage.DeleteFile(configToDelete.FilePath);
+                    ConfigFiles.Remove(configToDelete);
+					option.max = ConfigFiles.Count - 1;
+                    ConfigFiles = ConfigFiles.OrderBy(x => x.FilePath.FullName).ToList();
+					_selectedProfile.Value = ConfigFiles.IndexOf(SelectedProfile);
+                }
+            }));
 		}
 
 		public static ZioConfigEntry<T> Bind<T>(string category, string key, T defaultValue, string desc, [CanBeNull] Action<ZioConfigEntry<T>> firstSetupCallback = null, object riskOfOptionsExtra = null)
@@ -69,10 +111,14 @@ namespace MaterialHud
 			var entryKey = category + key;
 			if (!Entries.ContainsKey(entryKey))
 			{
-				var _configEntry = RiskUIPlugin.ConfigFile.Bind(category, key, defaultValue, desc);
+				var _configEntry = ActiveConfigFile.Bind(category, key, defaultValue, desc);
 				_configEntry.SettingChanged += UpdateSelectedProfile;
-				foreach (var configFile in RiskUIPlugin.ConfigFiles) configFile.Bind(category, key, defaultValue, desc);
+				
+				foreach (var configFile in ConfigFiles) 
+					configFile.Bind(category, key, defaultValue, desc);
+				
 				ApplyConfigProfile(_configEntry);
+				
 				if(RiskUIPlugin.RiskOfOptionsEnabled)
 					FillRiskOfOptions(_configEntry, riskOfOptionsExtra);
 				Entries.Add(entryKey, _configEntry);
@@ -81,17 +127,39 @@ namespace MaterialHud
 			return (ZioConfigEntry<T>) Entries[entryKey];
 		}
 
-		private static void UpdateSelectedProfile(ZioConfigEntryBase arg1, object arg2, bool arg3)
-		{
-			configFiles[SelectedProfile][arg1.Definition].BoxedValue = arg1.BoxedValue;
+        private static void UpdateSelectedProfile(ZioConfigEntryBase configEntry, object _, bool __)
+        {
+            if (SelectedProfile == null)
+            {
+                Log.Error($"UpdateSelectedProfile: Profile num {_selectedProfile.Value} does not exist");
+                return;
+            }
+            if (!SelectedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
+            {
+                Log.Error($"UpdateSelectedProfile: Config entry {configEntry.Definition.Key} does not exist in profile num {_selectedProfile.Value}");
+                return;
+            }
+
+            zioEntry.BoxedValue = configEntry.BoxedValue;
 		}
 
 		private static void ApplyConfigProfile(ZioConfigEntryBase configEntry)
-		{
-			if (RiskUIPlugin.NeverBeforeInitialized)
-				UpdateSelectedProfile(configEntry, null, false);
+        {
+            if (SelectedProfile == null)
+            {
+                Log.Error($"ApplyConfigProfile: Profile num {_selectedProfile.Value} does not exist");
+                return;
+            }
+            if (!SelectedProfile.TryGetValue(configEntry.Definition, out var zioEntry))
+            {
+                Log.Error($"ApplyConfigProfile: Config entry {configEntry.Definition.Key} does not exist in profile num {_selectedProfile.Value}");
+                return;
+            }
+
+            if (NeverBeforeInitialized)
+				zioEntry.BoxedValue = configEntry.BoxedValue;
 			else
-				configEntry.BoxedValue = configFiles[SelectedProfile][configEntry.Definition].BoxedValue;
+				configEntry.BoxedValue = zioEntry.BoxedValue;
 		}
 
 		private static void FillRiskOfOptions<T>(ZioConfigEntry<T> configEntry, object riskOfOptionsExtra = null)

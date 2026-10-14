@@ -1,4 +1,8 @@
 # Changelog
+
+`1.1.0`
+- Updated for DLC4
+
 `1.0.5`
 - Fixed Hunk compat
 

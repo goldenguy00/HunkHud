@@ -56,7 +56,7 @@ MonoBehaviour:
   Author: public_ParticleSystem
   Name: HunkHud
   Description: Standalone Hud from HUNK
-  Version: 1.0.5
+  Version: 1.1.0
   Dependencies:
   - {fileID: 11400000, guid: 2d4d09ec817c24698d35dc9bf0704fdc, type: 2}
   - {fileID: 11400000, guid: 9c17f762567cffe40a1726f22264dca6, type: 2}
