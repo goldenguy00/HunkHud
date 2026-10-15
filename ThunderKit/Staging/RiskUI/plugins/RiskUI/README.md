@@ -3,6 +3,9 @@ The mod has risk of options support, you probably want to install it.
 
 # Change Log:
 
+1.6.4
+- Additional inspect panel fixes
+
 1.6.3
 - Fixed inspect panel
 - Added color remapping to acolyte regen, lunar ruin, and warped echo
