@@ -29,7 +29,7 @@ namespace MaterialHud
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("bubbet.zioriskofoptions", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("bubbet.riskui", "Risk UI", "1.6.4")]
+    [BepInPlugin("bubbet.riskui", "Risk UI", "1.6.5")]
     public class RiskUIPlugin : BaseUnityPlugin
     {
         public static GameObject _newHud;
@@ -120,7 +120,7 @@ namespace MaterialHud
             
             if (RiskOfOptionsEnabled)
                 MakeRiskofOptions();
-            
+
             foreach (var child in _newHud.GetComponentsInChildren<IConfigHandler>())
             {
                 child.Startup();

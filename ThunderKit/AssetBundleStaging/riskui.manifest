@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 1888536262
+CRC: 4054459586
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: dfe7315583cf4a052cdd7f15ba35f8b1
+    Hash: de1c483e84abfc67a957d72fac872706
   TypeTreeHash:
     serializedVersion: 2
     Hash: 2fbe7456872bf335e2d654a010ce47a6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: dfe7315583cf4a052cdd7f15ba35f8b1
+    Hash: de1c483e84abfc67a957d72fac872706
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -377,7 +377,6 @@ Assets:
 - Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.png
 - Assets/RoR2/Base/UI/AR/texUICornerTier2.asset
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUIBackdropFadedEnds.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.png
 - Assets/RoR2/Base/UI/Generic UI/Textures/texUICleanButton.png
 - Assets/FunnyUIMeme/Assets/Sprites/HitMarker.png
 - Assets/FunnyUIMeme/Assets/DifficultyIcons/Calypso (More Difficulties).png
@@ -452,7 +451,6 @@ Assets:
 - Assets/RoR2/Base/UI/HUD/MissingInspectInfoFallbackDef.asset
 - Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakAnimated.mat
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_5.asset
-- Assets/RoR2/DLC4/texKarmaIconLevel3Active.png
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/MoneyContainer.prefab
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
 - Assets/FunnyUIMeme/Assets/CurrencyIcons/Money.png
@@ -479,9 +477,9 @@ Assets:
 - Assets/RoR2/Base/Common/ColorRamps/texRampTwotoneWhite.png
 - Assets/FunnyUIMeme/Assets/HudParts/EquipIcon.prefab
 - Assets/RoR2/DLC4/texKarmaIconLevel6Active.png
-- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
-- Assets/RoR2/Base/UI/UISkins/skinMenu.asset
 - Assets/Gizmos/RoR2/EquipmentDef Icon.png
+- Assets/RoR2/Base/UI/UISkins/skinMenu.asset
+- Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_Timer_texture.png
 - Assets/FunnyUIMeme/Assets/Sprites/CircleCentered.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_2.asset
 - Assets/FunnyUIMeme/Assets/Sprites/Tab.png
@@ -516,10 +514,10 @@ Assets:
 - Assets/RoR2/Base/UI/texDetailPanel.png
 - Assets/FunnyUIMeme/Assets/Sprites/Shift.png
 - Assets/FunnyUIMeme/Assets/Sprites/texChevronEngiShield.png
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.asset
+- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset
 - Assets/FunnyUIMeme/Assets/Sprites/CircleOuter.png
 - Assets/RoR2/DLC4/texKarmaIconLevel0Active.png
-- Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset
+- Assets/RoR2/DLC4/texKarmaIconLevel3Active.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
 Dependencies: []
