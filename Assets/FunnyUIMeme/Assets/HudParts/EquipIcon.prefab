@@ -263,7 +263,7 @@ MonoBehaviour:
         m_CallState: 0
   allowAllEventSystems: 0
   submitOnPointerUp: 0
-  selectOnPointerEnter: 1
+  selectOnPointerEnter: 0
   disablePointerClick: 0
   disableGamepadClick: 1
   useBaseGamepadClick: 0
@@ -276,19 +276,7 @@ MonoBehaviour:
       m_Calls: []
   onSelect:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 7577031876415190831}
-        m_TargetAssemblyTypeName: RoR2.UI.EquipmentIcon, RoR2
-        m_MethodName: ItemClicked
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 0
+      m_Calls: []
   onDeselect:
     m_PersistentCalls:
       m_Calls: []
@@ -460,10 +448,10 @@ RectTransform:
   m_Father: {fileID: 5582874795274339575}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -2.8313072e-14, y: 4.4430605e-16, z: 1.473527e-39}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.035, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 7.035, y: -32.165}
+  m_SizeDelta: {x: 14.07, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4552618248956185272
 CanvasRenderer:
@@ -796,10 +784,10 @@ RectTransform:
   m_Father: {fileID: 5582874795274339575}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.035, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 7.035, y: -10.055}
+  m_SizeDelta: {x: 14.05, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8280965676700397149
 CanvasRenderer:

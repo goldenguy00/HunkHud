@@ -29,7 +29,7 @@ namespace MaterialHud
 {
     [BepInDependency("com.rune580.riskofoptions", BepInDependency.DependencyFlags.HardDependency)]
     [BepInDependency("bubbet.zioriskofoptions", BepInDependency.DependencyFlags.HardDependency)]
-    [BepInPlugin("bubbet.riskui", "Risk UI", "1.6.5")]
+    [BepInPlugin("bubbet.riskui", "Risk UI", "1.6.7")]
     public class RiskUIPlugin : BaseUnityPlugin
     {
         public static GameObject _newHud;

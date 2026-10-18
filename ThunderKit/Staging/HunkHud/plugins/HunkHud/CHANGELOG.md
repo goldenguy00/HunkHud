@@ -1,5 +1,10 @@
 # Changelog
 
+`1.1.3`
+- Fixed inspect panel errors
+- Fixed some issues with menu navigation
+- Fade out Key Item slot
+
 `1.1.2`
 - Added Acolyte support
 

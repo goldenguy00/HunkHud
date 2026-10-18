@@ -33,7 +33,7 @@ MonoBehaviour:
   m_Name: StageAssemblies
   m_EditorClassIdentifier: 
   Active: 1
-  stageDebugDatabases: 1
+  stageDebugDatabases: 0
   releaseBuild: 1
   assemblyArtifactPath: <AssemblyStaging>
   buildTarget: 5
@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: StageAssetBundles
   m_EditorClassIdentifier: 
   Active: 1
-  AssetBundleBuildOptions: 256
+  AssetBundleBuildOptions: 288
   buildTarget: 5
   recurseDirectories: 0
   simulate: 0

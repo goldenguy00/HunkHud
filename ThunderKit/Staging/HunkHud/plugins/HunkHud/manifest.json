@@ -1,7 +1,7 @@
 {
     "name": "HunkHud",
     "author": "public_ParticleSystem",
-    "version_number": "1.1.2",
+    "version_number": "1.1.3",
     "website_url": "https://discord.gg/xqp5CQM8Cs",
     "description": "Standalone Hud from HUNK",
     "dependencies": [

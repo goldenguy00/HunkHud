@@ -1,3 +1,7 @@
+1.6.7
+- Fixed tooltips persisting too long
+- Fixed some scoreboard navigation issues
+
 1.6.5
 - Actually fixed the inspect panel
 - Added changelog

@@ -36,10 +36,10 @@ RectTransform:
   m_Father: {fileID: 7289425879640910801}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: -2.8313072e-14, y: 4.4430605e-16, z: 1.473527e-39}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.035, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 7.035, y: -32.165}
+  m_SizeDelta: {x: 14.07, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2485705704742669155
 CanvasRenderer:
@@ -155,10 +155,10 @@ RectTransform:
   m_Father: {fileID: 7289425879640910801}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.035, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 7.035, y: -10.055}
+  m_SizeDelta: {x: 14.05, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &2020690018788117865
 CanvasRenderer:
@@ -757,6 +757,7 @@ MonoBehaviour:
   overrideBodyText: 
   disableTitleRichText: 0
   disableBodyRichText: 0
+  removeTooltipOnDeselect: 1
 --- !u!114 &2748430234467770744
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -790,6 +791,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
+  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
@@ -869,7 +871,7 @@ MonoBehaviour:
       m_Calls: []
   allowAllEventSystems: 0
   submitOnPointerUp: 0
-  selectOnPointerEnter: 1
+  selectOnPointerEnter: 0
   disablePointerClick: 1
   disableGamepadClick: 1
   useBaseGamepadClick: 0

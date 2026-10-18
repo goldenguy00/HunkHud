@@ -1,12 +1,7 @@
 fileFormatVersion: 2
 guid: 29c6987804b41e34a86e8896a7b8e9db
-timeCreated: 1749998474
-licenseType: Free
 PrefabImporter:
   externalObjects: {}
-  addedObjectFileIDs: []
-  isPrefabVariant: 0
-  unableToImportOnPreviousDomainReload: 0
-  userData:
-  assetBundleName: robdante
-  assetBundleVariant:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

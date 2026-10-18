@@ -1,15 +1,15 @@
 ManifestFileVersion: 0
-CRC: 92722609
+CRC: 2721019104
 Hashes:
   AssetFileHash:
     serializedVersion: 2
-    Hash: 72827cd007ec1e68b8fe92276c51baa7
+    Hash: dbec380978075f0d846fa320ffa1559b
   TypeTreeHash:
     serializedVersion: 2
-    Hash: 8795ada60c491789aa0dc4ccc843d2fd
+    Hash: e6ee3a13c323b86559d6d99fad6929f6
   IncrementalBuildHash:
     serializedVersion: 2
-    Hash: 72827cd007ec1e68b8fe92276c51baa7
+    Hash: dbec380978075f0d846fa320ffa1559b
 HashAppended: 0
 ClassTypes:
 - Class: 1
@@ -56,6 +56,8 @@ ClassTypes:
   Script: {fileID: 11500000, guid: 429edc83bd01b7f4b991c902f104a5e2, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: cae647a10e6ec9e44a8ae5a0946ff0b2, type: 3}
+- Class: 114
+  Script: {fileID: 11500000, guid: ab2114bdc8544297b417dfefe9f1e410, type: 3}
 - Class: 114
   Script: {fileID: 11500000, guid: 13358be29cd1ff74e9524269c8496281, type: 3}
 - Class: 114
@@ -114,6 +116,8 @@ ClassTypes:
   Script: {fileID: 1407764973, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -337221655, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
+- Class: 114
+  Script: {fileID: 154454898, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
   Script: {fileID: -1462100833, guid: 951ce57ad999ac1f040a4dceb5f8b763, type: 3}
 - Class: 114
@@ -362,6 +366,8 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.TMP_InputField/TouchScreenKeyboardEvent
 - AssemblyName: Unity.TextMeshPro
+  ClassName: TMPro.TMP_Style
+- AssemblyName: Unity.TextMeshPro
   ClassName: TMPro.VertexGradient
 - AssemblyName: UnityEngine.CoreModule
   ClassName: UnityEngine.Events.ArgumentCache
@@ -400,7 +406,6 @@ SerializeReferenceClassIdentifiers:
 - AssemblyName: UnityEngine.UI
   ClassName: UnityEngine.UI.SpriteState
 Assets:
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.png
 - Assets/FunnyUIMeme/Assets/MaterialTimerStringFormatter.asset
 - Assets/RoR2/Base/UI/AR/texUICornerTier2.asset
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBuffSacrificialBandCooldown.png
@@ -454,10 +459,9 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texImmuneBar.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texExpBar.asset
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBar.png
-- Assets/HunkHud/Assets/VFX/textures/texItemExclamation.asset
+- Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownHealingEmpty.png
 - Assets/FunnyUIMeme/Assets/HudParts/SpriteNumberImage.prefab
 - Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakFlash.mat
-- Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownHealingEmpty.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_4.asset
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldown.png
 - Assets/FunnyUIMeme/Assets/MaterialHealthbarStyleMinion.asset
@@ -466,6 +470,7 @@ Assets:
 - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
 - Assets/FunnyUIMeme/Assets/HudParts/ItemIcon.prefab
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBar.asset
+- Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
 - Assets/RoR2/Base/UI/SpecialUIMaterials/matUIPaintStreakAnimated.mat
 - Assets/HunkHud/Assets/VFX/textures/Bars/texHealthBarBiomassBackground.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialChatbox.prefab
@@ -497,13 +502,13 @@ Assets:
 - Assets/HunkHud/Assets/VFX/textures/Bars/texImmunityFill.png
 - Assets/FunnyUIMeme/Assets/Sprites/circle.png
 - Assets/HunkHud/Assets/VFX/textures/Bands/texBandCooldownVoid.png
-- Assets/HunkHud/Assets/VFX/textures/Bars/texFillFrozen.png
 - Assets/HunkHud/Assets/VFX/textures/Bars/texFillTile.asset
+- Assets/HunkHud/Assets/VFX/textures/Bars/texFillLowHealth.png
 - Assets/HunkHud/Assets/MainAssets/CustomElements/Bands/BandDisplaySacrificial.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/texChevronEngiShield.png
 - Assets/RoR2/Base/UI/texDetailPanel.png
 - Assets/RoR2/DLC4/texKarmaIconLevel3Active.png
-- Assets/HunkHud/Assets/VFX/textures/Bars/texFillLowHealth.png
+- Assets/HunkHud/Assets/VFX/textures/Bars/texFillFrozen.png
 - Assets/FunnyUIMeme/Assets/HudParts/MaterialAllyCard.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/Bold_Circle.png
 - Assets/RoR2/DLC3/UI/Textures/texTempItemsTimer.png
@@ -614,7 +619,6 @@ Assets:
 - Assets/FunnyUIMeme/Assets/HudParts/HealthBarSub.prefab
 - Assets/FunnyUIMeme/Assets/Sprites/ringTop.png
 - Assets/RoR2/Base/UI/SpriteText/Visual_Assets/Bombadier_number_texture_17.asset
-- Assets/RoR2/Base/UI/Generic UI/Textures/texUIHighlightBoxOutline.asset
 - Assets/FunnyUIMeme/Assets/Sprites/whitepixel.png
 - Assets/FunnyUIMeme/Assets/Sprites/Shift.png
 - Assets/RoR2/Base/Common/MiscIcons/texMysteryIcon.asset

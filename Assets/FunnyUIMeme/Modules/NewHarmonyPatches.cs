@@ -141,8 +141,8 @@ namespace MaterialHud
             else Log.Error("AllyCardManager.Awake");
         }
 
-        [HarmonyPostfix, HarmonyPatch(typeof(EnemyInfoPanel), nameof(EnemyInfoPanel.Init))]
-        public static void ChangeMonsterInventory() => EnemyInfoPanel.panelPrefab = RiskUIPlugin.EnemyInfoPanel;
+       // [HarmonyPostfix, HarmonyPatch(typeof(EnemyInfoPanel), nameof(EnemyInfoPanel.Init))]
+       // public static void ChangeMonsterInventory() => EnemyInfoPanel.panelPrefab = RiskUIPlugin.EnemyInfoPanel;
 
         [HarmonyPostfix, HarmonyPatch(typeof(HUD), nameof(HUD.DeactivateScoreboard))]
         public static void Unselect(HUD __instance)

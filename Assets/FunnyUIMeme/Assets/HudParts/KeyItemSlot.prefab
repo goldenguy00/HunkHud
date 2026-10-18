@@ -259,7 +259,7 @@ MonoBehaviour:
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
   m_Interactable: 1
-  m_TargetGraphic: {fileID: 0}
+  m_TargetGraphic: {fileID: 8439140972332504740}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
@@ -277,7 +277,7 @@ MonoBehaviour:
         m_CallState: 2
   allowAllEventSystems: 0
   submitOnPointerUp: 0
-  selectOnPointerEnter: 1
+  selectOnPointerEnter: 0
   disablePointerClick: 0
   disableGamepadClick: 1
   useBaseGamepadClick: 0

@@ -25,7 +25,7 @@
       "dependencies": {
         "com.unity.scriptablebuildpipeline": "1.16.1"
       },
-      "hash": "5012c9132d282d3e57446779936a43e72533b3f7"
+      "hash": "95a6236df08b0e4bbd5350dd4afdb0927cb7fb6a"
     },
     "com.unity.assetbundlebrowser": {
       "version": "https://github.com/Unity-Technologies/AssetBundles-Browser.git",
@@ -188,6 +188,12 @@
       "source": "embedded",
       "dependencies": {}
     },
+    "riskofthunder-r2api_addressables": {
+      "version": "file:R2API_Addressables",
+      "depth": 0,
+      "source": "embedded",
+      "dependencies": {}
+    },
     "riskofthunder-r2api_artifactcode": {
       "version": "file:R2API_ArtifactCode",
       "depth": 0,
@@ -333,20 +339,20 @@
       "dependencies": {}
     },
     "riskofthunder-ror2editorkit": {
-      "version": "https://github.com/risk-of-thunder/RoR2EditorKit.git#5.7.1",
+      "version": "https://github.com/risk-of-thunder/RoR2EditorKit.git",
       "depth": 0,
       "source": "git",
       "dependencies": {
         "com.unity.editorcoroutines": "1.0.0"
       },
-      "hash": "c8632ced7ba0ccbe4e8314410544dbfa319a6fff"
+      "hash": "1d09306555c7ea217f5fafc1b0c2a0b9edeec33c"
     },
     "riskofthunder-ror2importextensions": {
       "version": "https://github.com/risk-of-thunder/RoR2ImportExtensions.git",
       "depth": 0,
       "source": "git",
       "dependencies": {},
-      "hash": "b8704d045fd4c32e83778bf3e1792d6e0cf76e00"
+      "hash": "38fa4fe9c8dc16eb7986eaafcdd56e6a7a40a8ca"
     },
     "rob-hunk": {
       "version": "file:HUNK",

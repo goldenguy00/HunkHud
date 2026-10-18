@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 695574386
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: hunkui
+      Dependencies: {}
